@@ -1,0 +1,26 @@
+# Site settings
+title: L'entrepreneur
+email: hola@lentrepreneur.es
+description: >-
+  Un centre culinari per a l'escena startup de Barcelona al Poblenou.
+  Obertura pròxima - on la innovació es troba amb la gastronomia.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache/
+  - .jekyll-cache/
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js 

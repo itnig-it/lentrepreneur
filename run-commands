@@ -1,0 +1,19 @@
+# Install Jekyll dependencies
+bundle install
+
+# If you encounter issues, try:
+# bundle update
+
+# Install npm dependencies
+npm install
+
+# Build the CSS once
+npm run build:css
+
+# To run the development server with live CSS updates, use these two commands in separate terminals:
+# Terminal 1: npm run watch:css
+# Terminal 2: npm run start
+
+# Or for a simpler approach, just run:
+npx tailwindcss -i ./assets/css/main.scss -o ./assets/css/styles.css
+bundle exec jekyll serve --livereload 

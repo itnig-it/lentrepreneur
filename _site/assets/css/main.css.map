@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss"
+	],
+	"sourcesContent": [
+		"@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');\n\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer components {\n  .btn {\n    @apply px-6 py-3 rounded-md font-medium transition-colors duration-300;\n  }\n  \n  .btn-primary {\n    @apply bg-brand text-white hover:bg-brand-dark;\n  }\n  \n  .btn-outline {\n    @apply border-2 border-brand text-brand hover:bg-brand hover:text-white;\n  }\n  \n  .section {\n    @apply py-16 md:py-24;\n  }\n  \n  .container {\n    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;\n  }\n} "
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,+IAAI;AAEZ,SAAS,CAAT,IAAS;AACT,SAAS,CAAT,UAAS;AACT,SAAS,CAAT,SAAS;AAET,MAAM,CAAN,UAAM,GACJ,AAAA,IAAI,CAAC,EACH,MAAM,CAAN,+DAAM,GACP;EAED,AAAA,YAAY,CAAC,EACX,MAAM,CAAN,uCAAM,GACP;EAED,AAAA,YAAY,CAAC,EACX,MAAM,CAAN,gEAAM,GACP;EAED,AAAA,QAAQ,CAAC,EACP,MAAM,CAAN,cAAM,GACP;EAED,AAAA,UAAU,CAAC,EACT,MAAM,CAAN,sCAAM,GACP"
+}
