@@ -1,5 +1,5 @@
 [build]
-  command = "./build.sh"
+  command = "docker build -t lentrepreneur . && docker run --rm -v $(pwd)/_site:/app/_site lentrepreneur"
   publish = "_site"
 
 [build.environment]

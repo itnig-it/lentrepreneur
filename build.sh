@@ -3,10 +3,13 @@
 # Exit on error
 set -e
 
-# Install specific bundler version
-gem install bundler -v 2.3.26
+# Remove existing Gemfile.lock to avoid version conflicts
+rm -f Gemfile.lock
 
-# Install dependencies
+# Install latest bundler
+gem install bundler
+
+# Install dependencies with clean environment
 bundle install
 
 # Build the site

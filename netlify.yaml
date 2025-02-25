@@ -1,0 +1,14 @@
+build:
+  environment:
+    RUBY_VERSION: 3.1.3
+  
+  command: |
+    gem install bundler
+    bundle config set --local path 'vendor/bundle'
+    bundle install
+    bundle exec jekyll build
+
+plugins:
+  - package: "@netlify/plugin-ruby-bundler"
+    config:
+      version: 3.1.3 
