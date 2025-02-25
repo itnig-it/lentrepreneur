@@ -17,11 +17,14 @@ title: Menú
         <h2 class="text-2xl font-bold mb-4">{{ category.category }}</h2>
         <ul class="space-y-4">
           {% for item in category.items %}
-            <li class="flex justify-between items-baseline">
-              <span class="text-lg capitalize-first">{{ item.name | capitalize }}</span>
-              {% if item.price %}
-                <span class="text-brand font-medium">€{{ item.price }}</span>
-              {% endif %}
+            <li class="flex flex-col justify-between items-baseline">
+              <div class="flex justify-between w-full">
+                <span class="text-lg capitalize-first">{{ item.name | capitalize }}</span>
+                {% if item.price %}
+                  <span class="text-brand font-medium">€{{ item.price }}</span>
+                {% endif %}
+              </div>
+              <p class="text-gray-600">{{ item.description }}</p>
             </li>
           {% endfor %}
         </ul>

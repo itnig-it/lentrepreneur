@@ -234,7 +234,8 @@ layout: default
       listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
                               <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
                               ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
-                            </div>`;
+                            </div>
+                            <p class="text-gray-600">${item.description}</p>`;
       dishesList.appendChild(listItem);
     });
     
@@ -245,7 +246,8 @@ layout: default
       listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
                               <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
                               ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
-                            </div>`;
+                            </div>
+                            <p class="text-gray-600">${item.description}</p>`;
       drinksList.appendChild(listItem);
     });
   });
