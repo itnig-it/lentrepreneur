@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "Restaurant website for L'entrepreneur",
   "scripts": {
-    "build:css": "tailwindcss -i ./assets/css/main.scss -o ./assets/css/styles.css",
-    "watch:css": "tailwindcss -i ./assets/css/main.scss -o ./assets/css/styles.css --watch",
+    "build:css": "postcss ./assets/css/main.scss -o ./assets/css/styles.css",
+    "watch:css": "postcss ./assets/css/main.scss -o ./assets/css/styles.css --watch",
     "start": "bundle exec jekyll serve --livereload"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.0"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9"
   }
-} 
+}

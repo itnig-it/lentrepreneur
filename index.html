@@ -38,7 +38,7 @@ layout: default
             <i class="fas fa-utensils text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">Cuina Íntima</h3>
-          <p class="text-gray-600">Plats elaborats amb cura en la nostra petita cuina, utilitzant ingredients locals de primera qualitat.</p>
+          <p class="text-gray-600">Plats elaborats amb cura en la nostra petita cuina, utilizando ingredients locals de primera qualitat.</p>
         </div>
         <div class="p-6 border border-gray-200 rounded-lg">
           <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
@@ -81,77 +81,36 @@ layout: default
   </div>
 </section>
 
-<!-- Menu Preview Section -->
-<section id="menu" class="section bg-white">
+<!-- Menu Section -->
+<section id="menu" class="section bg-gray-50">
   <div class="container">
     <div class="max-w-3xl mx-auto text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Petit tastet del Menú</h2>
-      <p class="text-lg text-gray-600">
-        El nostre menú és curt però acurat, canviant segons la temporada i els ingredients disponibles. Aquí teniu un tast del que podeu esperar.
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Avançament del Menú</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Aquí teniu un tast del que podeu esperar quan obrim les portes.
       </p>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Entrants</h3>
-        <ul class="space-y-6">
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Pa de Massa Mare Silicon Valley</h4>
-              <span class="text-brand font-medium">8€</span>
-            </div>
-            <p class="text-gray-600">Pa artesanal de massa mare amb oli d'oliva de l'Empordà i tomàquet</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Ceviche Startup</h4>
-              <span class="text-brand font-medium">14€</span>
-            </div>
-            <p class="text-gray-600">Peix fresc del Mediterrani, cítrics, alvocat i quinoa cruixent</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Burrata Venture Capital</h4>
-              <span class="text-brand font-medium">12€</span>
-            </div>
-            <p class="text-gray-600">Burrata cremosa amb tomàquets de varietats antigues i oli de alfàbrega</p>
-          </li>
+      <!-- Left Column: Random Dishes -->
+      <div class="bg-white p-8 rounded-lg" id="random-dishes">
+        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Plats Seleccionats</h3>
+        <ul class="space-y-6" id="dishes-list">
+          <!-- Random dishes will be inserted here -->
         </ul>
       </div>
       
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Plats Principals</h3>
-        <ul class="space-y-6">
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Risotto del Disruptor</h4>
-              <span class="text-brand font-medium">18€</span>
-            </div>
-            <p class="text-gray-600">Risotto de bolets i tòfona amb parmesà envellit</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Peix del Fundador</h4>
-              <span class="text-brand font-medium">24€</span>
-            </div>
-            <p class="text-gray-600">Peix del dia amb verdures de temporada i salsa de safrà</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Filet Unicorn</h4>
-              <span class="text-brand font-medium">28€</span>
-            </div>
-            <p class="text-gray-600">Porc ibèric a la graella amb salsa romesco i patates rostides</p>
-          </li>
+      <!-- Right Column: Random Drinks -->
+      <div class="bg-white p-8 rounded-lg" id="random-drinks">
+        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Begudes Seleccionades</h3>
+        <ul class="space-y-6" id="drinks-list">
+          <!-- Random drinks will be inserted here -->
         </ul>
       </div>
     </div>
     
     <div class="text-center mt-12">
-      <p class="text-lg text-gray-600 italic mb-6">
-        Donat el nostre espai reduït i el nostre compromís amb la qualitat, oferim un menú curt que canvia normalment segons la temporada i la disponibilitat d'ingredients.
-      </p>
-      <p class="text-brand font-medium">Menú complet pròximament</p>
+      <a href="{{ '/menu.html' | relative_url }}" class="btn btn-primary mt-6">Veure Menú Complet</a>
     </div>
   </div>
 </section>
@@ -238,4 +197,56 @@ layout: default
       </a>
     </div>
   </div>
-</section> 
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuData = {{ site.data.menu | jsonify }};
+    
+    // Filter and flatten dishes
+    const dishCategories = ["CARN", "PEIX", "LLEGUMS I ARRÒS"];
+    const allDishes = menuData.filter(category => dishCategories.includes(category.category))
+                              .flatMap(category => category.items);
+    
+    // Filter and flatten drinks
+    const drinkCategory = "COMBINATS";
+    const allDrinks = menuData.find(category => category.category === drinkCategory).items;
+    
+    // Function to get random items
+    function getRandomItems(items, count) {
+      const shuffled = items.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+    
+    // Get random dishes and drinks
+    const randomDishes = getRandomItems(allDishes, 3);
+    const randomDrinks = getRandomItems(allDrinks, 3);
+    
+    // Function to properly capitalize text (first letter uppercase, rest lowercase)
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+    
+    // Insert random dishes into the DOM
+    const dishesList = document.getElementById("dishes-list");
+    randomDishes.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
+                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
+                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
+                            </div>`;
+      dishesList.appendChild(listItem);
+    });
+    
+    // Insert random drinks into the DOM
+    const drinksList = document.getElementById("drinks-list");
+    randomDrinks.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
+                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
+                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
+                            </div>`;
+      drinksList.appendChild(listItem);
+    });
+  });
+</script> 

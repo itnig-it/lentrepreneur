@@ -1,0 +1,31 @@
+---
+layout: default
+title: Menú
+---
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-serif font-bold mb-6">Menú Complet</h1>
+      <p class="text-lg text-gray-600 mb-8">
+        Descobreix la nostra selecció completa de plats i begudes.
+      </p>
+    </div>
+    
+    {% for category in site.data.menu %}
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">{{ category.category }}</h2>
+        <ul class="space-y-4">
+          {% for item in category.items %}
+            <li class="flex justify-between items-baseline">
+              <span class="text-lg capitalize-first">{{ item.name | capitalize }}</span>
+              {% if item.price %}
+                <span class="text-brand font-medium">€{{ item.price }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section> 

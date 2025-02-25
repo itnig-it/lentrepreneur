@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>L'entrepreneur</title>
-  <meta name="description" content="A culinary hub for Barcelona's startup scene in Poblenou. Opening soon - where innovation meets gastronomy.">
+  <meta name="description" content="Un centre culinari per a l'escena startup de Barcelona al Poblenou. Obertura pròxima - on la innovació es troba amb la gastronomia.">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="icon" href="/assets/images/favicon.ico">
   <!-- Font Awesome from CDN -->
@@ -83,7 +83,7 @@
             <i class="fas fa-utensils text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">Cuina Íntima</h3>
-          <p class="text-gray-600">Plats elaborats amb cura en la nostra petita cuina, utilitzant ingredients locals de primera qualitat.</p>
+          <p class="text-gray-600">Plats elaborats amb cura en la nostra petita cuina, utilizando ingredients locals de primera qualitat.</p>
         </div>
         <div class="p-6 border border-gray-200 rounded-lg">
           <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
@@ -126,77 +126,36 @@
   </div>
 </section>
 
-<!-- Menu Preview Section -->
-<section id="menu" class="section bg-white">
+<!-- Menu Section -->
+<section id="menu" class="section bg-gray-50">
   <div class="container">
     <div class="max-w-3xl mx-auto text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Petit tastet del Menú</h2>
-      <p class="text-lg text-gray-600">
-        El nostre menú és curt però acurat, canviant segons la temporada i els ingredients disponibles. Aquí teniu un tast del que podeu esperar.
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Avançament del Menú</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Aquí teniu un tast del que podeu esperar quan obrim les portes.
       </p>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Entrants</h3>
-        <ul class="space-y-6">
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Pa de Massa Mare Silicon Valley</h4>
-              <span class="text-brand font-medium">8€</span>
-            </div>
-            <p class="text-gray-600">Pa artesanal de massa mare amb oli d'oliva de l'Empordà i tomàquet</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Ceviche Startup</h4>
-              <span class="text-brand font-medium">14€</span>
-            </div>
-            <p class="text-gray-600">Peix fresc del Mediterrani, cítrics, alvocat i quinoa cruixent</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Burrata Venture Capital</h4>
-              <span class="text-brand font-medium">12€</span>
-            </div>
-            <p class="text-gray-600">Burrata cremosa amb tomàquets de varietats antigues i oli de alfàbrega</p>
-          </li>
+      <!-- Left Column: Random Dishes -->
+      <div class="bg-white p-8 rounded-lg" id="random-dishes">
+        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Plats Seleccionats</h3>
+        <ul class="space-y-6" id="dishes-list">
+          <!-- Random dishes will be inserted here -->
         </ul>
       </div>
       
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Plats Principals</h3>
-        <ul class="space-y-6">
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Risotto del Disruptor</h4>
-              <span class="text-brand font-medium">18€</span>
-            </div>
-            <p class="text-gray-600">Risotto de bolets i tòfona amb parmesà envellit</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Peix del Fundador</h4>
-              <span class="text-brand font-medium">24€</span>
-            </div>
-            <p class="text-gray-600">Peix del dia amb verdures de temporada i salsa de safrà</p>
-          </li>
-          <li>
-            <div class="flex justify-between items-baseline mb-2">
-              <h4 class="text-xl font-medium">Filet Unicorn</h4>
-              <span class="text-brand font-medium">28€</span>
-            </div>
-            <p class="text-gray-600">Porc ibèric a la graella amb salsa romesco i patates rostides</p>
-          </li>
+      <!-- Right Column: Random Drinks -->
+      <div class="bg-white p-8 rounded-lg" id="random-drinks">
+        <h3 class="text-2xl font-serif font-bold mb-6 text-brand">Begudes Seleccionades</h3>
+        <ul class="space-y-6" id="drinks-list">
+          <!-- Random drinks will be inserted here -->
         </ul>
       </div>
     </div>
     
     <div class="text-center mt-12">
-      <p class="text-lg text-gray-600 italic mb-6">
-        Donat el nostre espai reduït i el nostre compromís amb la qualitat, oferim un menú curt que canvia normalment segons la temporada i la disponibilitat d'ingredients.
-      </p>
-      <p class="text-brand font-medium">Menú complet pròximament</p>
+      <a href="/menu.html" class="btn btn-primary mt-6">Veure Menú Complet</a>
     </div>
   </div>
 </section>
@@ -283,7 +242,59 @@
       </a>
     </div>
   </div>
-</section> 
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuData = [{"category":"ESMORZARS","items":[{"name":"TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)","price":3.5},{"name":"OU PASSAT PER AIGUA (ACOMPANYAMENT)","price":2.5},{"name":"FORMATGE COMTÉ (ACOMPANYAMENT)","price":2.5},{"name":"ALVOCAT (ACOMPANYAMENT)","price":2.5},{"name":"PERNIL DOLÇ O GALL D'INDI CASOLÀ (ACOMPANYAMENT)","price":3.0},{"name":"SALMÓ CURAT (ACOMPANYAMENT)","price":3.5},{"name":"SALSA HOLANDESA O BEARNESA (ACOMPANYAMENT)","price":2.5},{"name":"CREMA DE XOCOLATA I AVELLANES FETA A CASA","price":3.5},{"name":"BIKINI DE CECINA D.O. LEÓN Y COMTÉ AMB S/BEARNESA","price":10.0},{"name":"TRUITA DE PATATA AL MOMENTO","price":9.0},{"name":"OUS REMENATS AMB TORRADA","price":7.5},{"name":"OUS AL NIU, ESPINACS, SALMÓ FUMAT I SALSA HOLANDESA","price":12.5},{"name":"OUS AL PLAT AMB SOBRASADA DE MENORCA","price":9.0},{"name":"ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ","price":6.5},{"name":"XURROS AMB XOCOLATA CALENTA I GELAT DE NATA","price":5.5},{"name":"MATÓ AMB MEL CRUA I FESTUCS","price":6.0},{"name":"YOGUR GREC CASOLÀ AMB FRUITA I GRANOLA FETA A CASA","price":5.5},{"name":"CISTELLA DE MINI BOLLERÍA","price":6.0}]},{"category":"AMANIDES I MÉS","items":[{"name":"GILDA DE LA CASA XXL","price":3.5},{"name":"AMANIDA RUSSA AMB VENTRESCA I PIPARRES","price":8.0},{"name":"CECINA DE LLEÓ D.O. AMB BURRATA I PESTO DE FESTUC","price":null},{"name":"AMANIDA DE TOMÀQUET D'HIVERN AMB SEITONS MARINATS, MANZANILLES I PERNIL IBÈRIC DE GLA","price":13.9},{"name":"PATATES BRAVES PUJADES (ALLIOLI I OLI PICANT)","price":6.0},{"name":"CROQUETES DE LLET CRUA DE PERNIL IBÈRIC DE GLA","price":1.9},{"name":"BIKINI DE CECINA DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA","price":10.0}]},{"category":"CARN","items":[{"name":"FRICANDÓ DE LLATA DE VEDELLA","price":16.0},{"name":"ALBÓNDIGAS EN SU JUGO CON TROMPETAS DE LA MUERTE","price":14.0},{"name":"BUTIFARRA IBÉRICA ESPARRACADA CON JUDÍAS DE SANTA PAU","price":13.0},{"name":"CHEESEBURGER CON SALSA DE LA CASA","price":14.0},{"name":"ENTRECOT A LA PIMIENTA NEGRA","price":21.0}]},{"category":"GUARNICIÓ","items":[{"name":"PATATES FREGIDES ALLUMETTE","price":3.5},{"name":"PEBROTS CONFITATS","price":3.5},{"name":"AMANIDA VERDA AMB RAVES","price":3.5},{"name":"VERDURA DE TEMPORADA","price":3.5}]},{"category":"INFUSIONS I TES","items":[{"name":"MATCHA LATTE","price":null},{"name":"CHAI LATTE","price":null},{"name":"INFUSIÓ DE CAMAMILLA","price":null},{"name":"INFUSIÓ POLEO MENTA","price":null},{"name":"TE NEGRE","price":null}]},{"category":"LLEGUMS I ARRÒS","items":[{"name":"CIGRONS SALTEJATS AMB TOMÀQUET I PERNIL IBÈRIC","price":8.0},{"name":"PÈSOLS NEGRES ESTOFATS AMB SÍPIA","price":13.5},{"name":"ARRÒS DEL SENYORET A LA LLAUNA","price":21.0}]},{"category":"PA","items":[{"name":"PA DE MASSA MARE AMB AOVE I TOMACÓ","price":3.5},{"name":"PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA","price":3.75}]},{"category":"PEIX","items":[{"name":"LLUÇ LA ROMANA AMB SALSA TÁRTARA","price":16.0},{"name":"CALAMAR A LA PLANXA FARCIT DE BOLETS (S/ DE TINTA)","price":16.5},{"name":"BACALLÀ AMB ESPINACS A LA CATALANA","price":19.8}]},{"category":"VERDURES, OUS I PASTA","items":[{"name":"TRINXAT AMB ROSTES DE SORIA, LI POTS AFEGIR OU","price":10.0},{"name":"CARXOFES CONFITADES AMB CRUIXENT DE PERNIL I PINYONS","price":8.0},{"name":"OUS TRENCATS AMB TARTAR DE ATÚN I ALGA NORI","price":18.5},{"name":"TRUITA DE PATATA AMB CHORIÇ IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT","price":9.0},{"name":"MACARRONS GRATINATS A LA CARDINALE","price":11.0},{"name":"CANELÓN XL DE ROSTIT GRATINAT I BECHAMEL DE CEPS","price":14.0}]},{"category":"CAFÈS","items":[{"name":"ESPRESSO","price":1.9},{"name":"CAFÉ AMB LLET","price":2.8},{"name":"FLAT WHITE","price":null},{"name":"AMERICÀ","price":2.2},{"name":"TALLAT","price":2.5}]},{"category":"COMBINATS","items":[{"name":"MACARONESIAN GINEBRA","price":7.0},{"name":"SUNTORY ROKU GINEBRA","price":8.0},{"name":"SEAGRAM'S GINEBRA","price":7.0},{"name":"MOMBASA CLUB LONDON GINEBRA","price":8.0},{"name":"NORDES GINEBRA","price":10.0},{"name":"GLENMORANGIE WHISKY","price":9.0},{"name":"JOHNNY WALKER BLACK LABEL WHISKY","price":8.0},{"name":"GREY GOOSE VODKA","price":9.0},{"name":"BELVEDERE VODKA","price":9.0},{"name":"UKIYO JAPANESE RICE VODKA","price":8.0},{"name":"DON PAPA BAROKO RON","price":9.0},{"name":"DEMON'S SHARE 12 AÑOS RON","price":13.0},{"name":"BRUGAL RON","price":6.0},{"name":"HERRADURA REPOSADO TEQUILA","price":9.0},{"name":"MEZCAL 400 CONEJOS","price":10.0},{"name":"PISCO SARCAY MOLLAR","price":7.0},{"name":"FERNET BRANCA","price":5.5},{"name":"MALVASIA HOSPITAL DE SITGES","price":7.0},{"name":"MOSCATEL HOSPITAL DE SITGES","price":5.5},{"name":"RATAFIA DELS RAIERS","price":6.0},{"name":"SAMBUCA MARCATI","price":5.0},{"name":"ORUJO","price":6.0},{"name":"AMARETTO DI SARONNO","price":5.0},{"name":"CAMPARI","price":6.0},{"name":"BAILEYS","price":5.0},{"name":"APEROL","price":5.0}]},{"category":"CÒCTELS","items":[{"name":"MOJITO","price":8.5},{"name":"MOSCOW MULE","price":8.5},{"name":"BLOODY MARY","price":8.5},{"name":"PISCO/AMARETTO SOUR","price":8.5},{"name":"APEROL/CAMPARI SPRITZ","price":6.5},{"name":"MIMOSA","price":5.5},{"name":"VIRGEN MARY","price":7.5},{"name":"VIRGEN MOJITO","price":7.5}]}];
+    
+    // Filter and flatten dishes
+    const dishCategories = ["CARN", "PEIX", "LLEGUMS I ARRÒS"];
+    const allDishes = menuData.filter(category => dishCategories.includes(category.category))
+                              .flatMap(category => category.items);
+    
+    // Filter and flatten drinks
+    const drinkCategory = "COMBINATS";
+    const allDrinks = menuData.find(category => category.category === drinkCategory).items;
+    
+    // Function to get random items
+    function getRandomItems(items, count) {
+      const shuffled = items.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+    
+    // Get random dishes and drinks
+    const randomDishes = getRandomItems(allDishes, 3);
+    const randomDrinks = getRandomItems(allDrinks, 3);
+    
+    // Function to properly capitalize text (first letter uppercase, rest lowercase)
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+    
+    // Insert random dishes into the DOM
+    const dishesList = document.getElementById("dishes-list");
+    randomDishes.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
+                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
+                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
+                            </div>`;
+      dishesList.appendChild(listItem);
+    });
+    
+    // Insert random drinks into the DOM
+    const drinksList = document.getElementById("drinks-list");
+    randomDrinks.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
+                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
+                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
+                            </div>`;
+      drinksList.appendChild(listItem);
+    });
+  });
+</script> 
   </main>
   
   <footer class="bg-gray-900 text-white">

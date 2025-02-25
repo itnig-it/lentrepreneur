@@ -1,0 +1,211 @@
+- category: ESMORZARS
+  items:
+  - name: TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)
+    price: 3.5
+  - name: OU PASSAT PER AIGUA (ACOMPANYAMENT)
+    price: 2.5
+  - name: FORMATGE COMTÉ (ACOMPANYAMENT)
+    price: 2.5
+  - name: ALVOCAT (ACOMPANYAMENT)
+    price: 2.5
+  - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ (ACOMPANYAMENT)
+    price: 3.0
+  - name: SALMÓ CURAT (ACOMPANYAMENT)
+    price: 3.5
+  - name: SALSA HOLANDESA O BEARNESA (ACOMPANYAMENT)
+    price: 2.5
+  - name: CREMA DE XOCOLATA I AVELLANES FETA A CASA
+    price: 3.5
+  - name: BIKINI DE CECINA D.O. LEÓN Y COMTÉ AMB S/BEARNESA
+    price: 10.0
+  - name: TRUITA DE PATATA AL MOMENTO
+    price: 9.0
+  - name: OUS REMENATS AMB TORRADA
+    price: 7.5
+  - name: OUS AL NIU, ESPINACS, SALMÓ FUMAT I SALSA HOLANDESA
+    price: 12.5
+  - name: OUS AL PLAT AMB SOBRASADA DE MENORCA
+    price: 9.0
+  - name: ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ
+    price: 6.5
+  - name: XURROS AMB XOCOLATA CALENTA I GELAT DE NATA
+    price: 5.5
+  - name: MATÓ AMB MEL CRUA I FESTUCS
+    price: 6.0
+  - name: YOGUR GREC CASOLÀ AMB FRUITA I GRANOLA FETA A CASA
+    price: 5.5
+  - name: CISTELLA DE MINI BOLLERÍA
+    price: 6.0
+- category: AMANIDES I MÉS
+  items:
+  - name: GILDA DE LA CASA XXL
+    price: 3.5
+  - name: AMANIDA RUSSA AMB VENTRESCA I PIPARRES
+    price: 8.0
+  - name: CECINA DE LLEÓ D.O. AMB BURRATA I PESTO DE FESTUC
+    price: null
+  - name: AMANIDA DE TOMÀQUET D'HIVERN AMB SEITONS MARINATS, MANZANILLES I PERNIL
+      IBÈRIC DE GLA
+    price: 13.9
+  - name: PATATES BRAVES PUJADES (ALLIOLI I OLI PICANT)
+    price: 6.0
+  - name: CROQUETES DE LLET CRUA DE PERNIL IBÈRIC DE GLA
+    price: 1.9
+  - name: BIKINI DE CECINA DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA
+    price: 10.0
+- category: CARN
+  items:
+  - name: FRICANDÓ DE LLATA DE VEDELLA
+    price: 16.0
+  - name: ALBÓNDIGAS EN SU JUGO CON TROMPETAS DE LA MUERTE
+    price: 14.0
+  - name: BUTIFARRA IBÉRICA ESPARRACADA CON JUDÍAS DE SANTA PAU
+    price: 13.0
+  - name: CHEESEBURGER CON SALSA DE LA CASA
+    price: 14.0
+  - name: ENTRECOT A LA PIMIENTA NEGRA
+    price: 21.0
+- category: GUARNICIÓ
+  items:
+  - name: PATATES FREGIDES ALLUMETTE
+    price: 3.5
+  - name: PEBROTS CONFITATS
+    price: 3.5
+  - name: AMANIDA VERDA AMB RAVES
+    price: 3.5
+  - name: VERDURA DE TEMPORADA
+    price: 3.5
+- category: INFUSIONS I TES
+  items:
+  - name: MATCHA LATTE
+    price: null
+  - name: CHAI LATTE
+    price: null
+  - name: INFUSIÓ DE CAMAMILLA
+    price: null
+  - name: INFUSIÓ POLEO MENTA
+    price: null
+  - name: TE NEGRE
+    price: null
+- category: LLEGUMS I ARRÒS
+  items:
+  - name: CIGRONS SALTEJATS AMB TOMÀQUET I PERNIL IBÈRIC
+    price: 8.0
+  - name: PÈSOLS NEGRES ESTOFATS AMB SÍPIA
+    price: 13.5
+  - name: ARRÒS DEL SENYORET A LA LLAUNA
+    price: 21.0
+- category: PA
+  items:
+  - name: PA DE MASSA MARE AMB AOVE I TOMACÓ
+    price: 3.5
+  - name: PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA
+    price: 3.75
+- category: PEIX
+  items:
+  - name: LLUÇ LA ROMANA AMB SALSA TÁRTARA
+    price: 16.0
+  - name: CALAMAR A LA PLANXA FARCIT DE BOLETS (S/ DE TINTA)
+    price: 16.5
+  - name: BACALLÀ AMB ESPINACS A LA CATALANA
+    price: 19.8
+- category: VERDURES, OUS I PASTA
+  items:
+  - name: TRINXAT AMB ROSTES DE SORIA, LI POTS AFEGIR OU
+    price: 10.0
+  - name: CARXOFES CONFITADES AMB CRUIXENT DE PERNIL I PINYONS
+    price: 8.0
+  - name: OUS TRENCATS AMB TARTAR DE ATÚN I ALGA NORI
+    price: 18.5
+  - name: TRUITA DE PATATA AMB CHORIÇ IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT
+    price: 9.0
+  - name: MACARRONS GRATINATS A LA CARDINALE
+    price: 11.0
+  - name: CANELÓN XL DE ROSTIT GRATINAT I BECHAMEL DE CEPS
+    price: 14.0
+
+- category: CAFÈS
+  items:
+  - name: ESPRESSO
+    price: 1.9
+  - name: CAFÉ AMB LLET
+    price: 2.8
+  - name: FLAT WHITE
+    price: null
+  - name: AMERICÀ
+    price: 2.2
+  - name: TALLAT
+    price: 2.5
+
+- category: COMBINATS
+  items:
+  - name: MACARONESIAN GINEBRA
+    price: 7.0
+  - name: SUNTORY ROKU GINEBRA
+    price: 8.0
+  - name: SEAGRAM'S GINEBRA
+    price: 7.0
+  - name: MOMBASA CLUB LONDON GINEBRA
+    price: 8.0
+  - name: NORDES GINEBRA
+    price: 10.0
+  - name: GLENMORANGIE WHISKY
+    price: 9.0
+  - name: JOHNNY WALKER BLACK LABEL WHISKY
+    price: 8.0
+  - name: GREY GOOSE VODKA
+    price: 9.0
+  - name: BELVEDERE VODKA
+    price: 9.0
+  - name: UKIYO JAPANESE RICE VODKA
+    price: 8.0
+  - name: DON PAPA BAROKO RON
+    price: 9.0
+  - name: DEMON'S SHARE 12 AÑOS RON
+    price: 13.0
+  - name: BRUGAL RON
+    price: 6.0
+  - name: HERRADURA REPOSADO TEQUILA
+    price: 9.0
+  - name: MEZCAL 400 CONEJOS
+    price: 10.0
+  - name: PISCO SARCAY MOLLAR
+    price: 7.0
+  - name: FERNET BRANCA
+    price: 5.5
+  - name: MALVASIA HOSPITAL DE SITGES
+    price: 7.0
+  - name: MOSCATEL HOSPITAL DE SITGES
+    price: 5.5
+  - name: RATAFIA DELS RAIERS
+    price: 6.0
+  - name: SAMBUCA MARCATI
+    price: 5.0
+  - name: ORUJO
+    price: 6.0
+  - name: AMARETTO DI SARONNO
+    price: 5.0
+  - name: CAMPARI
+    price: 6.0
+  - name: BAILEYS
+    price: 5.0
+  - name: APEROL
+    price: 5.0
+- category: CÒCTELS
+  items:
+  - name: MOJITO
+    price: 8.5
+  - name: MOSCOW MULE
+    price: 8.5
+  - name: BLOODY MARY
+    price: 8.5
+  - name: PISCO/AMARETTO SOUR
+    price: 8.5
+  - name: APEROL/CAMPARI SPRITZ
+    price: 6.5
+  - name: MIMOSA
+    price: 5.5
+  - name: VIRGEN MARY
+    price: 7.5
+  - name: VIRGEN MOJITO
+    price: 7.5
