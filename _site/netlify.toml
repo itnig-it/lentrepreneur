@@ -1,5 +1,5 @@
 [build]
-  command = "docker build -t lentrepreneur . && docker run --rm -v $(pwd)/_site:/app/_site lentrepreneur"
+  command = "chmod +x ./build.sh && ./build.sh"
   publish = "_site"
 
 [build.environment]
