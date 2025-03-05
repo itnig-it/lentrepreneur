@@ -4,13 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define Prociono font face */
+@font-face {
+  font-family: 'ProcionomBrand';
+  src: url('/assets/fonts/Prociono-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Create a completely separate class for the brand logo only */
+.brand-font {
+  font-family: 'ProcionomBrand', serif;
+}
+
 @layer components {
   .btn {
     @apply px-6 py-3 rounded-md font-medium transition-colors duration-300;
   }
   
   .btn-primary {
-    @apply bg-brand text-white hover:bg-brand-dark;
+    @apply bg-brand text-white hover:bg-opacity-90;
   }
   
   .btn-outline {

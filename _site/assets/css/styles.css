@@ -610,8 +610,7 @@ video {
 }
 
 .btn-primary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 84 0 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 0.9;
 }
 
 .btn-outline{
@@ -966,6 +965,11 @@ video {
      object-fit: cover;
 }
 
+.object-center{
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-6{
   padding: 1.5rem;
 }
@@ -1131,6 +1135,26 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+/* Define Prociono font face */
+
+@font-face {
+  font-family: 'ProcionomBrand';
+
+  src: url('/assets/fonts/Prociono-Regular.otf') format('opentype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+/* Create a completely separate class for the brand logo only */
+
+.brand-font {
+  font-family: 'ProcionomBrand', serif;
 }
 
 .hover\:text-brand:hover{
