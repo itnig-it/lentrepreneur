@@ -15,15 +15,17 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (!menuData.length) return;
     
-    // Filter and flatten dishes
+    // Filter and flatten dishes, excluding items with type: acompanyament
     const dishCategories = ["CARN", "PEIX", "LLEGUMS I ARRÒS"];
-    const allDishes = menuData.filter(category => dishCategories.includes(category.category))
-                            .flatMap(category => category.items);
+    const allDishes = menuData
+      .filter(category => dishCategories.includes(category.category))
+      .flatMap(category => category.items.filter(item => item.type !== 'acompanyament'));
     
     // Filter and flatten drinks
     const drinkCategories = ["VINS", "CÒCTELS"];
-    const allDrinks = menuData.filter(category => drinkCategories.includes(category.category))
-                            .flatMap(category => category.items);
+    const allDrinks = menuData
+      .filter(category => drinkCategories.includes(category.category))
+      .flatMap(category => category.items);
     
     // Get random items
     const getRandomItems = (items, count) => {

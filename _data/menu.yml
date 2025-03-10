@@ -3,27 +3,34 @@
   - name: TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)
     price: 3.5
     description: "Amb pa de massa mare, servida amb mantega o tomàquet."
-  - name: OU PASSAT PER AIGUA (ACOMPANYAMENT)
+  - name: OU PASSAT PER AIGUA
     price: 2.5
     description: "Perfecte com a acompanyament."
-  - name: FORMATGE COMTÉ (ACOMPANYAMENT)
+    type: acompanyament
+  - name: FORMATGE COMTÉ
     price: 2.5
     description: "Un acompanyament deliciós."
-  - name: ALVOCAT (ACOMPANYAMENT)
+    type: acompanyament
+  - name: ALVOCAT
     price: 2.5
     description: "Fresc, ideal per acompanyar qualsevol plat."
-  - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ (ACOMPANYAMENT)
+    type: acompanyament 
+  - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ
     price: 3.0
     description: "Perfecte per acompanyar."
-  - name: SALMÓ CURAT (ACOMPANYAMENT)
+    type: acompanyament
+  - name: SALMÓ CURAT
     price: 3.5
     description: "Un acompanyament exquisit."
-  - name: SALSA HOLANDESA O BEARNESA (ACOMPANYAMENT)
+    type: acompanyament
+  - name: SALSA HOLANDESA O BEARNESA
     price: 2.5
     description: "Ideal per acompanyar plats."
+    type: acompanyament
   - name: CREMA DE XOCOLATA I AVELLANES FETA A CASA
     price: 3.5
     description: "Deliciosa i dolça."
+    type: acompanyament
   - name: BIKINI DE CECINA D.O. LEÓN Y COMTÉ AMB S/BEARNESA
     price: 10.0
     description: "Amb salsa bearnesa."

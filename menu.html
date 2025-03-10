@@ -14,20 +14,25 @@ title: Menú
     
     {% for category in site.data.menu %}
       <div class="mb-12">
-        <h2 class="text-2xl font-bold mb-4">{{ category.category }}</h2>
-        <ul class="space-y-4">
+        <h2 class="text-2xl font-serif font-bold mb-6">{{ category.category }}</h2>
+        <div class="space-y-4">
           {% for item in category.items %}
-            <li class="flex flex-col justify-between items-baseline">
-              <div class="flex justify-between w-full">
-                <span class="text-lg capitalize-first">{{ item.name | capitalize }}</span>
+            <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
+              {% if item.type == 'acompanyament' %}
+                <span class="text-brand mr-2">+</span>
+              {% endif %}
+              <div class="flex justify-between items-start">
+                <h3 class="text-lg font-medium">{{ item.name }}</h3>
                 {% if item.price %}
-                  <span class="text-brand font-medium">€{{ item.price }}</span>
+                  <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
                 {% endif %}
               </div>
-              <p class="text-gray-600">{{ item.description }}</p>
-            </li>
+              {% if item.description %}
+                <p class="text-gray-600 mt-1">{{ item.description }}</p>
+              {% endif %}
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       </div>
     {% endfor %}
   </div>
