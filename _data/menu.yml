@@ -1,307 +1,436 @@
-- category: ESMORZARS
+- category: TORRADES I ENTREPANS
+  menu_area: "ESMORZARS"
   items:
-  - name: TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)
-    price: 3.5
-    description: "Amb pa de massa mare, servida amb mantega o tomàquet."
-  - name: OU PASSAT PER AIGUA
-    price: 2.5
-    description: "Perfecte com a acompanyament."
-    type: acompanyament
-  - name: FORMATGE COMTÉ
-    price: 2.5
-    description: "Un acompanyament deliciós."
-    type: acompanyament
-  - name: ALVOCAT
-    price: 2.5
-    description: "Fresc, ideal per acompanyar qualsevol plat."
-    type: acompanyament 
-  - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ
-    price: 3.0
-    description: "Perfecte per acompanyar."
-    type: acompanyament
-  - name: SALMÓ CURAT
-    price: 3.5
-    description: "Un acompanyament exquisit."
-    type: acompanyament
-  - name: SALSA HOLANDESA O BEARNESA
-    price: 2.5
-    description: "Ideal per acompanyar plats."
-    type: acompanyament
-  - name: CREMA DE XOCOLATA I AVELLANES FETA A CASA
-    price: 3.5
-    description: "Deliciosa i dolça."
-    type: acompanyament
-  - name: BIKINI DE CECINA D.O. LEÓN Y COMTÉ AMB S/BEARNESA
-    price: 10.0
-    description: "Amb salsa bearnesa."
-  - name: TRUITA DE PATATA AL MOMENTO
-    price: 9.0
-    description: "Feta al moment, saborosa i tradicional."
-  - name: OUS REMENATS AMB TORRADA
-    price: 7.5
-    description: "Servits amb torrada cruixent."
-  - name: OUS AL NIU, ESPINACS, SALMÓ FUMAT I SALSA HOLANDESA
-    price: 12.5
-    description: "Amb espinacs, salmó fumat i salsa holandesa."
-  - name: OUS AL PLAT AMB SOBRASADA DE MENORCA
-    price: 9.0
-    description: "Un plat autèntic."
-  - name: ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ
-    price: 6.5
-    description: "Amb xarop d'auró, fruita i bacó."
-  - name: XURROS AMB XOCOLATA CALENTA I GELAT DE NATA
-    price: 5.5
-    description: "Un clàssic dolç."
-  - name: MATÓ AMB MEL CRUA I FESTUCS
-    price: 6.0
-    description: "Un postre deliciós."
-  - name: YOGUR GREC CASOLÀ AMB FRUITA I GRANOLA FETA A CASA
-    price: 5.5
-    description: "Amb fruita i granola feta a casa."
-  - name: CISTELLA DE MINI BOLLERÍA
-    price: 6.0
-    description: "Perfecta per compartir."
-- category: AMANIDES I MÉS
+    - name: TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)
+      price: 3.5
+      description: "Amb pa de massa mare, servida amb mantega o tomàquet."
+    - name: OU PASSAT PER AIGUA
+      price: 2.5
+      description: "Perfecte com a acompanyament."
+      type: acompanyament
+    - name: FORMATGE COMTÉ
+      price: 2.5
+      description: "Un acompanyament deliciós."
+      type: acompanyament
+    - name: ALVOCAT
+      price: 2.5
+      description: "Fresc, ideal per acompanyar qualsevol plat."
+      type: acompanyament
+    - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ
+      price: 3.0
+      description: "Perfecte per acompanyar."
+      type: acompanyament
+    - name: SALMÓ CURAT
+      price: 3.5
+      description: "Un acompanyament exquisit."
+      type: acompanyament
+    - name: SALSA HOLANDESA O BEARNESA
+      price: 2.5
+      description: "Ideal per acompanyar plats."
+      type: acompanyament
+    - name: CREMA DE XOCOLATA I AVELLANES FETA A CASA
+      price: 3.5
+      description: "Deliciosa i dolça."
+      type: acompanyament
+    - name: BIQUINI DE "CECINA" DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA 
+      price: 10.0
+      description: "Amb salsa bearnesa."
+- category: OUS
+  menu_area: "ESMORZARS"
   items:
-  - name: GILDA DE LA CASA XXL
-    price: 3.5
-    description: "Un aperitiu clàssic."
-  - name: AMANIDA RUSSA AMB VENTRESCA I PIPARRES
-    price: 8.0
-    description: "Fresca i saborosa."
-  - name: CECINA DE LLEÓ D.O. AMB BURRATA I PESTO DE FESTUC
-    price: null
-    description: "Amb burrata i pesto de festuc."
-  - name: AMANIDA DE TOMÀQUET D'HIVERN AMB SEITONS MARINATS, MANZANILLES I PERNIL IBÈRIC DE GLA
-    price: 13.9
-    description: "Amb seitons marinats, manzanilles i pernil ibèric de gla."
-  - name: PATATES BRAVES PUJADES (ALLIOLI I OLI PICANT)
-    price: 6.0
-    description: "Amb allioli i oli picant."
-  - name: CROQUETES DE LLET CRUA DE PERNIL IBÈRIC DE GLA
-    price: 1.9
-    description: "Cruixents i saboroses."
-  - name: BIKINI DE CECINA DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA
-    price: 10.0
-    description: "Amb salsa bearnesa."
-- category: CARN
+    - name: TRUITA DE PATATA "AL MOMENT"
+      price: 9.0
+      description: "Feta al moment, saborosa i tradicional."
+    - name: OUS REMENATS AMB TORRADA (AFEGEIX PERNIL, COMTÉ RATLLAT, BACÓ, SALMÓ CURAT)
+      price: 7.5
+      description: "Servits amb torrada cruixent."
+    - name: OUS AL NIU, ESPINACS, SALMÓ FUMAT I SALSA HOLANDESA
+      price: 12.5
+      description: "Amb espinacs, salmó fumat i salsa holandesa."
+    - name: OUS AL PLAT AMB SOBRASADA DE MENORCA
+      price: 9.0
+      description: "Un plat autèntic."
+- category: DOLÇ
+  menu_area: "ESMORZARS"
   items:
-  - name: FRICANDÓ DE LLATA DE VEDELLA
-    price: 16.0
-    description: "Un plat tradicional i saborós."
-  - name: ALBÓNDIGAS EN SU JUGO CON TROMPETAS DE LA MUERTE
-    price: 14.0
-    description: "Mandonguilles en el seu suc amb trompetes de la mort."
-  - name: BUTIFARRA IBÉRICA ESPARRACADA CON JUDÍAS DE SANTA PAU
-    price: 13.0
-    description: "Amb mongetes de Santa Pau."
-  - name: CHEESEBURGER CON SALSA DE LA CASA
-    price: 14.0
-    description: "Un clàssic modern."
-  - name: ENTRECOT A LA PIMIENTA NEGRA
-    price: 21.0
-    description: "Suculent i ben condimentat."
-- category: GUARNICIÓ
+    - name: ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ
+      price: 6.5
+      description: "Amb xarop d'auró, fruita i bacó."
+    - name: XURROS AMB XOCOLATA CALENTA I GELAT DE NATA
+      price: 5.5
+      description: "Un clàssic dolç."
+    - name: MATÓ AMB MEL CRUA I FESTUCS
+      price: 6.0
+      description: "Un postre deliciós."
+    - name: IOGURT GREC CASOLÀ AMB FRUITA I GRANOLA FETA A CASA
+      price: 5.5
+      description: "Amb fruita i granola feta a casa."
+    - name: CISTELL DE MINI BRIOIXERIA
+      price: 6.0
+      description: "Perfecta per compartir."
+    - name: PLAT DE PATATES "ALLUMETTE" O AMANIDA VERDA AMB RAVES
+      price: 3.5
+      description: "Acompanyaments d'esmorzars"
+- category: CAFÈ ESPECIALITAT "SYRA COFFEE"
+  menu_area: "ESMORZARS"
   items:
-  - name: PATATES FREGIDES ALLUMETTE
-    price: 3.5
-    description: "Cruixents i delicioses."
-  - name: PEBROTS CONFITATS
-    price: 3.5
-    description: "Dolços i saborosos."
-  - name: AMANIDA VERDA AMB RAVES
-    price: 3.5
-    description: "Fresca i saludable."
-  - name: VERDURA DE TEMPORADA
-    price: 3.5
-    description: "Cuinada al punt."
+    - name: ESPRESSO
+      price: 1.9
+      description: "Intens i aromàtic."
+    - name: CAFÉ AMB LLET
+      price: 2.8
+      description: "Suau i cremós."
+    - name: FLAT WHITE
+      price: 3.2
+      description: "Un cafè amb llet amb una textura suau."
+    - name: AMERICÀ
+      price: 2.2
+      description: "Lleuger i suau."
+    - name: TALLAT
+      price: 2.5
+      description: "Un cafè amb un toc de llet."
 - category: INFUSIONS I TES
+  menu_area: "ESMORZARS"
   items:
-  - name: MATCHA LATTE
-    price: null
-    description: "Una beguda energètica i saludable."
-  - name: CHAI LATTE
-    price: null
-    description: "Una beguda especiada i reconfortant."
-  - name: INFUSIÓ DE CAMAMILLA
-    price: null
-    description: "Calmant i relaxant."
-  - name: INFUSIÓ POLEO MENTA
-    price: null
-    description: "Refrescant i digestiva."
-  - name: TE NEGRE
-    price: null
-    description: "Intens i aromàtic."
-- category: LLEGUMS I ARRÒS
+    - name: MATCHA LATTE
+      price: 4.5
+      description: "Una beguda energètica i saludable."
+    - name: CHAI LATTE
+      price: 4.5
+      description: "Una beguda especiada i reconfortant."
+    - name: INFUSIÓ DE CAMAMILLA
+      price: 3.5
+      description: "Calmant i relaxant."
+    - name: INFUSIÓ POLEO MENTA
+      price: 3.5
+      description: "Refrescant i digestiva."
+    - name: TE NEGRE
+      price: 3.5
+      description: "Intens i aromàtic."
+- category: AMANIDES I MÉS
+  menu_area: "PER COMPARTIR"
   items:
-  - name: CIGRONS SALTEJATS AMB TOMÀQUET I PERNIL IBÈRIC
-    price: 8.0
-    description: "Un plat nutritiu."
-  - name: PÈSOLS NEGRES ESTOFATS AMB SÍPIA
-    price: 13.5
-    description: "Un plat mariner."
-  - name: ARRÒS DEL SENYORET A LA LLAUNA
-    price: 21.0
-    description: "Un clàssic de la cuina mediterrània."
-- category: PA
-  items:
-  - name: PA DE MASSA MARE AMB AOVE I TOMACÓ
-    price: 3.5
-    description: "Cruixent i saborós."
-  - name: PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA
-    price: 3.75
-    description: "Amb mantega artesana fumada."
-- category: PEIX
-  items:
-  - name: LLUÇ LA ROMANA AMB SALSA TÁRTARA
-    price: 16.0
-    description: "Fresc i cruixent."
-  - name: CALAMAR A LA PLANXA FARCIT DE BOLETS (S/ DE TINTA)
-    price: 16.5
-    description: "Farcit de bolets, sense tinta."
-  - name: BACALLÀ AMB ESPINACS A LA CATALANA
-    price: 19.8
-    description: "Un plat tradicional."
+    - name: GILDA DE LA CASA XXL
+      price: 3.5
+      description: "Un aperitiu clàssic."
+    - name: AMANIDA RUSSA AMB VENTRESCA I PIPARRES
+      price: 8.0
+      description: "Fresca i saborosa."
+    - name: LA "CECINA" DE LLEÓ D.O. AMB BURRATA I PESTO DE FESTUC
+      price: 18.9
+      description: "Amb burrata i pesto de festuc."
+    - name: AMANIDA DE TOMÀQUET D'HIVERN AMB SARDINES MARINADES, GORDAL I PERNIL IBÈRIC DE GLA
+      price: 13.9
+      description: "Amb seitons marinats, manzanilles i pernil ibèric de gla."
+    - name: PATATES BRAVES PUJADES (ALLIOLI I OLI PICANT)
+      price: 6.0
+      description: "Amb allioli i oli picant."
+    - name: CROQUETA DE LLET CRUA I PERNIL IBÈRIC DE GLA
+      price: 1.9
+      description: "Cruixents i saboroses."
+    - name: BIQUINI DE "CECINA" DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA
+      price: 10.0
+      description: "Amb salsa bearnesa."
 - category: VERDURES, OUS I PASTA
+  menu_area: "PER COMPARTIR"
   items:
-  - name: TRINXAT AMB ROSTES DE SORIA, LI POTS AFEGIR OU
-    price: 10.0
-    description: "Opcionalment amb ou."
-  - name: CARXOFES CONFITADES AMB CRUIXENT DE PERNIL I PINYONS
-    price: 8.0
-    description: "Amb cruixent de pernil i pinyons."
-  - name: OUS TRENCATS AMB TARTAR DE ATÚN I ALGA NORI
-    price: 18.5
-    description: "Amb tàrtar de tonyina i alga nori."
-  - name: TRUITA DE PATATA AMB CHORIÇ IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT
-    price: 9.0
-    description: "Opcionalment amb formatge ratllat."
-  - name: MACARRONS GRATINATS A LA CARDINALE
-    price: 11.0
-    description: "Un plat de pasta clàssic."
-  - name: CANELÓN XL DE ROSTIT GRATINAT I BECHAMEL DE CEPS
-    price: 14.0
-    description: "Amb beixamel de ceps."
-- category: CAFÈS
+    - name: TRINXAT AMB ROSTES DE SÒRIA, LI POTS AFEGIR OU
+      price: 10.0
+      description: "Opcionalment amb ou."
+    - name: ALBERGINIES FUMADES AMB MAÓ, MEL I AVELLANES
+      price: 9.9
+      description: "Fumades amb maó, mel i avellanes."
+    - name: OU AMB "PUNTILLA" AMB TARTAR DE TONYINA I ALGA NORI
+      price: 18.5
+      description: "Amb tartar de tonyina i alga nori."
+    - name: TRUITA DE PATATA AMB XORIÇO IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT
+      price: 9.0
+      description: "Opcionalment amb formatge ratllat."
+    - name: MACARRONS GRATINATS "A LA CARDINALE"
+      price: 11.0
+      description: "Un plat de pasta clàssic."
+    - name: CANELÓ XL DE ROSTIT AMB BEIXAMEL DE CEPS
+      price: 14.0
+      description: "Amb beixamel de ceps."
+- category: CARN
+  menu_area: "PLATS PRINCIPALS"
   items:
-  - name: ESPRESSO
-    price: 1.9
-    description: "Intens i aromàtic."
-  - name: CAFÉ AMB LLET
-    price: 2.8
-    description: "Suau i cremós."
-  - name: FLAT WHITE
-    price: null
-    description: "Un cafè amb llet amb una textura suau."
-  - name: AMERICÀ
-    price: 2.2
-    description: "Lleuger i suau."
-  - name: TALLAT
-    price: 2.5
-    description: "Un cafè amb un toc de llet."
-- category: COMBINATS
+    - name: FRICANDÓ DE LLATA DE VEDELLA AMB BOLETS I PARMENTIER
+      price: 16.0
+      description: "Un plat tradicional i saborós."
+    - name: MANDONGUILLES AMB TROMPETES DE LA MORT
+      price: 14.0
+      description: "Mandonguilles en el seu suc amb trompetes de la mort."
+    - name: BOTIFARRA ARTESANA ESPARRACADA AMB MONGETES DE SANTA PAU
+      price: 13.0
+      description: "Amb mongetes de Santa Pau."
+    - name: LA "CHEESEBURGER" AMB SALSA DE LA CASA
+      price: 14.0
+      description: "Un clàssic modern."
+    - name: ENTRECOT AL PEBRE NEGRE
+      price: 21.0
+      description: "Suculent i ben condimentat."
+- category: GUARNICIÓ
+  menu_area: "PLATS PRINCIPALS"
   items:
-  - name: MACARONESIAN GINEBRA
-    price: 7.0
-    description: "Una ginebra amb botànics únics."
-  - name: SUNTORY ROKU GINEBRA
-    price: 8.0
-    description: "Una ginebra japonesa amb sis botànics."
-  - name: SEAGRAM'S GINEBRA
-    price: 7.0
-    description: "Una ginebra clàssica i suau."
-  - name: MOMBASA CLUB LONDON GINEBRA
-    price: 8.0
-    description: "Una ginebra amb un toc exòtic."
-  - name: NORDES GINEBRA
-    price: 10.0
-    description: "Una ginebra gallega amb botànics atlàntics."
-  - name: GLENMORANGIE WHISKY
-    price: 9.0
-    description: "Un whisky escocès suau i aromàtic."
-  - name: JOHNNY WALKER BLACK LABEL WHISKY
-    price: 8.0
-    description: "Un whisky escocès amb cos."
-  - name: GREY GOOSE VODKA
-    price: 9.0
-    description: "Una vodka francesa de qualitat superior."
-  - name: BELVEDERE VODKA
-    price: 9.0
-    description: "Una vodka polonesa de luxe."
-  - name: UKIYO JAPANESE RICE VODKA
-    price: 8.0
-    description: "Una vodka japonesa suau."
-  - name: DON PAPA BAROKO RON
-    price: 9.0
-    description: "Un rom filipí amb notes dolces."
-  - name: DEMON'S SHARE 12 AÑOS RON
-    price: 13.0
-    description: "Un rom envellit amb caràcter."
-  - name: BRUGAL RON
-    price: 6.0
-    description: "Un rom dominicà clàssic."
-  - name: HERRADURA REPOSADO TEQUILA
-    price: 9.0
-    description: "Un tequila suau i envellit."
-  - name: MEZCAL 400 CONEJOS
-    price: 10.0
-    description: "Un mezcal amb un sabor fumat."
-  - name: PISCO SARCAY MOLLAR
-    price: 7.0
-    description: "Un pisco peruà suau."
-  - name: FERNET BRANCA
-    price: 5.5
-    description: "Un licor amarg amb herbes."
-  - name: MALVASIA HOSPITAL DE SITGES
-    price: 7.0
-    description: "Un vi dolç català."
-  - name: MOSCATEL HOSPITAL DE SITGES
-    price: 5.5
-    description: "Un vi dolç i aromàtic."
-  - name: RATAFIA DELS RAIERS
-    price: 6.0
-    description: "Un licor català amb nous verdes."
-  - name: SAMBUCA MARCATI
-    price: 5.0
-    description: "Un licor italià amb anís."
-  - name: ORUJO
-    price: 6.0
-    description: "Un aiguardent espanyol amb caràcter."
-  - name: AMARETTO DI SARONNO
-    price: 5.0
-    description: "Un licor italià amb ametlles."
-  - name: CAMPARI
-    price: 6.0
-    description: "Un aperitiu italià amb un sabor amarg."
-  - name: BAILEYS
-    price: 5.0
-    description: "Un licor irlandès amb crema."
-  - name: APEROL
-    price: 5.0
-    description: "Un aperitiu italià amb un sabor dolç i amarg."
+    - name: PATATES FREGIDES "ALLUMETTE"
+      price: 3.5
+      description: "Cruixents i delicioses."
+    - name: PEBROTS CONFITATS
+      price: 3.5
+      description: "Dolços i saborosos."
+    - name: AMANIDA VERDA AMB RAVES
+      price: 3.5
+      description: "Fresca i saludable."
+    - name: VERDURA DE TEMPORADA
+      price: 3.5
+      description: "Cuinada al punt."
+- category: LLEGUMS I ARRÒS
+  menu_area: "PLATS PRINCIPALS"
+  items:
+    - name: CIGRONS SALTATS AMB TOMÀQUET I PERNIL IBÈRIC
+      price: 8.0
+      description: "Un plat nutritiu."
+    - name: FESOLETS ESTOFATS AMB ESCOPINYES
+      price: 13.5
+      description: "Un plat mariner."
+    - name: ARRÒS MARINER A LA LLAUNA
+      price: 21.0
+      description: "Un clàssic de la cuina mediterrània."
+- category: PA
+  menu_area: "PLATS PRINCIPALS"
+  items:
+    - name: PA DE MASSA MARE AMB AOVE I TOMACÓ
+      price: 3.5
+      description: "Cruixent i saborós."
+    - name: PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA
+      price: 3.75
+      description: "Amb mantega artesana fumada."
+- category: PEIX
+  menu_area: "PLATS PRINCIPALS"
+  items:
+    - name: LLUÇ LA ROMANA AMB SALSA TÁRTARA
+      price: 16.0
+      description: "Fresc i cruixent."
+    - name: CALAMAR DE POTERA AMB PAPADA IBÉRICA
+      price: 18.5
+      description: "Farcit de bolets, sense tinta."
+    - name: BACALLÀ AMB ESPINACS A LA CATALANA
+      price: 19.8
+      description: "Un plat tradicional."
+- category: GINEBRA
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: MACARONESIAN
+      price: 7.0
+      description: "Una ginebra amb botànics únics."
+    - name: SUNTORY ROKU
+      price: 8.0
+      description: "Una ginebra japonesa amb sis botànics."
+    - name: SEAGRAM'S
+      price: 7.0
+      description: "Una ginebra clàssica i suau."
+    - name: MOMBASA CLUB LONDON
+      price: 8.0
+      description: "Una ginebra amb un toc exòtic."
+    - name: NORDES
+      price: 10.0
+      description: "Una ginebra gallega amb botànics atlàntics."
+- category: WHISKY
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: GLENMORANGIE
+      price: 9.0
+      description: "Un whisky escocès suau i aromàtic."
+    - name: JOHNNY WALKER BLACK LABEL
+      price: 8.0
+      description: "Un whisky escocès amb cos."
+- category: VODKA
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: GREY GOOSE
+      price: 9.0
+      description: "Una vodka francesa de qualitat superior."
+    - name: BELVEDERE
+      price: 9.0
+      description: "Una vodka polonesa de luxe."
+    - name: UKIYO JAPANESE RICE
+      price: 8.0
+      description: "Una vodka japonesa suau."
+- category: ROM
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: DON PAPA BAROKO
+      price: 9.0
+      description: "Un rom filipí amb notes dolces."
+    - name: DEMON'S SHARE 12 AÑOS
+      price: 13.0
+      description: "Un rom envellit amb caràcter."
+    - name: BRUGAL
+      price: 6.0
+      description: "Un rom dominicà clàssic."
+- category: TEQUILA & CO
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: HERRADURA REPOSADO
+      price: 9.0
+      description: "Un tequila suau i envellit."
+    - name: JIMADOR
+      price: 6.0
+      description: "Un tequila envellit amb notes de canyella."
+    - name: MEZCAL 400 CONEJOS
+      price: 10.0
+      description: "Un mezcal amb un sabor fumat."
+    - name: PISCO SARCAY MOLLAR
+      price: 7.0
+      description: "Un pisco peruà suau."
+- category: LICORS
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
+  items:
+    - name: FERNET BRANCA
+      price: 5.5
+      description: "Un licor amarg amb herbes."
+    - name: MALVASIA HOSPITAL DE SITGES
+      price: 7.0
+      description: "Un vi dolç català."
+    - name: MOSCATELL HOSPITAL DE SITGES
+      price: 5.5
+      description: "Un vi dolç i aromàtic."
+    - name: RATAFIA DELS RAIERS
+      price: 6.0
+      description: "Un licor català amb nous verdes."
+    - name: SAMBUCA MARCATI
+      price: 5.0
+      description: "Un licor italià amb anís."
+    - name: ORUJO
+      price: 6.0
+      description: "Un aiguardent espanyol amb caràcter."
+    - name: AMARETTO DI SARONNO
+      price: 5.0
+      description: "Un licor italià amb ametlles."
+    - name: CAMPARI
+      price: 6.0
+      description: "Un aperitiu italià amb un sabor amarg."
+    - name: BAILEYS
+      price: 5.0
+      description: "Un licor irlandès amb crema."
+    - name: APEROL
+      price: 5.0
+      description: "Un aperitiu italià amb un sabor dolç i amarg."
 - category: CÒCTELS
+  menu_area: "CÒCTELS I ESPIRITUOSOS"
   items:
-  - name: MOJITO
-    price: 8.5
-    description: "Un còctel refrescant amb menta i llima."
-  - name: MOSCOW MULE
-    price: 8.5
-    description: "Un còctel amb vodka, gingebre i llima."
-  - name: BLOODY MARY
-    price: 8.5
-    description: "Un còctel amb vodka i suc de tomàquet."
-  - name: PISCO/AMARETTO SOUR
-    price: 8.5
-    description: "Un còctel amb pisco o amaretto."
-  - name: APEROL/CAMPARI SPRITZ
-    price: 6.5
-    description: "Un còctel amb Aperol o Campari."
-  - name: MIMOSA
-    price: 5.5
-    description: "Un còctel amb suc de taronja i cava."
-  - name: VIRGEN MARY
-    price: 7.5
-    description: "Una versió sense alcohol del Bloody Mary."
-  - name: VIRGEN MOJITO
-    price: 7.5
-    description: "Una versió sense alcohol del Mojito."
+    - name: MOJITO
+      price: 8.5
+      description: "Un còctel refrescant amb menta i llima."
+    - name: MOSCOW MULE
+      price: 8.5
+      description: "Un còctel amb vodka, gingebre i llima."
+    - name: BLOODY MARY
+      price: 8.5
+      description: "Un còctel amb vodka i suc de tomàquet."
+    - name: PISCO/AMARETTO SOUR
+      price: 8.5
+      description: "Un còctel amb pisco o amaretto."
+    - name: APEROL/CAMPARI SPRITZ
+      price: 6.5
+      description: "Un còctel amb Aperol o Campari."
+    - name: MIMOSA
+      price: 5.5
+      description: "Un còctel amb suc de taronja i cava."
+    - name: VIRGIN MARY
+      price: 7.5
+      description: "Una versió sense alcohol del Bloody Mary."
+    - name: VIRGIN MOJITO
+      price: 7.5
+      description: "Una versió sense alcohol del Mojito."
+
+- category: BLANCS NATURALS
+  menu_area: "VINS"
+  items:
+    - name: BIVAC - XAREL.LO I VIOGNIER - PENEDÉS
+      price_glass: 4.5
+      price_bottle: 22.0
+      description: "Fresc i equilibrat, amb aromes de fruita blanca i un toc floral. Ideal per aperitius o plats lleugers."
+    - name: LA PEONA BRISAT - XAREL.LO VERMELL - ORANGE BLANC PENEDÈS
+      price_bottle: 33.0
+      description: "Vi brisat amb cos i estructura, notes cítriques i una subtil tanicitat que el fa perfecte per maridatges amb formatges i plats especiats."
+    - name: PICAPEDRA - PARELLADA - CONCA DE BARBERÀ  
+      price_bottle: 27.0
+      description: "Elegant i mineral, amb una frescor vibrant i notes de poma verda i herbes mediterrànies."
+
+- category: BLANCS
+  menu_area: "VINS"
+  items:
+    - name: BLANC DE LA CASA OZÓ - TERRA ALTA - VI SOLIDARI
+      price_glass: 3.0
+      price_bottle: 12.0
+      description: "Un vi blanc jove i afruitat, amb tocs de préssec i flors blanques. Molt fàcil de beure."
+    - name: VIVIDORS DEL VI BLANC - XAREL.LO I MALVASIA DE SITGES
+      price_glass: 4.5
+      price_bottle: 23.0
+      description: "Aromàtic i fresc, amb notes de flors, albercoc i un toc salí. Perfecte per mariscs i arrossos."
+    - name: SECRETS DEL MAR - GARNATXA BLANCA - TERRA ALTA 
+      price_bottle: 22.0
+      description: "Cítric i untuós, amb records de fruita madura i un final llarg i sedós."
+    - name: 3 PUEBLOS VERDEJO - VERDEJO - RUEDA
+      price_bottle: 22.0
+      description: "Vi fresc i expressiu, amb aromes de fonoll, préssec i un toc de pell de llima."
+
+- category: ROSATS NATURALS
+  menu_area: "VINS"
+  items:
+    - name: LA SOLANA LLARGA 2020 - TREPAT - CONCA DE BARBERÀ
+      price_glass: 5.0
+      price_bottle: 27.0
+      description: "Vi rosat elegant i fi, amb notes de maduixa fresca i un fons especiat subtil."
+    - name: TRENCACLOSQUES - SYRAH - MONTSANT
+      price_bottle: 29.0
+      description: "Rosat intens i estructurat, amb fruita vermella madura i un toc balsàmic que el fa molt gastronòmic."
+
+- category: NEGRES NATURALS
+  menu_area: "VINS"
+  items:
+    - name: ALOSA - GARNATXA NEGRA - FORA D.O.
+      price_glass: 4.7
+      price_bottle: 25.0
+      description: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
+    - name: CROSSOS - GARNATXA, CARIÑENA I SYRAH
+      price_bottle: 40.0
+      description: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
+    - name: COCA I FITÓ NATURA - GARNATXA NEGRA - MONTSANT
+      price_glass: 4.5
+      price_bottle: 23.0
+      description: "Rodó i equilibrat, amb fruita negra madura, espècies dolces i una frescor sorprenent."
+
+- category: NEGRES
+  menu_area: "VINS"
+  items:
+    - name: NEGRE DE LA CASA OZÓ - TERRA ALTA - VI SOLIDARI
+      price_glass: 3.0
+      price_bottle: 12.0
+      description: "Vi negre jove i afruitat, amb records de cirera i un toc lleugerament especiat."
+    - name: MÉS QUE PARAULES - CABERNET SAUVIGNON I MERLOT - PLA DE BAGES
+      price_glass: 5.0
+      price_bottle: 27.0
+      description: "Elegant i estructurat, amb notes de fruita negra, pebre i un final llarg i sedós."
+    - name: MONO COCO - MONASTRELL - EMPORDÀ
+      price_bottle: 28.0
+      description: "Vi intens i expressiu, amb aromes de mores, espècies i un fons lleugerament fumat."
+
+- category: CAVA
+  menu_area: "VINS"
+  items:
+    - name: VALLDOLINA RESERVA BN - COUPAGE TRADICIONAL I CHARDONNAY 
+      price_bottle: 28
+      description: "Cava elegant i fresc, amb bombolla fina i aromes de poma, brioix i un toc cítric."
+
+- category: ALTRES NATURALS
+  menu_area: "VINS"
+  items:
+    - name: VERMUTH XALAR ARTESANAL - GARNATXA BLANCA 
+      price_glass: 5.5
+      description: "Vermouth artesanal amb notes d’herbes aromàtiques, pell de taronja i un final suau i equilibrat."
+    - name: VINYES DEL TER DOLÇ - GARNATXA NEGRA I CABERNET
+      price_glass: 6.5
+      description: "Vi dolç natural, amb intensos sabors de fruita confitada, xocolata negra i un toc de nou moscada."

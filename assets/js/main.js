@@ -105,4 +105,31 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
+  
+  // Define the desired menu area order
+  const menuAreaOrder = [
+    "ESMORZARS",
+    "PER COMPARTIR",
+    "PLATS PRINCIPALS", 
+    "VINS",
+    "CÒCTELS I ESPIRITUOSOS"
+  ];
+  
+  // Sort menu data by the defined order
+  const sortedMenuData = menuData.sort((a, b) => {
+    const aIndex = menuAreaOrder.indexOf(a.menu_area);
+    const bIndex = menuAreaOrder.indexOf(b.menu_area);
+    
+    // If both areas are in our order array, sort by their index
+    if (aIndex !== -1 && bIndex !== -1) {
+      return aIndex - bIndex;
+    }
+    
+    // If only one area is in our order array, prioritize it
+    if (aIndex !== -1) return -1;
+    if (bIndex !== -1) return 1;
+    
+    // If neither area is in our order array, maintain original order
+    return 0;
+  });
 }); 
