@@ -31,9 +31,20 @@ title: Menú
                     {% assign capitalized_name = words | first | capitalize %}
                     {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
                     <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
-                    {% if item.price %}
-                      <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
-                    {% endif %}
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
                   </div>
                   {% if item.description %}
                     <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
@@ -65,9 +76,20 @@ title: Menú
                     {% assign capitalized_name = words | first | capitalize %}
                     {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
                     <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
-                    {% if item.price %}
-                      <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
-                    {% endif %}
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
                   </div>
                   {% if item.description %}
                     <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
@@ -99,9 +121,20 @@ title: Menú
                     {% assign capitalized_name = words | first | capitalize %}
                     {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
                     <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
-                    {% if item.price %}
-                      <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
-                    {% endif %}
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
                   </div>
                   {% if item.description %}
                     <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
@@ -133,9 +166,20 @@ title: Menú
                     {% assign capitalized_name = words | first | capitalize %}
                     {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
                     <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
-                    {% if item.price %}
-                      <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
-                    {% endif %}
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
                   </div>
                   {% if item.description %}
                     <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
@@ -167,9 +211,20 @@ title: Menú
                     {% assign capitalized_name = words | first | capitalize %}
                     {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
                     <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
-                    {% if item.price %}
-                      <span class="text-brand font-medium ml-4">€{{ item.price }}</span>
-                    {% endif %}
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
                   </div>
                   {% if item.description %}
                     <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>

@@ -3,74 +3,76 @@
   items:
     - name: TORRADA ESPECIAL (PA DE MASSA MARE, MANTEGA O TOMÀQUET)
       price: 3.5
-      description: "Amb pa de massa mare, servida amb mantega o tomàquet."
+      description: "Torrada cruixent de massa mare, servida amb mantega cremosa o tomàquet de penjar per a un toc fresc i tradicional."
     - name: OU PASSAT PER AIGUA
       price: 2.5
-      description: "Perfecte com a acompanyament."
+      description: "Ou cuinat suaument per mantenir la seva textura sedosa, perfecte per barrejar amb torrades o altres acompanyaments."
       type: acompanyament
     - name: FORMATGE COMTÉ
       price: 2.5
-      description: "Un acompanyament deliciós."
+      description: "Formatge francès curat amb una textura suau i un sabor intensament avellanat, ideal per acompanyar les teves torrades."
       type: acompanyament
     - name: ALVOCAT
       price: 2.5
-      description: "Fresc, ideal per acompanyar qualsevol plat."
+      description: "Alvocat madur i cremós, perfecte per afegir un toc fresc i saludable a qualsevol plat."
       type: acompanyament
     - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ
       price: 3.0
-      description: "Perfecte per acompanyar."
+      description: "Opció suau i saborosa de pernil dolç o gall d’indi fet a casa, tallat fi per potenciar el seu gust delicat."
       type: acompanyament
     - name: SALMÓ CURAT
       price: 3.5
-      description: "Un acompanyament exquisit."
+      description: "Salmó curat artesanalment, amb una textura melosa i un sabor equilibrat entre dolç i salí."
       type: acompanyament
     - name: SALSA HOLANDESA O BEARNESA
       price: 2.5
-      description: "Ideal per acompanyar plats."
+      description: "Salsa casolana, cremosa i suau, perfecta per donar un toc gourmet als teus esmorzars."
       type: acompanyament
     - name: CREMA DE XOCOLATA I AVELLANES FETA A CASA
       price: 3.5
-      description: "Deliciosa i dolça."
+      description: "Una crema irresistible de xocolata i avellanes torrades, elaborada artesanalment per un sabor intens i equilibrat."
       type: acompanyament
-    - name: BIQUINI DE "CECINA" DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA 
+    - name: BIQUINI DE "CECINA" DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA
       price: 10.0
-      description: "Amb salsa bearnesa."
+      description: "Biquini gurmet amb cecina de Lleó curada, formatge Comté fos i un toc de salsa bearnesa per arrodonir el seu sabor."
+
 - category: OUS
   menu_area: "ESMORZARS"
   items:
     - name: TRUITA DE PATATA "AL MOMENT"
       price: 9.0
-      description: "Feta al moment, saborosa i tradicional."
+      description: "Truita de patata gruixuda i sucosa, feta al moment per garantir la seva textura perfecta i sabor casolà."
     - name: OUS REMENATS AMB TORRADA (AFEGEIX PERNIL, COMTÉ RATLLAT, BACÓ, SALMÓ CURAT)
       price: 7.5
-      description: "Servits amb torrada cruixent."
+      description: "Ous remenats suaus i cremosos, servits amb torrada cruixent. Personalitza'ls amb els teus ingredients preferits."
     - name: OUS AL NIU, ESPINACS, SALMÓ FUMAT I SALSA HOLANDESA
       price: 12.5
-      description: "Amb espinacs, salmó fumat i salsa holandesa."
+      description: "Ous cuinats al forn sobre un llit d’espinacs frescos i salmó fumat, banyats amb una delicada salsa holandesa."
     - name: OUS AL PLAT AMB SOBRASADA DE MENORCA
       price: 9.0
-      description: "Un plat autèntic."
+      description: "Ous al plat amb sobrasada de Menorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
+
 - category: DOLÇ
   menu_area: "ESMORZARS"
   items:
     - name: ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ
       price: 6.5
-      description: "Amb xarop d'auró, fruita i bacó."
+      description: "Pa torrat arrebossat i fregit, servit amb xarop d’auró, fruita fresca i un toc cruixent de bacó."
     - name: XURROS AMB XOCOLATA CALENTA I GELAT DE NATA
       price: 5.5
-      description: "Un clàssic dolç."
+      description: "Xurros casolans cruixents acompanyats de xocolata calenta espessa i un suau gelat de nata."
     - name: MATÓ AMB MEL CRUA I FESTUCS
       price: 6.0
-      description: "Un postre deliciós."
+      description: "Postre tradicional amb mató fresc, mel crua aromàtica i festucs torrats per un contrast de textures i sabors."
     - name: IOGURT GREC CASOLÀ AMB FRUITA I GRANOLA FETA A CASA
       price: 5.5
-      description: "Amb fruita i granola feta a casa."
+      description: "Iogurt grec cremós fet a casa, servit amb fruita de temporada i una granola cruixent d’elaboració pròpia."
     - name: CISTELL DE MINI BRIOIXERIA
       price: 6.0
-      description: "Perfecta per compartir."
+      description: "Una selecció de brioixeria artesana en format mini, perfecta per compartir i gaudir d’un toc dolç."
     - name: PLAT DE PATATES "ALLUMETTE" O AMANIDA VERDA AMB RAVES
       price: 3.5
-      description: "Acompanyaments d'esmorzars"
+      description: "Tria entre unes patates allumette cruixents o una amanida verda fresca amb raves per acompanyar el teu esmorzar."
 - category: CAFÈ ESPECIALITAT "SYRA COFFEE"
   menu_area: "ESMORZARS"
   items:
@@ -112,64 +114,66 @@
   items:
     - name: GILDA DE LA CASA XXL
       price: 3.5
-      description: "Un aperitiu clàssic."
+      description: "Una versió XXL de l’aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d’acidesa i sabor intens."
     - name: AMANIDA RUSSA AMB VENTRESCA I PIPARRES
       price: 8.0
-      description: "Fresca i saborosa."
+      description: "Amanida russa cremosa, acompanyada de ventresca de tonyina i piparres, aportant un contrast entre la suavitat i l’acidesa."
     - name: LA "CECINA" DE LLEÓ D.O. AMB BURRATA I PESTO DE FESTUC
       price: 18.9
-      description: "Amb burrata i pesto de festuc."
+      description: "Cecina de Lleó curada, combinada amb burrata fresca i pesto de festucs per a una fusió entre intensitat i cremositat."
     - name: AMANIDA DE TOMÀQUET D'HIVERN AMB SARDINES MARINADES, GORDAL I PERNIL IBÈRIC DE GLA
       price: 13.9
-      description: "Amb seitons marinats, manzanilles i pernil ibèric de gla."
+      description: "Tomàquet d’hivern madurat, sardines marinades i olives gordal, amb un toc de pernil ibèric de gla que aporta complexitat al plat."
     - name: PATATES BRAVES PUJADES (ALLIOLI I OLI PICANT)
       price: 6.0
-      description: "Amb allioli i oli picant."
+      description: "Patates braves cruixents amb allioli suau i oli picant casolà per un equilibri perfecte entre cremositat i potència."
     - name: CROQUETA DE LLET CRUA I PERNIL IBÈRIC DE GLA
       price: 1.9
-      description: "Cruixents i saboroses."
+      description: "Croqueta artesana, amb una beixamel cremosa de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
     - name: BIQUINI DE "CECINA" DE LLEÓ D.O. I COMTÉ AMB SALSA BEARNESA
       price: 10.0
-      description: "Amb salsa bearnesa."
+      description: "Biquini gourmet amb cecina de Lleó i formatge Comté fos, complementat amb salsa bearnesa per un toc suau i aromàtic."
+
 - category: VERDURES, OUS I PASTA
   menu_area: "PER COMPARTIR"
   items:
     - name: TRINXAT AMB ROSTES DE SÒRIA, LI POTS AFEGIR OU
       price: 10.0
-      description: "Opcionalment amb ou."
+      description: "Trinxat de col i patata amb rostes de Sòria cruixents; pots afegir-hi un ou per donar-hi encara més cremositat."
     - name: ALBERGINIES FUMADES AMB MAÓ, MEL I AVELLANES
       price: 9.9
-      description: "Fumades amb maó, mel i avellanes."
+      description: "Albergínies escalivades amb formatge Maó fos, un toc de mel i avellanes torrades per un contrast de sabors dolços i salats."
     - name: OU AMB "PUNTILLA" AMB TARTAR DE TONYINA I ALGA NORI
       price: 18.5
-      description: "Amb tartar de tonyina i alga nori."
+      description: "Ou ferrat amb les puntes cruixents, acompanyat d’un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
     - name: TRUITA DE PATATA AMB XORIÇO IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT
       price: 9.0
-      description: "Opcionalment amb formatge ratllat."
+      description: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
     - name: MACARRONS GRATINATS "A LA CARDINALE"
       price: 11.0
-      description: "Un plat de pasta clàssic."
+      description: "Macarrons al forn amb una salsa de tomàquet suau, gratinats amb formatge per obtenir una crosta cruixent irresistible."
     - name: CANELÓ XL DE ROSTIT AMB BEIXAMEL DE CEPS
       price: 14.0
-      description: "Amb beixamel de ceps."
+      description: "Caneló farcit de rostit tradicional, banyat amb una beixamel de ceps que afegeix cremositat i un toc aromàtic espectacular."
+
 - category: CARN
   menu_area: "PLATS PRINCIPALS"
   items:
     - name: FRICANDÓ DE LLATA DE VEDELLA AMB BOLETS I PARMENTIER
       price: 16.0
-      description: "Un plat tradicional i saborós."
+      description: "Estofat tradicional català amb vedella tendra, bolets i una parmentier cremosa que potencia el seu sabor."
     - name: MANDONGUILLES AMB TROMPETES DE LA MORT
       price: 14.0
-      description: "Mandonguilles en el seu suc amb trompetes de la mort."
+      description: "Mandonguilles casolanes sucades en una salsa intensa amb trompetes de la mort, aportant un toc profund i fosc de bosc."
     - name: BOTIFARRA ARTESANA ESPARRACADA AMB MONGETES DE SANTA PAU
       price: 13.0
-      description: "Amb mongetes de Santa Pau."
+      description: "Botifarra artesana de qualitat, esparracada i saltejada, servida amb les emblemàtiques mongetes de Santa Pau."
     - name: LA "CHEESEBURGER" AMB SALSA DE LA CASA
       price: 14.0
-      description: "Un clàssic modern."
+      description: "Hamburguesa sucosa de vedella amb formatge fos, acompanyada de la nostra salsa especial per a un toc inoblidable."
     - name: ENTRECOT AL PEBRE NEGRE
       price: 21.0
-      description: "Suculent i ben condimentat."
+      description: "Entrecot de vedella madurat, marcat al punt i banyat amb una salsa cremosa de pebre negre per ressaltar el seu gust."
 - category: GUARNICIÓ
   menu_area: "PLATS PRINCIPALS"
   items:
@@ -190,34 +194,34 @@
   items:
     - name: CIGRONS SALTATS AMB TOMÀQUET I PERNIL IBÈRIC
       price: 8.0
-      description: "Un plat nutritiu."
+      description: "Cigrons saltejats amb tomàquet madur i encenalls de pernil ibèric, una combinació deliciosa i nutritiva."
     - name: FESOLETS ESTOFATS AMB ESCOPINYES
       price: 13.5
-      description: "Un plat mariner."
+      description: "Fesols tendres estofats a foc lent amb escopinyes fresques, un plat mariner amb tot el sabor del mar."
     - name: ARRÒS MARINER A LA LLAUNA
       price: 21.0
-      description: "Un clàssic de la cuina mediterrània."
+      description: "Arròs melós cuinat a la llauna amb marisc fresc i brou intens, un autèntic clàssic mediterrani."
 - category: PA
   menu_area: "PLATS PRINCIPALS"
   items:
     - name: PA DE MASSA MARE AMB AOVE I TOMACÓ
       price: 3.5
-      description: "Cruixent i saborós."
+      description: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar."
     - name: PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA
       price: 3.75
-      description: "Amb mantega artesana fumada."
+      description: "Pa de massa mare servit calent amb mantega artesana fumada, un toc suau i aromàtic."
 - category: PEIX
   menu_area: "PLATS PRINCIPALS"
   items:
     - name: LLUÇ LA ROMANA AMB SALSA TÁRTARA
       price: 16.0
-      description: "Fresc i cruixent."
+      description: "Lluç arrebossat amb una cobertura cruixent i lleugera, servit amb una salsa tàrtara fresca i cremosa."
     - name: CALAMAR DE POTERA AMB PAPADA IBÉRICA
       price: 18.5
-      description: "Farcit de bolets, sense tinta."
+      description: "Calamar de potera tendre i saborós, combinat amb papada ibèrica per donar-li un toc melós i intens."
     - name: BACALLÀ AMB ESPINACS A LA CATALANA
       price: 19.8
-      description: "Un plat tradicional."
+      description: "Llom de bacallà cuinat al punt, acompanyat d'espinacs saltejats amb panses i pinyons, un plat clàssic i equilibrat."
 - category: GINEBRA
   menu_area: "CÒCTELS I ESPIRITUOSOS"
   items:
