@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         'brand': {
           'light': '#EBD295',
-          'DEFAULT': '#8E3B34',
+          'DEFAULT': '#B32821',
           'dark': '#40320a',
         },
       },
