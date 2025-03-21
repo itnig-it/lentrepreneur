@@ -942,7 +942,7 @@ video {
 
 .bg-brand-light{
   --tw-bg-opacity: 1;
-  background-color: rgb(235 210 149 / var(--tw-bg-opacity, 1));
+  background-color: rgb(242 240 235 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-50{
@@ -1096,7 +1096,7 @@ video {
 
 .text-brand-light{
   --tw-text-opacity: 1;
-  color: rgb(235 210 149 / var(--tw-text-opacity, 1));
+  color: rgb(242 240 235 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-400{
@@ -1167,12 +1167,12 @@ video {
   transition-duration: 150ms;
 }
 
-/* Define Prociono font face */
+/* Define NTBrickSans font face */
 
 @font-face {
-  font-family: 'ProcionomBrand';
+  font-family: 'NTBrickSans';
 
-  src: url('/assets/fonts/Prociono-Regular.otf') format('opentype');
+  src: url('/assets/fonts/NTBrickSans.otf') format('opentype');
 
   font-weight: normal;
 
@@ -1184,7 +1184,7 @@ video {
 /* Create a completely separate class for the brand logo only */
 
 .brand-font {
-  font-family: 'ProcionomBrand', serif;
+  font-family: 'NTBrickSans', sans-serif;
 }
 
 .hover\:text-brand:hover{
@@ -1194,7 +1194,7 @@ video {
 
 .hover\:text-brand-light:hover{
   --tw-text-opacity: 1;
-  color: rgb(235 210 149 / var(--tw-text-opacity, 1));
+  color: rgb(242 240 235 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover{

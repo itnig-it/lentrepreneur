@@ -4,10 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define Prociono font face */
+/* Define NTBrickSans font face */
 @font-face {
-  font-family: 'ProcionomBrand';
-  src: url('/assets/fonts/Prociono-Regular.otf') format('opentype');
+  font-family: 'NTBrickSans';
+  src: url('/assets/fonts/NTBrickSans.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -15,7 +15,7 @@
 
 /* Create a completely separate class for the brand logo only */
 .brand-font {
-  font-family: 'ProcionomBrand', serif;
+  font-family: 'NTBrickSans', sans-serif;
 }
 
 @layer components {
