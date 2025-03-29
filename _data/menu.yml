@@ -18,7 +18,7 @@
       type: acompanyament
     - name: PERNIL DOLÇ O GALL D'INDI CASOLÀ
       price: 3.0
-      description: "Opció suau i saborosa de pernil dolç o gall d’indi fet a casa, tallat fi per potenciar el seu gust delicat."
+      description: "Opció suau i saborosa de pernil dolç o gall d'indi fet a casa, tallat fi per potenciar el seu gust delicat."
       type: acompanyament
     - name: SALMÓ CURAT
       price: 3.5
@@ -51,6 +51,14 @@
     - name: OUS AL PLAT AMB SOBRASADA DE MENORCA
       price: 9.0
       description: "Ous al plat amb sobrasada de Menorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
+    - name: PATATES FREGIDES ALLUMETTE
+      price: 3.5
+      description: "Patates fregides cruixents i delicioses."
+      type: acompanyament
+    - name: AMANIDA VERDA AMB RAVES
+      price: 3.5
+      description: "Amanida verda fresca amb raves per un toc salat i fresc."
+      type: acompanyament
 
 - category: DOLÇ
   menu_area: "ESMORZARS"
@@ -70,9 +78,7 @@
     - name: CISTELL DE MINI BRIOIXERIA
       price: 6.0
       description: "Una selecció de brioixeria artesana en format mini, perfecta per compartir i gaudir d’un toc dolç."
-    - name: PLAT DE PATATES "ALLUMETTE" O AMANIDA VERDA AMB RAVES
-      price: 3.5
-      description: "Tria entre unes patates allumette cruixents o una amanida verda fresca amb raves per acompanyar el teu esmorzar."
+
 - category: CAFÈ ESPECIALITAT "SYRA COFFEE"
   menu_area: "ESMORZARS"
   items:
@@ -145,7 +151,7 @@
       description: "Albergínies escalivades amb formatge Maó fos, un toc de mel i avellanes torrades per un contrast de sabors dolços i salats."
     - name: OU AMB "PUNTILLA" AMB TARTAR DE TONYINA I ALGA NORI
       price: 18.5
-      description: "Ou ferrat amb les puntes cruixents, acompanyat d’un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
+      description: "Ou ferrat amb les puntes cruixents, acompanyat d'un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
     - name: TRUITA DE PATATA AMB XORIÇO IBÈRIC PICANT, LI POTS AFEGIR FORMATGE RATLLAT
       price: 9.0
       description: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
@@ -205,11 +211,31 @@
   menu_area: "PLATS PRINCIPALS"
   items:
     - name: PA DE MASSA MARE AMB AOVE I TOMACÓ
-      price: 3.5
-      description: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar."
-    - name: PA DE MASSA MARE CALENT AMB MANTEGA ARTESANA FUMADA
       price: 3.75
-      description: "Pa de massa mare servit calent amb mantega artesana fumada, un toc suau i aromàtic."
+      description: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar."
+
+- category: POSTRES
+  menu_area: "PLATS PRINCIPALS"
+  items:
+    - name: LLIMONA GELADA
+      price: 8.50
+      description: "Una refrescant llimona farcida de sorbet de llimona, amb un equilibri perfecte entre dolçor i acidesa, ideal per acabar el menjar amb una nota cítrica i lleugera."
+    - name: XUIXO AMB GELAT
+      price: 6.00
+      description: "El clàssic xuixo gironí, farcit de crema i fregit fins a quedar daurat i cruixent, servit amb una bola de gelat que en potencia el contrast de textures i temperatures."
+    - name: ROSTES DE SANTA TERESA AMB XAROP D'AURÓ, FRUITA I BACÓ
+      price: 6.50
+      description: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d’auró, la fruita fresca i el bacó cruixent."
+    - name: MATÓ CASOLÀ AMB MEL CRUA I FESTUCS
+      price: 6.00
+      description: "Un clàssic de la gastronomia catalana: mató artesà de textura suau, acompanyat de mel crua que en ressalta la dolçor natural i un toc cruixent de festucs."
+    - name: SUÍS
+      price: 5.50
+      description: "Una tassa de xocolata calenta espessa i cremosa, coronada amb una generosa capa de nata muntada, perfecta per als amants del cacau."
+    - name: FLAM
+      price: 5.00
+      description: "El flam tradicional de tota la vida, fet amb ous frescos i llet, amb una textura suau i un caramel delicadament amarg que equilibra la dolçor."
+  
 - category: PEIX
   menu_area: "PLATS PRINCIPALS"
   items:
@@ -237,7 +263,7 @@
     - name: MOMBASA CLUB LONDON
       price: 8.0
       description: "Una ginebra amb un toc exòtic."
-    - name: NORDES
+    - name: NORDÉS
       price: 10.0
       description: "Una ginebra gallega amb botànics atlàntics."
 - category: WHISKY
@@ -285,7 +311,7 @@
     - name: MEZCAL 400 CONEJOS
       price: 10.0
       description: "Un mezcal amb un sabor fumat."
-    - name: PISCO SARCAY MOLLAR
+    - name: PISCO DEMONIO DE LOS ANDES
       price: 7.0
       description: "Un pisco peruà suau."
 - category: LICORS
@@ -352,7 +378,7 @@
 - category: BLANCS NATURALS
   menu_area: "VINS"
   items:
-    - name: BIVAC - XAREL.LO I VIOGNIER - PENEDÉS
+    - name: BIVAC - XAREL.LO I VIOGNIER - PENEDÊS
       price_glass: 4.5
       price_bottle: 22.0
       description: "Fresc i equilibrat, amb aromes de fruita blanca i un toc floral. Ideal per aperitius o plats lleugers."
@@ -399,7 +425,7 @@
       price_glass: 4.7
       price_bottle: 25.0
       description: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
-    - name: CROSSOS - GARNATXA, CARIÑENA I SYRAH
+    - name: CROSSOS - GARNATXA, CARIÑENA I SYRAH - PRIORAT
       price_bottle: 40.0
       description: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
     - name: COCA I FITÓ NATURA - GARNATXA NEGRA - MONTSANT
