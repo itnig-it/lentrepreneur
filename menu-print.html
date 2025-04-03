@@ -271,6 +271,51 @@ layout: null
             min-width: 20px;
             text-align: center;
         }
+
+        /* Update the contact-info styles */
+        .contact-info {
+            position: absolute;
+            right: 15mm;  /* Moved further from the margin */
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: right center;
+            font-size: 10px;  /* Increased base font size */
+            line-height: 1.5;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .brand-name {
+            font-family: 'NTBrick Sans', sans-serif;
+            font-size: 14px;  /* Larger size for the brand name */
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Update the font-face declaration with correct path */
+        @font-face {
+            font-family: 'NTBrick Sans';
+            src: url('/assets/fonts/NTBrickSans.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Add these styles */
+        .restaurant-description {
+            font-size: 10px;
+            line-height: 1.4;
+            text-align: justify;
+            margin-top: 20mm;
+            margin-bottom: 20mm;
+            max-width: 90mm;  /* To ensure good line length for readability */
+        }
+
+        .restaurant-name {
+            font-family: 'NTBrick Sans', sans-serif;
+            font-size: 16px;
+            margin-bottom: 10mm;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -292,16 +337,21 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign plat_dia_items = site.data.menu | where: "menu_area", "PLAT DEL DIA" %}
-                {% for section in plat_dia_items %}
-                <div class="menu-section">
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                        <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                <h2 class="restaurant-name">entrepreneur</h2>
+                <p class="restaurant-description">
+                    {{ site.data.menu.description_ca }}
+                </p>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "PLAT DEL DIA" %}
+                    <div class="menu-section">
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <h1 class="menu-title">PLAT DEL DIA</h1>
@@ -323,16 +373,17 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign compartir_items = site.data.menu | where: "menu_area", "PER COMPARTIR" %}
-                {% for section in compartir_items %}
-                <div class="menu-section">
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                        <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "PER COMPARTIR" %}
+                    <div class="menu-section">
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <h1 class="menu-title">PER COMPARTIR</h1>
@@ -354,16 +405,17 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign principals_items = site.data.menu | where: "menu_area", "PLATS PRINCIPALS" %}
-                {% for section in principals_items %}
-                <div class="menu-section">
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                        <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "PLATS PRINCIPALS" %}
+                    <div class="menu-section">
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <h1 class="menu-title">PLATS PRINCIPALS</h1>
@@ -385,30 +437,31 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign vins_items = site.data.menu | where: "menu_area", "VINS" %}
-                {% for section in vins_items %}
-                <div class="menu-section">
-                    {% if forloop.first %}
-                    <div class="wine-header">
-                        <div class="wine-header-item">
-                            <i class="fas fa-wine-glass"></i>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "VINS" %}
+                    <div class="menu-section">
+                        {% if forloop.first %}
+                        <div class="wine-header">
+                            <div class="wine-header-item">
+                                <i class="fas fa-wine-glass"></i>
+                            </div>
+                            <div class="wine-header-item">
+                                <i class="fas fa-wine-bottle"></i>
+                            </div>
                         </div>
-                        <div class="wine-header-item">
-                            <i class="fas fa-wine-bottle"></i>
+                        {% endif %}
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="wine-item">
+                            <span class="wine-item-name">{{ item.name }}</span>
+                            <div class="wine-prices">
+                                <span class="wine-price">{% if item.price_glass %}{{ item.price_glass }}{% else %}-{% endif %}</span>
+                                <span class="wine-price">{% if item.price_bottle %}{{ item.price_bottle }}{% else %}-{% endif %}</span>
+                            </div>
                         </div>
+                        {% endfor %}
                     </div>
                     {% endif %}
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="wine-item">
-                        <span class="wine-item-name">{{ item.name }}</span>
-                        <div class="wine-prices">
-                            <span class="wine-price">{% if item.price_glass %}{{ item.price_glass }}{% else %}-{% endif %}</span>
-                            <span class="wine-price">{% if item.price_bottle %}{{ item.price_bottle }}{% else %}-{% endif %}</span>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
                 {% endfor %}
             </div>
             <h1 class="menu-title">CARTA VINS</h1>
@@ -430,16 +483,17 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign coctels_items = site.data.menu | where: "menu_area", "CÒCTELS I ESPIRITUOSOS" %}
-                {% for section in coctels_items %}
-                <div class="menu-section">
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                        <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "CÒCTELS I ESPIRITUOSOS" %}
+                    <div class="menu-section">
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <h1 class="menu-title">CÒCTELS I ESPIRITUOSOS</h1>
@@ -449,6 +503,14 @@ layout: null
     <!-- ESMORZARS -->
     <div id="esmorzars" class="menu-page">
         <div class="menu-content-wrapper">
+            <!-- Update the contact info -->
+            <div class="contact-info">
+                <span class="brand-name">entrepreneur</span>
+                entrepreneur.cat<br>
+                hola@entrepreneur.cat<br>
+                Tel 93 675 05 80
+            </div>
+
             <!-- Cut lines -->
             <div class="cut-line horizontal" style="top: 0;"></div>
             <div class="cut-line horizontal" style="bottom: 0;"></div>
@@ -461,16 +523,17 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
-                {% assign esmorzars_items = site.data.menu | where: "menu_area", "ESMORZARS" %}
-                {% for section in esmorzars_items %}
-                <div class="menu-section">
-                    <h2>{{ section.category }}</h2>
-                    {% for item in section.items %}
-                    <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                        <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "ESMORZARS" %}
+                    <div class="menu-section">
+                        <h2>{{ section.category }}</h2>
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
             <h1 class="menu-title">ESMORZARS</h1>

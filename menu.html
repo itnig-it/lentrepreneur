@@ -13,7 +13,7 @@ title: Menú
     </div>
     
     <!-- ESMORZARS -->
-    {% assign esmorzars = site.data.menu | where: "menu_area", "ESMORZARS" %}
+    {% assign esmorzars = site.data.menu.menu.items | where: "menu_area", "ESMORZARS" %}
     {% if esmorzars.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">ESMORZARS</h2>
@@ -58,7 +58,7 @@ title: Menú
     {% endif %}
 
     <!-- PER COMPARTIR -->
-    {% assign per_compartir = site.data.menu | where: "menu_area", "PER COMPARTIR" %}
+    {% assign per_compartir = site.data.menu.menu.items | where: "menu_area", "PER COMPARTIR" %}
     {% if per_compartir.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">PER COMPARTIR</h2>
@@ -103,7 +103,7 @@ title: Menú
     {% endif %}
 
     <!-- PLATS PRINCIPALS -->
-    {% assign plats_principals = site.data.menu | where: "menu_area", "PLATS PRINCIPALS" %}
+    {% assign plats_principals = site.data.menu.menu.items | where: "menu_area", "PLATS PRINCIPALS" %}
     {% if plats_principals.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">PLATS PRINCIPALS</h2>
@@ -148,7 +148,7 @@ title: Menú
     {% endif %}
 
     <!-- VINS -->
-    {% assign vins = site.data.menu | where: "menu_area", "VINS" %}
+    {% assign vins = site.data.menu.menu.items | where: "menu_area", "VINS" %}
     {% if vins.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">VINS</h2>
@@ -193,7 +193,7 @@ title: Menú
     {% endif %}
 
     <!-- CÒCTELS I ESPIRITUOSOS -->
-    {% assign coctels = site.data.menu | where: "menu_area", "CÒCTELS I ESPIRITUOSOS" %}
+    {% assign coctels = site.data.menu.menu.items | where: "menu_area", "CÒCTELS I ESPIRITUOSOS" %}
     {% if coctels.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">CÒCTELS I ESPIRITUOSOS</h2>

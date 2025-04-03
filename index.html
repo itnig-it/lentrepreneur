@@ -170,56 +170,67 @@ layout: default
 </section>
 
 <script>
+  console.log('Script starting...');
+  
   document.addEventListener("DOMContentLoaded", function() {
-    const menuData = {% raw %}{{ site.data.menu | jsonify }}{% endraw %};
+    console.log('DOM Content Loaded');
     
-    // Filter and flatten dishes
-    const dishCategories = ["TORRADES I ENTREPANS", "OUS", "DOLÇ"];
-    const allDishes = menuData.filter(category => dishCategories.includes(category.category))
-                              .flatMap(category => category.items);
+    // Get menu data
+    const menuData = {{ site.data.menu.menu.items | jsonify }};
     
-    // Filter and flatten drinks
-    const drinkCategories = ["CÒCTELS", "LICORS", "TEQUILA & CO"];
-    const allDrinks = menuData.filter(category => drinkCategories.includes(category.category))
-                              .flatMap(category => category.items);
+    // Get dishes from ESMORZARS
+    const dishes = menuData
+      .filter(section => section.menu_area === "ESMORZARS")
+      .filter(section => ["TORRADES I ENTREPANS", "OUS", "DOLÇ"].includes(section.category))
+      .flatMap(section => section.items || []);
+    
+    // Get drinks from CÒCTELS I ESPIRITUOSOS
+    const drinks = menuData
+      .filter(section => section.menu_area === "CÒCTELS I ESPIRITUOSOS")
+      .filter(section => ["CÒCTELS", "LICORS", "TEQUILA & CO"].includes(section.category))
+      .flatMap(section => section.items || []);
     
     // Function to get random items
     function getRandomItems(items, count) {
-      const shuffled = items.sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, count);
+      if (!items || items.length === 0) return [];
+      const shuffled = [...items].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, Math.min(count, items.length));
     }
     
-    // Get random dishes and drinks
-    const randomDishes = getRandomItems(allDishes, 3);
-    const randomDrinks = getRandomItems(allDrinks, 3);
+    // Get random selections
+    const randomDishes = getRandomItems(dishes, 3);
+    const randomDrinks = getRandomItems(drinks, 3);
     
-    // Function to properly capitalize text (first letter uppercase, rest lowercase)
-    function capitalizeFirstLetter(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-    }
-    
-    // Insert random dishes into the DOM
+    // Add dishes to the list
     const dishesList = document.getElementById("dishes-list");
-    randomDishes.forEach(item => {
-      const listItem = document.createElement("li");
-      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
-                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
-                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
-                            </div>
-                            <p class="text-gray-600">${item.description}</p>`;
-      dishesList.appendChild(listItem);
-    });
+    if (dishesList && randomDishes.length > 0) {
+      dishesList.innerHTML = ''; // Clear test item
+      randomDishes.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+          <div class="mb-2">
+            <h4 class="text-xl font-medium">${item.name}</h4>
+            ${item.description ? `<p class="text-gray-600 mt-1">${item.description}</p>` : ''}
+          </div>
+        `;
+        dishesList.appendChild(listItem);
+      });
+    }
     
-    // Insert random drinks into the DOM
+    // Add drinks to the list
     const drinksList = document.getElementById("drinks-list");
-    randomDrinks.forEach(item => {
-      const listItem = document.createElement("li");
-      listItem.innerHTML = `<div class="flex justify-between items-baseline mb-2">
-                              <h4 class="text-xl font-medium">${capitalizeFirstLetter(item.name)}</h4>
-                              ${item.price ? `<span class="text-brand font-medium">€${item.price}</span>` : ""}
-                            </div>
-                            <p class="text-gray-600">${item.description}</p>`;
-      drinksList.appendChild(listItem);
-    });
+    if (drinksList && randomDrinks.length > 0) {
+      drinksList.innerHTML = ''; // Clear test item
+      randomDrinks.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+          <div class="mb-2">
+            <h4 class="text-xl font-medium">${item.name}</h4>
+            ${item.description ? `<p class="text-gray-600 mt-1">${item.description}</p>` : ''}
+          </div>
+        `;
+        drinksList.appendChild(listItem);
+      });
+    }
   });
 </script>
