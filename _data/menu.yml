@@ -125,7 +125,7 @@ menu:
       menu_area: "PER COMPARTIR"
       items:
         - name: Gilda de la casa XXL
-          price: 3.5
+          price: 3.9
           description: "Una versió XXL de l'aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d'acidesa i sabor intens."
         - name: Amanida russa amb ventresca i piparres
           price: 8.0
