@@ -1,482 +1,1434 @@
-description_ca: "A l'entrepreneur treballem per tornar a l'essència de la cuina, oferint una gastronomia sincera i de qualitat; amb verdures km 0, làctics i carns de pastura, així com ous ecològics de Calaf i peix salvatge. El nostre pa és de massa mare i fermentació lenta i els olis que utilitzem son verges extra."
+description:
+  ca: "A l'entrepreneur treballem per tornar a l'essència de la cuina, oferint una gastronomia sincera i de qualitat; amb verdures km 0, làctics i carns de pastura, així com ous ecològics de Calaf i peix salvatge. El nostre pa és de massa mare i fermentació lenta i els olis que utilitzem són verges extra."
+  en: "At Entrepreneur we work to return to the essence of cuisine, offering honest and high-quality gastronomy; with local vegetables, pasture-raised dairy and meats, organic eggs from Calaf, and wild-caught fish. Our bread is sourdough with slow fermentation, and the oils we use are extra virgin."
+  es: "En el entrepreneur trabajamos para volver a la esencia de la cocina, ofreciendo una gastronomía sincera y de calidad; con verduras de proximidad, lácteos y carnes de pastura, así como huevos ecológicos de Calaf y pescado salvaje. Nuestro pan es de masa madre y fermentación lenta, y los aceites que utilizamos son vírgenes extra."
+
 
 menu:
+  areas:
+    ESMORZARS:
+      ca: "ESMORZARS"
+      en: "BREAKFAST"
+      es: "DESAYUNOS"
+    PER_COMPARTIR:
+      ca: "PER COMPARTIR"
+      en: "TO SHARE"
+      es: "PARA COMPARTIR"
+    PLATS_PRINCIPALS:
+      ca: "PLATS PRINCIPALS"
+      en: "MAIN DISHES"
+      es: "PLATOS PRINCIPALES"
+    VINS:
+      ca: "CARTA VINS"
+      en: "WINE LIST"
+      es: "CARTA VINOS"
+    COCTELS:
+      ca: "CÒCTELS I ESPIRITUOSOS"
+      en: "COCKTAILS & SPIRITS"
+      es: "CÓCTELES Y ESPIRITUOSOS"
+    PLAT_DEL_DIA:
+      ca: "PLAT DEL DIA"
+      en: "DISH OF THE DAY"
+      es: "PLATO DEL DÍA"
+
   items:
-    - category: TORRADES I ENTREPANS
+    - category:
+        ca: "TORRADES I ENTREPANS"
+        en: "TOASTS AND SANDWICHES"
+        es: "TOSTADAS Y BOCADILLOS"
       menu_area: "ESMORZARS"
       items:
-        - name: Torrada especial (pa de massa mare, mantega o tomàquet)
-          price: 3.5
-          description: "Torrada cruixent de massa mare, servida amb mantega cremosa o tomàquet de penjar per a un toc fresc i tradicional."
-        - name: Ou passat per aigua
-          price: 2.5
-          description: "Ou cuinat suaument per mantenir la seva textura sedosa, perfecte per barrejar amb torrades o altres acompanyaments."
-          type: acompanyament
-        - name: Formatge Comté
-          price: 2.5
-          description: "Formatge francès curat amb una textura suau i un sabor intensament avellanat, ideal per acompanyar les teves torrades."
-          type: acompanyament
-        - name: Alvocat
-          price: 2.5
-          description: "Alvocat madur i cremós, perfecte per afegir un toc fresc i saludable a qualsevol plat."
-          type: acompanyament
-        - name: Pernil dolç o gall d'indi fet a casa
-          price: 3.0
-          description: "Opció suau i saborosa de pernil dolç o gall d'indi fet a casa, tallat fi per potenciar el seu gust delicat."
-          type: acompanyament
-        - name: Salmó curat
-          price: 3.5
-          description: "Salmó curat artesanalment, amb una textura melosa i un sabor equilibrat entre dolç i salí."
-          type: acompanyament
-        - name: Salsa holandesa o bearnesa
-          price: 2.5
-          description: "Salsa casolana, cremosa i suau, perfecta per donar un toc gourmet als teus esmorzars."
-          type: acompanyament
-        - name: Crema de xocolata i avellanes torrades fet a casa
-          price: 3.5
-          description: "Una crema irresistible de xocolata i avellanes torrades, elaborada artesanalment per un sabor intens i equilibrat."
-          type: acompanyament
-        - name: Biquini de "Cecina" de Lleó D.O. i Comté amb salsa bearnesa
-          price: 10.0
-          description: "Biquini gurmet amb cecina de Lleó curada, formatge Comté fos i un toc de salsa bearnesa per arrodonir el seu sabor."
+      - name:
+          ca: "Torrada especial (pa de massa mare, mantega o tomàquet)"
+          en: "Special toast (sourdough bread, butter or tomato)"
+          es: "Tostada especial (pan de masa madre, mantequilla o tomate)"
+        price: 3.5
+        description:
+          ca: "Torrada cruixent de massa mare, servida amb mantega cremosa o tomàquet de penjar per a un toc fresc i tradicional."
+          en: "Crispy sourdough toast, served with creamy butter or tomato de penjar for a fresh and traditional touch."
+          es: "Tostada crujiente de masa madre, servida con mantequilla cremosa o tomate de penjar para un toque fresco y tradicional."
 
-    - category: OUS
+      - name: 
+          ca: "Ou passat per aigua"
+          en: "Soft-boiled egg"
+          es: "Huevo pasado por agua"
+        price: 2.5
+        description: 
+          ca: "Ou cuinat suaument per mantenir la seva textura sedosa, perfecte per barrejar amb torrades o altres acompanyaments."
+          en: "Soft-boiled egg, gently cooked to maintain its silky texture, perfect for mixing with toast or other sides."
+          es: "Huevo pasado por agua, cocido suavemente para mantener su textura sedosa, perfecto para acompañar tostadas u otros platos."
+        type: acompanyament
+
+      - name: 
+          ca: "Formatge Comté"
+          en: "Comté cheese"
+          es: "Queso Comté"
+        price: 2.5
+        description: 
+          ca: "Formatge francès curat amb una textura suau i un sabor intensament avellanat, ideal per acompanyar les teves torrades."
+          en: "French aged cheese with a soft texture and a rich nutty flavor, ideal for accompanying your toast."
+          es: "Queso francés curado con una textura suave y un sabor intensamente avellanado, ideal para acompañar tus tostadas."
+        type: acompanyament
+
+      - name: 
+          ca: "Alvocat"
+          en: "Avocado"
+          es: "Aguacate"
+        price: 2.5
+        description: 
+          ca: "Alvocat madur i cremós, perfecte per afegir un toc fresc i saludable a qualsevol plat."
+          en: "Ripe and creamy avocado, perfect for adding a fresh and healthy touch to any dish."
+          es: "Aguacate maduro y cremoso, perfecto para añadir un toque fresco y saludable a cualquier plato."
+        type: acompanyament
+
+      - name: 
+          ca: "Pernil dolç o gall d'indi fet a casa"
+          en: "Homemade sweet ham or turkey"
+          es: "Jamón dulce o pavo casero"
+        price: 3.0
+        description: 
+          ca: "Opció suau i saborosa de pernil dolç o gall d'indi fet a casa, tallat fi per potenciar el seu gust delicat."
+          en: "Soft and flavorful option of homemade sweet ham or turkey, finely sliced to enhance its delicate flavor."
+          es: "Opción suave y sabrosa de jamón dulce o pavo casero, cortado finamente para potenciar su sabor delicado."
+        type: acompanyament
+
+      - name: 
+          ca: "Salmó curat"
+          en: "Cured salmon"
+          es: "Salmón curado"
+        price: 3.5
+        description: 
+          ca: "Salmó curat artesanalment, amb una textura melosa i un sabor equilibrat entre dolç i salí."
+          en: "Artisanally cured salmon, with a tender texture and a balanced sweet and salty flavor."
+          es: "Salmón curado artesanalmente, con una textura melosa y un sabor equilibrado entre dulce y salado."
+        type: acompanyament
+
+      - name: 
+          ca: "Salsa holandesa o bearnesa"
+          en: "Hollandaise or Bearnaise sauce"
+          es: "Salsa holandesa o bearnesa"
+        price: 2.5
+        description: 
+          ca: "Salsa casolana, cremosa i suau, perfecta per donar un toc gourmet als teus esmorzars."
+          en: "Homemade, creamy and smooth sauce, perfect for adding a gourmet touch to your breakfasts."
+          es: "Salsa casera, cremosa y suave, perfecta para agregar un toque gourmet a tus desayunos."
+        type: acompanyament
+
+      - name: 
+          ca: "Crema de xocolata i avellanes torrades feta a casa"
+          en: "Homemade chocolate and roasted hazelnut cream"
+          es: "Crema de chocolate y avellanas tostadas casera"
+        price: 3.5
+        description: 
+          ca: "Una crema irresistible de xocolata i avellanes torrades, elaborada artesanalment per un sabor intens i equilibrat."
+          en: "An irresistible homemade chocolate and roasted hazelnut cream, crafted for an intense and balanced flavor."
+          es: "Una crema irresistible de chocolate y avellanas tostadas, elaborada artesanalmente para un sabor intenso y equilibrado."
+        type: acompanyament
+
+      - name: 
+          ca: "Biquini de \"Cecina\" de Lleó D.O. i Comté amb salsa bearnesa"
+          en: "Gourmet biquini with Leon D.O. cured beef and Comté cheese with Bearnaise sauce"
+          es: "Biquini gourmet con cecina de León D.O. y queso Comté con salsa bearnesa"
+        price: 10.0
+        description: 
+          ca: "Biquini gurmet amb cecina de Lleó curada, formatge Comté fos i un toc de salsa bearnesa per arrodonir el seu sabor."
+          en: "Gourmet biquini with cured Leon D.O. beef, melted Comté cheese, and a touch of Bearnaise sauce to round off the flavor."
+          es: "Biquini gourmet con cecina de León curada, queso Comté fundido y un toque de salsa bearnesa para redondear su sabor."
+
+
+    - category: 
+        ca: "OUS"
+        en: "EGGS"
+        es: "HUEVOS"
       menu_area: "ESMORZARS"
       items:
-        - name: Truita de patata "al moment"
+      - name: 
+          ca: "Truita de patata \"al moment\""
+          en: "Freshly made potato omelette"
+          es: "Tortilla de patata recién hecha"
+        price: 9.0
+        description: 
+          ca: "Truita de patata gruixuda i sucosa, feta al moment per garantir la seva textura perfecta i sabor casolà."
+          en: "Thick and juicy potato omelette, freshly made to ensure perfect texture and homemade flavor."
+          es: "Tortilla de patata gruesa y jugosa, hecha al momento para garantizar una textura perfecta y sabor casero."
+
+      - name: 
+          ca: "Ous remenats amb torrada (afegeix pernil, Comté ratllat, bacó, salmó curat)"
+          en: "Scrambled eggs with toast (add ham, grated Comté, bacon, cured salmon)"
+          es: "Huevos revueltos con tostada (añade jamón, Comté rallado, bacon, salmón curado)"
+        price: 7.5
+        description: 
+          ca: "Ous remenats suaus i cremosos, servits amb torrada cruixent. Personalitza'ls amb els teus ingredients preferits."
+          en: "Soft and creamy scrambled eggs, served with crispy toast. Customize them with your favorite ingredients."
+          es: "Huevos revueltos suaves y cremosos, servidos con tostada crujiente. Personalízalos con tus ingredientes preferidos."
+
+      - name: 
+          ca: "Ous al niu, espinacs, salmó fumat i salsa holandesa"
+          en: "Eggs in a nest with spinach, smoked salmon and hollandaise sauce"
+          es: "Huevos al nido con espinacas, salmón ahumado y salsa holandesa"
+        price: 12.5
+        description: 
+          ca: "Ous cuinats al forn sobre un llit d'espinacs frescos i salmó fumat, banyats amb una delicada salsa holandesa."
+          en: "Baked eggs on a bed of fresh spinach and smoked salmon, topped with a delicate hollandaise sauce."
+          es: "Huevos horneados sobre una cama de espinacas frescas y salmón ahumado, bañados en una delicada salsa holandesa."
+
+      - name: 
+          ca: "Ous al plat amb sobrasada de Menorca"
+          en: "Baked eggs with Minorcan sobrasada"
+          es: "Huevos al plato con sobrasada de Menorca"
+        price: 9.0
+        description: 
+          ca: "Ous al plat amb sobrasada de Menorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
+          en: "Baked eggs with melted Minorcan sobrasada, adding a spicy and intense touch to this classic dish."
+          es: "Huevos al plato con sobrasada de Menorca fundida, que aporta un toque especiado e intenso a este plato clásico."
+
+      - name: 
+          ca: "Patates fregides allumette"
+          en: "Allumette fries"
+          es: "Patatas fritas allumette"
+        price: 3.5
+        description: 
+          ca: "Patates fregides cruixents i delicioses."
+          en: "Crispy and delicious allumette fries."
+          es: "Patatas fritas allumette, crujientes y deliciosas."
+        type: acompanyament
+
+      - name: 
+          ca: "Amanida verda amb raves"
+          en: "Green salad with radishes"
+          es: "Ensalada verde con rábanos"
+        price: 3.5
+        description: 
+          ca: "Amanida verda fresca amb raves per un toc salat i fresc."
+          en: "Fresh green salad with radishes for a salty and refreshing touch."
+          es: "Ensalada verde fresca con rábanos para un toque salado y refrescante."
+        type: acompanyament
+
+
+    - category: 
+        ca: "DOLÇ"
+        en: "SWEET"
+        es: "DULCE"
+      menu_area: "ESMORZARS"
+      items:
+      - name: 
+          ca: "Rostes de Santa Teresa amb xarop d'auró, fruita i bacó"
+          en: "French toast with maple syrup, fruit and bacon"
+          es: "Torrijas de Santa Teresa con sirope de arce, fruta y bacon"
+        price: 6.5
+        description: 
+          ca: "Pa torrat arrebossat i fregit, servit amb xarop d'auró, fruita fresca i un toc cruixent de bacó."
+          en: "Crispy French toast served with maple syrup, fresh fruit, and a crunchy touch of bacon."
+          es: "Torrijas crujientes servidas con sirope de arce, fruta fresca y un toque crujiente de bacon."
+
+      - name: 
+          ca: "Xurros amb xocolata calenta i gelat de nata"
+          en: "Churros with hot chocolate and cream ice cream"
+          es: "Churros con chocolate caliente y helado de nata"
+        price: 5.5
+        description: 
+          ca: "Xurros casolans cruixents acompanyats de xocolata calenta espessa i un suau gelat de nata."
+          en: "Homemade crispy churros served with thick hot chocolate and smooth cream ice cream."
+          es: "Churros caseros crujientes acompañados de chocolate caliente espeso y un suave helado de nata."
+
+      - name: 
+          ca: "Mató amb mel crua i festucs torrats"
+          en: "Mató cheese with raw honey and toasted pistachios"
+          es: "Mató con miel cruda y pistachos tostados"
+        price: 6.0
+        description: 
+          ca: "Postre tradicional amb mató fresc, mel crua aromàtica i festucs torrats per un contrast de textures i sabors."
+          en: "Traditional dessert with fresh mató cheese, aromatic raw honey, and toasted pistachios for a contrast of textures and flavors."
+          es: "Postre tradicional con mató fresco, miel cruda aromática y pistachos tostados para un contraste de texturas y sabores."
+
+      - name: 
+          ca: "Iogurt grec casolà amb fruita i granola feta a casa"
+          en: "Homemade Greek yogurt with fruit and homemade granola"
+          es: "Yogur griego casero con fruta y granola casera"
+        price: 5.5
+        description: 
+          ca: "Iogurt grec cremós fet a casa, servit amb fruita de temporada i una granola cruixent d'elaboració pròpia."
+          en: "Creamy homemade Greek yogurt served with seasonal fruit and our own crunchy granola."
+          es: "Yogur griego cremoso hecho en casa, servido con fruta de temporada y nuestra granola crujiente casera."
+
+      - name: 
+          ca: "Cistell de mini brioixeria"
+          en: "Basket of mini pastries"
+          es: "Cesta de mini bollería"
+        price: 6.0
+        description: 
+          ca: "Una selecció de brioixeria artesana en format mini, perfecta per compartir i gaudir d'un toc dolç."
+          en: "A selection of artisanal mini pastries, perfect for sharing and enjoying a sweet touch."
+          es: "Una selección de bollería artesana en formato mini, perfecta para compartir y disfrutar de un toque dulce."
+
+
+    - category: 
+        ca: "CAFÈ ESPECIALITAT \"SYRA COFFEE\""
+        en: "SPECIALTY COFFEE \"SYRA COFFEE\""
+        es: "CAFÉ ESPECIALIDAD \"SYRA COFFEE\""
+      menu_area: "ESMORZARS"
+      items:
+      - name: 
+          ca: "Espresso"
+          en: "Espresso"
+          es: "Espresso"
+        price: 1.9
+        description: 
+          ca: "Cafè intens i aromàtic."
+          en: "Intense and aromatic coffee."
+          es: "Café intenso y aromático."
+
+      - name: 
+          ca: "Cafè amb llet"
+          en: "Coffee with milk"
+          es: "Café con leche"
+        price: 2.8
+        description: 
+          ca: "Cafè suau i cremós amb llet calenta."
+          en: "Smooth and creamy coffee with hot milk."
+          es: "Café suave y cremoso con leche caliente."
+
+      - name: 
+          ca: "Flat white"
+          en: "Flat white"
+          es: "Flat white"
+        price: 3.2
+        description: 
+          ca: "Cafè amb llet amb una textura suau i cremosa."
+          en: "Coffee with milk, featuring a smooth and creamy texture."
+          es: "Café con leche, de textura suave y cremosa."
+
+      - name: 
+          ca: "Americà"
+          en: "Americano"
+          es: "Americano"
+        price: 2.2
+        description: 
+          ca: "Cafè lleuger, llarg i suau."
+          en: "Light, long, and smooth coffee."
+          es: "Café ligero, largo y suave."
+
+      - name: 
+          ca: "Tallat"
+          en: "Macchiato"
+          es: "Café cortado"
+        price: 2.5
+        description: 
+          ca: "Cafè curt amb un toc de llet calenta."
+          en: "Short coffee with a touch of hot milk."
+          es: "Café corto con un toque de leche caliente."
+
+    - category: 
+        ca: "INFUSIONS I TES"
+        en: "INFUSIONS AND TEAS"
+        es: "INFUSIONES Y TÉS"
+      menu_area: "ESMORZARS"
+      items:
+      - name: 
+          ca: "Matcha latte"
+          en: "Matcha latte"
+          es: "Matcha latte"
+        price: 4.5
+        description: 
+          ca: "Beguda energètica i saludable, elaborada amb te verd matcha i llet cremosa."
+          en: "Energizing and healthy drink made with green matcha tea and creamy milk."
+          es: "Bebida energética y saludable, elaborada con té verde matcha y leche cremosa."
+
+      - name: 
+          ca: "Chai latte"
+          en: "Chai latte"
+          es: "Chai latte"
+        price: 4.5
+        description: 
+          ca: "Beguda especiada i reconfortant, amb llet i barreja d'espècies aromàtiques."
+          en: "Spiced and comforting drink, with milk and a blend of aromatic spices."
+          es: "Bebida especiada y reconfortante, con leche y una mezcla de especias aromáticas."
+
+      - name: 
+          ca: "Infusió de camamilla"
+          en: "Chamomile infusion"
+          es: "Infusión de manzanilla"
+        price: 3.5
+        description: 
+          ca: "Infusió calmant i relaxant, ideal per a qualsevol moment del dia."
+          en: "Calming and relaxing infusion, ideal for any moment of the day."
+          es: "Infusión calmante y relajante, ideal para cualquier momento del día."
+
+      - name: 
+          ca: "Infusió de menta i poliol"
+          en: "Mint and pennyroyal infusion"
+          es: "Infusión de menta y poleo"
+        price: 3.5
+        description: 
+          ca: "Infusió refrescant i digestiva amb menta i poliol natural."
+          en: "Refreshing and digestive infusion with natural mint and pennyroyal."
+          es: "Infusión refrescante y digestiva con menta y poleo natural."
+
+      - name: 
+          ca: "Te negre"
+          en: "Black tea"
+          es: "Té negro"
+        price: 3.5
+        description: 
+          ca: "Te intens i aromàtic, ideal per començar el dia amb energia."
+          en: "Intense and aromatic tea, perfect to start the day with energy."
+          es: "Té intenso y aromático, perfecto para empezar el día con energía."
+
+    - category: 
+        ca: "AMANIDES I MÉS"
+        en: "SALADS AND MORE"
+        es: "ENSALADAS Y MÁS"
+      menu_area: "PER_COMPARTIR"
+      items:
+      - name: 
+          ca: "Gilda de la casa XXL"
+          en: "House Gilda XXL"
+          es: "Gilda de la casa XXL"
+        price: 3.9
+        description: 
+          ca: "Versió XXL de l'aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d'acidesa i sabor intens."
+          en: "XXL version of the classic Basque appetizer with anchovy, olive, and piparra, a perfect combination of acidity and intense flavor."
+          es: "Versión XXL del aperitivo clásico vasco con anchoa, oliva y piparra, combinación perfecta de acidez y sabor intenso."
+
+      - name: 
+          ca: "Amanida russa amb ventresca i piparres"
+          en: "Russian salad with tuna belly and piparras"
+          es: "Ensaladilla rusa con ventresca y piparras"
+        price: 8.0
+        description: 
+          ca: "Amanida russa cremosa, acompanyada de ventresca de tonyina i piparres, aportant un contrast entre la suavitat i l'acidesa."
+          en: "Creamy Russian salad with tuna belly and piparras, offering a contrast between smoothness and acidity."
+          es: "Ensaladilla rusa cremosa, acompañada de ventresca de atún y piparras, aportando un contraste entre suavidad y acidez."
+
+      - name: 
+          ca: "Amanida russa amb gambes a l'all"
+          en: "Russian salad with garlic shrimp"
+          es: "Ensaladilla rusa con gambas al ajillo"
+        price: 13.0
+        description: 
+          ca: "Amanida russa cremosa, acompanyada de gambes a l'all, aportant un contrast entre la suavitat i l'acidesa."
+          en: "Creamy Russian salad with garlic shrimp, offering a contrast between smoothness and acidity."
+          es: "Ensaladilla rusa cremosa, acompañada de gambas al ajillo, aportando un contraste entre suavidad y acidez."
+
+      - name: 
+          ca: "La Cecina Wagyu amb Burrata i pesto de festucs"
+          en: "Wagyu cured beef with burrata and pistachio pesto"
+          es: "Cecina de Wagyu con burrata y pesto de pistachos"
+        price: 18.9
+        description: 
+          ca: "Cecina de Wagyu de Lleó, combinada amb burrata fresca i pesto de festucs per a una fusió entre intensitat i cremositat."
+          en: "Leon D.O. Wagyu cured beef combined with fresh burrata and pistachio pesto, fusing intensity and creaminess."
+          es: "Cecina de Wagyu de León combinada con burrata fresca y pesto de pistachos, fusionando intensidad y cremosidad."
+
+      - name: 
+          ca: "Amanida de tomàquet amb seitons, olives i pernil ibèric de gla"
+          en: "Tomato salad with anchovies, olives, and Iberian ham"
+          es: "Ensalada de tomate con boquerones, olivas y jamón ibérico"
+        price: 13.9
+        description: 
+          ca: "Tomàquet madur amb seitons i olives, acabat amb un toc de pernil ibèric de gla que aporta complexitat al plat."
+          en: "Ripe tomato with anchovies and olives, finished with a touch of acorn-fed Iberian ham that adds complexity."
+          es: "Tomate maduro con boquerones y olivas, rematado con un toque de jamón ibérico de bellota que aporta complejidad."
+
+      - name: 
+          ca: "Patates braves pujades (allioli i oli picant)"
+          en: "Loaded patatas bravas (allioli and spicy oil)"
+          es: "Patatas bravas especiales (allioli y aceite picante)"
+        price: 6.0
+        description: 
+          ca: "Patates braves cruixents amb allioli suau i oli picant casolà, per un equilibri perfecte entre cremositat i potència."
+          en: "Crispy patatas bravas with smooth allioli and homemade spicy oil, offering a perfect balance between creaminess and intensity."
+          es: "Patatas bravas crujientes con allioli suave y aceite picante casero, logrando un equilibrio perfecto entre cremosidad e intensidad."
+
+      - name: 
+          ca: "Croqueta de llet crua i pernil ibèric de gla"
+          en: "Croquette of raw milk and acorn-fed Iberian ham"
+          es: "Croqueta de leche cruda y jamón ibérico de bellota"
+        price: 2.2
+        description: 
+          ca: "Croqueta artesana amb beixamel cremosa de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
+          en: "Handmade croquette with creamy raw milk béchamel and acorn-fed Iberian ham, crispy outside and soft inside."
+          es: "Croqueta artesana con bechamel cremosa de leche cruda y jamón ibérico de bellota, crujiente por fuera y cremosa por dentro."
+
+      - name: 
+          ca: "Biquini de \"Cecina\" de Lleó D.O. i Comté amb salsa bearnesa"
+          en: "Biquini with cured beef and Comtée with Bearnaise sauce"
+          es: "Biquini con cecina de León D.O. y Comté con salsa bearnesa"
+        price: 10.0
+        description: 
+          ca: "Biquini gourmet amb cecina de Lleó i formatge Comté fos, complementat amb salsa bearnesa per un toc suau i aromàtic."
+          en: "Gourmet biquini with Leon D.O. cured beef and melted Comté cheese, complemented with Bearnaise sauce for a soft and aromatic touch."
+          es: "Biquini gourmet con cecina de León y queso Comté fundido, complementado con salsa bearnesa para un toque suave y aromático."
+
+      - name: 
+          ca: "Albergínies fumades amb Maó, mel i avellanes"
+          en: "Smoked aubergines with Maó cheese, honey and hazelnuts"
+          es: "Berenjenas ahumadas con queso Maó, miel y avellanas"
+        price: 9.9
+        description: 
+          ca: "Albergínies escalivades amb formatge Maó fos, mel i avellanes torrades per un contrast dolç i salat."
+          en: "Grilled smoked aubergines with melted Maó cheese, honey, and toasted hazelnuts for a sweet and salty contrast."
+          es: "Berenjenas escalivadas con queso Maó fundido, miel y avellanas tostadas para un contraste dulce y salado."
+
+      - name: 
+          ca: "Ou amb \"puntilla\" amb tàrtar de tonyina i alga nori"
+          en: "Crispy-edged fried egg with tuna tartar and nori seaweed"
+          es: "Huevo frito con puntilla, tartar de atún y alga nori"
+        price: 18.5
+        description: 
+          ca: "Ou ferrat amb les puntes cruixents, acompanyat d'un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
+          en: "Fried egg with crispy edges, served with a delicate tuna tartar and nori seaweed for an unmistakable umami touch."
+          es: "Huevo frito con puntilla, acompañado de un delicado tartar de atún y alga nori para un inconfundible toque umami."
+
+      - name: 
+          ca: "Truita de patata amb xoriço ibèric picant"
+          en: "Potato omelette with spicy Iberian chorizo"
+          es: "Tortilla de patata con chorizo ibérico picante"
+        price: 9.5
+        description: 
+          ca: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
+          en: "Soft potato omelette with spicy Iberian chorizo; optionally, you can add grated cheese to enhance the flavor."
+          es: "Tortilla de patata melosa con chorizo ibérico picante; opcionalmente, puedes añadir queso rallado para potenciar su sabor."
+
+      - name: 
+          ca: "Xurro amb tàrtar de vedella"
+          en: "Fried churro with beef tartar"
+          es: "Churro frito con tartar de ternera"
+        price: 8.0
+        description: 
+          ca: "Xurro fregit, servit amb un tàrtar de vedella fresc."
+          en: "Fried churro served with fresh beef tartar."
+          es: "Churro frito servido con un tartar de ternera fresco."
+
+
+    - category: 
+        ca: "LLEGUMS, ARRÒS I PASTA"
+        en: "LEGUMES, RICE AND PASTA"
+        es: "LEGUMBRES, ARROZ Y PASTA"
+      menu_area: "PER_COMPARTIR"
+      items:
+      - name: 
+          ca: "Macarrons gratinats \"a la cardinale\""
+          en: "Gratinated macaroni \"a la cardinale\""
+          es: "Macarrones gratinados \"a la cardinale\""
+        price: 11.0
+        description: 
+          ca: "Macarrons al forn amb una salsa de tomàquet suau, gratinats amb formatge per obtenir una crosta cruixent irresistible."
+          en: "Oven-baked macaroni with a smooth tomato sauce, gratinated with cheese for an irresistible crispy crust."
+          es: "Macarrones al horno con una salsa de tomate suave, gratinados con queso para conseguir una irresistible costra crujiente."
+
+      - name: 
+          ca: "Caneló XL de rostit amb beixamel de ceps"
+          en: "XL roasted meat cannelloni with mushroom béchamel"
+          es: "Canelón XL de asado con bechamel de setas"
+        price: 14.0
+        description: 
+          ca: "Caneló farcit de rostit tradicional, banyat amb una beixamel de ceps que afegeix cremositat i un toc aromàtic espectacular."
+          en: "Cannelloni filled with traditional roast meat, topped with mushroom béchamel adding creaminess and an amazing aromatic touch."
+          es: "Canelón relleno de asado tradicional, bañado con bechamel de setas que aporta cremosidad y un toque aromático espectacular."
+
+      - name: 
+          ca: "Cigrons saltats amb tomàquet i pernil ibèric"
+          en: "Sautéed chickpeas with tomato and Iberian ham"
+          es: "Garbanzos salteados con tomate y jamón ibérico"
+        price: 8.0
+        description: 
+          ca: "Cigrons saltejats amb tomàquet madur i encenalls de pernil ibèric, una combinació deliciosa i nutritiva."
+          en: "Sautéed chickpeas with ripe tomato and shavings of Iberian ham, a delicious and nutritious combination."
+          es: "Garbanzos salteados con tomate maduro y virutas de jamón ibérico, una combinación deliciosa y nutritiva."
+
+      - name: 
+          ca: "Fesolets estofats amb navalles del Delta"
+          en: "Stewed baby beans with razor clams from the Delta"
+          es: "Judiones estofados con navajas del Delta"
+        price: 13.5
+        description: 
+          ca: "Fesols tendres estofats a foc lent amb navalles fresques del Delta, un plat mariner amb tot el sabor del mar."
+          en: "Tender baby beans slowly stewed with fresh razor clams from the Delta, a seafood dish full of sea flavor."
+          es: "Judiones tiernos estofados a fuego lento con navajas frescas del Delta, un plato marinero lleno de sabor a mar."
+
+      - name: 
+          ca: "Pèsols negres amb llom de bacallà"
+          en: "Black peas with cod loin"
+          es: "Guisantes negros con lomo de bacalao"
+        price: 0.0
+        description: 
+          ca: "Pèsols negres amb llom de bacallà, un plat mediterrani amb tot el sabor del mar."
+          en: "Black peas with cod loin, a Mediterranean dish packed with sea flavor."
+          es: "Guisantes negros con lomo de bacalao, un plato mediterráneo lleno de sabor a mar."
+
+      - name: 
+          ca: "Arròs mariner a la llauna"
+          en: "Marinera rice baked in the pan"
+          es: "Arroz marinero a la llauna"
+        price: 21.0
+        description: 
+          ca: "Arròs melós cuinat a la llauna amb marisc fresc i brou intens, un autèntic clàssic mediterrani."
+          en: "Creamy rice cooked in the pan with fresh seafood and rich broth, an authentic Mediterranean classic."
+          es: "Arroz meloso cocinado a la llauna con marisco fresco y caldo intenso, un auténtico clásico mediterráneo."
+
+    - category: 
+        ca: "PEIX"
+        en: "FISH"
+        es: "PESCADO"
+      menu_area: "PLATS_PRINCIPALS"
+      items:
+      - name: 
+          ca: "Verat escabetxat"
+          en: "Marinated mackerel"
+          es: "Caballa en escabeche"
+        price: 0.0
+        description: 
+          ca: "Verat fresc marinat en escabetx suau, una explosió de sabors mediterranis."
+          en: "Fresh mackerel marinated in a light escabeche, bursting with Mediterranean flavors."
+          es: "Caballa fresca marinada en un suave escabeche, una explosión de sabores mediterráneos."
+
+      - name: 
+          ca: "Lluc a la romana amb salsa tàrtara"
+          en: "Fried hake with tartar sauce"
+          es: "Merluza a la romana con salsa tártara"
+        price: 16.0
+        description: 
+          ca: "Lluç arrebossat amb una cobertura cruixent i lleugera, servit amb una salsa tàrtara fresca i cremosa."
+          en: "Fried hake with a crispy and light batter, served with fresh and creamy tartar sauce."
+          es: "Merluza rebozada con una cobertura crujiente y ligera, servida con salsa tártara fresca y cremosa."
+
+      - name: 
+          ca: "Calamar de potera a la planxa"
+          en: "Grilled squid"
+          es: "Calamar de potera a la plancha"
+        price: 18.5
+        description: 
+          ca: "Calamar de potera tendre i saborós, cuinat a la planxa per ressaltar tot el seu sabor natural."
+          en: "Tender and flavorful squid, grilled to enhance its natural taste."
+          es: "Calamar de potera tierno y sabroso, cocinado a la plancha para resaltar todo su sabor natural."
+
+      - name: 
+          ca: "Bacallà amb samfaina"
+          en: "Cod with Catalan ratatouille (samfaina)"
+          es: "Bacalao con samfaina"
+        price: 19.8
+        description: 
+          ca: "Llom de bacallà cuinat al punt, acompanyat de samfaina casolana de verdures."
+          en: "Perfectly cooked cod loin served with homemade Catalan ratatouille (samfaina)."
+          es: "Lomo de bacalao cocinado al punto, acompañado de samfaina casera de verduras."
+
+
+    - category: 
+        ca: "CARN"
+        en: "MEAT"
+        es: "CARNE"
+      menu_area: "PLATS_PRINCIPALS"
+      items:
+      - name: 
+          ca: "Fricandó de llata de vedella amb bolets i parmentier"
+          en: "Veal fricandó with mushrooms and parmentier"
+          es: "Fricandó de ternera con setas y parmentier"
+        price: 16.0
+        description: 
+          ca: "Estofat tradicional català amb vedella tendra, bolets i una parmentier cremosa que potencia el seu sabor."
+          en: "Traditional Catalan stew with tender veal, mushrooms, and a creamy parmentier to enhance its flavor."
+          es: "Estofado tradicional catalán con ternera tierna, setas y una parmentier cremosa que realza su sabor."
+
+      - name: 
+          ca: "Mandonguilles amb sípia i pèsols"
+          en: "Meatballs with cuttlefish and peas"
+          es: "Albóndigas con sepia y guisantes"
+        price: 14.5
+        description: 
+          ca: "Mandonguilles casolanes guisades amb sípia tendra i pèsols, un plat mariner de sabors profunds i reconfortants."
+          en: "Homemade meatballs stewed with tender cuttlefish and peas, a comforting seafood dish with deep flavors."
+          es: "Albóndigas caseras guisadas con sepia tierna y guisantes, un plato marinero de sabores profundos y reconfortantes."
+
+      - name: 
+          ca: "Botifarra artesana esparracada amb mongetes de Santa Pau"
+          en: "Artisan botifarra with Santa Pau beans"
+          es: "Butifarra artesana con judías de Santa Pau"
+        price: 13.0
+        description: 
+          ca: "Botifarra artesana de qualitat, esparracada i saltejada, servida amb les emblemàtiques mongetes de Santa Pau."
+          en: "High-quality artisan botifarra, broken and sautéed, served with the iconic Santa Pau beans."
+          es: "Butifarra artesana de calidad, desmenuzada y salteada, servida con las emblemáticas judías de Santa Pau."
+
+      - name: 
+          ca: "Lingot de xai"
+          en: "Lamb lingot"
+          es: "Lingote de cordero"
+        price: 0.0
+        description: 
+          ca: "Lingot tendre i melós de xai cuinat a baixa temperatura, amb un sabor intens i una textura irresistible."
+          en: "Tender and juicy lamb lingot slow-cooked to perfection, offering an intense flavor and irresistible texture."
+          es: "Lingote de cordero tierno y meloso cocinado a baja temperatura, con un sabor intenso y una textura irresistible."
+
+      - name: 
+          ca: "Entrecot al pebre negre"
+          en: "Ribeye steak with black pepper sauce"
+          es: "Entrecot con salsa de pimienta negra"
+        price: 21.0
+        description: 
+          ca: "Entrecot de vedella madurat, marcat al punt i banyat amb una salsa cremosa de pebre negre per ressaltar el seu gust."
+          en: "Aged ribeye steak, grilled to perfection and finished with a creamy black pepper sauce to enhance its flavor."
+          es: "Entrecot de ternera madurada, marcado al punto y bañado con una cremosa salsa de pimienta negra que realza su sabor."
+
+
+    - category: 
+        ca: "GUARNICIÓ"
+        en: "GUARNISH"
+        es: "GUARNICIÓN"
+      menu_area: "PLATS_PRINCIPALS"
+      items:
+      - name: 
+          ca: "Amanida verda amb raves"
+          en: "Green salad with radishes"
+          es: "Ensalada verde con rábanos"
+        price: 3.5
+        description: 
+          ca: "Amanida fresca amb fulles verdes i raves, ideal per aportar lleugeresa i frescor al teu àpat."
+          en: "Fresh salad with mixed greens and radishes, perfect to add lightness and freshness to your meal."
+          es: "Ensalada fresca con hojas verdes y rábanos, ideal para aportar ligereza y frescura a tu comida."
+
+      - name: 
+          ca: "Verdura de temporada"
+          en: "Seasonal vegetables"
+          es: "Verduras de temporada"
+        price: 3.5
+        description: 
+          ca: "Selecció de verdures de temporada cuinades al punt per preservar tot el seu sabor i textura."
+          en: "Selection of seasonal vegetables cooked to perfection to preserve all their flavor and texture."
+          es: "Selección de verduras de temporada cocinadas al punto para preservar todo su sabor y textura."
+
+      - name: 
+          ca: "Pebrots escalivats"
+          en: "Roasted peppers"
+          es: "Pimientos asados"
+        price: 3.5
+        description: 
+          ca: "Pebrots escalivats a foc lent, dolços i tendres, ideals com a guarnició o entrant."
+          en: "Slow-roasted peppers, sweet and tender, ideal as a side dish or starter."
+          es: "Pimientos asados a fuego lento, dulces y tiernos, ideales como guarnición o entrante."
+
+      - name: 
+          ca: "Patates fregides \"Allumette\""
+          en: "Allumette fries"
+          es: "Patatas fritas \"Allumette\""
+        price: 3.5
+        description: 
+          ca: "Patates tallades fines i fregides fins a ser cruixents, perfectes per acompanyar qualsevol plat."
+          en: "Thin-cut potatoes fried until crispy, perfect to accompany any dish."
+          es: "Patatas finamente cortadas y fritas hasta quedar crujientes, perfectas para acompañar cualquier plato."
+
+       
+
+    - category: 
+        ca: "PA"
+        en: "BREAD"
+        es: "PAN"
+      menu_area: "PLATS_PRINCIPALS"
+      items:
+      - name: 
+          ca: "Pa de massa mare amb AOVE i tomacó"
+          en: "Sourdough bread with EVOO and tomato"
+          es: "Pan de masa madre con AOVE y tomate"
+        price: 3.75
+        description: 
+          ca: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar, per a un toc autèntic i mediterrani."
+          en: "Rustic sourdough bread, toasted and served with extra virgin olive oil and vine-ripened tomato, for an authentic Mediterranean touch."
+          es: "Pan rústico de masa madre, tostado y acompañado de aceite de oliva virgen extra y tomate de colgar, para un toque auténtico y mediterráneo."
+
+
+
+    - category: 
+        ca: "POSTRES"
+        en: "DESSERTS"
+        es: "POSTRES"
+      menu_area: "PLATS_PRINCIPALS"
+      items:
+      - name: 
+          ca: "Xuixo amb gelat"
+          en: "Xuixo with ice cream"
+          es: "Xuixo con helado"
+        price: 6.00
+        description: 
+          ca: "El clàssic xuixo gironí, farcit de crema i fregit fins a quedar daurat i cruixent, servit amb una bola de gelat que potencia el contrast de textures i temperatures."
+          en: "The classic Girona xuixo, filled with cream and fried until golden and crunchy, served with a scoop of ice cream to enhance the contrast of textures and temperatures."
+          es: "El clásico xuixo gerundense, relleno de crema y frito hasta quedar dorado y crujiente, servido con una bola de helado que potencia el contraste de texturas y temperaturas."
+
+      - name: 
+          ca: "Rostes de Santa Teresa amb xarop d'auró, fruita i bacó"
+          en: "Santa Teresa toast with maple syrup, fruit and bacon"
+          es: "Torrijas de Santa Teresa con sirope de arce, fruta y bacon"
+        price: 6.50
+        description: 
+          ca: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d'auró, la fruita fresca i el bacó cruixent."
+          en: "A sophisticated version of the traditional Santa Teresa toast, with a sweet and salty touch thanks to the maple syrup, fresh fruit, and crispy bacon."
+          es: "Una versión sofisticada de la tradicional torrija de Santa Teresa, con un toque dulce y salado gracias al sirope de arce, la fruta fresca y el bacon crujiente."
+
+      - name: 
+          ca: "Iogurt casolà"
+          en: "Homemade yogurt"
+          es: "Yogur casero"
+        price: 0.00
+        description: 
+          ca: "Iogurt grec cremós fet a casa, servit amb fruita de temporada i granola cruixent d'elaboració pròpia."
+          en: "Creamy homemade Greek yogurt, served with seasonal fruit and crunchy homemade granola."
+          es: "Cremoso yogur griego casero, servido con fruta de temporada y crujiente granola de elaboración propia."
+
+      - name: 
+          ca: "Maduixes al gust"
+          en: "Strawberries to your taste"
+          es: "Fresas al gusto"
+        price: 6.5
+        description: 
+          ca: "Maduixes fresques, servides al natural o amb nata muntada, al teu gust."
+          en: "Fresh strawberries, served either natural or with whipped cream, as you prefer."
+          es: "Fresas frescas, servidas al natural o con nata montada, a tu elección."
+
+      - name: 
+          ca: "Pastís de xocolata sense farina amb gelat"
+          en: "Flourless chocolate cake with ice cream"
+          es: "Pastel de chocolate sin harina con helado"
+        price: 6.5
+        description: 
+          ca: "Pastís de xocolata intens i sense farina, servit amb una bola de gelat que en ressalta la seva riquesa."
+          en: "Rich flourless chocolate cake, served with a scoop of ice cream to highlight its intensity."
+          es: "Pastel de chocolate intenso y sin harina, servido con una bola de helado que resalta su riqueza."
+
+      - name: 
+          ca: "Flam"
+          en: "Crème caramel"
+          es: "Flan"
+        price: 5.0
+        description: 
+          ca: "El flam tradicional de tota la vida, fet amb ous frescos i llet, amb una textura suau i un caramel delicadament amarg que equilibra la dolçor."
+          en: "The traditional flan made with fresh eggs and milk, featuring a soft texture and a delicately bitter caramel that balances the sweetness."
+          es: "El flan tradicional de toda la vida, hecho con huevos frescos y leche, con una textura suave y un caramelo delicadamente amargo que equilibra el dulzor."
+
+
+    - category: 
+        ca: "GINEBRA"
+        en: "GIN"
+        es: "GINEBRA"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
+      items:
+      - name: 
+          ca: "Macaronesian"
+          en: "Macaronesian"
+          es: "Macaronesian"
+        price: 7.0
+        description: 
+          ca: "Ginebra artesana elaborada amb botànics de les Illes Macaronèsiques, fresca i aromàtica."
+          en: "Craft gin made with botanicals from the Macaronesian Islands, fresh and aromatic."
+          es: "Ginebra artesanal elaborada con botánicos de las Islas Macaronésicas, fresca y aromática."
+
+      - name: 
+          ca: "Suntory Roku"
+          en: "Suntory Roku"
+          es: "Suntory Roku"
+        price: 8.0
+        description: 
+          ca: "Ginebra japonesa refinada, destil·lada amb sis botànics tradicionals que aporten equilibri i subtilesa."
+          en: "Refined Japanese gin, distilled with six traditional botanicals that bring balance and subtlety."
+          es: "Ginebra japonesa refinada, destilada con seis botánicos tradicionales que aportan equilibrio y sutileza."
+
+      - name: 
+          ca: "Seagram's"
+          en: "Seagram's"
+          es: "Seagram's"
+        price: 7.0
+        description: 
+          ca: "Una ginebra americana clàssica i suau, ideal per a còctels equilibrats."
+          en: "A classic and smooth American gin, perfect for balanced cocktails."
+          es: "Una ginebra americana clásica y suave, ideal para cócteles equilibrados."
+
+      - name: 
+          ca: "Mombasa Club London"
+          en: "Mombasa Club London"
+          es: "Mombasa Club London"
+        price: 8.0
+        description: 
+          ca: "Ginebra inspirada en l'època colonial britànica, amb un toc exòtic i especiat."
+          en: "Gin inspired by the British colonial era, with an exotic and spiced touch."
+          es: "Ginebra inspirada en la época colonial británica, con un toque exótico y especiado."
+
+      - name: 
+          ca: "Nordés"
+          en: "Nordés"
+          es: "Nordés"
+        price: 10.0
+        description: 
+          ca: "Ginebra gallega suau i aromàtica, elaborada amb raïm albariño i botànics atlàntics."
+          en: "Smooth and aromatic Galician gin, made with Albariño grapes and Atlantic botanicals."
+          es: "Ginebra gallega suave y aromática, elaborada con uvas Albariño y botánicos atlánticos."
+
+
+    - category: 
+        ca: "WHISKY"
+        en: "WHISKY"
+        es: "WHISKY"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
+      items:
+        - name: 
+            ca: "Glenmorangie"
+            en: "Glenmorangie"
+            es: "Glenmorangie"
           price: 9.0
-          description: "Truita de patata gruixuda i sucosa, feta al moment per garantir la seva textura perfecta i sabor casolà."
-        - name: Ous remenats amb torrada (afegeix pernil, Comté ratllat, bacó, salmó curat)
-          price: 7.5
-          description: "Ous remenats suaus i cremosos, servits amb torrada cruixent. Personalitza'ls amb els teus ingredients preferits."
-        - name: Ous al niu, espinacs, salmó fumat i salsa holandesa
-          price: 12.5
-          description: "Ous cuinats al forn sobre un llit d'espinacs frescos i salmó fumat, banyats amb una delicada salsa holandesa."
-        - name: Ous al plat amb sobrasada de Menorca
-          price: 9.0
-          description: "Ous al plat amb sobrasada de Menorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
-        - name: Patates fregides allumette
-          price: 3.5
-          description: "Patates fregides cruixents i delicioses."
-          type: acompanyament
-        - name: Amanida verda amb raves
-          price: 3.5
-          description: "Amanida verda fresca amb raves per un toc salat i fresc."
-          type: acompanyament
+          description: 
+            ca: "Un whisky escocès suau i aromàtic, perfecte per als paladars més exigents."
+            en: "A smooth and aromatic Scottish whisky, perfect for discerning palates."
+            es: "Un whisky escocés suave y aromático, perfecto para los paladares más exigentes."
 
-    - category: DOLÇ
-      menu_area: "ESMORZARS"
-      items:
-        - name: Rostes de Santa Teresa amb xarop d'auró, fruita i bacó
-          price: 6.5
-          description: "Pa torrat arrebossat i fregit, servit amb xarop d'auró, fruita fresca i un toc cruixent de bacó."
-        - name: Xurros amb xocolata calenta i gelat de nata
-          price: 5.5
-          description: "Xurros casolans cruixents acompanyats de xocolata calenta espessa i un suau gelat de nata."
-        - name: Mató amb mel crua i festucs torrats
-          price: 6.0
-          description: "Postre tradicional amb mató fresc, mel crua aromàtica i festucs torrats per un contrast de textures i sabors."
-        - name: Iogurt grec casolà amb fruita i granola feta a casa
-          price: 5.5
-          description: "Iogurt grec cremós fet a casa, servit amb fruita de temporada i una granola cruixent d'elaboració pròpia."
-        - name: Cistell de mini brioixeria
-          price: 6.0
-          description: "Una selecció de brioixeria artesana en format mini, perfecta per compartir i gaudir d'un toc dolç."
-
-    - category: CAFÈ ESPECIALITAT "SYRA COFFEE"
-      menu_area: "ESMORZARS"
-      items:
-        - name: Espresso
-          price: 1.9
-          description: "Intens i aromàtic."
-        - name: Cafè amb llet
-          price: 2.8
-          description: "Suau i cremós."
-        - name: Flat white
-          price: 3.2
-          description: "Un cafè amb llet amb una textura suau."
-        - name: Americà
-          price: 2.2
-          description: "Lleuger i suau."
-        - name: Tallat
-          price: 2.5
-          description: "Un cafè amb un toc de llet."
-
-    - category: INFUSIONS I TES
-      menu_area: "ESMORZARS"
-      items:
-        - name: Matcha latte
-          price: 4.5
-          description: "Una beguda energètica i saludable."
-        - name: Chai latte
-          price: 4.5
-          description: "Una beguda especiada i reconfortant."
-        - name: Infusió de camamilla
-          price: 3.5
-          description: "Calmant i relaxant."
-        - name: Infusió de menta i poliol
-          price: 3.5
-          description: "Refrescant i digestiva."
-        - name: Te negre
-          price: 3.5
-          description: "Intens i aromàtic."
-
-    - category: AMANIDES I MÉS
-      menu_area: "PER COMPARTIR"
-      items:
-        - name: Gilda de la casa XXL
-          price: 3.9
-          description: "Una versió XXL de l'aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d'acidesa i sabor intens."
-        - name: Amanida russa amb ventresca i piparres
+        - name: 
+            ca: "Johnnie Walker Black Label"
+            en: "Johnnie Walker Black Label"
+            es: "Johnnie Walker Black Label"
           price: 8.0
-          description: "Amanida russa cremosa, acompanyada de ventresca de tonyina i piparres, aportant un contrast entre la suavitat i l'acidesa."
-        - name: La "Cecina" de Lleó D.O. amb Burrata i pesto de festucs
-          price: 18.9
-          description: "Cecina de Lleó curada, combinada amb burrata fresca i pesto de festucs per a una fusió entre intensitat i cremositat."
-        - name: Amanida de tomàquet amb seitons, olives i pernil ibèric de gla
-          price: 13.9
-          description: "Tomàquet madurat, seitons i olives, amb un toc de pernil ibèric de gla que aporta complexitat al plat."
-        - name: Patates braves pujades (allioli i oli picant)
-          price: 6.0
-          description: "Patates braves cruixents amb allioli suau i oli picant casolà per un equilibri perfecte entre cremositat i potència."
-        - name: Croqueta de llet crua i pernil ibèric de gla
-          price: 1.9
-          description: "Croqueta artesana, amb una beixamel cremosa de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
-        - name: Biquini de "Cecina" de Lleó D.O. i Comté amb salsa bearnesa
-          price: 10.0
-          description: "Biquini gourmet amb cecina de Lleó i formatge Comté fos, complementat amb salsa bearnesa per un toc suau i aromàtic."
+          description: 
+            ca: "Un whisky escocès amb cos, equilibrat i amb notes fumades."
+            en: "A full-bodied Scottish whisky, balanced with smoky notes."
+            es: "Un whisky escocés con cuerpo, equilibrado y con notas ahumadas."
 
-    - category: VERDURES, OUS I PASTA
-      menu_area: "PER COMPARTIR"
+    - category: 
+        ca: "VODKA"
+        en: "VODKA"
+        es: "VODKA"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
       items:
-        - name: Trinxat amb rostes de Sòria, li pots afegir un ou
-          price: 10.0
-          description: "Trinxat de col i patata amb rostes de Sòria cruixents; pots afegir-hi un ou per donar-hi encara més cremositat."
-        - name: Alberginies fumades amb Maó, mel i avellanes
-          price: 9.9
-          description: "Albergínies escalivades amb formatge Maó fos, un toc de mel i avellanes torrades per un contrast de sabors dolços i salats."
-        - name: Ou amb "puntilla" amb tàrtar de tonyina i alga nori
-          price: 18.5
-          description: "Ou ferrat amb les puntes cruixents, acompanyat d'un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
-        - name: Truita de patata amb xoriço ibèric picant, li pots afegir formatge ratllat
+        - name: 
+            ca: "Grey Goose"
+            en: "Grey Goose"
+            es: "Grey Goose"
           price: 9.0
-          description: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
-        - name: Macarrons gratinats "a la cardinale"
-          price: 11.0
-          description: "Macarrons al forn amb una salsa de tomàquet suau, gratinats amb formatge per obtenir una crosta cruixent irresistible."
-        - name: Caneló XL de rostit amb beixamel de ceps
-          price: 14.0
-          description: "Caneló farcit de rostit tradicional, banyat amb una beixamel de ceps que afegeix cremositat i un toc aromàtic espectacular."
+          description: 
+            ca: "Una vodka francesa de qualitat superior, suau i refinada."
+            en: "A superior quality French vodka, smooth and refined."
+            es: "Una vodka francesa de calidad superior, suave y refinada."
 
-    - category: CARN
-      menu_area: "PLATS PRINCIPALS"
+        - name: 
+            ca: "Belvedere"
+            en: "Belvedere"
+            es: "Belvedere"
+          price: 9.0
+          description: 
+            ca: "Una vodka de luxe polonesa, elegant i pura."
+            en: "A luxury Polish vodka, elegant and pure."
+            es: "Una vodka polaca de lujo, elegante y pura."
+
+        - name: 
+            ca: "Ukiyo Japanese Rice"
+            en: "Ukiyo Japanese Rice"
+            es: "Ukiyo Japanese Rice"
+          price: 8.0
+          description: 
+            ca: "Vodka japonesa suau, destil·lada a partir d'arròs."
+            en: "Smooth Japanese vodka, distilled from rice."
+            es: "Vodka japonesa suave, destilada a partir de arroz."
+
+    - category: 
+        ca: "ROM"
+        en: "RUM"
+        es: "RON"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
       items:
-        - name: Fricandó de llata de vedella amb bolets i parmentier
-          price: 16.0
-          description: "Estofat tradicional català amb vedella tendra, bolets i una parmentier cremosa que potencia el seu sabor."
-        - name: Mandonguilles amb trompetes de la mort
-          price: 14.0
-          description: "Mandonguilles casolanes sucades en una salsa intensa amb trompetes de la mort, aportant un toc profund i fosc de bosc."
-        - name: Botifarra artesana esparracada amb mongetes de Santa Pau
+        - name: 
+            ca: "Don Papa Baroko"
+            en: "Don Papa Baroko"
+            es: "Don Papa Baroko"
+          price: 9.0
+          description: 
+            ca: "Un rom filipí amb notes dolces de vainilla i fruita tropical."
+            en: "A Filipino rum with sweet notes of vanilla and tropical fruit."
+            es: "Un ron filipino con notas dulces de vainilla y fruta tropical."
+
+        - name: 
+            ca: "Demon's Share 12 Años"
+            en: "Demon's Share 12 Years"
+            es: "Demon's Share 12 Años"
           price: 13.0
-          description: "Botifarra artesana de qualitat, esparracada i saltejada, servida amb les emblemàtiques mongetes de Santa Pau."
-        - name: La "Cheeseburger" amb salsa de la casa
-          price: 14.0
-          description: "Hamburguesa sucosa de vedella amb formatge fos, acompanyada de la nostra salsa especial per a un toc inoblidable."
-        - name: Entrecot al pebre negre
-          price: 21.0
-          description: "Entrecot de vedella madurat, marcat al punt i banyat amb una salsa cremosa de pebre negre per ressaltar el seu gust."
+          description: 
+            ca: "Rom envellit 12 anys, amb un perfil intens, fumat i especiat."
+            en: "12-year aged rum, with an intense, smoky and spiced profile."
+            es: "Ron añejado 12 años, con un perfil intenso, ahumado y especiado."
 
-    - category: GUARNICIÓ
-      menu_area: "PLATS PRINCIPALS"
-      items:
-        - name: Patates fregides "Allumette"
-          price: 3.5
-          description: "Cruixents i delicioses."
-        - name: Pebrots confitats
-          price: 3.5
-          description: "Dolços i saborosos."
-        - name: Amanida verda amb raves
-          price: 3.5
-          description: "Fresca i saludable."
-        - name: Verdura de temporada
-          price: 3.5
-          description: "Cuinada al punt."
+        - name: 
+            ca: "Brugal"
+            en: "Brugal"
+            es: "Brugal"
+          price: 6.0
+          description: 
+            ca: "Un rom dominicà clàssic, lleuger i fàcil de beure."
+            en: "A classic Dominican rum, light and easy to drink."
+            es: "Un ron dominicano clásico, ligero y fácil de beber."
 
-    - category: LLEGUMS I ARRÒS
-      menu_area: "PLATS PRINCIPALS"
-      items:
-        - name: Cigrons saltats amb tomàquet i pernil ibèric
-          price: 8.0
-          description: "Cigrons saltejats amb tomàquet madur i encenalls de pernil ibèric, una combinació deliciosa i nutritiva."
-        - name: Fesolets estofats amb escopinyes
-          price: 13.5
-          description: "Fesols tendres estofats a foc lent amb escopinyes fresques, un plat mariner amb tot el sabor del mar."
-        - name: Arròs mariner a la llauna
-          price: 21.0
-          description: "Arròs melós cuinat a la llauna amb marisc fresc i brou intens, un autèntic clàssic mediterrani."
 
-    - category: PA
-      menu_area: "PLATS PRINCIPALS"
+    - category: 
+        ca: "TEQUILA & CO"
+        en: "TEQUILA & CO"
+        es: "TEQUILA & CO"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
       items:
-        - name: Pa de massa mare amb AOVE i tomacó
-          price: 3.75
-          description: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar."
+        - name: 
+            ca: "Herradura Reposado"
+            en: "Herradura Reposado"
+            es: "Herradura Reposado"
+          price: 9.0
+          description: 
+            ca: "Un tequila suau, madurat en bóta per potenciar el seu sabor."
+            en: "A smooth tequila, barrel-aged to enhance its flavor."
+            es: "Un tequila suave, madurado en barrica para potenciar su sabor."
 
-    - category: PEIX
-      menu_area: "PLATS PRINCIPALS"
-      items:
-        - name: Lluc la romana amb salsa tàrtara
-          price: 16.0
-          description: "Lluç arrebossat amb una cobertura cruixent i lleugera, servit amb una salsa tàrtara fresca i cremosa."
-        - name: Calamar de potera amb papada ibèrica
-          price: 18.5
-          description: "Calamar de potera tendre i saborós, combinat amb papada ibèrica per donar-li un toc melós i intens."
-        - name: Bacallà amb espinacs a la catalana
-          price: 19.8
-          description: "Llom de bacallà cuinat al punt, acompanyat d'espinacs saltejats amb panses i pinyons, un plat clàssic i equilibrat."
+        - name: 
+            ca: "Jimador"
+            en: "Jimador"
+            es: "Jimador"
+          price: 6.0
+          description: 
+            ca: "Un tequila jove amb subtils notes de canyella."
+            en: "A young tequila with subtle hints of cinnamon."
+            es: "Un tequila joven con sutiles notas de canela."
 
-    - category: POSTRES
-      menu_area: "PLATS PRINCIPALS"
-      items:
-        - name: Llimona gelada
-          price: 8.50
-          description: "Una refrescant llimona farcida de sorbet de llimona, amb un equilibri perfecte entre dolçor i acidesa, ideal per acabar el menjar amb una nota cítrica i lleugera."
-        - name: Xuixo amb gelat
-          price: 6.00
-          description: "El clàssic xuixo gironí, farcit de crema i fregit fins a quedar daurat i cruixent, servit amb una bola de gelat que en potencia el contrast de textures i temperatures."
-        - name: Rostes de Santa Teresa amb xarop d'auró, fruita i bacó
-          price: 6.50
-          description: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d'auró, la fruita fresca i el bacó cruixent."
-        - name: Mató casolà amb mel crua i festucs
-          price: 6.00
-          description: "Un clàssic de la gastronomia catalana: mató artesà de textura suau, acompanyat de mel crua que en ressalta la dolçor natural i un toc cruixent de festucs."
-        - name: Suís
-          price: 5.50
-          description: "Una tassa de xocolata calenta espessa i cremosa, coronada amb una generosa capa de nata muntada, perfecta per als amants del cacau."
-        - name: Flam
-          price: 5.00
-          description: "El flam tradicional de tota la vida, fet amb ous frescos i llet, amb una textura suau i un caramel delicadament amarg que equilibra la dolçor."
-
-    - category: GINEBRA
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
-      items:
-        - name: Macaronesian
-          price: 7.0
-          description: "Una ginebra amb botànics únics."
-        - name: Suntory Roku
-          price: 8.0
-          description: "Una ginebra japonesa amb sis botànics."
-        - name: Seagram's
-          price: 7.0
-          description: "Una ginebra clàssica i suau."
-        - name: Mombasa Club London
-          price: 8.0
-          description: "Una ginebra amb un toc exòtic."
-        - name: Nordés
+        - name: 
+            ca: "Mezcal 400 Conejos"
+            en: "Mezcal 400 Conejos"
+            es: "Mezcal 400 Conejos"
           price: 10.0
-          description: "Una ginebra gallega amb botànics atlàntics."
+          description: 
+            ca: "Un mezcal artesanal amb un marcat sabor fumat."
+            en: "An artisanal mezcal with a pronounced smoky flavor."
+            es: "Un mezcal artesanal con un marcado sabor ahumado."
 
-    - category: WHISKY
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
-      items:
-        - name: Glenmorangie
-          price: 9.0
-          description: "Un whisky escocès suau i aromàtic."
-        - name: Johnnie Walker Black Label
-          price: 8.0
-          description: "Un whisky escocès amb cos."
-
-    - category: VODKA
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
-      items:
-        - name: Grey Goose
-          price: 9.0
-          description: "Una vodka francesa de qualitat superior."
-        - name: Belvedere
-          price: 9.0
-          description: "Una vodka polonesa de luxe."
-        - name: Ukiyo Japanese Rice
-          price: 8.0
-          description: "Una vodka japonesa suau."
-
-    - category: ROM
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
-      items:
-        - name: Don Papa Baroko
-          price: 9.0
-          description: "Un rom filipí amb notes dolces."
-        - name: Demon's Share 12 Años
-          price: 13.0
-          description: "Un rom envellit amb caràcter."
-        - name: Brugal
-          price: 6.0
-          description: "Un rom dominicà clàssic."
-
-    - category: TEQUILA & CO
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
-      items:
-        - name: Herradura Reposado
-          price: 9.0
-          description: "Un tequila suau i envellit."
-        - name: Jimador
-          price: 6.0
-          description: "Un tequila envellit amb notes de canyella."
-        - name: Mezcal 400 Conejos
-          price: 10.0
-          description: "Un mezcal amb un sabor fumat."
-        - name: Pisco Demonio de los Andes
+        - name: 
+            ca: "Pisco Demonio de los Andes"
+            en: "Pisco Demonio de los Andes"
+            es: "Pisco Demonio de los Andes"
           price: 7.0
-          description: "Un pisco peruà suau."
+          description: 
+            ca: "Un pisco peruà suau i aromàtic."
+            en: "A smooth and aromatic Peruvian pisco."
+            es: "Un pisco peruano suave y aromático."
 
-    - category: LICORS
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
+    - category: 
+        ca: "LICORS"
+        en: "LIQUEURS"
+        es: "LICORES"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
       items:
-        - name: Fernet Branca
+        - name: 
+            ca: "Fernet Branca"
+            en: "Fernet Branca"
+            es: "Fernet Branca"
           price: 5.5
-          description: "Un licor amarg amb herbes."
-        - name: Malvasia Hospital de Sitges
+          description: 
+            ca: "Un licor amarg i intens elaborat amb herbes aromàtiques."
+            en: "A bitter and intense liqueur made with aromatic herbs."
+            es: "Un licor amargo e intenso elaborado con hierbas aromáticas."
+
+        - name: 
+            ca: "Malvasia Hospital de Sitges"
+            en: "Malvasia Hospital de Sitges"
+            es: "Malvasia Hospital de Sitges"
           price: 7.0
-          description: "Un vi dolç català."
-        - name: Moscatell Hospital de Sitges
+          description: 
+            ca: "Un vi dolç català amb notes florals i afruitades."
+            en: "A Catalan sweet wine with floral and fruity notes."
+            es: "Un vino dulce catalán con notas florales y afrutadas."
+
+        - name: 
+            ca: "Moscatell Hospital de Sitges"
+            en: "Moscatell Hospital de Sitges"
+            es: "Moscatell Hospital de Sitges"
           price: 5.5
-          description: "Un vi dolç i aromàtic."
-        - name: Ratafia dels Raiers
+          description: 
+            ca: "Un vi dolç i aromàtic ideal per a postres."
+            en: "A sweet and aromatic wine, perfect for desserts."
+            es: "Un vino dulce y aromático, perfecto para postres."
+
+        - name: 
+            ca: "Ratafia dels Raiers"
+            en: "Ratafia dels Raiers"
+            es: "Ratafia dels Raiers"
           price: 6.0
-          description: "Un licor català amb nous verdes."
-        - name: Sambuca Marcati
+          description: 
+            ca: "Un licor tradicional català amb nous verdes i herbes."
+            en: "A traditional Catalan liqueur with green walnuts and herbs."
+            es: "Un licor tradicional catalán con nueces verdes y hierbas."
+
+        - name: 
+            ca: "Sambuca Marcati"
+            en: "Sambuca Marcati"
+            es: "Sambuca Marcati"
           price: 5.0
-          description: "Un licor italià amb anís."
-        - name: Orujo
+          description: 
+            ca: "Un licor italià dolç amb un intens sabor d'anís."
+            en: "A sweet Italian liqueur with an intense anise flavor."
+            es: "Un licor italiano dulce con un intenso sabor a anís."
+
+        - name: 
+            ca: "Orujo"
+            en: "Orujo"
+            es: "Orujo"
           price: 6.0
-          description: "Un aiguardent espanyol amb caràcter."
-        - name: Amaro di Saronno
+          description: 
+            ca: "Un aiguardent tradicional espanyol amb caràcter fort."
+            en: "A traditional Spanish spirit with a strong character."
+            es: "Un aguardiente tradicional español con un carácter fuerte."
+
+        - name: 
+            ca: "Amaro di Saronno"
+            en: "Amaro di Saronno"
+            es: "Amaro di Saronno"
           price: 5.0
-          description: "Un licor italià amb ametlles."
-        - name: Campari
+          description: 
+            ca: "Un licor italià d'ametlles amb un toc dolç i amarg."
+            en: "An Italian almond liqueur with a sweet and bitter touch."
+            es: "Un licor italiano de almendras con un toque dulce y amargo."
+
+        - name: 
+            ca: "Campari"
+            en: "Campari"
+            es: "Campari"
           price: 6.0
-          description: "Un aperitiu italià amb un sabor amarg."
-        - name: Baileys
+          description: 
+            ca: "Un aperitiu italià famós pel seu gust amarg i refrescant."
+            en: "A famous Italian aperitif known for its bitter and refreshing taste."
+            es: "Un famoso aperitivo italiano conocido por su sabor amargo y refrescante."
+
+        - name: 
+            ca: "Baileys"
+            en: "Baileys"
+            es: "Baileys"
           price: 5.0
-          description: "Un licor irlandès amb crema."
-        - name: Aperol
+          description: 
+            ca: "Un licor irlandès cremós amb whisky i crema de llet."
+            en: "A creamy Irish liqueur made with whiskey and cream."
+            es: "Un licor irlandés cremoso hecho con whisky y crema."
+
+        - name: 
+            ca: "Aperol"
+            en: "Aperol"
+            es: "Aperol"
           price: 5.0
-          description: "Un aperitiu italià amb un sabor dolç i amarg."
+          description: 
+            ca: "Un aperitiu italià de sabor dolç i lleugerament amarg."
+            en: "An Italian aperitif with a sweet and slightly bitter taste."
+            es: "Un aperitivo italiano con un sabor dulce y ligeramente amargo."
 
-    - category: CÒCTELS
-      menu_area: "CÒCTELS I ESPIRITUOSOS"
+
+    - category: 
+        ca: "CÒCTELS"
+        en: "COCKTAILS"
+        es: "COCTELES"
+      menu_area: "COCTELS_I_ESPIRITUOSOS"
       items:
-        - name: Mojito
-          price: 8.5
-          description: "Un còctel refrescant amb menta i llima."
-        - name: Moscow Mule
-          price: 8.5
-          description: "Un còctel amb vodka, gingebre i llima."
-        - name: Bloody Mary
-          price: 8.5
-          description: "Un còctel amb vodka i suc de tomàquet."
-        - name: Pisco/Amaretto Sour
-          price: 8.5
-          description: "Un còctel amb pisco o amaretto."
-        - name: Aperol/Campari Spritz
-          price: 6.5
-          description: "Un còctel amb Aperol o Campari."
-        - name: Mimosa
-          price: 5.5
-          description: "Un còctel amb suc de taronja i cava."
-        - name: Virgin Mary
-          price: 7.5
-          description: "Una versió sense alcohol del Bloody Mary."
-        - name: Virgin Mojito
-          price: 7.5
-          description: "Una versió sense alcohol del Mojito."
+      - name: 
+          ca: "Mojito"
+          en: "Mojito"
+          es: "Mojito"
+        price: 8.5
+        description: 
+          ca: "Un còctel cubà refrescant amb menta fresca, llima i rom."
+          en: "A refreshing Cuban cocktail with fresh mint, lime, and rum."
+          es: "Un cóctel cubano refrescante con menta fresca, lima y ron."
 
-    - category: BLANCS NATURALS
+      - name: 
+          ca: "Moscow Mule"
+          en: "Moscow Mule"
+          es: "Moscow Mule"
+        price: 8.5
+        description: 
+          ca: "Un còctel vibrant amb vodka, cervesa de gingebre i llima."
+          en: "A vibrant cocktail with vodka, ginger beer, and lime."
+          es: "Un cóctel vibrante con vodka, cerveza de jengibre y lima."
+
+      - name: 
+          ca: "Bloody Mary"
+          en: "Bloody Mary"
+          es: "Bloody Mary"
+        price: 8.5
+        description: 
+          ca: "Un còctel clàssic amb vodka, suc de tomàquet i espècies."
+          en: "A classic cocktail with vodka, tomato juice, and spices."
+          es: "Un cóctel clásico con vodka, jugo de tomate y especias."
+
+      - name: 
+          ca: "Pisco/Amaretto Sour"
+          en: "Pisco/Amaretto Sour"
+          es: "Pisco/Amaretto Sour"
+        price: 8.5
+        description: 
+          ca: "Un còctel agredolç elaborat amb pisco o amaretto."
+          en: "A sweet and sour cocktail made with pisco or amaretto."
+          es: "Un cóctel agridulce elaborado con pisco o amaretto."
+
+      - name: 
+          ca: "Aperol/Campari Spritz"
+          en: "Aperol/Campari Spritz"
+          es: "Aperol/Campari Spritz"
+        price: 6.5
+        description: 
+          ca: "Un aperitiu italià refrescant amb Aperol o Campari, cava i soda."
+          en: "A refreshing Italian aperitif with Aperol or Campari, sparkling wine, and soda."
+          es: "Un aperitivo italiano refrescante con Aperol o Campari, cava y soda."
+
+      - name: 
+          ca: "Mimosa"
+          en: "Mimosa"
+          es: "Mimosa"
+        price: 5.5
+        description: 
+          ca: "Un còctel lleuger amb suc de taronja natural i cava."
+          en: "A light cocktail with fresh orange juice and sparkling wine."
+          es: "Un cóctel ligero con jugo de naranja natural y cava."
+
+      - name: 
+          ca: "Virgin Mary"
+          en: "Virgin Mary"
+          es: "Virgin Mary"
+        price: 7.5
+        description: 
+          ca: "La versió sense alcohol del Bloody Mary, intensa i refrescant."
+          en: "The non-alcoholic version of the Bloody Mary, intense and refreshing."
+          es: "La versión sin alcohol del Bloody Mary, intensa y refrescante."
+
+      - name: 
+          ca: "Virgin Mojito"
+          en: "Virgin Mojito"
+          es: "Virgin Mojito"
+        price: 7.5
+        description: 
+          ca: "La versió sense alcohol del Mojito, fresca i lleugera."
+          en: "The non-alcoholic version of the Mojito, fresh and light."
+          es: "La versión sin alcohol del Mojito, fresca y ligera."
+
+
+    - category: 
+        ca: "BLANCS NATURALS"
+        en: "WHITE NATURALS"
+        es: "BLANCOS NATURALES"
       menu_area: "VINS"
       items:
-        - name: Bivac - Xarel.lo i Viognier - Penedès
-          price_glass: 4.5
-          price_bottle: 22.0
-          description: "Fresc i equilibrat, amb aromes de fruita blanca i un toc floral. Ideal per aperitius o plats lleugers."
-        - name: La Peona Brisat - Xarel·lo Vermell - Orange Blanc Penedès
-          price_bottle: 33.0
-          description: "Vi brisat amb cos i estructura, notes cítriques i una subtil tanicitat que el fa perfecte per maridatges amb formatges i plats especiats."
-        - name: Picapedra - Parellada - Conca de Barberà
-          price_bottle: 27.0
-          description: "Elegant i mineral, amb una frescor vibrant i notes de poma verda i herbes mediterrànies."
+      - name: 
+          ca: "Bivac - Xarel·lo i Viognier - Penedès"
+          en: "Bivac - Xarel·lo and Viognier - Penedès"
+          es: "Bivac - Xarel·lo y Viognier - Penedès"
+        price_glass: 4.5
+        price_bottle: 22.0
+        description: 
+          ca: "Vi fresc i equilibrat, amb aromes de fruita blanca i un toc floral. Ideal per a aperitius o plats lleugers."
+          en: "A fresh and balanced wine, with aromas of white fruit and a floral touch. Ideal for appetizers or light dishes."
+          es: "Un vino fresco y equilibrado, con aromas de fruta blanca y un toque floral. Ideal para aperitivos o platos ligeros."
 
-    - category: BLANCS
+      - name: 
+          ca: "La Peona Brisat - Xarel·lo Vermell - Orange Blanc Penedès"
+          en: "La Peona Brisat - Xarel·lo Vermell - Orange Blanc Penedès"
+          es: "La Peona Brisat - Xarel·lo Vermell - Orange Blanc Penedès"
+        price_bottle: 33.0
+        description: 
+          ca: "Vi brisat amb cos i estructura, notes cítriques i una subtil tanicitat, perfecte per maridar amb formatges i plats especiats."
+          en: "A brisat wine with body and structure, citrus notes and a subtle tannin, perfect for pairing with cheeses and spicy dishes."
+          es: "Un vino brisado con cuerpo y estructura, notas cítricas y una sutil tanicidad, perfecto para maridar con quesos y platos especiados."
+
+      - name: 
+          ca: "Picapedra - Parellada - Conca de Barberà"
+          en: "Picapedra - Parellada - Conca de Barberà"
+          es: "Picapedra - Parellada - Conca de Barberà"
+        price_bottle: 27.0
+        description: 
+          ca: "Elegant i mineral, amb una frescor vibrant i notes de poma verda i herbes mediterrànies."
+          en: "Elegant and mineral, with vibrant freshness and notes of green apple and Mediterranean herbs."
+          es: "Elegante y mineral, con una frescura vibrante y notas de manzana verde y hierbas mediterráneas."
+
+
+    - category: 
+        ca: "BLANCS"
+        en: "WHITES"
+        es: "BLANCOS"
       menu_area: "VINS"
       items:
-        - name: Blanc de la Casa OZÓ - Terra Alta - Vi Solidari
-          price_glass: 3.0
-          price_bottle: 12.0
-          description: "Un vi blanc jove i afruitat, amb tocs de préssec i flors blanques. Molt fàcil de beure."
-        - name: Vividors del Vi Blanc - Xarel·lo i Malvasia de Sitges
-          price_glass: 4.5
-          price_bottle: 23.0
-          description: "Aromàtic i fresc, amb notes de flors, albercoc i un toc salí. Perfecte per mariscs i arrossos."
-        - name: Secrets del Mar - Garnatxa Blanca - Terra Alta
-          price_bottle: 22.0
-          description: "Cítric i untuós, amb records de fruita madura i un final llarg i sedós."
-        - name: 3 Pueblos - Verdejo - Rueda
-          price_bottle: 22.0
-          description: "Vi fresc i expressiu, amb aromes de fonoll, préssec i un toc de pell de llima."
+      - name: 
+          ca: "Blanc de la Casa OZÓ - Terra Alta - Vi Solidari"
+          en: "Blanc de la Casa OZÓ - Terra Alta - Solidarity Wine"
+          es: "Blanc de la Casa OZÓ - Terra Alta - Vino Solidario"
+        price_glass: 3.0
+        price_bottle: 12.0
+        description: 
+          ca: "Vi blanc jove i afruitat, amb tocs de préssec i flors blanques. Molt fàcil de beure."
+          en: "A young and fruity white wine, with notes of peach and white flowers. Very easy to drink."
+          es: "Un vino blanco joven y afrutado, con toques de melocotón y flores blancas. Muy fácil de beber."
 
-    - category: ROSATS NATURALS
+      - name: 
+          ca: "Vividors del Vi Blanc - Xarel·lo i Malvasia de Sitges"
+          en: "Vividors del Vi Blanc - Xarel·lo and Malvasia de Sitges"
+          es: "Vividors del Vi Blanc - Xarel·lo y Malvasía de Sitges"
+        price_glass: 4.5
+        price_bottle: 23.0
+        description: 
+          ca: "Aromàtic i fresc, amb notes de flors, albercoc i un toc salí. Perfecte per a mariscs i arrossos."
+          en: "Aromatic and fresh, with notes of flowers, apricot and a salty touch. Perfect for seafood and rice dishes."
+          es: "Aromático y fresco, con notas de flores, albaricoque y un toque salado. Perfecto para mariscos y arroces."
+
+      - name: 
+          ca: "Secrets del Mar - Garnatxa Blanca - Terra Alta"
+          en: "Secrets del Mar - Garnatxa Blanca - Terra Alta"
+          es: "Secrets del Mar - Garnatxa Blanca - Terra Alta"
+        price_bottle: 22.0
+        description: 
+          ca: "Cítric i untuós, amb records de fruita madura i un final llarg i sedós."
+          en: "Citrusy and smooth, with hints of ripe fruit and a long, silky finish."
+          es: "Cítrico y untuoso, con recuerdos de fruta madura y un final largo y sedoso."
+
+      - name: 
+          ca: "3 Pueblos - Verdejo - Rueda"
+          en: "3 Pueblos - Verdejo - Rueda"
+          es: "3 Pueblos - Verdejo - Rueda"
+        price_bottle: 22.0
+        description: 
+          ca: "Vi fresc i expressiu, amb aromes de fonoll, préssec i un toc de pell de llima."
+          en: "Fresh and expressive wine, with aromas of fennel, peach and a hint of lime peel."
+          es: "Vino fresco y expresivo, con aromas de hinojo, melocotón y un toque de piel de lima."
+
+
+    - category: 
+        ca: "ROSATS NATURALS"
+        en: "ROSE NATURALS"
+        es: "ROSADOS NATURALES"
       menu_area: "VINS"
       items:
-        - name: La Solana Llarga 2020 - Trepat - Conca de Barberà
-          price_glass: 5.0
-          price_bottle: 27.0
-          description: "Vi rosat elegant i fi, amb notes de maduixa fresca i un fons especiat subtil."
-        - name: Trencacloscues - Syrah - Montsant
-          price_bottle: 29.0
-          description: "Rosat intens i estructurat, amb fruita vermella madura i un toc balsàmic que el fa molt gastronòmic."
+      - name: 
+          ca: "La Solana Llarga 2020 - Trepat - Conca de Barberà"
+          en: "La Solana Llarga 2020 - Trepat - Conca de Barberà"
+          es: "La Solana Llarga 2020 - Trepat - Conca de Barberà"
+        price_glass: 5.0
+        price_bottle: 27.0
+        description: 
+          ca: "Vi rosat elegant i fi, amb notes de maduixa fresca i un fons especiat subtil."
+          en: "An elegant and delicate rosé wine, with notes of fresh strawberry and a subtle spicy background."
+          es: "Vino rosado elegante y delicado, con notas de fresa fresca y un fondo especiado sutil."
 
-    - category: NEGRES NATURALS
+      - name: 
+          ca: "Trencacloscues - Syrah - Montsant"
+          en: "Trencacloscues - Syrah - Montsant"
+          es: "Trencacloscues - Syrah - Montsant"
+        price_bottle: 29.0
+        description: 
+          ca: "Rosat intens i estructurat, amb fruita vermella madura i un toc balsàmic que el fa molt gastronòmic."
+          en: "An intense and structured rosé wine, with ripe red fruit and a balsamic hint that makes it highly gastronomic."
+          es: "Vino rosado intenso y estructurado, con fruta roja madura y un toque balsámico que lo hace muy gastronómico."
+
+
+    - category: 
+        ca: "NEGRES NATURALS"
+        en: "BLACK NATURALS"
+        es: "NEGROS NATURALES"
       menu_area: "VINS"
       items:
-        - name: Alosa - Garnatxa Negra - Fora D.O.
+        - name: 
+            ca: "Alosa - Garnatxa Negra - Fora D.O."
+            en: "Alosa - Garnatxa Negra - Fora D.O."
+            es: "Alosa - Garnatxa Negra - Fora D.O."
           price_glass: 4.7
           price_bottle: 25.0
-          description: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
-        - name: Crossos - Garnatxa, Cariñena i Syrah - Priorat
+          description: 
+            ca: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
+            en: "Fresh and vibrant, with notes of red fruits, spices and a slight minerality."
+            es: "Fresco y vibrante, con notas de fruta roja, especias y una leve mineralidad."
+        - name: 
+            ca: "Crossos - Garnatxa, Cariñena i Syrah - Priorat"
+            en: "Crossos - Garnatxa, Cariñena i Syrah - Priorat"
+            es: "Crossos - Garnatxa, Cariñena i Syrah - Priorat"
           price_bottle: 40.0
-          description: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
-        - name: Coca i Fitó Natura - Garnatxa Negra - Montsant
+          description: 
+            ca: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
+            en: "Complex and deep, with notes of ripe plums, raisins and a roasted finish."
+            es: "Complejo y profundo, con notas de ciruelas maduras, pasas y un toque tostado."
+        - name: 
+            ca: "Coca i Fitó Natura - Garnatxa Negra - Montsant"
+            en: "Coca i Fitó Natura - Garnatxa Negra - Montsant"
+            es: "Coca i Fitó Natura - Garnatxa Negra - Montsant"
           price_glass: 4.5
           price_bottle: 23.0
-          description: "Rodó i equilibrat, amb fruita negra madura, espècies dolces i una frescor sorprenent."
+          description: 
+            ca: "Rodó i equilibrat, amb fruita negra madura, espècies dolces i una frescor sorprenent."
+            en: "Rodó and balanced, with ripe black fruit, sweet spices and a surprising freshness."
+            es: "Rodado y equilibrado, con fruta negra madura, especias dulces y una frescura sorprendente."
 
-    - category: NEGRES
+    - category: 
+        ca: "NEGRES"
+        en: "BLACKS"
+        es: "NEGROS"
       menu_area: "VINS"
       items:
-        - name: Negre de la Casa OZÓ - Terra Alta - Vi Solidari
-          price_glass: 3.0
-          price_bottle: 12.0
-          description: "Vi negre jove i afruitat, amb records de cirera i un toc lleugerament especiat."
-        - name: Més que Paraules - Cabernet Sauvignon i Merlot - Pla de Bages
-          price_glass: 5.0
-          price_bottle: 27.0
-          description: "Elegant i estructurat, amb notes de fruita negra, pebre i un final llarg i sedós."
-        - name: Mono Coco - Monastrell - Empordà
-          price_bottle: 28.0
-          description: "Vi intens i expressiu, amb aromes de mores, espècies i un fons lleugerament fumat."
+      - name: 
+          ca: "Alosa - Garnatxa Negra - Fora D.O."
+          en: "Alosa - Garnatxa Negra - Outside D.O."
+          es: "Alosa - Garnatxa Negra - Fuera D.O."
+        price_glass: 4.7
+        price_bottle: 25.0
+        description: 
+          ca: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
+          en: "Fresh and vibrant Grenache, with aromas of red fruits, spices, and a light minerality."
+          es: "Garnacha fresca y vibrante, con aromas de frutas rojas, especias y una leve mineralidad."
 
-    - category: CAVA
+      - name: 
+          ca: "Crossos - Garnatxa, Cariñena i Syrah - Priorat"
+          en: "Crossos - Grenache, Carignan and Syrah - Priorat"
+          es: "Crossos - Garnacha, Cariñena y Syrah - Priorat"
+        price_bottle: 40.0
+        description: 
+          ca: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
+          en: "A complex and deep wine, with notes of ripe plums, liquorice, and a roasted hint."
+          es: "Vino complejo y profundo, con notas de ciruelas maduras, regaliz y un toque tostado."
+
+      - name: 
+          ca: "Coca i Fitó Natura - Garnatxa Negra - Montsant"
+          en: "Coca i Fitó Natura - Grenache - Montsant"
+          es: "Coca i Fitó Natura - Garnacha Negra - Montsant"
+        price_glass: 4.5
+        price_bottle: 23.0
+        description: 
+          ca: "Rodó i equilibrat, amb fruita negra madura, espècies dolces i una frescor sorprenent."
+          en: "Round and balanced, with ripe black fruit, sweet spices, and a surprising freshness."
+          es: "Redondo y equilibrado, con fruta negra madura, especias dulces y una frescura sorprendente."
+
+
+    - category: 
+        ca: "CAVA"
+        en: "CAVA"
+        es: "CAVA"
       menu_area: "VINS"
       items:
-        - name: Valldolina Reserva BN - Coupage Tradicional i Chardonnay
+        - name: 
+            ca: "Valldolina Reserva BN - Coupage Tradicional i Chardonnay"
+            en: "Valldolina Reserva BN - Coupage Tradicional i Chardonnay"
+            es: "Valldolina Reserva BN - Coupage Tradicional i Chardonnay"
           price_bottle: 28
-          description: "Cava elegant i fresc, amb bombolla fina i aromes de poma, brioix i un toc cítric."
+          description: 
+            ca: "Cava elegant i fresc, amb bombolla fina i aromes de poma, brioix i un toc cítric."
+            en: "Elegant and fresh, with fine bubbles and notes of apple, brioche and a citrus touch."
+            es: "Elegante y fresco, con burbujas finas y notas de manzana, brioche y un toque cítrico."
 
-    - category: ALTRES NATURALS
+    - category: 
+        ca: "ALTRES NATURALS"
+        en: "OTHER NATURALS"
+        es: "OTROS NATURALES"
       menu_area: "VINS"
       items:
-        - name: Vermut Xalar Artesanal - Garnatxa Blanca
-          price_glass: 5.5
-          description: "Vermouth artesanal amb notes d'herbes aromàtiques, pell de taronja i un final suau i equilibrat."
-        - name: Vinyes del Ter Dolç - Garnatxa Negra i Cabernet
-          price_glass: 6.5
-          description: "Vi dolç natural, amb intensos sabors de fruita confitada, xocolata negra i un toc de nou moscada."
+      - name: 
+          ca: "Vermut Xalar Artesanal - Garnatxa Blanca"
+          en: "Xalar Artisanal Vermouth - White Grenache"
+          es: "Vermut Xalar Artesanal - Garnacha Blanca"
+        price_glass: 5.5
+        description: 
+          ca: "Vermut artesanal amb notes d'herbes aromàtiques, pell de taronja i un final suau i equilibrat."
+          en: "Artisanal vermouth with notes of aromatic herbs, orange peel, and a smooth, balanced finish."
+          es: "Vermut artesanal con notas de hierbas aromáticas, cáscara de naranja y un final suave y equilibrado."
+
+      - name: 
+          ca: "Vinyes del Ter Dolç - Garnatxa Negra i Cabernet"
+          en: "Vinyes del Ter Dolç - Red Grenache and Cabernet"
+          es: "Vinyes del Ter Dolç - Garnacha Negra y Cabernet"
+        price_glass: 6.5
+        description: 
+          ca: "Vi dolç natural, amb intensos sabors de fruita confitada, xocolata negra i un toc de nou moscada."
+          en: "Natural sweet wine, with intense flavors of candied fruit, dark chocolate, and a hint of nutmeg."
+          es: "Vino dulce natural, con intensos sabores de fruta confitada, chocolate negro y un toque de nuez moscada."
+

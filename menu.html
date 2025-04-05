@@ -8,7 +8,7 @@ title: Menú
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h1 class="text-3xl md:text-4xl font-serif font-bold mb-6">Menú Complet</h1>
       <p class="text-lg text-gray-600 mb-8">
-        Descobreix la nostra selecció completa de plats i begudes.
+        {{ site.data.menu.description.ca }}
       </p>
     </div>
     
@@ -16,10 +16,12 @@ title: Menú
     {% assign esmorzars = site.data.menu.menu.items | where: "menu_area", "ESMORZARS" %}
     {% if esmorzars.size > 0 %}
       <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">ESMORZARS</h2>
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.ESMORZARS.ca }}
+        </h2>
         {% for category in esmorzars %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category | capitalize }}</h3>
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -27,10 +29,7 @@ title: Menú
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
                   <div class="flex justify-between items-start">
-                    {% assign words = item.name | split: " " %}
-                    {% assign capitalized_name = words | first | capitalize %}
-                    {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
-                    <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
                         <div class="flex flex-col">
@@ -47,7 +46,7 @@ title: Menú
                     </div>
                   </div>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -58,13 +57,15 @@ title: Menú
     {% endif %}
 
     <!-- PER COMPARTIR -->
-    {% assign per_compartir = site.data.menu.menu.items | where: "menu_area", "PER COMPARTIR" %}
+    {% assign per_compartir = site.data.menu.menu.items | where: "menu_area", "PER_COMPARTIR" %}
     {% if per_compartir.size > 0 %}
       <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">PER COMPARTIR</h2>
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.PER_COMPARTIR.ca }}
+        </h2>
         {% for category in per_compartir %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category | capitalize }}</h3>
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -72,10 +73,7 @@ title: Menú
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
                   <div class="flex justify-between items-start">
-                    {% assign words = item.name | split: " " %}
-                    {% assign capitalized_name = words | first | capitalize %}
-                    {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
-                    <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
                         <div class="flex flex-col">
@@ -92,7 +90,7 @@ title: Menú
                     </div>
                   </div>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -103,13 +101,15 @@ title: Menú
     {% endif %}
 
     <!-- PLATS PRINCIPALS -->
-    {% assign plats_principals = site.data.menu.menu.items | where: "menu_area", "PLATS PRINCIPALS" %}
+    {% assign plats_principals = site.data.menu.menu.items | where: "menu_area", "PLATS_PRINCIPALS" %}
     {% if plats_principals.size > 0 %}
       <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">PLATS PRINCIPALS</h2>
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.PLATS_PRINCIPALS.ca }}
+        </h2>
         {% for category in plats_principals %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category | capitalize }}</h3>
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -117,10 +117,7 @@ title: Menú
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
                   <div class="flex justify-between items-start">
-                    {% assign words = item.name | split: " " %}
-                    {% assign capitalized_name = words | first | capitalize %}
-                    {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
-                    <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
                         <div class="flex flex-col">
@@ -137,7 +134,7 @@ title: Menú
                     </div>
                   </div>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -151,10 +148,12 @@ title: Menú
     {% assign vins = site.data.menu.menu.items | where: "menu_area", "VINS" %}
     {% if vins.size > 0 %}
       <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">VINS</h2>
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.VINS.ca }}
+        </h2>
         {% for category in vins %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category | capitalize }}</h3>
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -162,10 +161,7 @@ title: Menú
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
                   <div class="flex justify-between items-start">
-                    {% assign words = item.name | split: " " %}
-                    {% assign capitalized_name = words | first | capitalize %}
-                    {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
-                    <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
                         <div class="flex flex-col">
@@ -182,7 +178,7 @@ title: Menú
                     </div>
                   </div>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -193,13 +189,15 @@ title: Menú
     {% endif %}
 
     <!-- CÒCTELS I ESPIRITUOSOS -->
-    {% assign coctels = site.data.menu.menu.items | where: "menu_area", "CÒCTELS I ESPIRITUOSOS" %}
+    {% assign coctels = site.data.menu.menu.items | where: "menu_area", "COCTELS_I_ESPIRITUOSOS" %}
     {% if coctels.size > 0 %}
       <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">CÒCTELS I ESPIRITUOSOS</h2>
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.COCTELS_I_ESPIRITUOSOS.ca }}
+        </h2>
         {% for category in coctels %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category | capitalize }}</h3>
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -207,10 +205,7 @@ title: Menú
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
                   <div class="flex justify-between items-start">
-                    {% assign words = item.name | split: " " %}
-                    {% assign capitalized_name = words | first | capitalize %}
-                    {% assign rest_words = words | slice: 1, words.size | join: " " | downcase %}
-                    <h3 class="text-lg font-medium">{{ capitalized_name }} {{ rest_words }}</h3>
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
                         <div class="flex flex-col">
@@ -227,7 +222,7 @@ title: Menú
                     </div>
                   </div>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-1">{{ item.description | capitalize }}</p>
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}

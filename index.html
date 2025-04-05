@@ -22,6 +22,30 @@ layout: default
   </div>
 </section>
 
+<!-- Plat del dia Section -->
+<section id="plat-dia" class="relative -mt-32 mb-16 hidden">
+  <div class="container">
+    <div class="bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-6 max-w-2xl mx-auto transform hover:scale-102 transition-transform duration-300">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h2 class="text-2xl font-bold text-brand">Plat del dia</h2>
+          <p class="text-sm text-gray-600" id="plat-dia-date"></p>
+        </div>
+        <span class="bg-brand text-white px-3 py-1 rounded-full text-sm">Només per dinar</span>
+      </div>
+      <div class="space-y-4">
+        <div class="main-dish">
+          <h3 class="text-xl font-medium" id="main-dish-title"></h3>
+        </div>
+        <div class="side-dishes">
+          <p class="text-gray-600 text-sm mb-2">Tria un acompanyament:</p>
+          <ul class="grid grid-cols-2 gap-2" id="side-dishes-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- About Section -->
 <section id="about" class="section bg-white">
   <div class="container">
@@ -141,15 +165,25 @@ layout: default
     </div>
     
     <div class="max-w-4xl mx-auto">
-      <div class="rounded-lg overflow-hidden shadow-lg">
-        <iframe 
-          src="https://booking02.hiopos.com/booking?data=iV2d94WanlmcvZSZzxWYm1jbp1GZhZCOzETN0MTPklEcvh2c"
-          width="100%"
-          height="700"
-          frameborder="0"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+      <div class="rounded-lg overflow-hidden shadow-lg relative" id="booking-container">
+        <div id="booking-placeholder" class="bg-gray-50 p-8 text-center">
+          <h3 class="text-xl font-bold mb-4">Reserva una taula</h3>
+          <p class="text-gray-600 mb-6">Fes clic per accedir al sistema de reserves</p>
+          <button id="load-booking" class="btn btn-primary">Obrir reserva</button>
+        </div>
+        <div id="booking-frame-container" class="hidden">
+          <iframe 
+            src="https://booking02.hiopos.com/booking?data=iV2d94WanlmcvZSZzxWYm1jbp1GZhZCOzETN0MTPklEcvh2c"
+            width="100%"
+            height="700"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            tabindex="-1"
+            aria-hidden="true"
+            id="booking-iframe">
+          </iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -170,66 +204,141 @@ layout: default
 </section>
 
 <script>
-  console.log('Script starting...');
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    console.log('DOM Content Loaded');
-    
-    // Get menu data
-    const menuData = {{ site.data.menu.menu.items | jsonify }};
-    
-    // Get dishes from ESMORZARS
-    const dishes = menuData
-      .filter(section => section.menu_area === "ESMORZARS")
-      .filter(section => ["TORRADES I ENTREPANS", "OUS", "DOLÇ"].includes(section.category))
-      .flatMap(section => section.items || []);
-    
-    // Get drinks from CÒCTELS I ESPIRITUOSOS
-    const drinks = menuData
-      .filter(section => section.menu_area === "CÒCTELS I ESPIRITUOSOS")
-      .filter(section => ["CÒCTELS", "LICORS", "TEQUILA & CO"].includes(section.category))
-      .flatMap(section => section.items || []);
-    
-    // Function to get random items
-    function getRandomItems(items, count) {
-      if (!items || items.length === 0) return [];
-      const shuffled = [...items].sort(() => 0.5 - Math.random());
-      return shuffled.slice(0, Math.min(count, items.length));
+  document.addEventListener('DOMContentLoaded', function() {
+    // Plat del dia logic
+    function checkPlatDia() {
+      const platDiaSection = document.getElementById('plat-dia');
+      const platDiaDate = document.getElementById('plat-dia-date');
+      
+      {% if site.data.platdia and site.data.platdia != empty %}
+        const platDiaData = {
+          {% for day in site.data.platdia %}
+            "{{ day[0] }}": {
+              main: "{{ day[1].main }}",
+              sides: {{ day[1].sides | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        };
+
+        // Obtenir el dia actual
+        const today = new Date();
+        const days = ['diumenge', 'dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'dissabte'];
+        const currentDay = days[today.getDay()];
+        
+        // Obtenir la data actual
+        const dayNames = ['Diumenge', 'Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres', 'Dissabte'];
+        const dayName = dayNames[today.getDay()];
+        const date = today.toLocaleDateString('ca-ES', { 
+          day: '2-digit', 
+          month: '2-digit', 
+          year: 'numeric' 
+        });
+        
+        // Mostrar la data
+        platDiaDate.textContent = `${dayName} dia ${date}`;
+
+        // Comprovar si estem dins de l'horari (8:30 - 16:30)
+        const currentHour = today.getHours();
+        const currentMinute = today.getMinutes();
+        const currentTime = currentHour * 60 + currentMinute;
+        const startTime = 8 * 60 + 30;  // 8:30
+        const endTime = 16 * 60 + 30;   // 16:30
+
+        if (platDiaData[currentDay] && currentTime >= startTime && currentTime <= endTime) {
+          const mainDishTitle = document.getElementById('main-dish-title');
+          const sideDishList = document.getElementById('side-dishes-list');
+          
+          mainDishTitle.textContent = platDiaData[currentDay].main;
+          sideDishList.innerHTML = platDiaData[currentDay].sides.map(side => 
+            `<li class="bg-gray-50 p-2 rounded text-sm">${side}</li>`
+          ).join('');
+          
+          platDiaSection.classList.remove('hidden');
+        } else {
+          platDiaSection.classList.add('hidden');
+        }
+      {% else %}
+        platDiaSection.classList.add('hidden');
+      {% endif %}
     }
-    
-    // Get random selections
-    const randomDishes = getRandomItems(dishes, 3);
-    const randomDrinks = getRandomItems(drinks, 3);
-    
-    // Add dishes to the list
-    const dishesList = document.getElementById("dishes-list");
-    if (dishesList && randomDishes.length > 0) {
-      dishesList.innerHTML = ''; // Clear test item
-      randomDishes.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `
-          <div class="mb-2">
-            <h4 class="text-xl font-medium">${item.name}</h4>
-            ${item.description ? `<p class="text-gray-600 mt-1">${item.description}</p>` : ''}
-          </div>
+
+    // Comprova inicialment i cada minut
+    checkPlatDia();
+    setInterval(checkPlatDia, 60000);
+
+    // Existing random dishes and drinks logic
+    function getRandomItems(items, count) {
+      const shuffled = items.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+
+    // Obtener todos los platos (excluyendo bebidas)
+    const allDishes = [];
+    {% for section in site.data.menu.menu.items %}
+      {% if section.menu_area != "VINS" and section.menu_area != "COCTELS_I_ESPIRITUOSOS" %}
+        {% for item in section.items %}
+          allDishes.push({
+            name: "{{ item.name.ca | escape }}",
+            description: "{{ item.description.ca | escape }}"
+          });
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    // Obtener todas las bebidas
+    const allDrinks = [];
+    {% for section in site.data.menu.menu.items %}
+      {% if section.menu_area == "VINS" or section.menu_area == "COCTELS_I_ESPIRITUOSOS" %}
+        {% for item in section.items %}
+          allDrinks.push({
+            name: "{{ item.name.ca | escape }}",
+            description: "{{ item.description.ca | escape }}"
+          });
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    // Seleccionar 3 platos y 3 bebidas aleatorios
+    const selectedDishes = getRandomItems(allDishes, 3);
+    const selectedDrinks = getRandomItems(allDrinks, 3);
+
+    // Mostrar los platos seleccionados
+    const dishesContainer = document.querySelector('#dishes-list');
+    if (dishesContainer) {
+      selectedDishes.forEach(dish => {
+        const dishElement = document.createElement('li');
+        dishElement.className = 'mb-6';
+        dishElement.innerHTML = `
+          <h3 class="text-lg font-medium">${dish.name}</h3>
+          ${dish.description ? `<p class="text-gray-600 mt-1">${dish.description}</p>` : ''}
         `;
-        dishesList.appendChild(listItem);
+        dishesContainer.appendChild(dishElement);
       });
     }
-    
-    // Add drinks to the list
-    const drinksList = document.getElementById("drinks-list");
-    if (drinksList && randomDrinks.length > 0) {
-      drinksList.innerHTML = ''; // Clear test item
-      randomDrinks.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `
-          <div class="mb-2">
-            <h4 class="text-xl font-medium">${item.name}</h4>
-            ${item.description ? `<p class="text-gray-600 mt-1">${item.description}</p>` : ''}
-          </div>
+
+    // Mostrar las bebidas seleccionadas
+    const drinksContainer = document.querySelector('#drinks-list');
+    if (drinksContainer) {
+      selectedDrinks.forEach(drink => {
+        const drinkElement = document.createElement('li');
+        drinkElement.className = 'mb-6';
+        drinkElement.innerHTML = `
+          <h3 class="text-lg font-medium">${drink.name}</h3>
+          ${drink.description ? `<p class="text-gray-600 mt-1">${drink.description}</p>` : ''}
         `;
-        drinksList.appendChild(listItem);
+        drinksContainer.appendChild(drinkElement);
+      });
+    }
+
+    // Booking iframe control
+    const bookingPlaceholder = document.getElementById('booking-placeholder');
+    const bookingFrameContainer = document.getElementById('booking-frame-container');
+    const loadBookingButton = document.getElementById('load-booking');
+
+    if (bookingPlaceholder && bookingFrameContainer && loadBookingButton) {
+      loadBookingButton.addEventListener('click', function() {
+        bookingPlaceholder.classList.add('hidden');
+        bookingFrameContainer.classList.remove('hidden');
       });
     }
   });

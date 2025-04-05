@@ -16,7 +16,7 @@ layout: null
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+            font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
         }
 
         .menu-page {
@@ -53,9 +53,10 @@ layout: null
             bottom: 5mm;
             left: 10mm;
             font-size: 28px;
-            font-weight: bold;
+            font-weight: 300;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
         }
 
         /* Cut guidelines */
@@ -156,7 +157,7 @@ layout: null
         }
 
         .menu-section h2 {
-            font-size: 10px;
+            font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -171,14 +172,14 @@ layout: null
         }
 
         .menu-item-name {
-            font-size: 8px;
+            font-size: 9px;
             font-weight: normal;
             display: inline;
             text-transform: uppercase;
         }
 
         .menu-item-price {
-            font-size: 8px;
+            font-size: 9px;
             font-weight: normal;
         }
 
@@ -194,32 +195,32 @@ layout: null
 
         /* Specific sizes for each menu page */
         #plat-del-dia .menu-content-wrapper {
-            width: 110mm;
+            width: 110mm;  /* Smallest size */
             height: 147mm;
         }
 
         #per-compartir .menu-content-wrapper {
-            width: 130mm;
+            width: 130mm;  /* +20mm from smallest */
             height: 177mm;
         }
 
         #plats-principals .menu-content-wrapper {
-            width: 150mm;
+            width: 150mm;  /* +40mm from smallest */
             height: 207mm;
         }
 
         #carta-vins .menu-content-wrapper {
-            width: 170mm;
+            width: 170mm;  /* +60mm from smallest */
             height: 237mm;
         }
 
         #coctels .menu-content-wrapper {
-            width: 190mm;
+            width: 190mm;  /* +80mm from smallest */
             height: 267mm;
         }
 
         #esmorzars .menu-content-wrapper {
-            width: 210mm;
+            width: 210mm;  /* +100mm from smallest (full A4) */
             height: 297mm;
         }
 
@@ -228,20 +229,23 @@ layout: null
             display: flex;
             justify-content: flex-end;
             margin-bottom: 8px;
-            gap: 15px;
-            margin-right: 45px;
+            gap: 25px;
+            margin-right: 45px;  /* Match with wine-prices margin */
+            padding-right: 0;    /* Remove padding */
         }
 
         .wine-header-item {
             display: flex;
             align-items: center;
-            font-size: 8px;
-            width: 20px;
             justify-content: center;
+            width: 25px;        /* Match exactly with wine-price width */
+            text-align: center; /* Ensure icon is centered */
         }
 
         .wine-header-item i {
-            font-size: 10px;
+            font-size: 14px;
+            color: #000;
+            display: inline-block;
         }
 
         .wine-item {
@@ -253,22 +257,23 @@ layout: null
         }
 
         .wine-item-name {
-            font-size: 8px;
+            font-size: 9px;
             font-weight: normal;
             text-transform: uppercase;
             flex: 1;
+            margin-right: 10px;
         }
 
         .wine-prices {
             display: flex;
-            gap: 15px;
+            gap: 25px;         /* Match with wine-header gap */
             text-align: right;
-            margin-right: 45px;
+            margin-right: 45px; /* Match with wine-header margin */
         }
 
         .wine-price {
-            font-size: 8px;
-            min-width: 20px;
+            font-size: 9px;
+            min-width: 25px;    /* Match with wine-header-item width */
             text-align: center;
         }
 
@@ -316,9 +321,46 @@ layout: null
             margin-bottom: 10mm;
             text-align: center;
         }
+
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            background-color: #4A5568;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .lang-btn.active {
+            background-color: #2D3748;
+        }
+
+        @media print {
+            .language-selector {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Add this at the top of the body -->
+    <div class="language-selector">
+        <button class="lang-btn" data-lang="ca">Català</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="es">Español</button>
+    </div>
+
     <!-- Add Download Button -->
     <button class="download-btn" onclick="downloadPDF()">Descarregar PDF</button>
 
@@ -339,22 +381,37 @@ layout: null
             <div class="menu-content">
                 <h2 class="restaurant-name">entrepreneur</h2>
                 <p class="restaurant-description">
-                    {{ site.data.menu.description_ca }}
+                    <span data-lang-content="ca">{{ site.data.menu.description.ca }}</span>
+                    <span data-lang-content="en">{{ site.data.menu.description.en }}</span>
+                    <span data-lang-content="es">{{ site.data.menu.description.es }}</span>
                 </p>
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PLAT DEL DIA" %}
+                    {% if section.menu_area == "PLAT_DEL_DIA" %}
                     <div class="menu-section">
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.ca }}</span>
+                            <span data-lang-content="en">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.en }}</span>
+                            <span data-lang-content="es">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                - {{ item.price }}
+                            </span>
                         </div>
                         {% endfor %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">PLAT DEL DIA</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.es }}</span>
+            </h1>
         </div>
     </div>
 
@@ -374,19 +431,32 @@ layout: null
             <!-- Menu content -->
             <div class="menu-content">
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PER COMPARTIR" %}
+                    {% if section.menu_area == "PER_COMPARTIR" %}
                     <div class="menu-section">
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                - {{ item.price }}
+                            </span>
                         </div>
                         {% endfor %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">PER COMPARTIR</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PER_COMPARTIR.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.PER_COMPARTIR.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.PER_COMPARTIR.es }}</span>
+            </h1>
         </div>
     </div>
 
@@ -406,19 +476,32 @@ layout: null
             <!-- Menu content -->
             <div class="menu-content">
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PLATS PRINCIPALS" %}
+                    {% if section.menu_area == "PLATS_PRINCIPALS" %}
                     <div class="menu-section">
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                {% if item.price %} - {{ item.price }}{% endif %}
+                            </span>
                         </div>
                         {% endfor %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">PLATS PRINCIPALS</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">PLATS PRINCIPALS</span>
+                <span data-lang-content="en">MAIN DISHES</span>
+                <span data-lang-content="es">PLATOS PRINCIPALES</span>
+            </h1>
         </div>
     </div>
 
@@ -437,23 +520,30 @@ layout: null
 
             <!-- Menu content -->
             <div class="menu-content">
+                <div class="wine-header">
+                    <div class="wine-header-item">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <div class="wine-header-item">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                </div>
+                
                 {% for section in site.data.menu.menu.items %}
                     {% if section.menu_area == "VINS" %}
                     <div class="menu-section">
-                        {% if forloop.first %}
-                        <div class="wine-header">
-                            <div class="wine-header-item">
-                                <i class="fas fa-wine-glass"></i>
-                            </div>
-                            <div class="wine-header-item">
-                                <i class="fas fa-wine-bottle"></i>
-                            </div>
-                        </div>
-                        {% endif %}
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="wine-item">
-                            <span class="wine-item-name">{{ item.name }}</span>
+                            <span class="wine-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                            </span>
                             <div class="wine-prices">
                                 <span class="wine-price">{% if item.price_glass %}{{ item.price_glass }}{% else %}-{% endif %}</span>
                                 <span class="wine-price">{% if item.price_bottle %}{{ item.price_bottle }}{% else %}-{% endif %}</span>
@@ -464,7 +554,11 @@ layout: null
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">CARTA VINS</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.VINS.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.VINS.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.VINS.es }}</span>
+            </h1>
         </div>
     </div>
 
@@ -484,19 +578,32 @@ layout: null
             <!-- Menu content -->
             <div class="menu-content">
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "CÒCTELS I ESPIRITUOSOS" %}
+                    {% if section.menu_area == "COCTELS_I_ESPIRITUOSOS" %}
                     <div class="menu-section">
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                {% if item.price %} - {{ item.price }}{% endif %}
+                            </span>
                         </div>
                         {% endfor %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">CÒCTELS I ESPIRITUOSOS</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">CÒCTELS I ESPIRITUOSOS</span>
+                <span data-lang-content="en">COCKTAILS & SPIRITS</span>
+                <span data-lang-content="es">CÓCTELES Y ESPIRITUOSOS</span>
+            </h1>
         </div>
     </div>
 
@@ -526,112 +633,170 @@ layout: null
                 {% for section in site.data.menu.menu.items %}
                     {% if section.menu_area == "ESMORZARS" %}
                     <div class="menu-section">
-                        <h2>{{ section.category }}</h2>
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">{{ item.name }} - {{ item.price }}</span>
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                {% if item.price %} - {{ item.price }}{% endif %}
+                            </span>
                         </div>
                         {% endfor %}
                     </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            <h1 class="menu-title">ESMORZARS</h1>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.ESMORZARS.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.ESMORZARS.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.ESMORZARS.es }}</span>
+            </h1>
         </div>
     </div>
 
     <script>
-        async function downloadPDF() {
-            const btn = document.querySelector('.download-btn');
-            btn.style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language
+            let currentLang = 'ca';
+            updateLanguageDisplay(currentLang);
 
-            try {
-                const menuPages = document.querySelectorAll('.menu-page');
-                const { jsPDF } = window.jspdf;
-                const pdf = new jsPDF({
-                    format: 'a4',
-                    unit: 'mm',
-                    orientation: 'portrait'
+            // Add click handlers to language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    currentLang = this.dataset.lang;
+                    updateLanguageDisplay(currentLang);
+                    updateActiveButton(this);
                 });
+            });
 
-                for (let i = 0; i < menuPages.length; i++) {
-                    const page = menuPages[i];
-                    const wrapper = page.querySelector('.menu-content-wrapper');
-                    const wrapperWidth = parseInt(getComputedStyle(wrapper).width);
-                    const wrapperHeight = parseInt(getComputedStyle(wrapper).height);
+            function updateLanguageDisplay(lang) {
+                // Hide all language content
+                document.querySelectorAll('[data-lang-content]').forEach(el => {
+                    el.style.display = 'none';
+                });
+                
+                // Show selected language content
+                document.querySelectorAll(`[data-lang-content="${lang}"]`).forEach(el => {
+                    el.style.display = 'inline';
+                });
+            }
 
-                    // Create a temporary container
-                    const container = document.createElement('div');
-                    container.style.position = 'absolute';
-                    container.style.left = '-9999px';
-                    container.style.top = '0';
-                    document.body.appendChild(container);
+            function updateActiveButton(clickedBtn) {
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                clickedBtn.classList.add('active');
+            }
 
-                    // Clone and prepare the page
-                    const clonedPage = page.cloneNode(true);
-                    
-                    // Remove dimension labels
-                    clonedPage.querySelectorAll('.dimension-label').forEach(el => el.remove());
-                    
-                    // Handle cut lines based on page ID
-                    if (clonedPage.id === 'esmorzars') {
-                        // Remove cut lines for Esmorzars page
-                        clonedPage.querySelectorAll('.cut-line').forEach(line => line.remove());
-                    } else {
-                        // Ensure cut lines are visible for other pages
-                        clonedPage.querySelectorAll('.cut-line').forEach(line => {
-                            line.style.borderColor = '#000';
-                            line.style.borderStyle = 'dashed';
-                            line.style.borderWidth = '1px';
-                            line.style.opacity = '1';
-                        });
-                    }
-                    
-                    // Set styles for capture
-                    clonedPage.style.margin = '0';
-                    clonedPage.style.padding = '0';
-                    clonedPage.style.border = 'none';
-                    clonedPage.style.width = wrapperWidth + 'px';
-                    clonedPage.style.height = wrapperHeight + 'px';
-                    clonedPage.style.position = 'relative';
-                    
-                    container.appendChild(clonedPage);
+            // Modify the existing downloadPDF function to use current language
+            const originalDownloadPDF = window.downloadPDF;
+            window.downloadPDF = async function() {
+                // Set filename based on language
+                const langSuffixes = {
+                    'ca': '',
+                    'en': '-english',
+                    'es': '-espanol'
+                };
+                
+                const btn = document.querySelector('.download-btn');
+                btn.style.display = 'none';
+                document.querySelector('.language-selector').style.display = 'none';
 
-                    // Generate canvas
-                    const canvas = await html2canvas(clonedPage, {
-                        scale: 2,
-                        useCORS: true,
-                        letterRendering: true,
-                        width: wrapperWidth,
-                        height: wrapperHeight,
-                        backgroundColor: null
+                try {
+                    const menuPages = document.querySelectorAll('.menu-page');
+                    const { jsPDF } = window.jspdf;
+                    const pdf = new jsPDF({
+                        format: 'a4',
+                        unit: 'mm',
+                        orientation: 'portrait'
                     });
 
-                    // Add to PDF
-                    if (i > 0) {
-                        pdf.addPage();
+                    for (let i = 0; i < menuPages.length; i++) {
+                        const page = menuPages[i];
+                        const wrapper = page.querySelector('.menu-content-wrapper');
+                        const wrapperWidth = parseInt(getComputedStyle(wrapper).width);
+                        const wrapperHeight = parseInt(getComputedStyle(wrapper).height);
+
+                        // Create a temporary container
+                        const container = document.createElement('div');
+                        container.style.position = 'absolute';
+                        container.style.left = '-9999px';
+                        container.style.top = '0';
+                        document.body.appendChild(container);
+
+                        // Clone and prepare the page
+                        const clonedPage = page.cloneNode(true);
+                        
+                        // Remove dimension labels
+                        clonedPage.querySelectorAll('.dimension-label').forEach(el => el.remove());
+                        
+                        // Handle cut lines based on page ID
+                        if (clonedPage.id === 'esmorzars') {
+                            // Remove cut lines for Esmorzars page
+                            clonedPage.querySelectorAll('.cut-line').forEach(line => line.remove());
+                        } else {
+                            // Ensure cut lines are visible for other pages
+                            clonedPage.querySelectorAll('.cut-line').forEach(line => {
+                                line.style.borderColor = '#000';
+                                line.style.borderStyle = 'dashed';
+                                line.style.borderWidth = '1px';
+                                line.style.opacity = '1';
+                            });
+                        }
+                        
+                        // Set styles for capture
+                        clonedPage.style.margin = '0';
+                        clonedPage.style.padding = '0';
+                        clonedPage.style.border = 'none';
+                        clonedPage.style.width = wrapperWidth + 'px';
+                        clonedPage.style.height = wrapperHeight + 'px';
+                        clonedPage.style.position = 'relative';
+                        
+                        container.appendChild(clonedPage);
+
+                        // Generate canvas
+                        const canvas = await html2canvas(clonedPage, {
+                            scale: 2,
+                            useCORS: true,
+                            letterRendering: true,
+                            width: wrapperWidth,
+                            height: wrapperHeight,
+                            backgroundColor: null
+                        });
+
+                        // Add to PDF
+                        if (i > 0) {
+                            pdf.addPage();
+                        }
+
+                        // Calculate positioning to center on page
+                        const xOffset = (210 - (wrapperWidth / 3.78)) / 2;
+                        const yOffset = (297 - (wrapperHeight / 3.78)) / 2;
+
+                        const imgData = canvas.toDataURL('image/jpeg', 1.0);
+                        pdf.addImage(imgData, 'JPEG', xOffset, yOffset, wrapperWidth / 3.78, wrapperHeight / 3.78);
+
+                        // Cleanup
+                        document.body.removeChild(container);
                     }
 
-                    // Calculate positioning to center on page
-                    const xOffset = (210 - (wrapperWidth / 3.78)) / 2;
-                    const yOffset = (297 - (wrapperHeight / 3.78)) / 2;
+                    // Save PDF
+                    pdf.save(`menu-entrepreneur${langSuffixes[currentLang]}.pdf`);
 
-                    const imgData = canvas.toDataURL('image/jpeg', 1.0);
-                    pdf.addImage(imgData, 'JPEG', xOffset, yOffset, wrapperWidth / 3.78, wrapperHeight / 3.78);
-
-                    // Cleanup
-                    document.body.removeChild(container);
+                } catch (error) {
+                    console.error('Error generating PDF:', error);
+                } finally {
+                    btn.style.display = 'block';
+                    document.querySelector('.language-selector').style.display = 'flex';
                 }
-
-                // Save PDF
-                pdf.save('menu-entrepreneur.pdf');
-
-            } catch (error) {
-                console.error('Error generating PDF:', error);
-            } finally {
-                btn.style.display = 'block';
-            }
-        }
+            };
+        });
     </script>
 </body>
 </html> 
