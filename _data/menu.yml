@@ -134,14 +134,14 @@ menu:
       menu_area: "ESMORZARS"
       items:
       - name:
-          ca: "\"Mollete\" de fricandó (li pots afegir formatge de Maó)"
-          en: "\"Fricandó\" sandwich (you can add Maó cheese)"
-          es: "Mollete de fricandó (se puede añadir queso de Maó)"
+          ca: "\"Mollete\" de fricandó amb formatge fos"
+          en: "\"Fricandó\" sandwich with melted cheese"
+          es: "Mollete de fricandó con queso fundido"
         price: 5.5
         description:
-          ca: "Mollete suau farcit de fricandó casolà. Pots afegir-hi formatge de Maó per donar-hi un toc cremós."
-          en: "Soft sandwich filled with homemade fricandó. You can add Maó cheese for an extra creamy touch."
-          es: "Mollete tierno relleno de fricandó casero. Puedes añadir queso de Maó para darle un toque cremoso."
+          ca: "Mollete suau farcit de fricandó casolà amb formatge fos per donar-hi un toc cremós."
+          en: "Soft sandwich filled with homemade fricandó with melted cheese for an extra creamy touch."
+          es: "Mollete tierno relleno de fricandó casero con queso fundido para darle un toque cremoso."
 
       - name:
           ca: "\"Mollete\" amb botifarra i pebrot escalivat"
@@ -183,11 +183,27 @@ menu:
           en: "Sandwich filled with roasted seasonal vegetables, light and full of Mediterranean flavor."
           es: "Mollete relleno de verduras asadas de temporada, ligero y lleno de sabor mediterráneo."
 
+      - name: 
+          ca: "Ou ferrat"
+          en: "Fried egg"
+          es: "Huevo frito"
+        price: 1.0
+        description: 
+        type: acompanyament
+
+      - name: 
+          ca: "Formatge fos"
+          en: "Melted cheese"
+          es: "Queso fundido"
+        price: 1.0
+        description: 
+        type: acompanyament
+
       - name:
           ca: "Biquini de \"Cecina\" de Lleó D.O. i Comté amb salsa bearnesa"
           en: "Gourmet biquini with Leon D.O. cured beef and Comté cheese with Bearnaise sauce"
           es: "Biquini gourmet con cecina de León D.O. y queso Comté con salsa bearnesa"
-        price: 11.0
+        price: 12.0
         description:
           ca: "Biquini gourmet de cecina de Lleó D.O. i formatge Comté, amb salsa bearnesa per potenciar cada mossegada."
           en: "Gourmet biquini with Leon D.O. cured beef and Comté cheese, enhanced with Bearnaise sauce in every bite."
@@ -217,14 +233,23 @@ menu:
           es: "Huevos horneados sobre una cama de espinacas frescas y salmón ahumado, bañados en una delicada salsa holandesa."
 
       - name: 
-          ca: "Ous al plat amb sobrasada de Menorca"
-          en: "Baked eggs with Minorcan sobrasada"
-          es: "Huevos al plato con sobrasada de Menorca"
+          ca: "Ou ferrat amb sobrasada de Mallorca"
+          en: "Fried egg with Mallorcan sobrasada"
+          es: "Huevo frito con sobrasada de Mallorca"
         price: 9.0
         description: 
-          ca: "Ous al plat amb sobrasada de Menorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
-          en: "Baked eggs with melted Minorcan sobrasada, adding a spicy and intense touch to this classic dish."
-          es: "Huevos al plato con sobrasada de Menorca fundida, que aporta un toque especiado e intenso a este plato clásico."
+          ca: "Ou ferrat amb sobrasada de Mallorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
+          en: "Fried egg with melted Mallorcan sobrasada, adding a spicy and intense touch to this classic dish."
+          es: "Huevo frito con sobrasada de Mallorca fundida, que aporta un toque especiado e intenso a este plato clásico."
+
+
+      - name: 
+          ca: "Ou extra"
+          en: "Extra egg"
+          es: "Huevo extra"
+        price: 1
+        description: 
+        type: acompanyament
 
       - name: 
           ca: "Patates fregides allumette"
@@ -748,7 +773,7 @@ menu:
           ca: "Escalivada"
           en: "Escalivada"
           es: "Escalivada"
-        price: 3.5
+        price: 4.5
         description: 
           ca: "Escalivada tradicional amb verdures de temporada, un clàssic català que aporta frescor i intensitat a qualsevol àpat."
           en: "Traditional escalivada with seasonal vegetables, a Catalan classic that brings freshness and intensity to any meal."
@@ -764,15 +789,6 @@ menu:
           en: "Selection of seasonal vegetables cooked to perfection to preserve all their flavor and texture."
           es: "Selección de verduras de temporada cocinadas al punto para preservar todo su sabor y textura."
 
-      - name: 
-          ca: "Pebrots escalivats"
-          en: "Roasted peppers"
-          es: "Pimientos asados"
-        price: 3.5
-        description: 
-          ca: "Pebrots escalivats a foc lent, dolços i tendres, ideals com a guarnició o entrant."
-          en: "Slow-roasted peppers, sweet and tender, ideal as a side dish or starter."
-          es: "Pimientos asados a fuego lento, dulces y tiernos, ideales como guarnición o entrante."
 
       - name: 
           ca: "Patates fregides \"Allumette\""
