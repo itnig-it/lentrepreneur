@@ -195,7 +195,7 @@ menu:
           ca: "Formatge fos"
           en: "Melted cheese"
           es: "Queso fundido"
-        price: 1.0
+        price: 0.5
         description: 
         type: acompanyament
 
@@ -812,7 +812,7 @@ menu:
           ca: "Pa de massa mare amb AOVE i tomacó"
           en: "Sourdough bread with EVOO and tomato"
           es: "Pan de masa madre con AOVE y tomate"
-        price: 3.75
+        price: 4.0
         description: 
           ca: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar, per a un toc autèntic i mediterrani."
           en: "Rustic sourdough bread, toasted and served with extra virgin olive oil and vine-ripened tomato, for an authentic Mediterranean touch."
@@ -845,6 +845,17 @@ menu:
           ca: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d'auró, la fruita fresca i el bacó cruixent."
           en: "A sophisticated version of the traditional Santa Teresa toast, with a sweet and salty touch thanks to the maple syrup, fresh fruit, and crispy bacon."
           es: "Una versión sofisticada de la tradicional torrija de Santa Teresa, con un toque dulce y salado gracias al sirope de arce, la fruta fresca y el bacon crujiente."
+
+      - name:
+          ca: "Llimona gelada"
+          en: "Lemon sorbet"
+          es: "Sorbete de limón"
+        price: 8.0
+        description: 
+          ca: "Clàssic de l'estiu: llimona natural farcida de sorbet, fresca, lleugera i molt refrescant."
+          en: "A summer classic: natural lemon filled with sorbet, fresh, light, and incredibly refreshing."
+          es: "Clásico del verano: limón natural relleno de sorbete, fresco, ligero y muy refrescante."
+
 
       - name: 
           ca: "Iogurt casolà"
