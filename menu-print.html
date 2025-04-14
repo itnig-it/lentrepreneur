@@ -280,14 +280,30 @@ layout: null
         /* Update the contact-info styles */
         .contact-info {
             position: absolute;
-            right: 15mm;  /* Moved further from the margin */
+            right: 8mm;  /* Moved slightly more to the left to respect cut line */
             top: 50%;
             transform: translateY(-50%) rotate(-90deg);
             transform-origin: right center;
-            font-size: 10px;  /* Increased base font size */
+            font-size: 10px;
             line-height: 1.5;
-            text-align: center;
+            text-align: left;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 15mm;
+        }
+
+        .contact-logo {
+            width: 20mm;
+            height: 20mm;
+            margin-right: 5mm; /* Changed from margin-left to margin-right */
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2mm;
+            text-align: left; /* Changed from right to left */
         }
 
         .brand-name {
@@ -738,8 +754,16 @@ layout: null
                         
                         // Handle cut lines based on page ID
                         if (clonedPage.id === 'esmorzars') {
-                            // Remove cut lines for Esmorzars page
-                            clonedPage.querySelectorAll('.cut-line').forEach(line => line.remove());
+                            // Add A4 cut marks for the last page
+                            const a4CutMarks = document.createElement('div');
+                            a4CutMarks.className = 'a4-cut-marks';
+                            a4CutMarks.innerHTML = `
+                                <div class="a4-cut-mark corner top-left"></div>
+                                <div class="a4-cut-mark corner top-right"></div>
+                                <div class="a4-cut-mark corner bottom-left"></div>
+                                <div class="a4-cut-mark corner bottom-right"></div>
+                            `;
+                            clonedPage.appendChild(a4CutMarks);
                         } else {
                             // Ensure cut lines are visible for other pages
                             clonedPage.querySelectorAll('.cut-line').forEach(line => {
