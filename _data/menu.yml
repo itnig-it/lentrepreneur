@@ -489,15 +489,6 @@ menu:
           en: "Creamy Russian salad with garlic shrimp, offering a contrast between smoothness and acidity."
           es: "Ensaladilla rusa cremosa, acompañada de gambas al ajillo, aportando un contraste entre suavidad y acidez."
 
-      - name:
-          ca: "Sípia amb maionesa i oli de julivert amb aroma de llimona"
-          en: "Cuttlefish with mayonnaise and parsley oil with lemon zest"
-          es: "Sepia con mayonesa y aceite de perejil con aroma de limón"
-        price: 13.0
-        description: 
-          ca: "Sípia tendra a la planxa, servida amb maionesa suau i un toc fresc d'oli de julivert."
-          en: "Tender grilled cuttlefish served with smooth mayonnaise and a fresh touch of parsley oil."
-          es: "Sepia tierna a la plancha, servida con mayonesa suave y un toque fresco de aceite de perejil."
      
       - name: 
           ca: "La Cecina Angus amb Burrata i pesto de festucs"
