@@ -134,54 +134,54 @@ menu:
       menu_area: "ESMORZARS"
       items:
       - name:
-          ca: "\"Mollete\" de fricandó amb formatge fos"
-          en: "\"Fricandó\" sandwich with melted cheese"
-          es: "Mollete de fricandó con queso fundido"
-        price: 5.5
+          ca: "Entrepanet de fricandó amb formatge fos"
+          en: "Sandwich with \"Fricandó\" with melted cheese"
+          es: "Bocadillito de fricandó con queso fundido"
+        price: 7.5
         description:
-          ca: "Mollete suau farcit de fricandó casolà amb formatge fos per donar-hi un toc cremós."
-          en: "Soft sandwich filled with homemade fricandó with melted cheese for an extra creamy touch."
-          es: "Mollete tierno relleno de fricandó casero con queso fundido para darle un toque cremoso."
+          ca: "Entrepanet cruixent farcit de fricandó casolà amb formatge fos per donar-hi un toc cremós."
+          en: "Sandwich filled with homemade fricandó with melted cheese for an extra creamy touch."
+          es: "Bocadillito crujiente relleno de fricandó casero con queso fundido para darle un toque cremoso."
 
       - name:
-          ca: "\"Mollete\" amb botifarra i pebrot escalivat"
+          ca: "Entrepanet amb botifarra i pebrot escalivat"
           en: "Sandwich with Catalan pork sausage and roasted pepper"
-          es: "Mollete con botifarra y pimiento escalivado"
-        price: 5.5
+          es: "Bocadillito con botifarra y pimiento escalivado"
+        price: 7.5
         description:
-          ca: "Mollete calent amb botifarra tradicional catalana i pebrot escalivat, una combinació de sabors autèntics."
+          ca: "Entrepanet calent amb botifarra tradicional catalana i pebrot escalivat, una combinació de sabors autèntics."
           en: "Warm sandwich with traditional Catalan pork sausage and roasted pepper, a combination of authentic flavors."
-          es: "Mollete caliente con botifarra tradicional catalana y pimiento escalivado, una combinación de sabores auténticos."
+          es: "Bocadillito caliente con botifarra tradicional catalana y pimiento escalivado, una combinación de sabores auténticos."
 
       - name:
-          ca: "\"Mollete\" amb mandonguilles amb sípia"
+          ca: "Entrepanet amb mandonguilles amb sípia"
           en: "Sandwich with cuttlefish meatballs"
-          es: "Mollete con albóndigas con sepia"
-        price: 5.5
+          es: "Bocadillito con albóndigas con sepia"
+        price: 7.5
         description:
-          ca: "Mollete farcit de mandonguilles amb sípia, un clàssic mariner amb un gir original."
+          ca: "Entrepanet farcit de mandonguilles amb sípia, un clàssic mariner amb un gir original."
           en: "Sandwich filled with cuttlefish meatballs, a classic seafood dish with an original twist."
-          es: "Mollete relleno de albóndigas con sepia, un clásico marinero con un giro original."
+          es: "Bocadillito relleno de albóndigas con sepia, un clásico marinero con un giro original."
 
       - name:
-          ca: "\"Mollete\" de sobrassada, formatge de Maó i mel"
+          ca: "Entrepanet de sobrassada, formatge de Maó i mel"
           en: "Sandwich with sobrasada, Maó cheese and honey"
-          es: "Mollete con sobrasada, queso de Maó y miel"
-        price: 4.5
+          es: "Bocadillito con sobrasada, queso de Maó y miel"
+        price: 6.5
         description:
           ca: "Una combinació irresistible: sobrassada calenta, formatge de Maó fos i un toc dolç de mel."
           en: "An irresistible combination: warm sobrasada, melted Maó cheese, and a sweet touch of honey."
           es: "Una combinación irresistible: sobrasada caliente, queso de Maó fundido y un toque dulce de miel."
 
       - name:
-          ca: "\"Mollete\" d'escalivada"
+          ca: "Entrepanet d'escalivada"
           en: "Sandwich with escalivada"
-          es: "Mollete con escalivada"
-        price: 4.5
+          es: "Bocadillito con escalivada"
+        price: 6.5
         description:
-          ca: "Mollete farcit amb escalivada de verdures de temporada, lleuger i ple de sabor mediterrani."
+          ca: "Entrepanet farcit amb escalivada de verdures de temporada, lleuger i ple de sabor mediterrani."
           en: "Sandwich filled with roasted seasonal vegetables, light and full of Mediterranean flavor."
-          es: "Mollete relleno de verduras asadas de temporada, ligero y lleno de sabor mediterráneo."
+          es: "Bocadillito relleno de verduras asadas de temporada, ligero y lleno de sabor mediterráneo."
 
       - name: 
           ca: "Ou ferrat"
@@ -521,14 +521,15 @@ menu:
           es: "Delicada esqueixada de bacalao aderezada con aceitunas kalamata, un plato fresco y ligero con todo el sabor del Mediterráneo."
 
       - name:
-          ca: "Espàrrecs tebis amb fruits secs i ratafia picant"
-          en: "Warm asparagus with dried fruits and spicy ratafia"
-          es: "Espárragos tiernos con frutos secos y ratafia picante"
-        price: 14.5
+          ca: "Coca d'escalivada amb sardina marinada"
+          en: "Chargrilled vegetable flatbread with marinated sardine"
+          es: "Coca de escalivada con sardina marinada"
+        price: 11
         description:
-          ca: "Espàrrecs lleugerament tebis servits amb una selecció de fruits secs i un toc vibrant de ratafia picant."
-          en: "Gently warmed asparagus served with a selection of dried fruits and a vibrant touch of spicy ratafia."
-          es: "Espárragos ligeramente templados acompañados de una selección de frutos secos y un vibrante toque de ratafía picante."
+          ca: "La dolçor de les verdures escalivades sobre una base cruixent es combina amb la intensitat i frescor de la sardina marinada. Un clàssic reinventat amb equilibri i sabor."
+          en: "The sweetness of chargrilled vegetables on a crispy flatbread, paired with the intensity and freshness of marinated sardine. A reinvented classic full of balance and flavor."
+          es: "La dulzura de las verduras escalivadas sobre una base crujiente se combina con la intensidad y frescura de la sardina marinada. Un clásico reinventado con equilibrio y sabor."
+        
 
       - name: 
           ca: "Albergínies fumades amb Maó, mel i avellanes"
@@ -609,21 +610,22 @@ menu:
 
     
       - name:
-          ca: "Empedrat amb mongeta de Santa Pau, kalamata i cítrics"
-          en: "Empedrat with Santa Pau beans, kalamata olives and citrus"
-          es: "Empedrat con judías de Santa Pau, aceitunas kalamata y cítricos"
-        price: 12.0
+          ca: "Mongeta de Santa Pau saltada amb calamars de potera amb cítrics i cruixent de pernil ibèric"
+          en: "Sautéed Santa Pau beans with potera squid, citrus and crispy Iberian ham"
+          es: "Judía de Santa Pau salteada con calamares de potera, cítricos y crujiente de jamón ibérico"
+        price: 12.5
         description: 
-          ca: "Amanida d'empedrat amb mongeta de Santa Pau, olives kalamata i un toc cítric, una explosió de frescor mediterrània."
-          en: "Traditional Catalan empedrat with Santa Pau beans, kalamata olives, and a citrus twist, a burst of Mediterranean freshness."
-          es: "Empedrat tradicional catalán con judías de Santa Pau, aceitunas kalamata y un toque cítrico, una explosión de frescura mediterránea."
+          ca: "Un plat que combina la dolçor i textura de la mongeta de Santa Pau amb la frescor dels cítrics, la tendresa del calamar i el toc salat i cruixent del pernil ibèric."
+          en: "A dish that balances the sweetness and texture of Santa Pau beans with the freshness of citrus, the tenderness of squid, and the salty crunch of Iberian ham."
+          es: "Un plato que combina la dulzura y textura de la judía de Santa Pau con la frescura de los cítricos, la ternura del calamar y el toque salado y crujiente del jamón ibérico."
+        
 
 
       - name:
           ca: "Cigronets del Berguedà estofats amb popets"
           en: "Stewed Berguedà chickpeas with baby octopus"
           es: "Cigronets del Berguedà estofados con pulpitos"
-        price: 14.8
+        price: 15.8
         description: 
           ca: "Estofat de cigronets del Berguedà amb popets, un plat mariner amb l'autenticitat i el sabor de la Mediterrània."
           en: "Stew of Berguedà chickpeas with baby octopus, a seafood dish full of authentic Mediterranean flavor."
@@ -1442,36 +1444,38 @@ menu:
       menu_area: "VINS"
       items:
       - name: 
-          ca: "Alosa - Garnatxa Negra - Fora D.O."
-          en: "Alosa - Garnatxa Negra - Outside D.O."
-          es: "Alosa - Garnatxa Negra - Fuera D.O."
-        price_glass: 4.7
-        price_bottle: 25.0
+          ca: "NEGRE DE LA CASA OZÓ - TERRA ALTA - VI SOLIDARI"
+          en: "Casa Ozó Red - Terra Alta - Solidarity Wine"
+          es: "Negro de la Casa Ozó - Terra Alta - Vino Solidario"
+        price_glass: 3
+        price_bottle: 12
         description: 
-          ca: "Garnatxa fresca i vibrant, amb aromes de fruits vermells, espècies i una lleugera mineralitat."
-          en: "Fresh and vibrant Grenache, with aromas of red fruits, spices, and a light minerality."
-          es: "Garnacha fresca y vibrante, con aromas de frutas rojas, especias y una leve mineralidad."
+          ca: "Vi jove de Garnatxa negra amb caràcter mediterrani. Aromes de fruita vermella i toc herbaci, amb una bona acidesa que el fa fàcil de beure."
+          en: "Young Grenache wine with Mediterranean character. Red fruit aromas and herbal notes, with bright acidity and an easy-drinking profile."
+          es: "Vino joven de Garnacha negra con carácter mediterráneo. Aromas de fruta roja y notas herbáceas, con buena acidez y muy fácil de beber."
 
       - name: 
-          ca: "Crossos - Garnatxa, Cariñena i Syrah - Priorat"
-          en: "Crossos - Grenache, Carignan and Syrah - Priorat"
-          es: "Crossos - Garnacha, Cariñena y Syrah - Priorat"
-        price_bottle: 40.0
+          ca: "MÉS QUE PARAULES – CABERNET SAUVIGNON I MERLOT - PLA DE BAGES"
+          en: "Més que Paraules – Cabernet Sauvignon & Merlot – Pla de Bages"
+          es: "Més que Paraules – Cabernet Sauvignon y Merlot – Pla de Bages"
+        price_glass: 5
+        price_bottle: 27.0
         description: 
-          ca: "Vi complex i profund, amb notes de prunes madures, regalèssia i un toc torrefacte."
-          en: "A complex and deep wine, with notes of ripe plums, liquorice, and a roasted hint."
-          es: "Vino complejo y profundo, con notas de ciruelas maduras, regaliz y un toque tostado."
+          ca: "Cupatge elegant i estructurat, amb notes de fruita negra madura, tanins suaus i un final lleugerament especiat."
+          en: "An elegant and structured blend, with ripe dark fruit, smooth tannins, and a slightly spicy finish."
+          es: "Un coupage elegante y estructurado, con fruta negra madura, taninos suaves y un final ligeramente especiado."
 
       - name: 
-          ca: "Coca i Fitó Natura - Garnatxa Negra - Montsant"
-          en: "Coca i Fitó Natura - Grenache - Montsant"
-          es: "Coca i Fitó Natura - Garnacha Negra - Montsant"
+          ca: "MONO COCO – MONASTRELL – EMPORDÀ"
+          en: "Mono Coco – Monastrell – Empordà"
+          es: "Mono Coco – Monastrell – Empordà"
         price_glass: 4.5
         price_bottle: 23.0
         description: 
-          ca: "Rodó i equilibrat, amb fruita negra madura, espècies dolces i una frescor sorprenent."
-          en: "Round and balanced, with ripe black fruit, sweet spices, and a surprising freshness."
-          es: "Redondo y equilibrado, con fruta negra madura, especias dulces y una frescura sorprendente."
+          ca: "Monastrell amb ànima empordanesa. Intensitat mitjana, aromes de bosc, pruna i una lleu nota salina que recorda el mar."
+          en: "Empordà-style Monastrell. Medium intensity, forest and plum aromas, and a subtle saline note reminiscent of the sea."
+          es: "Monastrell con alma del Empordà. Intensidad media, aromas de bosque y ciruela, con un leve toque salino que recuerda al mar."
+
 
 
     - category: 
