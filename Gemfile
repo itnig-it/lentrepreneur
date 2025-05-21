@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Jekyll and its dependencies
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.3.2"
 gem "nokogiri"
 
 # Jekyll plugins
@@ -29,3 +29,8 @@ gem "webrick", "~> 1.7"
 
 # Allow any compatible version of ffi
 gem "ffi" 
+
+
+gem "csv"
+gem "logger"
+gem "base64"
