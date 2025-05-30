@@ -718,12 +718,12 @@ menu:
       - name: 
           ca: "Botifarra esparracada amb mongetes de Santa Pau"
           en: "Broken botifarra with Santa Pau beans"
-          es: "Botifarra desmenuzada con judías de Santa Pau"
+          es: "Botifarra \"esparracada\" con judías de Santa Pau"
         price: 13.5
         description: 
-          ca: "Botifarra artesana de calidad, esparracada y salteada, servida con las emblemáticas judías de Santa Pau."
+          ca: "Botifarra artesana de qualitat, esparracada i saltejada, servida amb les emblemàtiques mongetes de Santa Pau."
           en: "High-quality artisan botifarra, broken and sautéed, served with the iconic Santa Pau beans."
-          es: "Butifarra artesana de calidad, desmenuzada y salteada, servida con las emblemáticas judías de Santa Pau."
+          es: "Butifarra artesana de calidad, \"esparracada\" y salteada, servida con las emblemáticas judías de Santa Pau."
 
       - name: 
           ca: "Lingot de xai"

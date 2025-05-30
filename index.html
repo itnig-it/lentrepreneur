@@ -166,24 +166,16 @@ layout: default
     
     <div class="max-w-4xl mx-auto">
       <div class="rounded-lg overflow-hidden shadow-lg relative" id="booking-container">
-        <div id="booking-placeholder" class="bg-gray-50 p-8 text-center">
-          <h3 class="text-xl font-bold mb-4">Reserva una taula</h3>
-          <p class="text-gray-600 mb-6">Fes clic per accedir al sistema de reserves</p>
-          <button id="load-booking" class="btn btn-primary">Obrir reserva</button>
-        </div>
-        <div id="booking-frame-container" class="hidden">
-          <iframe 
-            src="https://booking02.hiopos.com/booking?data=iV2d94WanlmcvZSZzxWYm1jbp1GZhZCOzETN0MTPklEcvh2c"
-            width="100%"
-            height="700"
-            frameborder="0"
-            allowfullscreen
-            loading="lazy"
-            tabindex="-1"
-            aria-hidden="true"
-            id="booking-iframe">
-          </iframe>
-        </div>
+        <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
+        <iframe id="restaurante-entrepreneur" 
+                title="Reservas"
+                src="https://www.covermanager.com/reservation/module_restaurant/restaurante-entrepreneur/catalan"
+                allow="payment" 
+                frameborder="0" 
+                height="550" 
+                width="100%" 
+                onload="iFrameResize();">
+        </iframe>
       </div>
     </div>
   </div>
