@@ -22,29 +22,20 @@ layout: default
   </div>
 </section>
 
-<!-- Plat del dia Section -->
-<section id="plat-dia" class="relative -mt-32 mb-16 hidden">
+<!-- Anuncios Banner -->
+<section class="relative -mt-32 mb-16">
   <div class="container">
-    <div class="bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-6 max-w-2xl mx-auto transform hover:scale-102 transition-transform duration-300">
-      <div class="flex items-center justify-between mb-4">
-        <div>
-          <h2 class="text-2xl font-bold text-brand">Plat del dia</h2>
-          <p class="text-sm text-gray-600" id="plat-dia-date"></p>
-        </div>
-        <span class="bg-brand text-white px-3 py-1 rounded-full text-sm">Només per dinar</span>
-      </div>
-      <div class="space-y-4">
-        <div class="main-dish">
-          <h3 class="text-xl font-medium" id="main-dish-title"></h3>
-        </div>
-        <div class="side-dishes">
-          <p class="text-gray-600 text-sm mb-2">Tria un acompanyament:</p>
-          <ul class="grid grid-cols-2 gap-2" id="side-dishes-list"></ul>
-        </div>
+    <div class="bg-gradient-to-r from-amber-500 to-orange-600 rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
+      <div class="text-center text-white">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">Important 🏖️</h2>
+        <p class="text-lg mb-4">Tancament per vacances de l'11 al 17 d'agost</p>
+        <p class="text-amber-100">Tornem el 18 amb les piles carregades!</p>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- About Section -->
 <section id="about" class="section bg-white">
@@ -254,7 +245,7 @@ layout: default
       {% endif %}
     }
 
-    // Comprova inicialment i cada minut
+    // Comprova inicialment y cada minut
     checkPlatDia();
     setInterval(checkPlatDia, 60000);
 
