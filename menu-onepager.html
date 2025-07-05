@@ -8,6 +8,8 @@ layout: null
     <meta name="viewport" content="width=43cm, initial-scale=1.0">
     <title>Menú L'entrepreneur - One Pager</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -69,13 +71,14 @@ layout: null
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1cm;
             align-content: start;
+            transform-origin: top left;
         }
         .menu-area {
             break-inside: avoid;
             page-break-inside: avoid;
         }
         .menu-area-title {
-            font-size: 18px;
+            font-size: 22px;
             font-weight: bold;
             margin-top: 1em;
             margin-bottom: 0.6em;
@@ -86,15 +89,15 @@ layout: null
             margin-top: 0;
         }
         .menu-section-title {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
-            margin-bottom: 0.5em;
-            margin-top: 0.6em;
+            margin-bottom: 1.2em;
+            margin-top: 1.2em;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
         .menu-section {
-            margin-bottom: 6px;
+            margin-bottom: 20px;
         }
         .menu-list {
             list-style: none;
@@ -102,8 +105,8 @@ layout: null
             padding: 0;
         }
         .menu-item {
-            font-size: 9px;
-            margin-bottom: 0.15em;
+            font-size: 11px;
+            margin-bottom: 0.5em;
             padding-left: 0;
             font-weight: 400;
             text-transform: uppercase;
@@ -122,25 +125,25 @@ layout: null
             margin: 0 0.3em 0 0.3em;
         }
         .menu-item.acompanyament {
-            font-size: 9px;
+            font-size: 11px;
             color: #000;
             padding-left: 1em;
         }
         .menu-item.acompanyament:before {
             content: "+";
             margin-right: 0.3em;
-            font-size: 9px;
+            font-size: 11px;
         }
         .wine-item {
             margin-bottom: 0.15em;
             line-height: 1.3;
             display: block;
             text-transform: uppercase;
-            font-size: 9px;
+            font-size: 11px;
             font-weight: 400;
         }
         .wine-item-name {
-            font-size: 9px;
+            font-size: 11px;
             font-weight: 400;
             letter-spacing: 0.3px;
         }
@@ -157,7 +160,25 @@ layout: null
             grid-column: 3;
         }
         @media (max-width: 1200px) {
-            .menu-sheet { width: 100vw; height: auto; padding: 1em; }
+            .menu-sheet { 
+                transform: scale(0.8);
+                transform-origin: top left;
+                margin: 0;
+            }
+        }
+        @media (max-width: 900px) {
+            .menu-sheet { 
+                transform: scale(0.6);
+                transform-origin: top left;
+                margin: 0;
+            }
+        }
+        @media (max-width: 600px) {
+            .menu-sheet { 
+                transform: scale(0.4);
+                transform-origin: top left;
+                margin: 0;
+            }
         }
     </style>
 </head>
@@ -227,7 +248,7 @@ layout: null
             {% endif %}
         {% endfor %}
         
-        {% comment %} Columna 2: PER_COMPARTIR + PLATS_PRINCIPALS {% endcomment %}
+        {% comment %} Columna 2: PER_COMPARTIR {% endcomment %}
         <div class="menu-area column-2">
             {% for group in grouped_items %}
                 {% if group.name == "PER_COMPARTIR" %}
@@ -277,10 +298,13 @@ layout: null
                     {% endfor %}
                 {% endif %}
             {% endfor %}
-            
-            {% for group in grouped_items %}
-                {% if group.name == "PLATS_PRINCIPALS" %}
-                    {% assign area = areas[group.name] %}
+        </div>
+        
+        {% comment %} Columna 3: PLATS PRINCIPALS (en vez de VINS) {% endcomment %}
+        {% for group in grouped_items %}
+            {% if group.name == "PLATS_PRINCIPALS" %}
+                {% assign area = areas[group.name] %}
+                <div class="menu-area column-3">
                     <div class="menu-area-title">
                         <span data-lang-content="ca">{{ area.ca }}</span>
                         <span data-lang-content="en">{{ area.en }}</span>
@@ -320,48 +344,6 @@ layout: null
                                             <span class="price">{{ item.price }}</span>
                                         </li>
                                     {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        </div>
-        
-        {% comment %} Columna 3: VINS {% endcomment %}
-        {% for group in grouped_items %}
-            {% if group.name == "VINS" %}
-                {% assign area = areas[group.name] %}
-                <div class="menu-area column-3">
-                    <div class="menu-area-title">
-                        <span data-lang-content="ca">{{ area.ca }}</span>
-                        <span data-lang-content="en">{{ area.en }}</span>
-                        <span data-lang-content="es">{{ area.es }}</span>
-                    </div>
-                    
-                    {% for section in group.items %}
-                        <div class="menu-section">
-                            {% if section.category %}
-                            <div class="menu-section-title">
-                                <span data-lang-content="ca">{{ section.category.ca }}</span>
-                                <span data-lang-content="en">{{ section.category.en }}</span>
-                                <span data-lang-content="es">{{ section.category.es }}</span>
-                            </div>
-                            {% endif %}
-                            
-                            <ul class="menu-list">
-                                {% for item in section.items %}
-                                    <li class="wine-item">
-                                        <span class="wine-item-name">
-                                            <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
-                                            <span data-lang-content="en">{{ item.name.en | upcase }}</span>
-                                            <span data-lang-content="es">{{ item.name.es | upcase }}</span>
-                                        </span>
-                                        <span class="dash">-</span>
-                                        <span class="price">
-                                            {% if item.price_glass %}{{ item.price_glass }}{% endif %}{% if item.price_glass and item.price_bottle %}/{% endif %}{% if item.price_bottle %}{{ item.price_bottle }}{% endif %}
-                                        </span>
-                                    </li>
                                 {% endfor %}
                             </ul>
                         </div>
@@ -445,16 +427,48 @@ layout: null
         });
         function exportPDF() {
             const element = document.getElementById('menu-sheet');
-            html2pdf()
-                .set({
-                    margin: 0,
-                    filename: 'menu-entrepreneur.pdf',
-                    image: { type: 'jpeg', quality: 0.98 },
-                    html2canvas: { scale: 2 },
-                    jsPDF: { unit: 'cm', format: [43, 33], orientation: 'landscape' }
-                })
-                .from(element)
-                .save();
+            
+            // Ocultar botones durante la generación
+            const exportBtn = document.querySelector('.export-btn');
+            const langSelector = document.querySelector('.language-selector');
+            exportBtn.style.display = 'none';
+            langSelector.style.display = 'none';
+            
+            html2canvas(element, {
+                scale: 2,
+                useCORS: true,
+                letterRendering: true,
+                backgroundColor: '#ffffff'
+            }).then(canvas => {
+                const imgData = canvas.toDataURL('image/jpeg', 1.0);
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF({
+                    orientation: 'landscape',
+                    unit: 'cm',
+                    format: [43, 33]
+                });
+                
+                // Calcular dimensiones para que quepa en una página
+                const pageWidth = 43;
+                const pageHeight = 33;
+                const imgWidth = pageWidth - 0.5; // Pequeño margen
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                
+                // Si la imagen es más alta que la página, escalar proporcionalmente
+                const finalWidth = imgHeight > pageHeight ? (pageHeight * imgWidth) / imgHeight : imgWidth;
+                const finalHeight = imgHeight > pageHeight ? pageHeight : imgHeight;
+                
+                // Centrar en la página
+                const x = (pageWidth - finalWidth) / 2;
+                const y = (pageHeight - finalHeight) / 2;
+                
+                pdf.addImage(imgData, 'JPEG', x, y, finalWidth, finalHeight);
+                pdf.save('menu-entrepreneur.pdf');
+                
+                // Mostrar botones de nuevo
+                exportBtn.style.display = 'block';
+                langSelector.style.display = 'flex';
+            });
         }
     </script>
 </body>
