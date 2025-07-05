@@ -1,0 +1,461 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=43cm, initial-scale=1.0">
+    <title>Menú L'entrepreneur - One Pager</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+            background: white;
+        }
+        .export-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #4A5568;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+        .export-btn:hover {
+            background-color: #2D3748;
+        }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            background-color: #4A5568;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .lang-btn.active {
+            background-color: #2D3748;
+        }
+        @media print {
+            .export-btn, .language-selector { display: none !important; }
+        }
+        .menu-sheet {
+            width: 43cm;
+            min-height: 33cm;
+            margin: 0 auto;
+            background: #fff;
+            box-sizing: border-box;
+            padding: 1.2cm 2cm 1cm 2cm;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1cm;
+            align-content: start;
+        }
+        .menu-area {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        .menu-area-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 0.6em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .menu-area-title:first-child {
+            margin-top: 0;
+        }
+        .menu-section-title {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            margin-top: 0.6em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .menu-section {
+            margin-bottom: 6px;
+        }
+        .menu-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-item {
+            font-size: 9px;
+            margin-bottom: 0.15em;
+            padding-left: 0;
+            font-weight: 400;
+            text-transform: uppercase;
+            display: block;
+        }
+        .menu-item .name {
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        .menu-item .price {
+            font-weight: 400;
+            margin-left: 0.3em;
+            white-space: nowrap;
+        }
+        .menu-item .dash {
+            margin: 0 0.3em 0 0.3em;
+        }
+        .menu-item.acompanyament {
+            font-size: 9px;
+            color: #000;
+            padding-left: 1em;
+        }
+        .menu-item.acompanyament:before {
+            content: "+";
+            margin-right: 0.3em;
+            font-size: 9px;
+        }
+        .wine-item {
+            margin-bottom: 0.15em;
+            line-height: 1.3;
+            display: block;
+            text-transform: uppercase;
+            font-size: 9px;
+            font-weight: 400;
+        }
+        .wine-item-name {
+            font-size: 9px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+        .column-layout {
+            display: contents;
+        }
+        .column-1 {
+            grid-column: 1;
+        }
+        .column-2 {
+            grid-column: 2;
+        }
+        .column-3 {
+            grid-column: 3;
+        }
+        @media (max-width: 1200px) {
+            .menu-sheet { width: 100vw; height: auto; padding: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <button class="lang-btn" data-lang="ca">Català</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="es">Español</button>
+    </div>
+    <button class="export-btn" onclick="exportPDF()">Exportar a PDF</button>
+    <div id="menu-sheet" class="menu-sheet">
+        {% assign items = site.data.menu.menu.items %}
+        {% assign areas = site.data.menu.menu.areas %}
+        
+        {% comment %} Agrupar items por menu_area {% endcomment %}
+        {% assign grouped_items = items | group_by: "menu_area" %}
+        
+        {% comment %} Columna 1: ESMORZARS {% endcomment %}
+        {% for group in grouped_items %}
+            {% if group.name == "ESMORZARS" %}
+                {% assign area = areas[group.name] %}
+                <div class="menu-area column-1">
+                    <div class="menu-area-title">
+                        <span data-lang-content="ca">{{ area.ca }}</span>
+                        <span data-lang-content="en">{{ area.en }}</span>
+                        <span data-lang-content="es">{{ area.es }}</span>
+                    </div>
+                    
+                    {% for section in group.items %}
+                        <div class="menu-section">
+                            {% if section.category %}
+                            <div class="menu-section-title">
+                                <span data-lang-content="ca">{{ section.category.ca }}</span>
+                                <span data-lang-content="en">{{ section.category.en }}</span>
+                                <span data-lang-content="es">{{ section.category.es }}</span>
+                            </div>
+                            {% endif %}
+                            
+                            <ul class="menu-list">
+                                {% for item in section.items %}
+                                    {% if item.type == "acompanyament" %}
+                                        <li class="menu-item acompanyament">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% else %}
+                                        <li class="menu-item">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        
+        {% comment %} Columna 2: PER_COMPARTIR + PLATS_PRINCIPALS {% endcomment %}
+        <div class="menu-area column-2">
+            {% for group in grouped_items %}
+                {% if group.name == "PER_COMPARTIR" %}
+                    {% assign area = areas[group.name] %}
+                    <div class="menu-area-title">
+                        <span data-lang-content="ca">{{ area.ca }}</span>
+                        <span data-lang-content="en">{{ area.en }}</span>
+                        <span data-lang-content="es">{{ area.es }}</span>
+                    </div>
+                    
+                    {% for section in group.items %}
+                        <div class="menu-section">
+                            {% if section.category %}
+                            <div class="menu-section-title">
+                                <span data-lang-content="ca">{{ section.category.ca }}</span>
+                                <span data-lang-content="en">{{ section.category.en }}</span>
+                                <span data-lang-content="es">{{ section.category.es }}</span>
+                            </div>
+                            {% endif %}
+                            
+                            <ul class="menu-list">
+                                {% for item in section.items %}
+                                    {% if item.type == "acompanyament" %}
+                                        <li class="menu-item acompanyament">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% else %}
+                                        <li class="menu-item">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            
+            {% for group in grouped_items %}
+                {% if group.name == "PLATS_PRINCIPALS" %}
+                    {% assign area = areas[group.name] %}
+                    <div class="menu-area-title">
+                        <span data-lang-content="ca">{{ area.ca }}</span>
+                        <span data-lang-content="en">{{ area.en }}</span>
+                        <span data-lang-content="es">{{ area.es }}</span>
+                    </div>
+                    
+                    {% for section in group.items %}
+                        <div class="menu-section">
+                            {% if section.category %}
+                            <div class="menu-section-title">
+                                <span data-lang-content="ca">{{ section.category.ca }}</span>
+                                <span data-lang-content="en">{{ section.category.en }}</span>
+                                <span data-lang-content="es">{{ section.category.es }}</span>
+                            </div>
+                            {% endif %}
+                            
+                            <ul class="menu-list">
+                                {% for item in section.items %}
+                                    {% if item.type == "acompanyament" %}
+                                        <li class="menu-item acompanyament">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% else %}
+                                        <li class="menu-item">
+                                            <span class="name">
+                                                <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                                <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                                <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                            </span>
+                                            <span class="dash">-</span>
+                                            <span class="price">{{ item.price }}</span>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        {% comment %} Columna 3: VINS {% endcomment %}
+        {% for group in grouped_items %}
+            {% if group.name == "VINS" %}
+                {% assign area = areas[group.name] %}
+                <div class="menu-area column-3">
+                    <div class="menu-area-title">
+                        <span data-lang-content="ca">{{ area.ca }}</span>
+                        <span data-lang-content="en">{{ area.en }}</span>
+                        <span data-lang-content="es">{{ area.es }}</span>
+                    </div>
+                    
+                    {% for section in group.items %}
+                        <div class="menu-section">
+                            {% if section.category %}
+                            <div class="menu-section-title">
+                                <span data-lang-content="ca">{{ section.category.ca }}</span>
+                                <span data-lang-content="en">{{ section.category.en }}</span>
+                                <span data-lang-content="es">{{ section.category.es }}</span>
+                            </div>
+                            {% endif %}
+                            
+                            <ul class="menu-list">
+                                {% for item in section.items %}
+                                    <li class="wine-item">
+                                        <span class="wine-item-name">
+                                            <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                            <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                            <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                        </span>
+                                        <span class="dash">-</span>
+                                        <span class="price">
+                                            {% if item.price_glass %}{{ item.price_glass }}{% endif %}{% if item.price_glass and item.price_bottle %}/{% endif %}{% if item.price_bottle %}{{ item.price_bottle }}{% endif %}
+                                        </span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        
+        {% comment %} COCTELS (si hay espacio) {% endcomment %}
+        {% for group in grouped_items %}
+            {% if group.name == "COCTELS" %}
+                {% assign area = areas[group.name] %}
+                <div class="menu-area column-3">
+                    <div class="menu-area-title">
+                        <span data-lang-content="ca">{{ area.ca }}</span>
+                        <span data-lang-content="en">{{ area.en }}</span>
+                        <span data-lang-content="es">{{ area.es }}</span>
+                    </div>
+                    
+                    {% for section in group.items %}
+                        <div class="menu-section">
+                            {% if section.category %}
+                            <div class="menu-section-title">
+                                <span data-lang-content="ca">{{ section.category.ca }}</span>
+                                <span data-lang-content="en">{{ section.category.en }}</span>
+                                <span data-lang-content="es">{{ section.category.es }}</span>
+                            </div>
+                            {% endif %}
+                            
+                            <ul class="menu-list">
+                                {% for item in section.items %}
+                                    <li class="menu-item">
+                                        <span class="name">
+                                            <span data-lang-content="ca">{{ item.name.ca | upcase }}</span>
+                                            <span data-lang-content="en">{{ item.name.en | upcase }}</span>
+                                            <span data-lang-content="es">{{ item.name.es | upcase }}</span>
+                                        </span>
+                                        <span class="dash">-</span>
+                                        <span class="price">{% if item.price %}{{ item.price }}{% endif %}</span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default language
+            let currentLang = 'ca';
+            updateLanguageDisplay(currentLang);
+
+            // Add click handlers to language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    currentLang = this.dataset.lang;
+                    updateLanguageDisplay(currentLang);
+                    updateActiveButton(this);
+                });
+            });
+
+            function updateLanguageDisplay(lang) {
+                // Hide all language content
+                document.querySelectorAll('[data-lang-content]').forEach(el => {
+                    el.style.display = 'none';
+                });
+                // Show selected language content
+                document.querySelectorAll(`[data-lang-content="${lang}"]`).forEach(el => {
+                    el.style.display = 'inline';
+                });
+            }
+
+            function updateActiveButton(clickedBtn) {
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                clickedBtn.classList.add('active');
+            }
+        });
+        function exportPDF() {
+            const element = document.getElementById('menu-sheet');
+            html2pdf()
+                .set({
+                    margin: 0,
+                    filename: 'menu-entrepreneur.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'cm', format: [43, 33], orientation: 'landscape' }
+                })
+                .from(element)
+                .save();
+        }
+    </script>
+</body>
+</html> 
