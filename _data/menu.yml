@@ -247,7 +247,7 @@ menu:
           ca: "Ou extra"
           en: "Extra egg"
           es: "Huevo extra"
-        price: 1
+        price: 1.0
         description: 
         type: acompanyament
 
@@ -555,7 +555,7 @@ menu:
           ca: "Truita de patata amb xoriço ibèric picant (+ formatge)"
           en: "Potato omelette with spicy Iberian chorizo (+ cheese)"
           es: "Tortilla de patata con chorizo ibérico picante (+ queso)"
-        price: 11
+        price: 11.0
         description: 
           ca: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
           en: "Soft potato omelette with spicy Iberian chorizo; optionally, you can add grated cheese to enhance the flavor."
