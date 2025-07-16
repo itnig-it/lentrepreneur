@@ -8,7 +8,7 @@ permalink: /card_check/
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificación de Tarjeta de Café</title>
-    <script src="https://unpkg.com/html5-qrcode@2.3.8/minified/html5-qrcode.min.js"></script>
+    <script src="/assets/js/html5-qrcode.min.js"></script>
     <style>
         body { margin: 0; padding: 0; font-family: 'Avenir Next', Arial, sans-serif; background: #f7f7f7; }
         .container { max-width: 400px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-align: center; }
@@ -38,73 +38,80 @@ permalink: /card_check/
         <p style="margin-top:2em;color:#888;font-size:0.95em;">Escanee el código QR de la tarjeta para comprobar su autenticidad.</p>
     </div>
     <script>
-    // Utilidad para calcular SHA-256 en hex
-    async function sha256hex(str) {
-        const encoder = new TextEncoder();
-        const data = encoder.encode(str);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-        return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-
-    // Cargar hashes válidos desde JSON externo
-    let VALID_HASHES = [];
-    fetch('/assets/js/card_hashes.json')
-        .then(res => res.json())
-        .then(data => { VALID_HASHES = data; })
-        .catch(() => { alert('No se pudo cargar la lista de tarjetas válidas.'); });
-
-    // Inicializar QR
-    const resultDiv = document.getElementById('result');
-    const iconSpan = resultDiv.querySelector('.icon');
-    const msgSpan = resultDiv.querySelector('.message');
-
-    function showResult(valid) {
-        resultDiv.style.display = 'block';
-        if (valid) {
-            resultDiv.className = 'result valid';
-            iconSpan.textContent = '✅';
-            msgSpan.textContent = '¡Tarjeta válida!';
-        } else {
-            resultDiv.className = 'result invalid';
-            iconSpan.textContent = '❌';
-            msgSpan.textContent = 'Tarjeta inválida o falsificada';
+    document.addEventListener('DOMContentLoaded', function() {
+        // Utilidad para calcular SHA-256 en hex
+        async function sha256hex(str) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(str);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
         }
-    }
 
-    function resetResult() {
-        resultDiv.style.display = 'none';
-        resultDiv.className = 'result';
-        iconSpan.textContent = '';
-        msgSpan.textContent = '';
-    }
+        // Cargar hashes válidos desde JSON externo
+        let VALID_HASHES = [];
+        fetch('/assets/js/card_hashes.json')
+            .then(res => res.json())
+            .then(data => { VALID_HASHES = data; })
+            .catch(() => { alert('No se pudo cargar la lista de tarjetas válidas.'); });
 
-    // Iniciar escaneo QR
-    function onScanSuccess(decodedText, decodedResult) {
-        // Parar escaneo tras primer resultado
-        qrScanner.clear();
-        sha256hex(decodedText.trim()).then(hash => {
-            showResult(VALID_HASHES.includes(hash));
+        // Inicializar QR solo si la librería está disponible
+        if (typeof Html5Qrcode === 'undefined') {
+            document.getElementById('qr-reader').innerHTML = '<p style="color:red">Error: No se pudo cargar el visor de cámara. Intenta recargar la página o revisa tu conexión.</p>';
+            return;
+        }
+
+        const resultDiv = document.getElementById('result');
+        const iconSpan = resultDiv.querySelector('.icon');
+        const msgSpan = resultDiv.querySelector('.message');
+
+        function showResult(valid) {
+            resultDiv.style.display = 'block';
+            if (valid) {
+                resultDiv.className = 'result valid';
+                iconSpan.textContent = '✅';
+                msgSpan.textContent = '¡Tarjeta válida!';
+            } else {
+                resultDiv.className = 'result invalid';
+                iconSpan.textContent = '❌';
+                msgSpan.textContent = 'Tarjeta inválida o falsificada';
+            }
+        }
+
+        function resetResult() {
+            resultDiv.style.display = 'none';
+            resultDiv.className = 'result';
+            iconSpan.textContent = '';
+            msgSpan.textContent = '';
+        }
+
+        // Iniciar escaneo QR
+        function onScanSuccess(decodedText, decodedResult) {
+            // Parar escaneo tras primer resultado
+            qrScanner.clear();
+            sha256hex(decodedText.trim()).then(hash => {
+                showResult(VALID_HASHES.includes(hash));
+            });
+        }
+
+        function onScanFailure(error) {
+            // No mostrar nada, solo seguir escaneando
+        }
+
+        const qrScanner = new Html5Qrcode("qr-reader");
+        Html5Qrcode.getCameras().then(cameras => {
+            if (cameras && cameras.length) {
+                qrScanner.start(
+                    cameras[0].id,
+                    { fps: 10, qrbox: 250 },
+                    onScanSuccess,
+                    onScanFailure
+                );
+            } else {
+                document.getElementById('qr-reader').innerHTML = '<p>No se detectó cámara.</p>';
+            }
+        }).catch(err => {
+            document.getElementById('qr-reader').innerHTML = '<p>Error accediendo a la cámara.</p>';
         });
-    }
-
-    function onScanFailure(error) {
-        // No mostrar nada, solo seguir escaneando
-    }
-
-    const qrScanner = new Html5Qrcode("qr-reader");
-    Html5Qrcode.getCameras().then(cameras => {
-        if (cameras && cameras.length) {
-            qrScanner.start(
-                cameras[0].id,
-                { fps: 10, qrbox: 250 },
-                onScanSuccess,
-                onScanFailure
-            );
-        } else {
-            document.getElementById('qr-reader').innerHTML = '<p>No se detectó cámara.</p>';
-        }
-    }).catch(err => {
-        document.getElementById('qr-reader').innerHTML = '<p>Error accediendo a la cámara.</p>';
     });
     </script>
 </body>
