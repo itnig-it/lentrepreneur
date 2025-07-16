@@ -9,6 +9,7 @@ permalink: /card_check/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificación de Tarjeta de Café</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
     <style>
         body { margin: 0; padding: 0; font-family: 'Avenir Next', Arial, sans-serif; background: #f7f7f7; }
         .container { max-width: 400px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-align: center; }
@@ -25,6 +26,34 @@ permalink: /card_check/
         .result.valid { background: #38d39f; color: #fff; border: 2px solid #1e9c6b; }
         .result.invalid { background: #ff4d4f; color: #fff; border: 2px solid #b71c1c; }
         .result .icon { font-size: 3em; display: block; margin-bottom: 0.3em; }
+        .overlay-result {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.75);
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .overlay-result .icon {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+        }
+        .overlay-result .close-btn {
+            margin-top: 2em;
+            font-size: 1em;
+            background: #fff;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -39,19 +68,20 @@ permalink: /card_check/
     </div>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Utilidad para calcular SHA-256 en hex
-        async function sha256hex(str) {
-            const encoder = new TextEncoder();
-            const data = encoder.encode(str);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-            return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+        // Utilidad para calcular SHA-256 en hex usando js-sha256
+        function sha256hex(str) {
+            console.log('[debug] sha256hex called', str, typeof sha256, sha256);
+            return Promise.resolve(sha256(str));
         }
 
         // Cargar hashes válidos desde JSON externo
         let VALID_HASHES = [];
         fetch('/assets/js/card_hashes.json')
             .then(res => res.json())
-            .then(data => { VALID_HASHES = data; })
+            .then(data => { 
+                VALID_HASHES = data; 
+                console.log('[hashes] Cargados:', VALID_HASHES);
+            })
             .catch(() => { alert('No se pudo cargar la lista de tarjetas válidas.'); });
 
         // Inicializar QR solo si la librería está disponible
@@ -60,21 +90,44 @@ permalink: /card_check/
             return;
         }
 
-        const resultDiv = document.getElementById('result');
+        // Asegurar que el div de resultado existe
+        let resultDiv = document.getElementById('result');
+        if (!resultDiv) {
+            resultDiv = document.createElement('div');
+            resultDiv.id = 'result';
+            resultDiv.className = 'result';
+            // Insertar al principio del .container
+            const container = document.querySelector('.container');
+            if (container) {
+                container.insertBefore(resultDiv, container.children[1]);
+            } else {
+                document.body.appendChild(resultDiv);
+            }
+        }
         const iconSpan = resultDiv.querySelector('.icon');
         const msgSpan = resultDiv.querySelector('.message');
 
-        function showResult(valid) {
+        // Eliminar la función showOverlayResult y su llamada en showResult
+        // Modificar showResult para actualizar solo el div de resultado
+        function showResult(valid, scannedText = null) {
+            console.log('showResult llamada. valid:', valid, 'scannedText:', scannedText);
+            // Forzar visibilidad y depuración visual (mantener para compatibilidad)
             resultDiv.style.display = 'block';
+            resultDiv.style.border = '3px solid #333';
+            resultDiv.classList.remove('valid', 'invalid');
+            let html = '';
             if (valid) {
-                resultDiv.className = 'result valid';
-                iconSpan.textContent = '✅';
-                msgSpan.textContent = '¡Tarjeta válida!';
+                resultDiv.classList.add('valid');
+                html += `<span class="icon">✅</span><span class="message">¡Tarjeta válida!`;
             } else {
-                resultDiv.className = 'result invalid';
-                iconSpan.textContent = '❌';
-                msgSpan.textContent = 'Tarjeta inválida o falsificada';
+                resultDiv.classList.add('invalid');
+                html += `<span class="icon">❌</span><span class="message">Tarjeta inválida o falsificada`;
             }
+            if (scannedText !== null) {
+                html += `<br><span style='font-size:0.8em;color:#333'>QR leído: <code>${scannedText.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code></span>`;
+            }
+            html += '</span>';
+            resultDiv.innerHTML = html;
         }
 
         function resetResult() {
@@ -86,11 +139,18 @@ permalink: /card_check/
 
         // Iniciar escaneo QR
         function onScanSuccess(decodedText, decodedResult) {
-            // Parar escaneo tras primer resultado
-            qrScanner.clear();
-            sha256hex(decodedText.trim()).then(hash => {
-                showResult(VALID_HASHES.includes(hash));
-            });
+            console.log('QR detectado:', decodedText);
+            // NO llamar a qrScanner.clear()
+            console.log('[debug] Antes de sha256hex');
+            sha256hex(decodedText.trim())
+                .then(hash => {
+                    console.log('[hash] Calculado:', hash, 'VALID_HASHES:', VALID_HASHES);
+                    showResult(VALID_HASHES.includes(hash), decodedText.trim());
+                })
+                .catch(e => {
+                    console.error('[hash] Error calculando SHA-256:', e);
+                    alert('Error calculando el hash SHA-256. Prueba en un navegador moderno y en localhost o HTTPS.');
+                });
         }
 
         function onScanFailure(error) {
