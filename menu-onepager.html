@@ -96,6 +96,15 @@ layout: null
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
+        .menu-note {
+            font-size: 11px;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.8em;
+            margin-top: -0.8em;
+            text-transform: none;
+            letter-spacing: normal;
+        }
         .menu-section {
             margin-bottom: 20px;
         }
@@ -215,6 +224,13 @@ layout: null
                                 <span data-lang-content="en">{{ section.category.en }}</span>
                                 <span data-lang-content="es">{{ section.category.es }}</span>
                             </div>
+                            {% if section.note %}
+                            <div class="menu-note">
+                                <span data-lang-content="ca">{{ section.note.ca }}</span>
+                                <span data-lang-content="en">{{ section.note.en }}</span>
+                                <span data-lang-content="es">{{ section.note.es }}</span>
+                            </div>
+                            {% endif %}
                             {% endif %}
                             
                             <ul class="menu-list">
@@ -267,6 +283,13 @@ layout: null
                                 <span data-lang-content="en">{{ section.category.en }}</span>
                                 <span data-lang-content="es">{{ section.category.es }}</span>
                             </div>
+                            {% if section.note %}
+                            <div class="menu-note">
+                                <span data-lang-content="ca">{{ section.note.ca }}</span>
+                                <span data-lang-content="en">{{ section.note.en }}</span>
+                                <span data-lang-content="es">{{ section.note.es }}</span>
+                            </div>
+                            {% endif %}
                             {% endif %}
                             
                             <ul class="menu-list">
@@ -319,6 +342,13 @@ layout: null
                                 <span data-lang-content="en">{{ section.category.en }}</span>
                                 <span data-lang-content="es">{{ section.category.es }}</span>
                             </div>
+                            {% if section.note %}
+                            <div class="menu-note">
+                                <span data-lang-content="ca">{{ section.note.ca }}</span>
+                                <span data-lang-content="en">{{ section.note.en }}</span>
+                                <span data-lang-content="es">{{ section.note.es }}</span>
+                            </div>
+                            {% endif %}
                             {% endif %}
                             
                             <ul class="menu-list">
@@ -371,6 +401,13 @@ layout: null
                                 <span data-lang-content="en">{{ section.category.en }}</span>
                                 <span data-lang-content="es">{{ section.category.es }}</span>
                             </div>
+                            {% if section.note %}
+                            <div class="menu-note">
+                                <span data-lang-content="ca">{{ section.note.ca }}</span>
+                                <span data-lang-content="en">{{ section.note.en }}</span>
+                                <span data-lang-content="es">{{ section.note.es }}</span>
+                            </div>
+                            {% endif %}
                             {% endif %}
                             
                             <ul class="menu-list">

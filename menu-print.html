@@ -165,6 +165,16 @@ layout: null
             color: #333;
         }
 
+        .menu-note {
+            font-size: 9px;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 3px;
+            margin-top: -2px;
+            text-transform: none;
+            letter-spacing: normal;
+        }
+
         .menu-item {
             margin-bottom: 0px;
             line-height: 1;
@@ -454,6 +464,13 @@ layout: null
                             <span data-lang-content="en">{{ section.category.en }}</span>
                             <span data-lang-content="es">{{ section.category.es }}</span>
                         </h2>
+                        {% if section.note %}
+                        <p class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </p>
+                        {% endif %}
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
                             <span class="menu-item-name">
@@ -499,6 +516,13 @@ layout: null
                             <span data-lang-content="en">{{ section.category.en }}</span>
                             <span data-lang-content="es">{{ section.category.es }}</span>
                         </h2>
+                        {% if section.note %}
+                        <p class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </p>
+                        {% endif %}
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
                             <span class="menu-item-name">
@@ -553,6 +577,13 @@ layout: null
                             <span data-lang-content="en">{{ section.category.en }}</span>
                             <span data-lang-content="es">{{ section.category.es }}</span>
                         </h2>
+                        {% if section.note %}
+                        <p class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </p>
+                        {% endif %}
                         {% for item in section.items %}
                         <div class="wine-item">
                             <span class="wine-item-name">
@@ -601,6 +632,13 @@ layout: null
                             <span data-lang-content="en">{{ section.category.en }}</span>
                             <span data-lang-content="es">{{ section.category.es }}</span>
                         </h2>
+                        {% if section.note %}
+                        <p class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </p>
+                        {% endif %}
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
                             <span class="menu-item-name">
@@ -654,6 +692,13 @@ layout: null
                             <span data-lang-content="en">{{ section.category.en }}</span>
                             <span data-lang-content="es">{{ section.category.es }}</span>
                         </h2>
+                        {% if section.note %}
+                        <p class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </p>
+                        {% endif %}
                         {% for item in section.items %}
                         <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
                             <span class="menu-item-name">

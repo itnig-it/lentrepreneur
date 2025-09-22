@@ -22,6 +22,12 @@ title: Menú
         {% for category in esmorzars %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -66,6 +72,9 @@ title: Menú
         {% for category in per_compartir %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -110,6 +119,9 @@ title: Menú
         {% for category in plats_principals %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -154,6 +166,9 @@ title: Menú
         {% for category in vins %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
@@ -198,6 +213,9 @@ title: Menú
         {% for category in coctels %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            {% if category.note %}
+            <p class="text-sm text-gray-500 italic mb-4">{{ category.note.ca }}</p>
+            {% endif %}
             <div class="space-y-4">
               {% for item in category.items %}
                 <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
