@@ -445,29 +445,9 @@ menu:
           es: "Gilda de la casa XXL"
         price: 3.5
         description: 
-          ca: "Versió XXL de l'aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d'acidesa i sabor intens."
-          en: "XXL version of the classic Basque appetizer with anchovy, olive, and piparra, a perfect combination of acidity and intense flavor."
-          es: "Versión XXL del aperitivo clásico vasco con anchoa, oliva y piparra, combinación perfecta de acidez y sabor intenso."
-
-      - name: 
-          ca: "Croqueta de llet crua i pernil ibèric de gla"
-          en: "Croquette of raw milk and acorn-fed Iberian ham"
-          es: "Croqueta de leche cruda y jamón ibérico de bellota"
-        price: 1.9
-        description: 
-          ca: "Croqueta artesana amb beixamel cremosa de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
-          en: "Handmade croquette with creamy raw milk béchamel and acorn-fed Iberian ham, crispy outside and soft inside."
-          es: "Croqueta artesana con bechamel cremosa de leche cruda y jamón ibérico de bellota, crujiente por fuera y cremosa por dentro."
-
-      - name: 
-          ca: "Patates braves pujades (allioli i oli picant)"
-          en: "Loaded patatas bravas (allioli and spicy oil)"
-          es: "Patatas bravas especiales (allioli y aceite picante)"
-        price: 6.0
-        description: 
-          ca: "Patates braves cruixents amb allioli suau i oli picant casolà, per un equilibri perfecte entre cremositat i potència."
-          en: "Crispy patatas bravas with smooth allioli and homemade spicy oil, offering a perfect balance between creaminess and intensity."
-          es: "Patatas bravas crujientes con allioli suave y aceite picante casero, logrando un equilibrio perfecto entre cremosidad e intensidad."
+          ca: "Versió XXL del clàssic aperitiu basc amb anxova, oliva i piparra, una explosió de sabors salins i frescos."
+          en: "XXL version of the classic Basque appetizer with anchovy, olive and piparra — an explosion of salty and fresh flavors."
+          es: "Versión XXL del clásico aperitivo vasco con anchoa, aceituna y piparra, una explosión de sabores salinos y frescos."
 
       - name: 
           ca: "Amanida russa amb ventresca i piparres"
@@ -475,30 +455,49 @@ menu:
           es: "Ensaladilla rusa con ventresca y piparras"
         price: 8.0
         description: 
-          ca: "Amanida russa cremosa, acompanyada de ventresca de tonyina i piparres, aportant un contrast entre la suavitat i l'acidesa."
-          en: "Creamy Russian salad with tuna belly and piparras, offering a contrast between smoothness and acidity."
-          es: "Ensaladilla rusa cremosa, acompañada de ventresca de atún y piparras, aportando un contraste entre suavidad y acidez."
+          ca: "Amanida russa cremosa amb ventresca de tonyina i piparres, un contrast perfecte entre suavitat i acidesa."
+          en: "Creamy Russian salad with tuna belly and piparras, a perfect balance between smoothness and acidity."
+          es: "Ensaladilla rusa cremosa con ventresca de atún y piparras, un contraste perfecto entre suavidad y acidez."
 
-     
       - name: 
-          ca: "Cecina Angus de Lleó D.O. amb Burrata i pesto de festucs"
+          ca: "Cecina Angus de Lleó D.O. amb burrata i pesto de festucs"
           en: "Leon D.O. Angus cured beef with burrata and pistachio pesto"
           es: "Cecina Angus de León D.O. con burrata y pesto de pistachos"
         price: 18.9
         description: 
-          ca: "Cecina de Wagyu de Lleó, combinada amb burrata fresca i pesto de festucs per a una fusió entre intensitat i cremositat."
-          en: "Leon D.O. Wagyu cured beef combined with fresh burrata and pistachio pesto, fusing intensity and creaminess."
-          es: "Cecina de Wagyu de León combinada con burrata fresca y pesto de pistachos, fusionando intensidad y cremosidad."
+          ca: "Cecina de vedella Angus de Lleó amb burrata cremosa i pesto de festucs, una fusió entre intensitat i delicadesa."
+          en: "Leon D.O. Angus cured beef with creamy burrata and pistachio pesto — a fusion of intensity and delicacy."
+          es: "Cecina de ternera Angus de León con burrata cremosa y pesto de pistachos, una fusión entre intensidad y delicadeza."
 
       - name: 
-          ca: "Amanida de tomàquet amb seitons, olives i pernil ibèric de gla"
-          en: "Tomato salad with anchovies, olives, and Iberian ham"
-          es: "Ensalada de tomate con boquerones, olivas y jamón ibérico"
+          ca: "Amanida de tomàquet amb seitons marinats i pernil ibèric de gla"
+          en: "Tomato salad with marinated anchovies and acorn-fed Iberian ham"
+          es: "Ensalada de tomate con boquerones marinados y jamón ibérico de bellota"
         price: 13.9
         description: 
-          ca: "Tomàquet madur amb seitons i olives, acabat amb un toc de pernil ibèric de gla que aporta complexitat al plat."
-          en: "Ripe tomato with anchovies and olives, finished with a touch of acorn-fed Iberian ham that adds complexity."
-          es: "Tomate maduro con boquerones y olivas, rematado con un toque de jamón ibérico de bellota que aporta complejidad."
+          ca: "Tomàquet madur amb seitons marinats i pernil ibèric de gla, un plat fresc amb contrastos elegants."
+          en: "Ripe tomato with marinated anchovies and acorn-fed Iberian ham, a fresh dish with elegant contrasts."
+          es: "Tomate maduro con boquerones marinados y jamón ibérico de bellota, un plato fresco con contrastes elegantes."
+
+      - name: 
+          ca: "Patates braves pujades (allioli i oli picant)"
+          en: "Loaded patatas bravas (allioli and spicy oil)"
+          es: "Patatas bravas especiales (allioli y aceite picante)"
+        price: 6.0
+        description: 
+          ca: "Patates cruixents amb allioli suau i oli picant casolà, un clàssic amb personalitat pròpia."
+          en: "Crispy potatoes with smooth allioli and homemade spicy oil — a classic with character."
+          es: "Patatas crujientes con allioli suave y aceite picante casero, un clásico con personalidad propia."
+
+      - name: 
+          ca: "Croqueta de llet crua i pernil ibèric de gla"
+          en: "Croquette of raw milk and acorn-fed Iberian ham"
+          es: "Croqueta de leche cruda y jamón ibérico de bellota"
+        price: 1.9
+        description: 
+          ca: "Croqueta artesana amb beixamel de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
+          en: "Handcrafted croquette with raw milk béchamel and acorn-fed Iberian ham, crispy on the outside and creamy inside."
+          es: "Croqueta artesana con bechamel de leche cruda y jamón ibérico de bellota, crujiente por fuera y cremosa por dentro."
 
       - name: 
           ca: "Bunyols de bacallà amb maionesa de mel"
@@ -506,9 +505,9 @@ menu:
           es: "Buñuelos de bacalao con mayonesa de miel"
         price: 9.0
         description: 
-          ca: "Bunyols de bacallà cruixents amb maionesa de mel."
-          en: "Crispy cod fritters with honey mayonnaise."
-          es: "Buñuelos de bacalao crujientes con mayonesa de miel."
+          ca: "Bunyols lleugers i cruixents de bacallà, servits amb una maionesa de mel que aporta un toc dolç i suau."
+          en: "Light and crispy cod fritters served with honey mayonnaise for a sweet and delicate touch."
+          es: "Buñuelos ligeros y crujientes de bacalao servidos con mayonesa de miel que aporta un toque dulce y suave."
 
       - name: 
           ca: "Bolets de temporada saltats amb rovell d'ou i vel de panxeta ibèrica"
@@ -516,18 +515,18 @@ menu:
           es: "Setas de temporada salteadas con yema de huevo y velo de panceta ibérica"
         price: 14.5
         description: 
-          ca: "Bolets de temporada saltats, amb rovell d'ou i vel de panxeta ibèrica."
-          en: "Seasonal mushrooms sautéed with egg yolk and Iberian pork belly."
-          es: "Setas de temporada salteadas con yema de huevo y velo de panceta ibérica."
+          ca: "Bolets frescos saltats amb rovell d'ou i vel fi de panxeta ibèrica, una combinació melosa i intensa."
+          en: "Fresh seasonal mushrooms sautéed with egg yolk and thin Iberian pork belly — rich and silky."
+          es: "Setas frescas salteadas con yema de huevo y fino velo de panceta ibérica, una combinación melosa e intensa."
 
       - name: 
           ca: "Xistorra amb patates fregides i allioli"
-          en: "Xistorra with fried potatoes and allioli"
+          en: "Xistorra with fries and allioli"
           es: "Chistorra con patatas fritas y allioli"
         price: 12.0
         description: 
           ca: "Xistorra suculenta amb patates fregides cruixents i allioli casolà."
-          en: "Juicy xistorra with crispy fried potatoes and homemade allioli."
+          en: "Juicy xistorra with crispy fries and homemade allioli."
           es: "Chistorra jugosa con patatas fritas crujientes y allioli casero."
 
       - name: 
@@ -536,9 +535,9 @@ menu:
           es: "Biquini de bull negre y Arzua Ulloa"
         price: 12.0
         description: 
-          ca: "Biquini de bull negre i formatge Arzua Ulloa fos, acompanyat d'allioli."
-          en: "Biquini with black pudding and melted Arzua Ulloa cheese, served with allioli."
-          es: "Biquini de bull negre y queso Arzua Ulloa fundido, acompañado de allioli."
+          ca: "Biquini calent amb bull negre i formatge Arzua Ulloa fos, una combinació suau i saborosa."
+          en: "Warm biquini sandwich with black pudding and melted Arzua Ulloa cheese — smooth and flavorful."
+          es: "Biquini caliente con bull negre y queso Arzua Ulloa fundido, una combinación suave y sabrosa."
 
     - category: 
         ca: "VERDURES, OUS I PASTA"
@@ -552,9 +551,9 @@ menu:
           es: "Trinxat con torreznos de Soria, puedes añadir huevo"
         price: 10.0
         description: 
-          ca: "Clàssic trinxat de col i patata amb cruixents rostes de Soria, al qual pots afegir un ou per donar-hi més intensitat."
-          en: "Classic trinxat of cabbage and potato with crispy Soria pork cracklings, with the option to add an egg for extra richness."
-          es: "Clásico trinxat de col y patata con crujientes torreznos de Soria, al que puedes añadir un huevo para darle más intensidad."
+          ca: "Trinxat clàssic de col i patata amb cruixents rostes de Soria. Pots afegir-hi un ou ferrat per donar-li més intensitat."
+          en: "Classic cabbage and potato trinxat with crispy Soria cracklings. You can add a fried egg for extra richness."
+          es: "Clásico trinxat de col y patata con crujientes torreznos de Soria. Puedes añadir un huevo frito para darle más intensidad."
 
       - name: 
           ca: "Carxofes confitades amb cruixent de pernil i pinyons"
@@ -562,39 +561,39 @@ menu:
           es: "Alcachofas confitadas con crujiente de jamón y piñones"
         price: 8.0
         description: 
-          ca: "Carxofes confitades a baixa temperatura, acompanyades de cruixent de pernil i pinyons torrats."
-          en: "Slow-cooked confit artichokes served with crispy ham and toasted pine nuts."
-          es: "Alcachofas confitadas a baja temperatura, acompañadas de crujiente de jamón y piñones tostados."
+          ca: "Carxofes confitades a baixa temperatura, amb cruixent de pernil ibèric i pinyons torrats."
+          en: "Slow-cooked confit artichokes with crispy Iberian ham and toasted pine nuts."
+          es: "Alcachofas confitadas a baja temperatura con crujiente de jamón ibérico y piñones tostados."
 
       - name: 
-          ca: "Alberginia fumada amb maó, avellanes i mel"
+          ca: "Alberginia fumada amb Maó, avellanes i mel"
           en: "Smoked aubergine with Maó cheese, hazelnuts and honey"
           es: "Berenjena ahumada con queso Maó, avellanas y miel"
         price: 15.8
         description: 
-          ca: "Albergínia fumada amb formatge Maó fos, mel i avellanes torrades per un contrast dolç i salat."
-          en: "Smoked aubergine with melted Maó cheese, honey, and toasted hazelnuts for a sweet and savory contrast."
-          es: "Berenjena ahumada con queso Maó fundido, miel y avellanas tostadas para un contraste dulce y salado."
+          ca: "Albergínia fumada amb formatge Maó fos, mel i avellanes torrades, un joc dolç i salat irresistible."
+          en: "Smoked aubergine with melted Maó cheese, honey and toasted hazelnuts — an irresistible sweet and savory balance."
+          es: "Berenjena ahumada con queso Maó fundido, miel y avellanas tostadas, un equilibrio dulce y salado irresistible."
 
       - name: 
-          ca: "Ous de Calaf, patata panadera amb gambes o pop o gambes i pop al allet"
-          en: "Calaf eggs with potatoes and prawns, octopus or both with garlic"
-          es: "Huevos de Calaf con patata panadera y gambas, pulpo o gambas y pulpo al ajillo"
+          ca: "Ous de Calaf ferrats, patata panadera amb gambes a l'allet"
+          en: "Calaf fried eggs with pan-baked potatoes and garlic prawns"
+          es: "Huevos fritos de Calaf con patata panadera y gambas al ajillo"
         price: 18.5
         description: 
-          ca: "Ous de Calaf acompanyats de patata panadera, amb gambes, pop o la combinació de tots dos al perfum d'all."
-          en: "Calaf eggs served with pan-baked potatoes, with prawns, octopus or both, sautéed with garlic."
-          es: "Huevos de Calaf acompañados de patata panadera, con gambas, pulpo o la combinación de ambos al ajillo."
+          ca: "Ous ecològics de Calaf amb patata panadera i gambes saltejades a l'all, un plat saborós i reconfortant."
+          en: "Organic Calaf eggs with pan-baked potatoes and garlic sautéed prawns — flavorful and comforting."
+          es: "Huevos ecológicos de Calaf con patata panadera y gambas salteadas al ajillo, un plato sabroso y reconfortante."
 
       - name: 
-          ca: "Truita de patata amb tófona i li pots afegir formatge ratllat"
+          ca: "Truita de patata amb tòfona i li pots afegir formatge ratllat"
           en: "Potato omelette with truffle, you can add grated cheese"
           es: "Tortilla de patata con trufa, puedes añadir queso rallado"
         price: 9.0
         description: 
-          ca: "Truita de patata amb un toc de tòfona, amb l'opció d'afegir formatge ratllat per intensificar-ne el sabor."
-          en: "Potato omelette with a hint of truffle, with the option to add grated cheese for extra flavor."
-          es: "Tortilla de patata con un toque de trufa, con la opción de añadir queso rallado para intensificar su sabor."
+          ca: "Truita gruixuda de patata amb un toc de tòfona. Pots afegir-hi formatge ratllat per intensificar el sabor."
+          en: "Thick potato omelette with a hint of truffle. Add grated cheese to enhance the flavor."
+          es: "Tortilla gruesa de patata con un toque de trufa. Puedes añadir queso rallado para intensificar el sabor."
 
       - name: 
           ca: "Macarrons a la cardina"
@@ -602,9 +601,9 @@ menu:
           es: "Macarrones a la cardina"
         price: 9.5
         description: 
-          ca: "Macarrons cuinats amb cardina fresca i un toc d'espècies mediterrànies."
-          en: "Macaroni cooked with fresh cardina and a touch of Mediterranean spices."
-          es: "Macarrones cocinados con cardina fresca y un toque de especias mediterráneas."
+          ca: "Macarrons amb cardina fresca i un toc d'espècies mediterrànies, un plat humil i ple de sabor."
+          en: "Macaroni with fresh cardina and a touch of Mediterranean spices — simple yet full of flavor."
+          es: "Macarrones con cardina fresca y un toque de especias mediterráneas, un plato sencillo y lleno de sabor."
 
       - name: 
           ca: "Caneló XL de rostit amb beixamel de ceps"
@@ -612,9 +611,9 @@ menu:
           es: "Canelón XL de asado con bechamel de setas"
         price: 14.0
         description: 
-          ca: "Caneló XL farcit de rostit tradicional, banyat amb una beixamel de ceps cremosa i aromàtica."
-          en: "XL cannelloni stuffed with traditional roast meat, topped with creamy and aromatic porcini béchamel."
-          es: "Canelón XL relleno de asado tradicional, bañado con una bechamel de setas cremosa y aromática."
+          ca: "Caneló XL farcit de rostit tradicional i banyat amb una beixamel de ceps cremosa i aromàtica."
+          en: "XL cannelloni stuffed with traditional roast meat and topped with creamy porcini béchamel."
+          es: "Canelón XL relleno de asado tradicional y cubierto con una bechamel cremosa de setas."
 
     - category: 
         ca: "LLEGUMS I ARRÒS"
@@ -626,11 +625,11 @@ menu:
           ca: "Cigrons amb llamàntol"
           en: "Chickpeas with lobster"
           es: "Garbanzos con bogavante"
-        price: 28.90
+        price: 28.9
         description: 
-          ca: "Cigrons guisats amb llamàntol fresc, un plat mariner que combina la potència del marisc amb la suavitat del llegum."
-          en: "Stewed chickpeas with fresh lobster, a seafood dish combining the richness of shellfish with the smoothness of legumes."
-          es: "Garbanzos guisados con bogavante fresco, un plato marinero que combina la potencia del marisco con la suavidad de la legumbre."
+          ca: "Cigrons guisats amb llamàntol fresc, un plat mariner ple de sabor i elegància."
+          en: "Stewed chickpeas with fresh lobster — a rich and elegant seafood dish."
+          es: "Garbanzos guisados con bogavante fresco, un plato marinero lleno de sabor y elegancia."
 
       - name: 
           ca: "Arròs a la llauna amb gambes blanques"
@@ -638,9 +637,10 @@ menu:
           es: "Arroz a la llauna con gambas blancas"
         price: 25.0
         description: 
-          ca: "Arròs melós cuinat a la llauna amb gambes blanques fresques, intens en sabor i tradició mediterrània."
-          en: "Creamy rice baked in the pan with fresh white prawns, full of flavor and Mediterranean tradition."
+          ca: "Arròs melós cuinat a la llauna amb gambes blanques fresques, intens en sabor i tradició."
+          en: "Creamy rice baked in the pan with fresh white prawns — full of flavor and Mediterranean tradition."
           es: "Arroz meloso cocinado a la llauna con gambas blancas frescas, lleno de sabor y tradición mediterránea."
+
 
     - category: 
         ca: "PEIX"
@@ -649,44 +649,44 @@ menu:
       menu_area: "PLATS_PRINCIPALS"
       items:
       - name: 
-          ca: "Verat escabetxat"
-          en: "Marinated mackerel"
-          es: "Caballa en escabeche"
-        price: 16.0
-        description: 
-          ca: "Verat fresc marinat en escabetx suau, una explosió de sabors mediterranis."
-          en: "Fresh mackerel marinated in a light escabeche, bursting with Mediterranean flavors."
-          es: "Caballa fresca marinada en un suave escabeche, una explosión de sabores mediterráneos."
-
-      - name: 
           ca: "Lluç a la romana amb salsa tàrtara"
           en: "Fried hake with tartar sauce"
           es: "Merluza a la romana con salsa tártara"
-        price: 18.0
+        price: 19.0
         description: 
-          ca: "Lluç arrebossat amb una cobertura cruixent i lleugera, servit amb una salsa tàrtara fresca i cremosa."
-          en: "Fried hake with a crispy and light batter, served with fresh and creamy tartar sauce."
-          es: "Merluza rebozada con una cobertura crujiente y ligera, servida con salsa tártara fresca y cremosa."
+          ca: "Lluç fresc arrebossat amb una cobertura cruixent i lleugera, servit amb salsa tàrtara casolana i punt cítric."
+          en: "Fresh hake in a light, crispy batter, served with homemade tartar sauce and a hint of citrus."
+          es: "Merluza fresca rebozada con una cobertura ligera y crujiente, servida con salsa tártara casera y un toque cítrico."
 
       - name: 
-          ca: "Calamar de potera a la planxa amb papada ibèrica"
-          en: "Grilled squid with Iberian dewlap"
-          es: "Calamar de potera a la plancha con papada ibérica"
+          ca: "Calamars a la planxa amb vel de papada ibèrica"
+          en: "Grilled squid with Iberian pork belly veil"
+          es: "Calamares a la plancha con velo de papada ibérica"
         price: 18.5
         description: 
-          ca: "Calamar de potera tendre i saborós, cuinat a la planxa per ressaltar tot el seu sabor natural."
-          en: "Tender and flavorful squid, grilled to enhance its natural taste."
-          es: "Calamar de potera tierno y sabroso, cocinado a la plancha para resaltar todo su sabor natural."
+          ca: "Calamars tendres cuinats a la planxa i coronats amb un vel fi de papada ibèrica que aporta untuositat i aroma."
+          en: "Tender grilled squid topped with a fine veil of Iberian pork belly, adding richness and aroma."
+          es: "Calamares tiernos a la plancha coronados con un fino velo de papada ibérica que aporta untuosidad y aroma."
 
       - name: 
-          ca: "Bacallà amb samfaina"
-          en: "Cod with Catalan ratatouille (samfaina)"
-          es: "Bacalao con samfaina"
+          ca: "Bacallà ajoarriero"
+          en: "Cod ajoarriero"
+          es: "Bacalao ajoarriero"
+        price: 18.5
+        description: 
+          ca: "Bacallà esmicolat amb pebrot, all i tomàquet, seguint la recepta tradicional del nord amb el nostre toc suau i melós."
+          en: "Flaked cod with pepper, garlic, and tomato, following the traditional northern recipe with a soft and silky touch."
+          es: "Bacalao desmigado con pimiento, ajo y tomate, siguiendo la receta tradicional del norte con un toque suave y meloso."
+
+      - name: 
+          ca: "Tonyina amb llentia caviar i gingebre"
+          en: "Tuna with caviar lentils and ginger"
+          es: "Atún con lenteja caviar y jengibre"
         price: 22.0
         description: 
-          ca: "Llom de bacallà cuinat al punt, acompanyat de samfaina casolana de verdures."
-          en: "Perfectly cooked cod loin served with homemade Catalan ratatouille (samfaina)."
-          es: "Lomo de bacalao cocinado al punto, acompañado de samfaina casera de verduras."
+          ca: "Tataki de tonyina al punt amb llenties caviar i una vinagreta lleugera de gingebre que realça el seu sabor."
+          en: "Seared tuna with caviar lentils and a light ginger vinaigrette to enhance its flavor."
+          es: "Tataki de atún en su punto con lentejas caviar y una vinagreta ligera de jengibre que realza su sabor."
 
 
     - category: 
@@ -696,81 +696,91 @@ menu:
       menu_area: "PLATS_PRINCIPALS"
       items:
       - name: 
-          ca: "Fricandó de llata de vedella amb bolets i parmentier"
-          en: "Veal fricandó with mushrooms and parmentier"
-          es: "Fricandó de ternera con setas y parmentier"
-        price: 18.0
+          ca: "Fricandó de llata de vedella amb moixernons"
+          en: "Veal fricandó with moixernons mushrooms"
+          es: "Fricandó de ternera con moixernons"
+        price: 16.0
         description: 
-          ca: "Estofat tradicional català amb vedella tendra, bolets i una parmentier cremosa que potencia el seu sabor."
-          en: "Traditional Catalan stew with tender veal, mushrooms, and a creamy parmentier to enhance its flavor."
-          es: "Estofado tradicional catalán con ternera tierna, setas y una parmentier cremosa que realza su sabor."
+          ca: "Clàssic fricandó de vedella tendre amb moixernons, cuinat a foc lent amb una salsa intensa i melosa."
+          en: "Classic Catalan veal fricandó with moixernons mushrooms, slow-cooked in a rich, silky sauce."
+          es: "Clásico fricandó catalán de ternera tierna con moixernons, cocinado a fuego lento en una salsa intensa y melosa."
 
       - name: 
-          ca: "Mandonguilles amb sípia i pèsols"
-          en: "Meatballs with cuttlefish and peas"
-          es: "Albóndigas con sepia y guisantes"
-        price: 14.5
+          ca: "Cruixent de peus de porc i orella amb salsa i piparres"
+          en: "Crispy pork feet and ear with sauce and piparras"
+          es: "Crujiente de pies de cerdo y oreja con salsa y piparras"
+        price: 14.0
         description: 
-          ca: "Mandonguilles casolanes guisades amb sípia tendra i pèsols, un plat mariner de sabors profunds i reconfortants."
-          en: "Homemade meatballs stewed with tender cuttlefish and peas, a comforting seafood dish with deep flavors."
-          es: "Albóndigas caseras guisadas con sepia tierna y guisantes, un plato marinero de sabores profundos y reconfortantes."
+          ca: "Peus i orella de porc desossats, confitats i fregits fins a quedar cruixents, amb salsa casolana i piparres per al contrast."
+          en: "Deboned pork feet and ear, confit and fried until crispy, served with homemade sauce and piparras for contrast."
+          es: "Pies y oreja de cerdo deshuesados, confitados y fritos hasta quedar crujientes, con salsa casera y piparras para el contraste."
 
       - name: 
-          ca: "Botifarra esparracada amb mongetes de Santa Pau"
-          en: "Broken botifarra with Santa Pau beans"
-          es: "Botifarra \"esparracada\" con judías de Santa Pau"
-        price: 13.5
+          ca: "Mandonguilles amb trompetes de la mort i patates"
+          en: "Meatballs with black trumpets and potatoes"
+          es: "Albóndigas con trompetas de la muerte y patatas"
+        price: 14.0
         description: 
-          ca: "Botifarra artesana de qualitat, esparracada i saltejada, servida amb les emblemàtiques mongetes de Santa Pau."
-          en: "High-quality artisan botifarra, broken and sautéed, served with the iconic Santa Pau beans."
-          es: "Butifarra artesana de calidad, \"esparracada\" y salteada, servida con las emblemáticas judías de Santa Pau."
+          ca: "Mandonguilles casolanes guisades amb trompetes de la mort i patates, un plat fosc, intens i ple de sabor."
+          en: "Homemade meatballs stewed with black trumpet mushrooms and potatoes — dark, intense and full of flavor."
+          es: "Albóndigas caseras guisadas con trompetas de la muerte y patatas, un plato oscuro, intenso y lleno de sabor."
 
       - name: 
-          ca: "Lingot de xai"
-          en: "Lamb lingot"
-          es: "Lingote de cordero"
-        price: 21.0
+          ca: "Botifarra artesana amb mongeta de Santa Pau"
+          en: "Artisan botifarra with Santa Pau beans"
+          es: "Butifarra artesana con judías de Santa Pau"
+        price: 13.0
         description: 
-          ca: "Lingot tendre i melós de xai cuinat a baixa temperatura, amb un sabor intens i una textura irresistible."
-          en: "Tender and juicy lamb lingot slow-cooked to perfection, offering an intense flavor and irresistible texture."
-          es: "Lingote de cordero tierno y meloso cocinado a baja temperatura, con un sabor intenso y una textura irresistible."
+          ca: "Botifarra artesana feta amb porc de proximitat, acompanyada de les clàssiques mongetes de Santa Pau."
+          en: "Artisan Catalan sausage made with local pork, served with the classic Santa Pau beans."
+          es: "Butifarra artesana elaborada con cerdo de proximidad, acompañada de las clásicas judías de Santa Pau."
 
       - name: 
-          ca: "Entrecot al pebre negre"
-          en: "Ribeye steak with black pepper sauce"
-          es: "Entrecot con salsa de pimienta negra"
-        price: 22.0
+          ca: "Pepito de vedella amb foie d'ànec"
+          en: "Veal sandwich with duck foie gras"
+          es: "Pepito de ternera con foie de pato"
+        price: 19.0
         description: 
-          ca: "Entrecot de vedella madurat, marcat al punt i banyat amb una salsa cremosa de pebre negre per ressaltar el seu gust."
-          en: "Aged ribeye steak, grilled to perfection and finished with a creamy black pepper sauce to enhance its flavor."
-          es: "Entrecot de ternera madurada, marcado al punto y bañado con una cremosa salsa de pimienta negra que realza su sabor."
+          ca: "Pepito calent de vedella filetejada amb foie d’ànec a la planxa i salsa suau, un entrepà amb ànima de plat."
+          en: "Warm veal sandwich with seared duck foie gras and a smooth sauce — a sandwich with the soul of a main dish."
+          es: "Pepito caliente de ternera fileteada con foie de pato a la plancha y salsa suave, un bocadillo con alma de plato."
+
+      - name: 
+          ca: "Entrecot de pastura al pebre negre"
+          en: "Pasture-fed ribeye with black pepper sauce"
+          es: "Entrecot de pastura con salsa de pimienta negra"
+        price: 24.5
+        description: 
+          ca: "Entrecot de vedella de pastura, marcat al punt i servit amb salsa de pebre negre cremosa i aromàtica."
+          en: "Pasture-fed ribeye steak, grilled to perfection and served with creamy aromatic black pepper sauce."
+          es: "Entrecot de ternera de pastura, marcado al punto y servido con salsa cremosa de pimienta negra."
 
 
     - category: 
         ca: "GUARNICIÓ"
-        en: "GUARNISH"
+        en: "SIDES"
         es: "GUARNICIÓN"
       menu_area: "PLATS_PRINCIPALS"
       items:
       - name: 
-          ca: "Amanida verda amb raves"
-          en: "Green salad with radishes"
-          es: "Ensalada verde con rábanos"
+          ca: "Patates fregides \"Allumette\""
+          en: "Allumette fries"
+          es: "Patatas fritas \"Allumette\""
         price: 3.5
         description: 
-          ca: "Amanida fresca amb fulles verdes i raves, ideal per aportar lleugeresa i frescor al teu àpat."
-          en: "Fresh salad with mixed greens and radishes, perfect to add lightness and freshness to your meal."
-          es: "Ensalada fresca con hojas verdes y rábanos, ideal para aportar ligereza y frescura a tu comida."
+          ca: "Patates tallades fines i fregides fins a quedar cruixents, ideals per acompanyar qualsevol plat."
+          en: "Thin-cut fries fried until perfectly crispy, ideal to accompany any dish."
+          es: "Patatas finamente cortadas y fritas hasta quedar crujientes, ideales para acompañar cualquier plato."
 
-      - name:
-          ca: "Escalivada"
-          en: "Escalivada"
-          es: "Escalivada"
+      - name: 
+          ca: "Pebrots del piquillo confitats"
+          en: "Confit piquillo peppers"
+          es: "Pimientos del piquillo confitados"
         price: 4.5
         description: 
-          ca: "Escalivada tradicional amb verdures de temporada, un clàssic català que aporta frescor i intensitat a qualsevol àpat."
-          en: "Traditional escalivada with seasonal vegetables, a Catalan classic that brings freshness and intensity to any meal."
-          es: "Escalivada tradicional con verduras de temporada, un clásico catalán que aporta frescura e intensidad a cualquier comida."
+          ca: "Pebrots del piquillo confitats lentament amb oli d'oliva verge extra, dolços i aromàtics."
+          en: "Piquillo peppers slowly confit in extra virgin olive oil, sweet and aromatic."
+          es: "Pimientos del piquillo confitados lentamente en aceite de oliva virgen extra, dulces y aromáticos."
 
       - name: 
           ca: "Verdura de temporada"
@@ -778,20 +788,9 @@ menu:
           es: "Verduras de temporada"
         price: 3.5
         description: 
-          ca: "Selecció de verdures de temporada cuinades al punt per preservar tot el seu sabor i textura."
-          en: "Selection of seasonal vegetables cooked to perfection to preserve all their flavor and texture."
-          es: "Selección de verduras de temporada cocinadas al punto para preservar todo su sabor y textura."
-
-
-      - name: 
-          ca: "Patates fregides \"Allumette\""
-          en: "Allumette fries"
-          es: "Patatas fritas \"Allumette\""
-        price: 3.5
-        description: 
-          ca: "Patates tallades fines i fregides fins a ser cruixents, perfectes per acompanyar qualsevol plat."
-          en: "Thin-cut potatoes fried until crispy, perfect to accompany any dish."
-          es: "Patatas finamente cortadas y fritas hasta quedar crujientes, perfectas para acompañar cualquier plato."
+          ca: "Selecció de verdures fresques del dia, cuinades al punt per mantenir-ne la textura i el sabor."
+          en: "Selection of fresh daily vegetables, cooked to perfection to preserve their texture and flavor."
+          es: "Selección de verduras frescas del día, cocinadas al punto para mantener su textura y sabor."
 
        
 
@@ -805,7 +804,7 @@ menu:
           ca: "Pa de massa mare amb AOVE i tomacó"
           en: "Sourdough bread with EVOO and tomato"
           es: "Pan de masa madre con AOVE y tomate"
-        price: 4.0
+        price: 4.5
         description: 
           ca: "Pa rústic de massa mare, torrat i acompanyat d'oli d'oliva verge extra i tomàquet de penjar, per a un toc autèntic i mediterrani."
           en: "Rustic sourdough bread, toasted and served with extra virgin olive oil and vine-ripened tomato, for an authentic Mediterranean touch."
@@ -823,7 +822,7 @@ menu:
           ca: "Xuixo amb gelat"
           en: "Xuixo with ice cream"
           es: "Xuixo con helado"
-        price: 6.5
+        price: 7.0
         description: 
           ca: "El clàssic xuixo gironí, farcit de crema i fregit fins a quedar daurat i cruixent, servit amb una bola de gelat que potencia el contrast de textures i temperatures."
           en: "The classic Girona xuixo, filled with cream and fried until golden and crunchy, served with a scoop of ice cream to enhance the contrast of textures and temperatures."
@@ -833,7 +832,7 @@ menu:
           ca: "Rostes de Santa Teresa amb xarop d'auró, fruita i bacó"
           en: "Santa Teresa toast with maple syrup, fruit and bacon"
           es: "Torrijas de Santa Teresa con sirope de arce, fruta y bacon"
-        price: 6.50
+        price: 7.0
         description: 
           ca: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d'auró, la fruita fresca i el bacó cruixent."
           en: "A sophisticated version of the traditional Santa Teresa toast, with a sweet and salty touch thanks to the maple syrup, fresh fruit, and crispy bacon."
