@@ -443,7 +443,7 @@ menu:
           ca: "Gilda de la casa XXL"
           en: "House Gilda XXL"
           es: "Gilda de la casa XXL"
-        price: 3.9
+        price: 3.5
         description: 
           ca: "Versió XXL de l'aperitiu clàssic basc amb anxova, oliva i piparra, combinació perfecta d'acidesa i sabor intens."
           en: "XXL version of the classic Basque appetizer with anchovy, olive, and piparra, a perfect combination of acidity and intense flavor."
@@ -453,7 +453,7 @@ menu:
           ca: "Croqueta de llet crua i pernil ibèric de gla"
           en: "Croquette of raw milk and acorn-fed Iberian ham"
           es: "Croqueta de leche cruda y jamón ibérico de bellota"
-        price: 2.2
+        price: 1.9
         description: 
           ca: "Croqueta artesana amb beixamel cremosa de llet crua i pernil ibèric de gla, cruixent per fora i melosa per dins."
           en: "Handmade croquette with creamy raw milk béchamel and acorn-fed Iberian ham, crispy outside and soft inside."
@@ -463,7 +463,7 @@ menu:
           ca: "Patates braves pujades (allioli i oli picant)"
           en: "Loaded patatas bravas (allioli and spicy oil)"
           es: "Patatas bravas especiales (allioli y aceite picante)"
-        price: 7.0
+        price: 6.0
         description: 
           ca: "Patates braves cruixents amb allioli suau i oli picant casolà, per un equilibri perfecte entre cremositat i potència."
           en: "Crispy patatas bravas with smooth allioli and homemade spicy oil, offering a perfect balance between creaminess and intensity."
@@ -473,7 +473,7 @@ menu:
           ca: "Amanida russa amb ventresca i piparres"
           en: "Russian salad with tuna belly and piparras"
           es: "Ensaladilla rusa con ventresca y piparras"
-        price: 9.0
+        price: 8.0
         description: 
           ca: "Amanida russa cremosa, acompanyada de ventresca de tonyina i piparres, aportant un contrast entre la suavitat i l'acidesa."
           en: "Creamy Russian salad with tuna belly and piparras, offering a contrast between smoothness and acidity."
@@ -491,9 +491,9 @@ menu:
 
      
       - name: 
-          ca: "La Cecina Angus amb Burrata i pesto de festucs"
-          en: "Angus cured beef with burrata and pistachio pesto"
-          es: "Cecina de Angus con burrata y pesto de pistachos"
+          ca: "Cecina Angus de Lleó D.O. amb Burrata i pesto de festucs"
+          en: "Leon D.O. Angus cured beef with burrata and pistachio pesto"
+          es: "Cecina Angus de León D.O. con burrata y pesto de pistachos"
         price: 18.9
         description: 
           ca: "Cecina de Wagyu de Lleó, combinada amb burrata fresca i pesto de festucs per a una fusió entre intensitat i cremositat."
@@ -504,7 +504,7 @@ menu:
           ca: "Amanida de tomàquet amb seitons, olives i pernil ibèric de gla"
           en: "Tomato salad with anchovies, olives, and Iberian ham"
           es: "Ensalada de tomate con boquerones, olivas y jamón ibérico"
-        price: 14.5
+        price: 13.9
         description: 
           ca: "Tomàquet madur amb seitons i olives, acabat amb un toc de pernil ibèric de gla que aporta complexitat al plat."
           en: "Ripe tomato with anchovies and olives, finished with a touch of acorn-fed Iberian ham that adds complexity."
