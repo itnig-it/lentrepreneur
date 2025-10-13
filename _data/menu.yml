@@ -479,16 +479,6 @@ menu:
           en: "Creamy Russian salad with tuna belly and piparras, offering a contrast between smoothness and acidity."
           es: "Ensaladilla rusa cremosa, acompañada de ventresca de atún y piparras, aportando un contraste entre suavidad y acidez."
 
-      - name: 
-          ca: "Amanida russa amb gambes a l'allada"
-          en: "Russian salad with garlic shrimp"
-          es: "Ensaladilla rusa con gambas al ajillo"
-        price: 16.0
-        description: 
-          ca: "Amanida russa cremosa, acompanyada de gambes a l'all, aportant un contrast entre la suavitat i l'acidesa."
-          en: "Creamy Russian salad with garlic shrimp, offering a contrast between smoothness and acidity."
-          es: "Ensaladilla rusa cremosa, acompañada de gambas al ajillo, aportando un contraste entre suavidad y acidez."
-
      
       - name: 
           ca: "Cecina Angus de Lleó D.O. amb Burrata i pesto de festucs"
@@ -510,137 +500,109 @@ menu:
           en: "Ripe tomato with anchovies and olives, finished with a touch of acorn-fed Iberian ham that adds complexity."
           es: "Tomate maduro con boquerones y olivas, rematado con un toque de jamón ibérico de bellota que aporta complejidad."
 
-      - name: 
-          ca: "Esqueixada de bacallà amb oliva kalamata"
-          en: "Cured cod salad with kalamata olives"
-          es: "Esqueixada de bacalao con aceitunas kalamata"
-        price: 14.0
-        description: 
-          ca: "Delicat esqueixat de bacallà amanit amb olives kalamata, un plat fresc i lleuger amb tot el sabor del Mediterrani."
-          en: "Delicate cured cod salad with kalamata olives, a fresh and light Mediterranean dish full of flavor."
-          es: "Delicada esqueixada de bacalao aderezada con aceitunas kalamata, un plato fresco y ligero con todo el sabor del Mediterráneo."
-
-      - name:
-          ca: "Coca d'escalivada amb sardina marinada"
-          en: "Chargrilled vegetable flatbread with marinated sardine"
-          es: "Coca de escalivada con sardina marinada"
-        price: 11
-        description:
-          ca: "La dolçor de les verdures escalivades sobre una base cruixent es combina amb la intensitat i frescor de la sardina marinada. Un clàssic reinventat amb equilibri i sabor."
-          en: "The sweetness of chargrilled vegetables on a crispy flatbread, paired with the intensity and freshness of marinated sardine. A reinvented classic full of balance and flavor."
-          es: "La dulzura de las verduras escalivadas sobre una base crujiente se combina con la intensidad y frescura de la sardina marinada. Un clásico reinventado con equilibrio y sabor."
-        
-
-      - name: 
-          ca: "Albergínies fumades amb Maó, mel i avellanes"
-          en: "Smoked aubergines with Maó cheese, honey and hazelnuts"
-          es: "Berenjenas ahumadas con queso Maó, miel y avellanas"
-        price: 9.9
-        description: 
-          ca: "Albergínies escalivades amb formatge Maó fos, mel i avellanes torrades per un contrast dolç i salat."
-          en: "Grilled smoked aubergines with melted Maó cheese, honey, and toasted hazelnuts for a sweet and salty contrast."
-          es: "Berenjenas escalivadas con queso Maó fundido, miel y avellanas tostadas para un contraste dulce y salado."
-
-      - name: 
-          ca: "Ou amb \"puntilla\" amb tàrtar de tonyina i alga nori"
-          en: "Crispy-edged fried egg with tuna tartar and nori seaweed"
-          es: "Huevo frito con puntilla, tartar de atún y alga nori"
-        price: 18.5
-        description: 
-          ca: "Ou ferrat amb les puntes cruixents, acompanyat d'un delicat tàrtar de tonyina i alga nori per un toc umami inconfusible."
-          en: "Fried egg with crispy edges, served with a delicate tuna tartar and nori seaweed for an unmistakable umami touch."
-          es: "Huevo frito con puntilla, acompañado de un delicado tartar de atún y alga nori para un inconfundible toque umami."
-
-      - name: 
-          ca: "Truita de patata amb xoriço ibèric picant (+ formatge)"
-          en: "Potato omelette with spicy Iberian chorizo (+ cheese)"
-          es: "Tortilla de patata con chorizo ibérico picante (+ queso)"
-        price: 11.0
-        description: 
-          ca: "Truita de patata melosa amb xoriço ibèric picant; opcionalment, pots afegir-hi formatge ratllat per potenciar-ne el sabor."
-          en: "Soft potato omelette with spicy Iberian chorizo; optionally, you can add grated cheese to enhance the flavor."
-          es: "Tortilla de patata melosa con chorizo ibérico picante; opcionalmente, puedes añadir queso rallado para potenciar su sabor."
-
-      - name: 
-          ca: "Xurro amb tàrtar de vedella"
-          en: "Fried churro with beef tartar"
-          es: "Churro frito con tartar de ternera"
-        price: 9.0
-        description: 
-          ca: "Xurro fregit, servit amb un tàrtar de vedella fresc."
-          en: "Fried churro served with fresh beef tartar."
-          es: "Churro frito servido con un tartar de ternera fresco."
-
-      - name: 
-          ca: "Biquini de \"Cecina\" de Lleó D.O. i Comté amb salsa bearnesa"
-          en: "Biquini with cured beef and Comtée with Bearnaise sauce"
-          es: "Biquini con cecina de León D.O. y Comté con salsa bearnesa"
-        price: 12.0
-        description: 
-          ca: "Biquini gourmet amb cecina de Lleó i formatge Comté fos, complementat amb salsa bearnesa per un toc suau i aromàtic."
-          en: "Gourmet biquini with Leon D.O. cured beef and melted Comté cheese, complemented with Bearnaise sauce for a soft and aromatic touch."
-          es: "Biquini gourmet con cecina de León y queso Comté fundido, complementado con salsa bearnesa para un toque suave y aromático."
 
 
     - category: 
-        ca: "PASTA, LLEGUMS I ARRÒS"
-        en: "PASTA, LEGUMES AND RICE"
-        es: "PASTA, LEGUMBRES Y ARROZ"
+        ca: "VERDURES, OUS I PASTA"
+        en: "VEGETABLES, EGGS AND PASTA"
+        es: "VERDURAS, HUEVOS Y PASTA"
       menu_area: "PER_COMPARTIR"
       items:
       - name: 
-          ca: "Macarrons gratinats del cardenal"
-          en: "Gratinated macaroni \"a la cardinale\""
-          es: "Macarrones gratinados \"a la cardinale\""
-        price: 11.0
+          ca: "Trinxat amb rostes de Soria, li pots afegir ou"
+          en: "Trinxat with Soria pork cracklings, you can add egg"
+          es: "Trinxat con torreznos de Soria, puedes añadir huevo"
+        price: 10.0
         description: 
-          ca: "Macarrons al forn amb una salsa de tomàquet suau, gratinats amb formatge per obtenir una crosta cruixent irresistible."
-          en: "Oven-baked macaroni with a smooth tomato sauce, gratinated with cheese for an irresistible crispy crust."
-          es: "Macarrones al horno con una salsa de tomate suave, gratinados con queso para conseguir una irresistible costra crujiente."
+          ca: "Clàssic trinxat de col i patata amb cruixents rostes de Soria, al qual pots afegir un ou per donar-hi més intensitat."
+          en: "Classic trinxat of cabbage and potato with crispy Soria pork cracklings, with the option to add an egg for extra richness."
+          es: "Clásico trinxat de col y patata con crujientes torreznos de Soria, al que puedes añadir un huevo para darle más intensidad."
+
+      - name: 
+          ca: "Carxofes confitades amb cruixent de pernil i pinyons"
+          en: "Confit artichokes with crispy ham and pine nuts"
+          es: "Alcachofas confitadas con crujiente de jamón y piñones"
+        price: 8.0
+        description: 
+          ca: "Carxofes confitades a baixa temperatura, acompanyades de cruixent de pernil i pinyons torrats."
+          en: "Slow-cooked confit artichokes served with crispy ham and toasted pine nuts."
+          es: "Alcachofas confitadas a baja temperatura, acompañadas de crujiente de jamón y piñones tostados."
+
+      - name: 
+          ca: "Alberginia fumada amb maó, avellanes i mel"
+          en: "Smoked aubergine with Maó cheese, hazelnuts and honey"
+          es: "Berenjena ahumada con queso Maó, avellanas y miel"
+        price: 15.8
+        description: 
+          ca: "Albergínia fumada amb formatge Maó fos, mel i avellanes torrades per un contrast dolç i salat."
+          en: "Smoked aubergine with melted Maó cheese, honey, and toasted hazelnuts for a sweet and savory contrast."
+          es: "Berenjena ahumada con queso Maó fundido, miel y avellanas tostadas para un contraste dulce y salado."
+
+      - name: 
+          ca: "Ous de Calaf, patata panadera amb gambes o pop o gambes i pop al allet"
+          en: "Calaf eggs with potatoes and prawns, octopus or both with garlic"
+          es: "Huevos de Calaf con patata panadera y gambas, pulpo o gambas y pulpo al ajillo"
+        price: 18.5
+        description: 
+          ca: "Ous de Calaf acompanyats de patata panadera, amb gambes, pop o la combinació de tots dos al perfum d'all."
+          en: "Calaf eggs served with pan-baked potatoes, with prawns, octopus or both, sautéed with garlic."
+          es: "Huevos de Calaf acompañados de patata panadera, con gambas, pulpo o la combinación de ambos al ajillo."
+
+      - name: 
+          ca: "Truita de patata amb tófona i li pots afegir formatge ratllat"
+          en: "Potato omelette with truffle, you can add grated cheese"
+          es: "Tortilla de patata con trufa, puedes añadir queso rallado"
+        price: 9.0
+        description: 
+          ca: "Truita de patata amb un toc de tòfona, amb l'opció d'afegir formatge ratllat per intensificar-ne el sabor."
+          en: "Potato omelette with a hint of truffle, with the option to add grated cheese for extra flavor."
+          es: "Tortilla de patata con un toque de trufa, con la opción de añadir queso rallado para intensificar su sabor."
+
+      - name: 
+          ca: "Macarrons a la cardina"
+          en: "Macaroni with cardina"
+          es: "Macarrones a la cardina"
+        price: 9.5
+        description: 
+          ca: "Macarrons cuinats amb cardina fresca i un toc d'espècies mediterrànies."
+          en: "Macaroni cooked with fresh cardina and a touch of Mediterranean spices."
+          es: "Macarrones cocinados con cardina fresca y un toque de especias mediterráneas."
 
       - name: 
           ca: "Caneló XL de rostit amb beixamel de ceps"
-          en: "XL roasted meat cannelloni with mushroom béchamel"
+          en: "XL roast meat cannelloni with porcini béchamel"
           es: "Canelón XL de asado con bechamel de setas"
         price: 14.0
         description: 
-          ca: "Caneló farcit de rostit tradicional, banyat amb una beixamel de ceps que afegeix cremositat i un toc aromàtic espectacular."
-          en: "Cannelloni filled with traditional roast meat, topped with mushroom béchamel adding creaminess and an amazing aromatic touch."
-          es: "Canelón relleno de asado tradicional, bañado con bechamel de setas que aporta cremosidad y un toque aromático espectacular."
+          ca: "Caneló XL farcit de rostit tradicional, banyat amb una beixamel de ceps cremosa i aromàtica."
+          en: "XL cannelloni stuffed with traditional roast meat, topped with creamy and aromatic porcini béchamel."
+          es: "Canelón XL relleno de asado tradicional, bañado con una bechamel de setas cremosa y aromática."
 
-    
-      - name:
-          ca: "Mongeta de Santa Pau saltada amb calamars de potera amb cítrics i cruixent de pernil ibèric"
-          en: "Sautéed Santa Pau beans with potera squid, citrus and crispy Iberian ham"
-          es: "Judía de Santa Pau salteada con calamares de potera, cítricos y crujiente de jamón ibérico"
-        price: 12.5
+    - category: 
+        ca: "LLEGUMS I ARRÒS"
+        en: "LEGUMES AND RICE"
+        es: "LEGUMBRES Y ARROZ"
+      menu_area: "PER_COMPARTIR"
+      items:
+      - name: 
+          ca: "Cigrons amb llamàntol"
+          en: "Chickpeas with lobster"
+          es: "Garbanzos con bogavante"
+        price: 28.9
         description: 
-          ca: "Un plat que combina la dolçor i textura de la mongeta de Santa Pau amb la frescor dels cítrics, la tendresa del calamar i el toc salat i cruixent del pernil ibèric."
-          en: "A dish that balances the sweetness and texture of Santa Pau beans with the freshness of citrus, the tenderness of squid, and the salty crunch of Iberian ham."
-          es: "Un plato que combina la dulzura y textura de la judía de Santa Pau con la frescura de los cítricos, la ternura del calamar y el toque salado y crujiente del jamón ibérico."
-        
-
-
-      - name:
-          ca: "Cigronets del Berguedà estofats amb popets"
-          en: "Stewed Berguedà chickpeas with baby octopus"
-          es: "Cigronets del Berguedà estofados con pulpitos"
-        price: 15.8
-        description: 
-          ca: "Estofat de cigronets del Berguedà amb popets, un plat mariner amb l'autenticitat i el sabor de la Mediterrània."
-          en: "Stew of Berguedà chickpeas with baby octopus, a seafood dish full of authentic Mediterranean flavor."
-          es: "Estofado de cigronets del Berguedà con pulpitos, un plato marinero con la autenticidad y el sabor del Mediterráneo."
-
+          ca: "Cigrons guisats amb llamàntol fresc, un plat mariner que combina la potència del marisc amb la suavitat del llegum."
+          en: "Stewed chickpeas with fresh lobster, a seafood dish combining the richness of shellfish with the smoothness of legumes."
+          es: "Garbanzos guisados con bogavante fresco, un plato marinero que combina la potencia del marisco con la suavidad de la legumbre."
 
       - name: 
-          ca: "Arròs mariner a la llauna"
-          en: "Marinera rice baked in the pan"
-          es: "Arroz marinero a la llauna"
-        price: 21.0
+          ca: "Arròs a la llauna amb gambes blanques"
+          en: "Rice baked in the pan with white prawns"
+          es: "Arroz a la llauna con gambas blancas"
+        price: 25.0
         description: 
-          ca: "Arròs melós cuinat a la llauna amb marisc fresc i brou intens, un autèntic clàssic mediterrani."
-          en: "Creamy rice cooked in the pan with fresh seafood and rich broth, an authentic Mediterranean classic."
-          es: "Arroz meloso cocinado a la llauna con marisco fresco y caldo intenso, un auténtico clásico mediterráneo."
+          ca: "Arròs melós cuinat a la llauna amb gambes blanques fresques, intens en sabor i tradició mediterrània."
+          en: "Creamy rice baked in the pan with fresh white prawns, full of flavor and Mediterranean tradition."
+          es: "Arroz meloso cocinado a la llauna con gambas blancas frescas, lleno de sabor y tradición mediterránea."
 
     - category: 
         ca: "PEIX"
