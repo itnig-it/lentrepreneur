@@ -500,7 +500,45 @@ menu:
           en: "Ripe tomato with anchovies and olives, finished with a touch of acorn-fed Iberian ham that adds complexity."
           es: "Tomate maduro con boquerones y olivas, rematado con un toque de jamón ibérico de bellota que aporta complejidad."
 
+      - name: 
+          ca: "Bunyols de bacallà amb maionesa de mel"
+          en: "Cod fritters with honey mayonnaise"
+          es: "Buñuelos de bacalao con mayonesa de miel"
+        price: 9.0
+        description: 
+          ca: "Bunyols de bacallà cruixents amb maionesa de mel."
+          en: "Crispy cod fritters with honey mayonnaise."
+          es: "Buñuelos de bacalao crujientes con mayonesa de miel."
 
+      - name: 
+          ca: "Bolets de temporada saltats amb rovell d'ou i vel de panxeta ibèrica"
+          en: "Seasonal mushrooms sautéed with egg yolk and Iberian pork belly"
+          es: "Setas de temporada salteadas con yema de huevo y velo de panceta ibérica"
+        price: 14.5
+        description: 
+          ca: "Bolets de temporada saltats, amb rovell d'ou i vel de panxeta ibèrica."
+          en: "Seasonal mushrooms sautéed with egg yolk and Iberian pork belly."
+          es: "Setas de temporada salteadas con yema de huevo y velo de panceta ibérica."
+
+      - name: 
+          ca: "Xistorra amb patates fregides i allioli"
+          en: "Xistorra with fried potatoes and allioli"
+          es: "Chistorra con patatas fritas y allioli"
+        price: 12.0
+        description: 
+          ca: "Xistorra suculenta amb patates fregides cruixents i allioli casolà."
+          en: "Juicy xistorra with crispy fried potatoes and homemade allioli."
+          es: "Chistorra jugosa con patatas fritas crujientes y allioli casero."
+
+      - name: 
+          ca: "Biquini de bull negre i Arzua Ulloa"
+          en: "Biquini with black pudding and Arzua Ulloa cheese"
+          es: "Biquini de bull negre y Arzua Ulloa"
+        price: 12.0
+        description: 
+          ca: "Biquini de bull negre i formatge Arzua Ulloa fos, acompanyat d'allioli."
+          en: "Biquini with black pudding and melted Arzua Ulloa cheese, served with allioli."
+          es: "Biquini de bull negre y queso Arzua Ulloa fundido, acompañado de allioli."
 
     - category: 
         ca: "VERDURES, OUS I PASTA"
@@ -588,7 +626,7 @@ menu:
           ca: "Cigrons amb llamàntol"
           en: "Chickpeas with lobster"
           es: "Garbanzos con bogavante"
-        price: 28.9
+        price: 28.90
         description: 
           ca: "Cigrons guisats amb llamàntol fresc, un plat mariner que combina la potència del marisc amb la suavitat del llegum."
           en: "Stewed chickpeas with fresh lobster, a seafood dish combining the richness of shellfish with the smoothness of legumes."
