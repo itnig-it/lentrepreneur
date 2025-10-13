@@ -471,8 +471,8 @@ menu:
 
       - name: 
           ca: "Amanida de tomàquet amb seitons marinats i pernil ibèric de gla"
-          en: "Tomato salad with marinated anchovies and acorn-fed Iberian ham"
-          es: "Ensalada de tomate con boquerones marinados y jamón ibérico de bellota"
+          en: "Tomato salad with anchovies and acorn-fed Iberian ham"
+          es: "Ensalada de tomate con boquerones y jamón ibérico de bellota"
         price: 13.9
         description: 
           ca: "Tomàquet madur amb seitons marinats i pernil ibèric de gla, un plat fresc amb contrastos elegants."
@@ -510,9 +510,9 @@ menu:
           es: "Buñuelos ligeros y crujientes de bacalao servidos con mayonesa de miel que aporta un toque dulce y suave."
 
       - name: 
-          ca: "Bolets de temporada saltats amb rovell d'ou i vel de panxeta ibèrica"
-          en: "Seasonal mushrooms sautéed with egg yolk and Iberian pork belly"
-          es: "Setas de temporada salteadas con yema de huevo y velo de panceta ibérica"
+          ca: "Bolets de temporada amb rovell d'ou i vel de panxeta ibèrica"
+          en: "Seasonal mushrooms with egg yolk and Iberian pork belly"
+          es: "Setas de temporada con yema de huevo y velo de panceta ibérica"
         price: 14.5
         description: 
           ca: "Bolets frescos saltats amb rovell d'ou i vel fi de panxeta ibèrica, una combinació melosa i intensa."
