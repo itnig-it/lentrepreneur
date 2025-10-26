@@ -596,14 +596,14 @@ menu:
           es: "Tortilla gruesa de patata con un toque de trufa. Puedes añadir queso rallado para intensificar el sabor."
 
       - name: 
-          ca: "Macarrons a la cardina"
-          en: "Macaroni with cardina"
-          es: "Macarrones a la cardina"
+          ca: "Macarrons del cardenal"
+          en: "Cardinal's Macaroni"
+          es: "Macarrones del cardenal"
         price: 9.5
         description: 
-          ca: "Macarrons amb cardina fresca i un toc d'espècies mediterrànies, un plat humil i ple de sabor."
-          en: "Macaroni with fresh cardina and a touch of Mediterranean spices — simple yet full of flavor."
-          es: "Macarrones con cardina fresca y un toque de especias mediterráneas, un plato sencillo y lleno de sabor."
+          ca: "Macarrons amb una suau salsa rosada de tomàquet i nata, acabats amb un toc de parmesà i aroma de marisc — un plat clàssic i elegant."
+          en: "Macaroni in a smooth pink sauce of tomato and cream, finished with a hint of seafood and Parmesan — a classic, elegant dish."
+          es: "Macarrones con una suave salsa rosada de tomate y nata, terminados con un toque de marisco y parmesano — un plato clásico y elegante."
 
       - name: 
           ca: "Caneló XL de rostit amb beixamel de ceps"
@@ -829,9 +829,9 @@ menu:
           es: "El clásico xuixo gerundense, relleno de crema y frito hasta quedar dorado y crujiente, servido con una bola de helado que potencia el contraste de texturas y temperaturas."
 
       - name: 
-          ca: "Rostes de Santa Teresa amb xarop d'auró, fruita i bacó"
-          en: "Santa Teresa toast with maple syrup, fruit and bacon"
-          es: "Torrijas de Santa Teresa con sirope de arce, fruta y bacon"
+          ca: "Rostes de Santa Teresa amb xarop d'auró i fruita"
+          en: "Santa Teresa toast with maple syrup and fruits"
+          es: "Torrijas de Santa Teresa con sirope de arce y fruta"
         price: 7.0
         description: 
           ca: "Una versió sofisticada de la tradicional torrada de Santa Teresa, amb un toc dolç i salat gràcies al xarop d'auró, la fruita fresca i el bacó cruixent."
@@ -859,15 +859,6 @@ menu:
           en: "Creamy homemade Greek yogurt, served with seasonal fruit and crunchy homemade granola."
           es: "Cremoso yogur griego casero, servido con fruta de temporada y crujiente granola de elaboración propia."
 
-      - name: 
-          ca: "Maduixes al gust"
-          en: "Strawberries to your taste"
-          es: "Fresas al gusto"
-        price: 6.5
-        description: 
-          ca: "Maduixes fresques, servides al natural o amb nata muntada, al teu gust."
-          en: "Fresh strawberries, served either natural or with whipped cream, as you prefer."
-          es: "Fresas frescas, servidas al natural o con nata montada, a tu elección."
 
       - name: 
           ca: "Pastís de xocolata sense farina amb gelat"
