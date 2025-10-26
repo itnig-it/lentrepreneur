@@ -58,13 +58,13 @@ menu:
           es: "Sopa tradicional catalana de Navidad con galets, carne y verduras, un clásico que no puede faltar en la mesa."
 
       - name:
-          ca: "Patata d'Olot de carn d'olla amb potera"
-          en: "Olot potato with meat stew and cuttlefish"
-          es: "Patata de Olot de carne de olla con sepia"
+          ca: "Patata d'Olot de carn d'olla amb tòfona"
+          en: "Olot potato with meat stew and truffle"
+          es: "Patata de Olot de carne de olla con trufa"
         description:
-          ca: "Patata d'Olot farcida amb carn d'olla i potera, un plat tradicional que combina la dolçor de la patata amb la intensitat del marisc."
-          en: "Olot potato stuffed with meat stew and cuttlefish, a traditional dish that combines the sweetness of potato with the intensity of seafood."
-          es: "Patata de Olot rellena con carne de olla y sepia, un plato tradicional que combina la dulzura de la patata con la intensidad del marisco."
+          ca: "Patata d'Olot farcida amb carn d'olla i tòfona, un plat tradicional que combina la dolçor de la patata amb la intensitat de la tòfona."
+          en: "Olot potato stuffed with meat stew and truffle, a traditional dish that combines the sweetness of potato with the intensity of truffle."
+          es: "Patata de Olot rellena con carne de olla y trufa, un plato tradicional que combina la dulzura de la patata con la intensidad de la trufa."
 
       - name:
           ca: "Caneló rostit i gratinat"
