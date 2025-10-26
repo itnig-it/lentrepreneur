@@ -133,16 +133,16 @@ menu:
           es: "Selección de neulas y turrones tradicionales catalanes para acabar el menú con dulzura y tradición."
 
     - category:
-        ca: "SECRETS DEL LLAR"
-        en: "HOUSE SECRETS"
-        es: "SECRETOS DE LA CASA"
+        ca: "VINS RECOMANATS"
+        en: "RECOMMENDED WINES"
+        es: "VINOS RECOMENDADOS"
       menu_area: "SECRETS"
       items:
       - name:
-          ca: "Secrets del llar"
-          en: "House secrets"
-          es: "Secretos de la casa"
+          ca: "Secrets del Mar - Garnatxa Blanca - Terra Alta"
+          en: "Secrets del Mar - White Grenache - Terra Alta"
+          es: "Secrets del Mar - Garnacha Blanca - Terra Alta"
         description:
-          ca: "Plats especials i sorpreses culinàries que el nostre equip ha preparat especialment per a aquesta nit màgica."
-          en: "Special dishes and culinary surprises that our team has prepared especially for this magical night."
-          es: "Platos especiales y sorpresas culinarias que nuestro equipo ha preparado especialmente para esta noche mágica."
+          ca: "Vi blanc aromàtic i fresc, amb notes de flors, albercoc i un toc salí. Perfecte per acompanyar els plats de marisc del menú."
+          en: "Aromatic and fresh white wine, with notes of flowers, apricot and a salty touch. Perfect to accompany the seafood dishes of the menu."
+          es: "Vino blanco aromático y fresco, con notas de flores, albaricoque y un toque salado. Perfecto para acompañar los platos de marisco del menú."

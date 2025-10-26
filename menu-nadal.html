@@ -132,12 +132,12 @@ title: Menú de Nadal
       </div>
     {% endif %}
 
-    <!-- SECRETS DEL LLAR -->
+    <!-- VINS RECOMANATS -->
     {% assign secrets = site.data.menu_nadal.menu.items | where: "menu_area", "SECRETS" %}
     {% if secrets.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-green-800">
-          {{ site.data.menu_nadal.menu.areas.SECRETS.ca }}
+          Vins Recomanats
         </h2>
         {% for category in secrets %}
           <div class="mb-12">
