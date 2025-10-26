@@ -23,22 +23,36 @@ layout: default
   
   <!-- Banner navideño solapando el hero -->
   <div class="absolute bottom-0 left-0 right-0 z-20">
-    <div class="bg-gradient-to-r from-red-600 to-green-600 text-white py-4 px-6 shadow-lg">
-      <div class="container mx-auto">
+    <div class="bg-red-700 text-white py-6 px-6 shadow-2xl relative overflow-hidden">
+      <!-- Decoraciones navideñas de fondo -->
+      <div class="absolute top-2 left-4 text-lg opacity-30">❄️</div>
+      <div class="absolute top-2 right-4 text-lg opacity-30">🌟</div>
+      <div class="absolute bottom-2 left-8 text-lg opacity-30">🎁</div>
+      <div class="absolute bottom-2 right-8 text-lg opacity-30">🕯️</div>
+      <div class="absolute top-1/2 left-1/4 text-sm opacity-20">❄️</div>
+      <div class="absolute top-1/2 right-1/4 text-sm opacity-20">🌟</div>
+      
+      <div class="container mx-auto relative z-10">
         <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="flex items-center space-x-3 mb-3 md:mb-0">
-            <span class="text-2xl">🎄</span>
+          <div class="flex items-center space-x-4 mb-4 md:mb-0">
+            <div class="flex items-center space-x-2">
+              <span class="text-3xl">🎄</span>
+              <span class="text-2xl">❄️</span>
+              <span class="text-3xl">🎄</span>
+            </div>
             <div>
-              <h3 class="text-lg md:text-xl font-bold">Menú Especial de Nadal</h3>
-              <p class="text-sm md:text-base opacity-90">Plats tradicionals catalans per celebrar en família</p>
+              <h3 class="text-xl md:text-2xl font-bold text-yellow-200">✨ Menú Especial de Nadal ✨</h3>
+              <p class="text-sm md:text-base text-yellow-100">Plats tradicionals catalans per celebrar en família</p>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row gap-2">
-            <a href="/menu-nadal" class="bg-white text-red-600 hover:bg-gray-100 font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base">
-              🍽️ Veure Menú
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="/menu-nadal" class="bg-white text-red-700 hover:bg-yellow-100 font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg text-sm md:text-base flex items-center space-x-2">
+              <span>🍽️</span>
+              <span>Veure Menú</span>
             </a>
-            <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm md:text-base">
-              📞 Reservar
+            <a href="#contact" class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg text-sm md:text-base flex items-center space-x-2">
+              <span>📞</span>
+              <span>Reservar</span>
             </a>
           </div>
         </div>
