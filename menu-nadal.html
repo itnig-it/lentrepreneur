@@ -3,161 +3,185 @@ layout: default
 title: Menú de Nadal
 ---
 
-<section class="section bg-gradient-to-br from-red-50 to-green-50">
+<section class="section bg-gradient-to-br from-red-50 to-green-50 min-h-screen">
   <div class="container">
-    <div class="max-w-4xl mx-auto text-center mb-12">
-      <div class="mb-6">
-        <span class="text-6xl">🎄</span>
+    <!-- Header navideño -->
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <div class="mb-8">
+        <div class="flex justify-center items-center space-x-4 mb-4">
+          <span class="text-4xl">❄️</span>
+          <span class="text-6xl">🎄</span>
+          <span class="text-4xl">❄️</span>
+        </div>
+        <div class="flex justify-center items-center space-x-2 mb-4">
+          <span class="text-2xl">🌟</span>
+          <span class="text-2xl">🕯️</span>
+          <span class="text-2xl">🎁</span>
+        </div>
       </div>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-red-800">
+      
+      <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6 text-red-800">
         Menú de Nadal
       </h1>
-      <p class="text-xl text-gray-700 mb-8">
+      
+      <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-green-500 mx-auto mb-6"></div>
+      
+      <p class="text-xl text-gray-700 mb-8 leading-relaxed">
         {{ site.data.menu_nadal.description.ca }}
       </p>
-      <div class="flex justify-center space-x-4 text-sm text-gray-600">
-        <span>🌟 Plats tradicionals catalans</span>
-        <span>•</span>
-        <span>🍽️ Ingredients frescos i de qualitat</span>
-        <span>•</span>
-        <span>👨‍👩‍👧‍👦 Per celebrar en família</span>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 border-2 border-red-200">
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <span class="flex items-center gap-2">
+            <span class="text-lg">🌟</span>
+            <span>Plats tradicionals catalans</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="text-lg">🍽️</span>
+            <span>Ingredients frescos i de qualitat</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="text-lg">👨‍👩‍👧‍👦</span>
+            <span>Per celebrar en família</span>
+          </span>
+        </div>
       </div>
     </div>
     
-    <!-- APERITIU -->
-    {% assign aperitiu = site.data.menu_nadal.menu.items | where: "menu_area", "APERITIU" %}
-    {% if aperitiu.size > 0 %}
-      <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-green-800">
-          {{ site.data.menu_nadal.menu.areas.APERITIU.ca }}
-        </h2>
-        {% for category in aperitiu %}
+    <!-- Menú en formato tradicional -->
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-2xl p-8 border-4 border-red-200">
+        
+        <!-- APERITIU -->
+        {% assign aperitiu = site.data.menu_nadal.menu.items | where: "menu_area", "APERITIU" %}
+        {% if aperitiu.size > 0 %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-green-200 pb-2 text-green-700">{{ category.category.ca }}</h3>
-            <div class="space-y-4">
+            <h2 class="text-3xl font-serif font-bold mb-6 text-center text-red-800 border-b-2 border-red-200 pb-3">
+              {{ site.data.menu_nadal.menu.areas.APERITIU.ca }}
+            </h2>
+            {% for category in aperitiu %}
               {% for item in category.items %}
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-400">
-                  <div class="flex justify-between items-start">
-                    <h3 class="text-xl font-medium text-gray-800">{{ item.name.ca }}</h3>
-                  </div>
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ item.name.ca }}</h3>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-2">{{ item.description.ca }}</p>
+                    <p class="text-gray-600 italic">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
-            </div>
+            {% endfor %}
           </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+        {% endif %}
 
-    <!-- PRIMERS -->
-    {% assign primers = site.data.menu_nadal.menu.items | where: "menu_area", "PRIMERS" %}
-    {% if primers.size > 0 %}
-      <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-red-800">
-          {{ site.data.menu_nadal.menu.areas.PRIMERS.ca }}
-        </h2>
-        {% for category in primers %}
-          <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-red-200 pb-2 text-red-700">{{ category.category.ca }}</h3>
-            <div class="space-y-4">
-              {% for item in category.items %}
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-400">
-                  <div class="flex justify-between items-start">
-                    <h3 class="text-xl font-medium text-gray-800">{{ item.name.ca }}</h3>
-                  </div>
-                  {% if item.description %}
-                    <p class="text-gray-600 mt-2">{{ item.description.ca }}</p>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+        <!-- Separador decorativo -->
+        <div class="flex justify-center items-center my-8">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+          <span class="mx-4 text-2xl">❄️</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+        </div>
 
-    <!-- PLATS PRINCIPALS -->
-    {% assign principals = site.data.menu_nadal.menu.items | where: "menu_area", "PRINCIPALS" %}
-    {% if principals.size > 0 %}
-      <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-green-800">
-          {{ site.data.menu_nadal.menu.areas.PRINCIPALS.ca }}
-        </h2>
-        {% for category in principals %}
+        <!-- PRIMERS -->
+        {% assign primers = site.data.menu_nadal.menu.items | where: "menu_area", "PRIMERS" %}
+        {% if primers.size > 0 %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-green-200 pb-2 text-green-700">{{ category.category.ca }}</h3>
-            <div class="space-y-4">
+            <h2 class="text-3xl font-serif font-bold mb-6 text-center text-green-800 border-b-2 border-green-200 pb-3">
+              {{ site.data.menu_nadal.menu.areas.PRIMERS.ca }}
+            </h2>
+            {% for category in primers %}
               {% for item in category.items %}
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-400">
-                  <div class="flex justify-between items-start">
-                    <h3 class="text-xl font-medium text-gray-800">{{ item.name.ca }}</h3>
-                  </div>
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ item.name.ca }}</h3>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-2">{{ item.description.ca }}</p>
+                    <p class="text-gray-600 italic">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
-            </div>
+            {% endfor %}
           </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+        {% endif %}
 
-    <!-- POSTRES -->
-    {% assign postres = site.data.menu_nadal.menu.items | where: "menu_area", "POSTRES" %}
-    {% if postres.size > 0 %}
-      <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-red-800">
-          {{ site.data.menu_nadal.menu.areas.POSTRES.ca }}
-        </h2>
-        {% for category in postres %}
-          <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-red-200 pb-2 text-red-700">{{ category.category.ca }}</h3>
-            <div class="space-y-4">
-              {% for item in category.items %}
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-400">
-                  <div class="flex justify-between items-start">
-                    <h3 class="text-xl font-medium text-gray-800">{{ item.name.ca }}</h3>
-                  </div>
-                  {% if item.description %}
-                    <p class="text-gray-600 mt-2">{{ item.description.ca }}</p>
-                  {% endif %}
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+        <!-- Separador decorativo -->
+        <div class="flex justify-center items-center my-8">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+          <span class="mx-4 text-2xl">🌟</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+        </div>
 
-    <!-- VINS RECOMANATS -->
-    {% assign secrets = site.data.menu_nadal.menu.items | where: "menu_area", "SECRETS" %}
-    {% if secrets.size > 0 %}
-      <div class="mb-16">
-        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-green-800">
-          Vins Recomanats
-        </h2>
-        {% for category in secrets %}
+        <!-- PLATS PRINCIPALS -->
+        {% assign principals = site.data.menu_nadal.menu.items | where: "menu_area", "PRINCIPALS" %}
+        {% if principals.size > 0 %}
           <div class="mb-12">
-            <h3 class="text-2xl font-serif font-bold mb-6 border-b-2 border-green-200 pb-2 text-green-700">{{ category.category.ca }}</h3>
-            <div class="space-y-4">
+            <h2 class="text-3xl font-serif font-bold mb-6 text-center text-red-800 border-b-2 border-red-200 pb-3">
+              {{ site.data.menu_nadal.menu.areas.PRINCIPALS.ca }}
+            </h2>
+            {% for category in principals %}
               {% for item in category.items %}
-                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-400">
-                  <div class="flex justify-between items-start">
-                    <h3 class="text-xl font-medium text-gray-800">{{ item.name.ca }}</h3>
-                  </div>
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ item.name.ca }}</h3>
                   {% if item.description %}
-                    <p class="text-gray-600 mt-2">{{ item.description.ca }}</p>
+                    <p class="text-gray-600 italic">{{ item.description.ca }}</p>
                   {% endif %}
                 </div>
               {% endfor %}
-            </div>
+            {% endfor %}
           </div>
-        {% endfor %}
+        {% endif %}
+
+        <!-- Separador decorativo -->
+        <div class="flex justify-center items-center my-8">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+          <span class="mx-4 text-2xl">🎁</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+        </div>
+
+        <!-- POSTRES -->
+        {% assign postres = site.data.menu_nadal.menu.items | where: "menu_area", "POSTRES" %}
+        {% if postres.size > 0 %}
+          <div class="mb-12">
+            <h2 class="text-3xl font-serif font-bold mb-6 text-center text-green-800 border-b-2 border-green-200 pb-3">
+              {{ site.data.menu_nadal.menu.areas.POSTRES.ca }}
+            </h2>
+            {% for category in postres %}
+              {% for item in category.items %}
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ item.name.ca }}</h3>
+                  {% if item.description %}
+                    <p class="text-gray-600 italic">{{ item.description.ca }}</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <!-- Separador decorativo -->
+        <div class="flex justify-center items-center my-8">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+          <span class="mx-4 text-2xl">🕯️</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+        </div>
+
+        <!-- VINS RECOMANATS -->
+        {% assign secrets = site.data.menu_nadal.menu.items | where: "menu_area", "SECRETS" %}
+        {% if secrets.size > 0 %}
+          <div class="mb-8">
+            <h2 class="text-3xl font-serif font-bold mb-6 text-center text-red-800 border-b-2 border-red-200 pb-3">
+              Vins Recomanats
+            </h2>
+            {% for category in secrets %}
+              {% for item in category.items %}
+                <div class="mb-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ item.name.ca }}</h3>
+                  {% if item.description %}
+                    <p class="text-gray-600 italic">{{ item.description.ca }}</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
       </div>
-    {% endif %}
+    </div>
 
     <!-- Call to Action -->
     <div class="text-center mt-16 p-8 bg-gradient-to-r from-red-100 to-green-100 rounded-lg">
