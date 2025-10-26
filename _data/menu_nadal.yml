@@ -1,0 +1,148 @@
+description:
+  ca: "Menú especial de Nadal amb plats tradicionals catalans i tocs contemporanis, elaborat amb ingredients frescos i de qualitat per celebrar les festes en família."
+  en: "Special Christmas menu with traditional Catalan dishes and contemporary touches, made with fresh, quality ingredients to celebrate the holidays with family."
+  es: "Menú especial de Navidad con platos tradicionales catalanes y toques contemporáneos, elaborado con ingredientes frescos y de calidad para celebrar las fiestas en familia."
+
+menu:
+  areas:
+    APERITIU:
+      ca: "APERITIU"
+      en: "APERITIF"
+      es: "APERITIVO"
+    PRIMERS:
+      ca: "PRIMERS"
+      en: "FIRST COURSES"
+      es: "PRIMEROS"
+    PRINCIPALS:
+      ca: "PLATS PRINCIPALS"
+      en: "MAIN DISHES"
+      es: "PLATOS PRINCIPALES"
+    POSTRES:
+      ca: "POSTRES"
+      en: "DESSERTS"
+      es: "POSTRES"
+    SECRETS:
+      ca: "SECRETS DEL LLAR"
+      en: "HOUSE SECRETS"
+      es: "SECRETOS DE LA CASA"
+
+  items:
+    - category:
+        ca: "APERITIU"
+        en: "APERITIF"
+        es: "APERITIVO"
+      menu_area: "APERITIU"
+      items:
+      - name:
+          ca: "Micuit amb chutney de mango"
+          en: "Micuit with mango chutney"
+          es: "Micuit con chutney de mango"
+        description:
+          ca: "Micuit de foie gras amb un chutney de mango casolà que aporta un toc dolç i tropical."
+          en: "Foie gras micuit with homemade mango chutney that adds a sweet and tropical touch."
+          es: "Micuit de foie gras con chutney de mango casero que aporta un toque dulce y tropical."
+
+    - category:
+        ca: "PRIMERS"
+        en: "FIRST COURSES"
+        es: "PRIMEROS"
+      menu_area: "PRIMERS"
+      items:
+      - name:
+          ca: "Sopa de galets"
+          en: "Galets soup"
+          es: "Sopa de galets"
+        description:
+          ca: "Sopa tradicional catalana de Nadal amb galets, carn i verdures, un clàssic que no pot faltar a la taula."
+          en: "Traditional Catalan Christmas soup with galets, meat and vegetables, a classic that cannot be missing from the table."
+          es: "Sopa tradicional catalana de Navidad con galets, carne y verduras, un clásico que no puede faltar en la mesa."
+
+      - name:
+          ca: "Patata d'Olot de carn d'olla amb potera"
+          en: "Olot potato with meat stew and cuttlefish"
+          es: "Patata de Olot de carne de olla con sepia"
+        description:
+          ca: "Patata d'Olot farcida amb carn d'olla i potera, un plat tradicional que combina la dolçor de la patata amb la intensitat del marisc."
+          en: "Olot potato stuffed with meat stew and cuttlefish, a traditional dish that combines the sweetness of potato with the intensity of seafood."
+          es: "Patata de Olot rellena con carne de olla y sepia, un plato tradicional que combina la dulzura de la patata con la intensidad del marisco."
+
+      - name:
+          ca: "Caneló rostit i gratinat"
+          en: "Roasted and gratinated cannelloni"
+          es: "Canelón asado y gratinado"
+        description:
+          ca: "Caneló farcit de rostit tradicional, gratinat amb formatge i beixamel per un toc cremós i aromàtic."
+          en: "Cannelloni stuffed with traditional roast meat, gratinated with cheese and béchamel for a creamy and aromatic touch."
+          es: "Canelón relleno de asado tradicional, gratinado con queso y bechamel para un toque cremoso y aromático."
+
+    - category:
+        ca: "PLATS PRINCIPALS"
+        en: "MAIN DISHES"
+        es: "PLATOS PRINCIPALES"
+      menu_area: "PRINCIPALS"
+      items:
+      - name:
+          ca: "Suquet de Rap"
+          en: "Monkfish suquet"
+          es: "Suquet de rape"
+        description:
+          ca: "Suquet tradicional de rap amb patates i allioli, un plat mariner ple de sabor i tradició mediterrània."
+          en: "Traditional monkfish suquet with potatoes and allioli, a seafood dish full of flavor and Mediterranean tradition."
+          es: "Suquet tradicional de rape con patatas y allioli, un plato marinero lleno de sabor y tradición mediterránea."
+
+      - name:
+          ca: "Gall d'indi a la catalana"
+          en: "Catalan-style turkey"
+          es: "Pavo a la catalana"
+        description:
+          ca: "Gall d'indi preparat seguint la tradició catalana, amb una salsa rica i aromàtica que realça el seu sabor."
+          en: "Turkey prepared following Catalan tradition, with a rich and aromatic sauce that enhances its flavor."
+          es: "Pavo preparado siguiendo la tradición catalana, con una salsa rica y aromática que realza su sabor."
+
+      - name:
+          ca: "Garrí amb carbassa"
+          en: "Pork with pumpkin"
+          es: "Cerdo con calabaza"
+        description:
+          ca: "Garrí tendre acompanyat de carbassa confitada, una combinació que aporta dolçor i suavitat al plat."
+          en: "Tender pork accompanied by confit pumpkin, a combination that brings sweetness and softness to the dish."
+          es: "Cerdo tierno acompañado de calabaza confitada, una combinación que aporta dulzura y suavidad al plato."
+
+    - category:
+        ca: "POSTRES"
+        en: "DESSERTS"
+        es: "POSTRES"
+      menu_area: "POSTRES"
+      items:
+      - name:
+          ca: "Coca de forner amb xocolata, oli i sal"
+          en: "Baker's coca with chocolate, oil and salt"
+          es: "Coca de panadero con chocolate, aceite y sal"
+        description:
+          ca: "Coca tradicional de forner amb un toc contemporani de xocolata, oli d'oliva i sal marina."
+          en: "Traditional baker's coca with a contemporary touch of chocolate, olive oil and sea salt."
+          es: "Coca tradicional de panadero con un toque contemporáneo de chocolate, aceite de oliva y sal marina."
+
+      - name:
+          ca: "Neules i torrons"
+          en: "Neules and nougats"
+          es: "Neulas y turrones"
+        description:
+          ca: "Selecció de neules i torrons tradicionals catalans per acabar el menú amb dolçor i tradició."
+          en: "Selection of traditional Catalan neules and nougats to end the menu with sweetness and tradition."
+          es: "Selección de neulas y turrones tradicionales catalanes para acabar el menú con dulzura y tradición."
+
+    - category:
+        ca: "SECRETS DEL LLAR"
+        en: "HOUSE SECRETS"
+        es: "SECRETOS DE LA CASA"
+      menu_area: "SECRETS"
+      items:
+      - name:
+          ca: "Secrets del llar"
+          en: "House secrets"
+          es: "Secretos de la casa"
+        description:
+          ca: "Plats especials i sorpreses culinàries que el nostre equip ha preparat especialment per a aquesta nit màgica."
+          en: "Special dishes and culinary surprises that our team has prepared especially for this magical night."
+          es: "Platos especiales y sorpresas culinarias que nuestro equipo ha preparado especialmente para esta noche mágica."
