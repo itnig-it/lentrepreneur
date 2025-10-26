@@ -1225,6 +1225,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
+
   .md\:flex{
     display: flex;
   }
