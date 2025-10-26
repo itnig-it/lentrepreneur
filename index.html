@@ -35,57 +35,132 @@ layout: default
   </div>
   
   <div class="container relative z-10">
-    <div class="max-w-4xl mx-auto text-center mb-12">
-      <div class="mb-6">
-        <span class="text-6xl">🎄</span>
+    <!-- Header navideño mejorado -->
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <div class="mb-8">
+        <div class="flex justify-center items-center space-x-4 mb-4">
+          <span class="text-4xl">❄️</span>
+          <span class="text-6xl">🎄</span>
+          <span class="text-4xl">❄️</span>
+        </div>
+        <div class="flex justify-center items-center space-x-2 mb-4">
+          <span class="text-2xl">🌟</span>
+          <span class="text-2xl">🕯️</span>
+          <span class="text-2xl">🎁</span>
+        </div>
       </div>
-      <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-red-800">
+      
+      <h2 class="text-5xl md:text-6xl font-serif font-bold mb-6 text-red-800">
         Menú Especial de Nadal
       </h2>
-      <p class="text-xl text-gray-700 mb-8">
+      
+      <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-green-500 mx-auto mb-6"></div>
+      
+      <p class="text-xl text-gray-700 mb-8 leading-relaxed">
         Celebra les festes amb nosaltres i gaudeix d'un menú especial elaborat amb amor i tradició catalana.
       </p>
-      <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mb-8">
-        <span class="flex items-center gap-2">
-          <span>🌟</span>
-          <span>Plats tradicionals catalans</span>
-        </span>
-        <span class="flex items-center gap-2">
-          <span>🍽️</span>
-          <span>Ingredients frescos i de qualitat</span>
-        </span>
-        <span class="flex items-center gap-2">
-          <span>👨‍👩‍👧‍👦</span>
-          <span>Per celebrar en família</span>
-        </span>
+      
+      <div class="bg-white rounded-lg shadow-lg p-6 border-2 border-red-200 mb-12">
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <span class="flex items-center gap-2">
+            <span class="text-lg">🌟</span>
+            <span>Plats tradicionals catalans</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="text-lg">🍽️</span>
+            <span>Ingredients frescos i de qualitat</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="text-lg">👨‍👩‍👧‍👦</span>
+            <span>Per celebrar en família</span>
+          </span>
+        </div>
       </div>
     </div>
     
-    <!-- Menu Preview -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-400">
-        <h3 class="text-lg font-bold text-green-700 mb-3">Aperitiu</h3>
-        <p class="text-gray-700">Micuit amb chutney de mango</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-400">
-        <h3 class="text-lg font-bold text-red-700 mb-3">Primers</h3>
-        <p class="text-gray-700">Sopa de galets • Patata d'Olot • Caneló rostit</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-400">
-        <h3 class="text-lg font-bold text-green-700 mb-3">Principals</h3>
-        <p class="text-gray-700">Suquet de Rap • Gall d'indi • Garrí amb carbassa</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-400">
-        <h3 class="text-lg font-bold text-red-700 mb-3">Postres</h3>
-        <p class="text-gray-700">Coca de forner • Neules i torrons</p>
-      </div>
-      
-      <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-400">
-        <h3 class="text-lg font-bold text-green-700 mb-3">Vins Recomanats</h3>
-        <p class="text-gray-700">Secrets del Mar - Garnatxa Blanca</p>
+    <!-- Menu Preview en formato tradicional -->
+    <div class="max-w-2xl mx-auto mb-12">
+      <div class="bg-white rounded-2xl shadow-2xl p-8 border-4 border-red-200">
+        
+        <!-- Aperitiu -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-center text-red-800 border-b-2 border-red-200 pb-2">
+            Aperitiu
+          </h3>
+          <p class="text-lg font-medium text-gray-800 text-center">Micuit amb chutney de mango</p>
+        </div>
+
+        <!-- Separador -->
+        <div class="flex justify-center items-center my-6">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+          <span class="mx-4 text-xl">❄️</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+        </div>
+
+        <!-- Primers -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-center text-green-800 border-b-2 border-green-200 pb-2">
+            Primers
+          </h3>
+          <div class="space-y-2 text-center">
+            <p class="text-lg font-medium text-gray-800">Sopa de galets</p>
+            <p class="text-lg font-medium text-gray-800">Patata d'Olot de carn d'olla amb potera</p>
+            <p class="text-lg font-medium text-gray-800">Caneló rostit i gratinat</p>
+          </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="flex justify-center items-center my-6">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+          <span class="mx-4 text-xl">🌟</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+        </div>
+
+        <!-- Principals -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-center text-red-800 border-b-2 border-red-200 pb-2">
+            Plats Principals
+          </h3>
+          <div class="space-y-2 text-center">
+            <p class="text-lg font-medium text-gray-800">Suquet de Rap</p>
+            <p class="text-lg font-medium text-gray-800">Gall d'indi a la catalana</p>
+            <p class="text-lg font-medium text-gray-800">Garrí amb carbassa</p>
+          </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="flex justify-center items-center my-6">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+          <span class="mx-4 text-xl">🎁</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+        </div>
+
+        <!-- Postres -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-center text-green-800 border-b-2 border-green-200 pb-2">
+            Postres
+          </h3>
+          <div class="space-y-2 text-center">
+            <p class="text-lg font-medium text-gray-800">Coca de forner amb xocolata, oli i sal</p>
+            <p class="text-lg font-medium text-gray-800">Neules i torrons</p>
+          </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="flex justify-center items-center my-6">
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+          <span class="mx-4 text-xl">🕯️</span>
+          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-green-300 to-transparent"></div>
+        </div>
+
+        <!-- Vins -->
+        <div class="mb-4">
+          <h3 class="text-2xl font-serif font-bold mb-4 text-center text-red-800 border-b-2 border-red-200 pb-2">
+            Vins Recomanats
+          </h3>
+          <p class="text-lg font-medium text-gray-800 text-center">Secrets del Mar - Garnatxa Blanca - Terra Alta</p>
+        </div>
+
       </div>
     </div>
     
