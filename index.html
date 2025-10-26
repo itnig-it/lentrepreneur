@@ -23,14 +23,28 @@ layout: default
   
   <!-- Banner navideño solapando el hero -->
   <div class="absolute bottom-0 left-0 right-0 z-20">
-    <div class="bg-red-700 text-white py-6 px-6 shadow-2xl relative overflow-hidden">
+    <div class="bg-red-800 text-white py-6 px-6 shadow-2xl relative overflow-hidden">
+      <!-- Copos de nieve cayendo -->
+      <div class="snowflakes">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+      </div>
+      
       <!-- Decoraciones navideñas de fondo -->
-      <div class="absolute top-2 left-4 text-lg opacity-30">❄️</div>
-      <div class="absolute top-2 right-4 text-lg opacity-30">🌟</div>
-      <div class="absolute bottom-2 left-8 text-lg opacity-30">🎁</div>
-      <div class="absolute bottom-2 right-8 text-lg opacity-30">🕯️</div>
-      <div class="absolute top-1/2 left-1/4 text-sm opacity-20">❄️</div>
-      <div class="absolute top-1/2 right-1/4 text-sm opacity-20">🌟</div>
+      <div class="absolute top-2 left-4 text-lg opacity-30">🌟</div>
+      <div class="absolute top-2 right-4 text-lg opacity-30">🎁</div>
+      <div class="absolute bottom-2 left-8 text-lg opacity-30">🕯️</div>
+      <div class="absolute bottom-2 right-8 text-lg opacity-30">🌟</div>
       
       <div class="container mx-auto relative z-10">
         <div class="flex flex-col md:flex-row items-center justify-between">
@@ -46,7 +60,7 @@ layout: default
             </div>
           </div>
           <div class="flex flex-col sm:flex-row gap-3">
-            <a href="/menu-nadal" class="bg-white text-red-700 hover:bg-yellow-100 font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg text-sm md:text-base flex items-center space-x-2">
+            <a href="/menu-nadal" class="bg-white text-red-800 hover:bg-yellow-100 font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-lg text-sm md:text-base flex items-center space-x-2">
               <span>🍽️</span>
               <span>Veure Menú</span>
             </a>
@@ -351,3 +365,117 @@ layout: default
     }
   });
 </script>
+
+<style>
+/* Animación de copos de nieve */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1rem;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 3.5s;
+  animation-delay: 1s;
+}
+
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 3.2s;
+  animation-delay: 2s;
+}
+
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 4.2s;
+  animation-delay: 2.5s;
+}
+
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 3.8s;
+  animation-delay: 3s;
+}
+
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 4.8s;
+  animation-delay: 3.5s;
+}
+
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 3.3s;
+  animation-delay: 4s;
+}
+
+.snowflake:nth-child(10) {
+  left: 15%;
+  animation-duration: 4.3s;
+  animation-delay: 4.5s;
+}
+
+.snowflake:nth-child(11) {
+  left: 25%;
+  animation-duration: 3.7s;
+  animation-delay: 5s;
+}
+
+.snowflake:nth-child(12) {
+  left: 35%;
+  animation-duration: 4.7s;
+  animation-delay: 5.5s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Efecto de brillo navideño */
+.bg-red-800 {
+  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 50%, #991b1b 100%);
+  box-shadow: 0 0 20px rgba(153, 27, 27, 0.5);
+}
+</style>
