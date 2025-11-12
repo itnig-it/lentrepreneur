@@ -5,7 +5,10 @@
   "scripts": {
     "build:css": "postcss ./assets/css/main.scss -o ./assets/css/styles.css",
     "watch:css": "postcss ./assets/css/main.scss -o ./assets/css/styles.css --watch",
-    "start": "bundle exec jekyll serve --livereload"
+    "start": "bundle exec jekyll serve --livereload",
+    "dev": "netlify dev",
+    "test:stripe": "node test-stripe-local.js",
+    "install:all": "npm install && bundle install"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
   },
   "dependencies": {
     "postcss-cli": "^11.0.0",
-    "postcss-scss": "^4.0.9"
+    "postcss-scss": "^4.0.9",
+    "stripe": "^14.21.0"
   }
 }

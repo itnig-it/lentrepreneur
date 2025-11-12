@@ -1,0 +1,10 @@
+{
+  "name": "netlify-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for Stripe integration",
+  "main": "create-checkout-session.js",
+  "dependencies": {
+    "stripe": "^14.21.0"
+  }
+}
+

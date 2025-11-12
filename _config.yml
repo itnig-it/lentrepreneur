@@ -7,6 +7,13 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Netlify configuration
+netlify:
+  # URL base de tu sitio en Netlify (sin trailing slash)
+  # Ejemplo: https://tu-sitio.netlify.app
+  # Déjalo vacío para usar detección automática
+  site_url: ""
+
 # Build settings
 markdown: kramdown
 plugins:
