@@ -172,18 +172,54 @@ title: Menú de Nadal
       <div class="text-center mb-8">
         <h3 class="text-2xl font-serif font-bold mb-4 text-gray-800">Reserva la teva taula per Nadal</h3>
         <p class="text-gray-600 mb-6">Celebra les festes amb nosaltres i gaudeix d'un menú especial elaborat amb amor i tradició.</p>
+        <p class="text-sm text-gray-500 italic mb-4">El menú de Nadal està disponible només els dies 25 i 26 de desembre</p>
       </div>
       
-      <div class="rounded-lg overflow-hidden shadow-lg relative bg-white">
-        <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
-        <iframe id="restaurante-entrepreneur-nadal" 
-                title="Reservas Menú de Nadal"
-                src="https://www.covermanager.com/reservation/module_restaurant/restaurante-entrepreneur/catalan"
-                allow="payment" 
-                frameborder="0" 
-                height="550" 
-                width="100%" 
-                onload="if(typeof iFrameResize !== 'undefined') iFrameResize({}, '#restaurante-entrepreneur-nadal');">
+      <!-- Selector de fecha -->
+      <div class="flex justify-center mb-6 space-x-4">
+        <button 
+          id="btn-25-dic" 
+          class="date-selector active bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-base"
+          onclick="showReservationDate('25')"
+        >
+          📅 Dimecres 25 de Desembre
+        </button>
+        <button 
+          id="btn-26-dic" 
+          class="date-selector bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-base"
+          onclick="showReservationDate('26')"
+        >
+          📅 Dijous 26 de Desembre
+        </button>
+      </div>
+      
+      <!-- Iframe para día 25 -->
+      <div id="reserva-25" class="reserva-iframe-container rounded-lg overflow-hidden shadow-lg relative bg-white">
+        <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer/iframeResizer.min.js"></script>
+        <iframe 
+          id="restaurante-entrepreneur-25" 
+          title="Reservas Menú de Nadal - 25 de Desembre"
+          src="https://www.covermanager.com/reservation/module_restaurant/restaurante-entrepreneur/catalan/25-12-2025"
+          allow="payment" 
+          frameborder="0" 
+          height="550" 
+          width="100%" 
+          onload="if(typeof iFrameResize !== 'undefined') iFrameResize();">
+        </iframe>
+      </div>
+      
+      <!-- Iframe para día 26 -->
+      <div id="reserva-26" class="reserva-iframe-container rounded-lg overflow-hidden shadow-lg relative bg-white hidden">
+        <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer/iframeResizer.min.js"></script>
+        <iframe 
+          id="restaurante-entrepreneur-26" 
+          title="Reservas Menú de Nadal - 26 de Desembre"
+          src="https://www.covermanager.com/reservation/module_restaurant/restaurante-entrepreneur/catalan/26-12-2025"
+          allow="payment" 
+          frameborder="0" 
+          height="550" 
+          width="100%" 
+          onload="if(typeof iFrameResize !== 'undefined') iFrameResize();">
         </iframe>
       </div>
     </div>
@@ -337,6 +373,38 @@ title: Menú de Nadal
 </style>
 
 <script>
+  // Función para cambiar entre fechas de reserva
+  function showReservationDate(date) {
+    // Ocultar todos los iframes
+    document.getElementById('reserva-25').classList.add('hidden');
+    document.getElementById('reserva-26').classList.add('hidden');
+    
+    // Remover clase active de todos los botones
+    document.getElementById('btn-25-dic').classList.remove('active', 'bg-red-600', 'text-white');
+    document.getElementById('btn-25-dic').classList.add('bg-gray-300', 'text-gray-800');
+    document.getElementById('btn-26-dic').classList.remove('active', 'bg-red-600', 'text-white');
+    document.getElementById('btn-26-dic').classList.add('bg-gray-300', 'text-gray-800');
+    
+    // Mostrar el iframe seleccionado y activar el botón correspondiente
+    if (date === '25') {
+      document.getElementById('reserva-25').classList.remove('hidden');
+      document.getElementById('btn-25-dic').classList.add('active', 'bg-red-600', 'text-white');
+      document.getElementById('btn-25-dic').classList.remove('bg-gray-300', 'text-gray-800');
+    } else if (date === '26') {
+      document.getElementById('reserva-26').classList.remove('hidden');
+      document.getElementById('btn-26-dic').classList.add('active', 'bg-red-600', 'text-white');
+      document.getElementById('btn-26-dic').classList.remove('bg-gray-300', 'text-gray-800');
+    }
+    
+    // Re-inicializar el resizer del iframe visible
+    setTimeout(() => {
+      if (typeof iFrameResize !== 'undefined') {
+        const iframeId = date === '25' ? '#restaurante-entrepreneur-25' : '#restaurante-entrepreneur-26';
+        iFrameResize({}, iframeId);
+      }
+    }, 100);
+  }
+  
   // Configuración de precios (ajustar según necesidad)
   const PRICE_PER_PERSON = 50; // Precio por persona en euros
   
