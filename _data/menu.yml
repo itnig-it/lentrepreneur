@@ -33,19 +33,292 @@ menu:
 
   items:
     - category:
-        ca: "ENTREPANS, DOLÇOS I MÉS"
-        en: "SANDWICHES, SWEETS AND MORE"
-        es: "BOCADILLOS, DULCES Y MÁS"
+        ca: "TORRADES"
+        en: "TOASTS"
+        es: "TOSTADAS"
       menu_area: "ESMORZARS"
       items:
       - name:
-          ca: "Pregunta per les torrades, entrepanets i dolços fets a casa diàriament"
-          en: "Ask about our daily homemade toasts, sandwiches and sweets"
-          es: "Pregunta por nuestras tostadas, bocadillos y dulces caseros diarios"
+          ca: "Torrada de pa de massa mare amb mantega o tomacó"
+          en: "Sourdough bread toast with butter or special tomato"
+          es: "Tostada de pan de masa madre con mantequilla o tomate de colgar"
+        price: 3.5
         description:
-          ca: "Ofereix una varietat de torrades, entrepanets i dolços elaborats diàriament a casa amb ingredients frescos i de qualitat."
-          en: "We offer a variety of toasts, sandwiches and sweets made daily at home with fresh, quality ingredients."
-          es: "Ofrecemos una variedad de tostadas, bocadillos y dulces elaborados diariamente en casa con ingredientes frescos y de calidad."
+          ca: "Torrada cruixent de massa mare, servida amb mantega cremosa o tomàquet de penjar per a un toc fresc i tradicional."
+          en: "Crispy sourdough toast, served with creamy butter or tomato de penjar for a fresh and traditional touch."
+          es: "Tostada crujiente de masa madre, servida con mantequilla cremosa o tomate de penjar para un toque fresco y tradicional."
+
+      - name: 
+          ca: "Ou passat per aigua"
+          en: "Soft-boiled egg"
+          es: "Huevo pasado por agua"
+        price: 2.5
+        description: 
+          ca: "Ou cuinat suaument per mantenir la seva textura sedosa, perfecte per barrejar amb torrades o altres acompanyaments."
+          en: "Soft-boiled egg, gently cooked to maintain its silky texture, perfect for mixing with toast or other sides."
+          es: "Huevo pasado por agua, cocido suavemente para mantener su textura sedosa, perfecto para acompañar tostadas u otros platos."
+        type: acompanyament
+
+      - name: 
+          ca: "Formatge Comté"
+          en: "Comté cheese"
+          es: "Queso Comté"
+        price: 2.5
+        description: 
+          ca: "Formatge francès curat amb una textura suau i un sabor intensament avellanat, ideal per acompanyar les teves torrades."
+          en: "French aged cheese with a soft texture and a rich nutty flavor, ideal for accompanying your toast."
+          es: "Queso francés curado con una textura suave y un sabor intensamente avellanado, ideal para acompañar tus tostadas."
+        type: acompanyament
+
+      - name: 
+          ca: "Alvocat"
+          en: "Avocado"
+          es: "Aguacate"
+        price: 2.5
+        description: 
+          ca: "Alvocat madur i cremós, perfecte per afegir un toc fresc i saludable a qualsevol plat."
+          en: "Ripe and creamy avocado, perfect for adding a fresh and healthy touch to any dish."
+          es: "Aguacate maduro y cremoso, perfecto para añadir un toque fresco y saludable a cualquier plato."
+        type: acompanyament
+
+      - name: 
+          ca: "Pernil dolç o gall d'indi fet a casa"
+          en: "Homemade sweet ham or turkey"
+          es: "Jamón dulce o pavo casero"
+        price: 3.0
+        description: 
+          ca: "Opció suau i saborosa de pernil dolç o gall d'indi fet a casa, tallat fi per potenciar el seu gust delicat."
+          en: "Soft and flavorful option of homemade sweet ham or turkey, finely sliced to enhance its delicate flavor."
+          es: "Opción suave y sabrosa de jamón dulce o pavo casero, cortado finamente para potenciar su sabor delicado."
+        type: acompanyament
+
+      - name: 
+          ca: "Salmó curat artesanalment"
+          en: "Artisanally cured salmon"
+          es: "Salmón curado artesanalmente"
+        price: 3.5
+        description: 
+          ca: "Salmó curat artesanalment, amb una textura melosa i un sabor equilibrat entre dolç i salí."
+          en: "Artisanally cured salmon, with a tender texture and a balanced sweet and salty flavor."
+          es: "Salmón curado artesanalmente, con una textura melosa y un sabor equilibrado entre dulce y salado."
+        type: acompanyament
+
+      - name: 
+          ca: "Salsa holandesa o bearnesa"
+          en: "Hollandaise or Bearnaise sauce"
+          es: "Salsa holandesa o bearnesa"
+        price: 2.5
+        description: 
+          ca: "Salsa casolana, cremosa i suau, perfecta per donar un toc gourmet als teus esmorzars."
+          en: "Homemade, creamy and smooth sauce, perfect for adding a gourmet touch to your breakfasts."
+          es: "Salsa casera, cremosa y suave, perfecta para agregar un toque gourmet a tus desayunos."
+        type: acompanyament
+
+      - name: 
+          ca: "Crema de xocolata i avellanes torrades feta a casa"
+          en: "Homemade chocolate and roasted hazelnut cream"
+          es: "Crema de chocolate y avellanas tostadas casera"
+        price: 3.5
+        description: 
+          ca: "Una crema irresistible de xocolata i avellanes torrades, elaborada artesanalment per un sabor intens i equilibrat."
+          en: "An irresistible homemade chocolate and roasted hazelnut cream, crafted for an intense and balanced flavor."
+          es: "Una crema irresistible de chocolate y avellanas tostadas, elaborada artesanalmente para un sabor intenso y equilibrado."
+        type: acompanyament
+
+
+
+    - category: 
+        ca: "ENTREPANS I MÉS"
+        en: "SANDWICHES AND MORE"
+        es: "BOCADILLOS Y MÁS"
+      menu_area: "ESMORZARS"
+      items:
+      - name:
+          ca: "Entrepanet de fricandó amb formatge fos"
+          en: "Sandwich with \"Fricandó\" with melted cheese"
+          es: "Bocadillito de fricandó con queso fundido"
+        price: 7.5
+        description:
+          ca: "Entrepanet cruixent farcit de fricandó casolà amb formatge fos per donar-hi un toc cremós."
+          en: "Sandwich filled with homemade fricandó with melted cheese for an extra creamy touch."
+          es: "Bocadillito crujiente relleno de fricandó casero con queso fundido para darle un toque cremoso."
+
+      - name:
+          ca: "Entrepanet amb botifarra i pebrot escalivat"
+          en: "Sandwich with Catalan pork sausage and roasted pepper"
+          es: "Bocadillito con botifarra y pimiento escalivado"
+        price: 7.5
+        description:
+          ca: "Entrepanet calent amb botifarra tradicional catalana i pebrot escalivat, una combinació de sabors autèntics."
+          en: "Warm sandwich with traditional Catalan pork sausage and roasted pepper, a combination of authentic flavors."
+          es: "Bocadillito caliente con botifarra tradicional catalana y pimiento escalivado, una combinación de sabores auténticos."
+
+      - name:
+          ca: "Entrepanet amb mandonguilles amb sípia"
+          en: "Sandwich with cuttlefish meatballs"
+          es: "Bocadillito con albóndigas con sepia"
+        price: 7.5
+        description:
+          ca: "Entrepanet farcit de mandonguilles amb sípia, un clàssic mariner amb un gir original."
+          en: "Sandwich filled with cuttlefish meatballs, a classic seafood dish with an original twist."
+          es: "Bocadillito relleno de albóndigas con sepia, un clásico marinero con un giro original."
+
+      - name:
+          ca: "Entrepanet de sobrassada, formatge de Maó i mel"
+          en: "Sandwich with sobrasada, Maó cheese and honey"
+          es: "Bocadillito con sobrasada, queso de Maó y miel"
+        price: 6.5
+        description:
+          ca: "Una combinació irresistible: sobrassada calenta, formatge de Maó fos i un toc dolç de mel."
+          en: "An irresistible combination: warm sobrasada, melted Maó cheese, and a sweet touch of honey."
+          es: "Una combinación irresistible: sobrasada caliente, queso de Maó fundido y un toque dulce de miel."
+
+      - name:
+          ca: "Entrepanet d'escalivada"
+          en: "Sandwich with escalivada"
+          es: "Bocadillito con escalivada"
+        price: 6.5
+        description:
+          ca: "Entrepanet farcit amb escalivada de verdures de temporada, lleuger i ple de sabor mediterrani."
+          en: "Sandwich filled with roasted seasonal vegetables, light and full of Mediterranean flavor."
+          es: "Bocadillito relleno de verduras asadas de temporada, ligero y lleno de sabor mediterráneo."
+
+      - name: 
+          ca: "Ou ferrat"
+          en: "Fried egg"
+          es: "Huevo frito"
+        price: 1.0
+        description: 
+        type: acompanyament
+
+      - name: 
+          ca: "Formatge fos"
+          en: "Melted cheese"
+          es: "Queso fundido"
+        price: 0.5
+        description: 
+        type: acompanyament
+
+      - name:
+          ca: "Biquini de \"Cecina\" de Lleó D.O. i Comté amb salsa bearnesa"
+          en: "Gourmet biquini with Leon D.O. cured beef and Comté cheese with Bearnaise sauce"
+          es: "Biquini gourmet con cecina de León D.O. y queso Comté con salsa bearnesa"
+        price: 12.0
+        description:
+          ca: "Biquini gourmet de cecina de Lleó D.O. i formatge Comté, amb salsa bearnesa per potenciar cada mossegada."
+          en: "Gourmet biquini with Leon D.O. cured beef and Comté cheese, enhanced with Bearnaise sauce in every bite."
+          es: "Biquini gourmet de cecina de León D.O. y queso Comté, realzado con salsa bearnesa en cada bocado."
+
+        
+        
+        
+      - name: 
+          ca: "Truita de patata \"al moment\""
+          en: "Freshly made potato omelette"
+          es: "Tortilla de patata recién hecha"
+        price: 9.0
+        description: 
+          ca: "Truita de patata gruixuda i sucosa, feta al moment per garantir la seva textura perfecta i sabor casolà."
+          en: "Thick and juicy potato omelette, freshly made to ensure perfect texture and homemade flavor."
+          es: "Tortilla de patata gruesa y jugosa, hecha al momento para garantizar una textura perfecta y sabor casero."
+
+      - name: 
+          ca: "Ous amb puntilla amb samfaina, botifarra negra i mel"
+          en: "Eggs in a nest with spinach, smoked salmon and hollandaise sauce"
+          es: "Huevos al nido con espinacas, salmón ahumado y salsa holandesa"
+        price: 9.5
+        description: 
+          ca: "Ous cuinats al forn sobre un llit d'espinacs frescos i salmó fumat, banyats amb una delicada salsa holandesa."
+          en: "Baked eggs on a bed of fresh spinach and smoked salmon, topped with a delicate hollandaise sauce."
+          es: "Huevos horneados sobre una cama de espinacas frescas y salmón ahumado, bañados en una delicada salsa holandesa."
+
+      - name: 
+          ca: "Ou ferrat amb sobrasada de Mallorca"
+          en: "Fried egg with Mallorcan sobrasada"
+          es: "Huevo frito con sobrasada de Mallorca"
+        price: 9.0
+        description: 
+          ca: "Ou ferrat amb sobrasada de Mallorca fosa, que aporta un toc especiat i intens a aquest plat clàssic."
+          en: "Fried egg with melted Mallorcan sobrasada, adding a spicy and intense touch to this classic dish."
+          es: "Huevo frito con sobrasada de Mallorca fundida, que aporta un toque especiado e intenso a este plato clásico."
+
+
+      - name: 
+          ca: "Ou extra"
+          en: "Extra egg"
+          es: "Huevo extra"
+        price: 1.0
+        description: 
+        type: acompanyament
+
+      - name: 
+          ca: "Patates fregides allumette"
+          en: "Allumette fries"
+          es: "Patatas fritas allumette"
+        price: 3.5
+        description: 
+          ca: "Patates fregides cruixents i delicioses."
+          en: "Crispy and delicious allumette fries."
+          es: "Patatas fritas allumette, crujientes y deliciosas."
+        type: acompanyament
+
+      - name: 
+          ca: "Amanida verda amb raves"
+          en: "Green salad with radishes"
+          es: "Ensalada verde con rábanos"
+        price: 3.5
+        description: 
+          ca: "Amanida verda fresca amb raves per un toc salat i fresc."
+          en: "Fresh green salad with radishes for a salty and refreshing touch."
+          es: "Ensalada verde fresca con rábanos para un toque salado y refrescante."
+        type: acompanyament
+
+
+    - category: 
+        ca: "DOLÇ"
+        en: "SWEET"
+        es: "DULCE"
+      menu_area: "ESMORZARS"
+      items:
+      - name: 
+          ca: "Rostes de Santa Teresa amb xarop d'auró, fruita i bacó"
+          en: "French toast with maple syrup, fruit and bacon"
+          es: "Torrijas de Santa Teresa con sirope de arce, fruta y bacon"
+        price: 6.5
+        description: 
+          ca: "Pa torrat arrebossat i fregit, servit amb xarop d'auró, fruita fresca i un toc cruixent de bacó."
+          en: "Crispy French toast served with maple syrup, fresh fruit, and a crunchy touch of bacon."
+          es: "Torrijas crujientes servidas con sirope de arce, fruta fresca y un toque crujiente de bacon."
+
+      - name: 
+          ca: "Xocolata suïssa a la tassa amb xurros"
+          en: "Hot chocolate with cream and churros"
+          es: "Chocolate suizo a la taza con churros"
+        price: 5.5
+        description: 
+          ca: "Xurros casolans cruixents acompanyats de xocolata calenta espessa i un suau gelat de nata."
+          en: "Homemade crispy churros served with thick hot chocolate and smooth cream ice cream."
+          es: "Churros caseros crujientes acompañados de chocolate caliente espeso y un suave helado de nata."
+
+      - name: 
+          ca: "Iogurt grec casolà amb fruita i granola feta a casa"
+          en: "Homemade Greek yogurt with fruit and homemade granola"
+          es: "Yogur griego casero con fruta y granola casera"
+        price: 5.5
+        description: 
+          ca: "Iogurt grec cremós fet a casa, servit amb fruita de temporada i una granola cruixent d'elaboració pròpia."
+          en: "Creamy homemade Greek yogurt served with seasonal fruit and our own crunchy granola."
+          es: "Yogur griego cremoso hecho en casa, servido con fruta de temporada y nuestra granola crujiente casera."
+
+      - name: 
+          ca: "Cistell de mini brioixeria"
+          en: "Basket of mini pastries"
+          es: "Cesta de mini bollería"
+        price: 6.0
+        description: 
+          ca: "Una selecció de brioixeria artesana en format mini, perfecta per compartir i gaudir d'un toc dolç."
+          en: "A selection of artisanal mini pastries, perfect for sharing and enjoying a sweet touch."
+          es: "Una selección de bollería artesana en formato mini, perfecta para compartir y disfrutar de un toque dulce."
 
 
     - category: 

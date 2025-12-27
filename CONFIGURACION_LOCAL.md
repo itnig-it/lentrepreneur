@@ -68,3 +68,4 @@ Verifica que:
 2. La URL en `_config.yml` sea correcta
 3. La variable de entorno `STRIPE_SECRET_KEY` esté configurada en Netlify
 
+

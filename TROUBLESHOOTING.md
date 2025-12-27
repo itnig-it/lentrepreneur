@@ -100,3 +100,4 @@ Abre la consola del navegador (F12) para ver los errores detallados.
 
 Verifica que las URLs de éxito/cancelación en la función sean correctas. Deben apuntar a tu dominio.
 
+

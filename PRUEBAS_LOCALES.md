@@ -107,3 +107,4 @@ Verifica en la terminal del servidor local que veas los logs cuando haces una pe
 3. La función estará disponible en producción
 4. El código detectará automáticamente que estás en Netlify y usará la función desplegada
 
+
