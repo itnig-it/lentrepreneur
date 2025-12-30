@@ -654,13 +654,26 @@ menu:
 
       - name: 
           ca: "Entrecot al pebre negre"
-          en: "Ribeye with black pepper sauce"
+          en: "Ribeye steak with black pepper sauce"
           es: "Entrecot a la pimienta negra"
         price: 24.5
         description: 
           ca: "Entrecot de vedella, marcat al punt i servit amb salsa de pebre negre cremosa i aromàtica."
           en: "Ribeye steak, grilled to perfection and served with creamy aromatic black pepper sauce."
           es: "Entrecot de ternera, marcado al punto y servido con salsa cremosa de pimienta negra."
+
+      - name: 
+          ca: "Mitjana de vaca amb patates i pebrots"
+          en: "Bone-in Ribeye with fries and peppers"
+          es: "Chuletón de vaca con patatas y pimientos"
+        price: "S/M"
+        description: 
+          ca: "Mitjana de vaca amb patates i pebrots, un plat carnívor perfecte per a compartir."
+          en: "Bone-in Ribeye with fries and peppers, a perfect meat dish to share."
+          es: "Chuletón de vaca con patatas y pimientos, un plato carnívoro perfecto para compartir."
+
+
+
 
 
     - category: 
