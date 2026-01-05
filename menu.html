@@ -138,6 +138,9 @@ title: Menú
                   {% endif %}
                 </div>
               {% endfor %}
+              {% if category.note %}
+                <p class="text-base text-gray-600 italic mt-4 mb-2">{{ category.note.ca }}</p>
+              {% endif %}
             </div>
           </div>
         {% endfor %}

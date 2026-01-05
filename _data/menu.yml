@@ -662,15 +662,34 @@ menu:
           en: "Ribeye steak, grilled to perfection and served with creamy aromatic black pepper sauce."
           es: "Entrecot de ternera, marcado al punto y servido con salsa cremosa de pimienta negra."
 
+    - category:
+        ca: "PER ENCÀRREC"
+        en: "ON REQUEST"
+        es: "POR ENCARGO"
+      menu_area: "PLATS_PRINCIPALS"
+      note:
+        ca: "* Si hi ha algun plat que no tenim a la carta, te'l cuinem."
+        en: "* If there's a dish we don't have on the menu, we'll cook it for you."
+        es: "* Si hay algún plato que no tenemos en la carta, te lo cocinamos."
+      items:
       - name: 
-          ca: "Mitjana de vaca amb patates i pebrots"
-          en: "Bone-in Ribeye with fries and peppers"
-          es: "Chuletón de vaca con patatas y pimientos"
+          ca: "Mitjana de vaca (1Kg) amb patates i pebrots"
+          en: "Beef middle (1kg) with fries and peppers"
+          es: "Chuletón de vaca (1kg) con patatas y pimientos"
         price: "S/M"
         description: 
           ca: "Mitjana de vaca amb patates i pebrots, un plat carnívor perfecte per a compartir."
-          en: "Bone-in Ribeye with fries and peppers, a perfect meat dish to share."
-          es: "Chuletón de vaca con patatas y pimientos, un plato carnívoro perfecto para compartir."
+          en: "Beef middle with fries and peppers, a perfect meat dish to share."
+          es: "Mitjana de vaca con patatas y pimientos, un plato carnívoro perfecto para compartir."
+      - name: 
+          ca: "Escudella"
+          en: "Catalan meat and vegetable stew"
+          es: "Escudella"
+        price: "S/M"
+        description: 
+          ca: "Escudella de botifarra i fideu, un plat carnívor perfecte per a compartir."
+          en: "Catalan meat and vegetable stew, a perfect meat dish to share."
+          es: "Escudella de botifarra y fideu, un plato carnívoro perfecto para compartir."
 
 
 
