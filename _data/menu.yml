@@ -542,14 +542,14 @@ menu:
           es: "Alcachofas confitadas a baja temperatura con crujiente de jamón ibérico y piñones tostados."
 
       - name: 
-          ca: "Alberginia fumada amb Maó, avellanes i mel"
-          en: "Smoked aubergine with Maó cheese, hazelnuts and honey"
-          es: "Berenjena ahumada con queso Maó, avellanas y miel"
+          ca: "Moniato rostit amb recuit, mel i pistatxos"
+          en: "Roasted moniat with recuit, honey and toasted hazelnuts"
+          es: "Boniato asado con recuit, miel y pistachos"
         price: 10.9
         description: 
-          ca: "Albergínia fumada amb formatge Maó fos, mel i avellanes torrades, un joc dolç i salat irresistible."
-          en: "Smoked aubergine with melted Maó cheese, honey and toasted hazelnuts — an irresistible sweet and savory balance."
-          es: "Berenjena ahumada con queso Maó fundido, miel y avellanas tostadas, un equilibrio dulce y salado irresistible."
+          ca: "Moniato rustit amb recuit, mel i pistatxos, un joc dolç i salat irresistible."
+          en: "Roasted moniat with recuit, honey and toasted hazelnuts — an irresistible sweet and savory balance."
+          es: "Boniato asado con recuit, miel y pistachos, un equilibrio dulce y salado irresistible."
 
       - name: 
           ca: "Ous de Calaf ferrats, patata panadera amb gambes a l'allet"
@@ -571,6 +571,15 @@ menu:
           en: "Thick potato omelette with a hint of truffle. Add grated cheese to enhance the flavor."
           es: "Tortilla gruesa de patata con un toque de trufa. Puedes añadir queso rallado para intensificar el sabor."
 
+      - name: 
+          ca: "Macarrons de la casa gratinats"
+          en: "Gratinated house macaroni"
+          es: "Macarrones de la casa gratinados"
+        price: 10.5
+        description: 
+          ca: "Macarrons de la casa gratinats, un plat clàssic amb un toc aromàtic i saborós."
+          en: "Gratinated house macaroni, a classic dish with an aromatic and flavorful touch."
+          es: "Macarrones de la casa gratinados,, un plato clásico con un toque aromático y sabroso."
 
       - name: 
           ca: "Caneló XL de rostit amb beixamel de ceps"
@@ -642,9 +651,9 @@ menu:
           es: "Albóndigas caseras guisadas con trompetas de la muerte, un plato oscuro, intenso y lleno de sabor."
 
       - name: 
-          ca: "Botifarra artesana esmicolada amb mongeta de Santa Pau"
-          en: "Shredded Artisan botifarra with Santa Pau beans"
-          es: "Butifarra artesana desmenuzada con judías de Santa Pau"
+          ca: "Botifarra artesana amb mongeta de Santa Pau"
+          en: "Artisanally made botifarra with Santa Pau beans"
+          es: "Butifarra artesana con judías de Santa Pau"
         price: 15.0
         description: 
           ca: "Botifarra artesana feta amb porc de proximitat, acompanyada de les clàssiques mongetes de Santa Pau."
@@ -653,9 +662,9 @@ menu:
 
 
       - name: 
-          ca: "Entrecot al pebre negre"
-          en: "Ribeye steak with black pepper sauce"
-          es: "Entrecot a la pimienta negra"
+          ca: "Entrecot de vaca de pastura"
+          en: "Pasture-raised beef ribeye"
+          es: "Entrecot de pasto"
         price: 24.5
         description: 
           ca: "Entrecot de vedella, marcat al punt i servit amb salsa de pebre negre cremosa i aromàtica."
@@ -673,9 +682,9 @@ menu:
         es: "* Si hay algún plato que no tenemos en la carta, te lo cocinamos."
       items:
       - name: 
-          ca: "Mitjana de vaca (1Kg) amb patates i pebrots"
-          en: "Beef middle (1kg) with fries and peppers"
-          es: "Chuletón de vaca (1kg) con patatas y pimientos"
+          ca: "Mitjana de vaca de pastura (1Kg) amb patates i pebrots"
+          en: "Pasture-raised beef middle (1kg) with fries and peppers"
+          es: "Chuletón de vaca de pasto(1kg) con patatas y pimientos"
         price: "S/M"
         description: 
           ca: "Mitjana de vaca amb patates i pebrots, un plat carnívor perfecte per a compartir."
@@ -810,9 +819,9 @@ menu:
           es: "Pastel de chocolate intenso y sin harina, servido con una bola de helado que resalta su riqueza."
 
       - name: 
-          ca: "Flam"
-          en: "Crème caramel"
-          es: "Flan"
+          ca: "Flam amb llet crua i ous ecològics"
+          en: "Cream caramel with raw milk and organic eggs"
+          es: "Flan con leche cruda y huevos ecológicos"
         price: 6
         description: 
           ca: "El flam tradicional de tota la vida, fet amb ous frescos i llet, amb una textura suau i un caramel delicadament amarg que equilibra la dolçor."
