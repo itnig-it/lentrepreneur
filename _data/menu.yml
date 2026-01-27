@@ -662,14 +662,14 @@ menu:
 
 
       - name: 
-          ca: "Entrecot de vaca de pastura"
-          en: "Pasture-raised beef ribeye"
-          es: "Entrecot de pasto"
+          ca: "Entrecot de vaca de pastura al pebre negre"
+          en: "Pasture-raised beef ribeye with black pepper sauce"
+          es: "Entrecot de pasto a la pimienta negra"
         price: 24.5
         description: 
-          ca: "Entrecot de vedella, marcat al punt i servit amb salsa de pebre negre cremosa i aromàtica."
-          en: "Ribeye steak, grilled to perfection and served with creamy aromatic black pepper sauce."
-          es: "Entrecot de ternera, marcado al punto y servido con salsa cremosa de pimienta negra."
+          ca: "Entrecot de vedella de pastura, marcat al punt i servit amb salsa de pebre negre cremosa i aromàtica."
+          en: "Ribeye steak from pasture-raised beef, grilled to perfection and served with creamy aromatic black pepper sauce."
+          es: "Entrecot de ternera de pasto, marcado al punto y servido con salsa cremosa de pimienta negra."
 
     - category:
         ca: "PER ENCÀRREC"
