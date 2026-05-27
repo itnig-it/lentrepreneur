@@ -153,6 +153,15 @@ menu:
           en: "Ripe tomato with marinated anchovies and acorn-fed Iberian ham, a fresh dish with elegant contrasts."
           es: "Tomate maduro con boquerones marinados y jamón ibérico de bellota, un plato fresco con contrastes elegantes."
 
+      - name:
+          ca: "Bunyols de brandada de bacallà amb pebrots"
+          en: "Cod brandade fritters with peppers"
+          es: "Buñuelos de brandada de bacalao con pimientos"
+        price: 10.5
+        description:
+          ca: "Bunyols cruixents de brandada de bacallà, acompanyats amb pebrots per aportar dolçor i intensitat."
+          en: "Crispy cod brandade fritters served with peppers for sweetness and depth."
+          es: "Buñuelos crujientes de brandada de bacalao, acompañados con pimientos para aportar dulzor e intensidad."
 
       - name: 
           ca: "Xurro de tartar de vedella"
@@ -197,6 +206,16 @@ menu:
           en: "Warm biquini sandwich with black pudding and melted Arzua Ulloa cheese — smooth and flavorful."
           es: "Biquini caliente con bull negre y queso Arzua Ulloa fundido, una combinación suave y sabrosa."
 
+      - name:
+          ca: "Musclos a la marinera"
+          en: "Mussels marinara"
+          es: "Mejillones a la marinera"
+        price: 11.5
+        description:
+          ca: "Musclos cuinats amb salsa marinera, un plat clàssic, saborós i perfecte per compartir."
+          en: "Mussels cooked in marinara sauce, a classic, flavorful dish made for sharing."
+          es: "Mejillones cocinados con salsa marinera, un plato clásico, sabroso y perfecto para compartir."
+
     - category: 
         ca: "VERDURES, OUS, PASTA I LLEGUMS"
         en: "VEGETABLES, EGGS, PASTA AND LEGUMES"
@@ -205,25 +224,25 @@ menu:
       items:
      
 
-      - name: 
-          ca: "Carxofes confitades amb cruixent de pernil i pinyons"
-          en: "Confit artichokes with crispy ham and pine nuts"
-          es: "Alcachofas confitadas con crujiente de jamón y piñones"
-        price: 9.5
-        description: 
-          ca: "Carxofes confitades a baixa temperatura, amb cruixent de pernil ibèric i pinyons torrats."
-          en: "Slow-cooked confit artichokes with crispy Iberian ham and toasted pine nuts."
-          es: "Alcachofas confitadas a baja temperatura con crujiente de jamón ibérico y piñones tostados."
+      - name:
+          ca: "Albergínia rostida amb mató, mel i avellanes"
+          en: "Roasted eggplant with mató, honey and hazelnuts"
+          es: "Berenjena asada con mató, miel y avellanas"
+        price: 10
+        description:
+          ca: "Albergínia rostida amb mató cremós, mel i avellanes torrades, una combinació dolça i salada."
+          en: "Roasted eggplant with creamy mató, honey and toasted hazelnuts, a sweet and savory combination."
+          es: "Berenjena asada con mató cremoso, miel y avellanas tostadas, una combinación dulce y salada."
 
-      - name: 
-          ca: "Moniato rostit amb recuit, mel i pistatxos"
-          en: "Roasted moniat with recuit, honey and toasted hazelnuts"
-          es: "Boniato asado con recuit, miel y pistachos"
-        price: 10.9
-        description: 
-          ca: "Moniato rustit amb recuit, mel i pistatxos, un joc dolç i salat irresistible."
-          en: "Roasted moniat with recuit, honey and toasted hazelnuts — an irresistible sweet and savory balance."
-          es: "Boniato asado con recuit, miel y pistachos, un equilibrio dulce y salado irresistible."
+      - name:
+          ca: "Cazón i rabes a l'andalusa amb allioli de tinta de calamar"
+          en: "Andalusian-style dogfish and squid strips with squid ink allioli"
+          es: "Cazón y rabas a la andaluza con alioli de tinta de calamar"
+        price: 13
+        description:
+          ca: "Cazón i rabes fregits a l'andalusa, servits amb un allioli de tinta de calamar intens i mariner."
+          en: "Andalusian-style fried dogfish and squid strips, served with a bold squid ink allioli."
+          es: "Cazón y rabas fritos a la andaluza, servidos con un alioli de tinta de calamar intenso y marinero."
 
       - name: 
           ca: "Ous de Calaf ferrats, patata panadera amb gambes a l'allet"
@@ -264,16 +283,6 @@ menu:
           ca: "Caneló XL farcit de rostit tradicional i banyat amb una beixamel de ceps cremosa i aromàtica."
           en: "XL cannelloni stuffed with traditional roast meat and topped with creamy porcini béchamel."
           es: "Canelón XL relleno de asado tradicional y cubierto con una bechamel cremosa de setas."
-
-      - name: 
-          ca: "Cigrons amb llamàntol"
-          en: "Chickpeas with lobster"
-          es: "Garbanzos con bogavante"
-        price: 28.9
-        description: 
-          ca: "Cigrons guisats amb llamàntol fresc, un plat mariner ple de sabor i elegància."
-          en: "Stewed chickpeas with fresh lobster — a rich and elegant seafood dish."
-          es: "Garbanzos guisados con bogavante fresco, un plato marinero lleno de sabor y elegancia."
 
 
     - category: 
@@ -359,20 +368,11 @@ menu:
           ca: "Mitjana de vaca de pastura (1Kg) amb patates i pebrots"
           en: "Pasture-raised beef middle (1kg) with fries and peppers"
           es: "Chuletón de vaca de pasto(1kg) con patatas y pimientos"
-        price: "S/M"
+        price: 55
         description: 
           ca: "Mitjana de vaca amb patates i pebrots, un plat carnívor perfecte per a compartir."
           en: "Beef middle with fries and peppers, a perfect meat dish to share."
           es: "Mitjana de vaca con patatas y pimientos, un plato carnívoro perfecto para compartir."
-      - name: 
-          ca: "Escudella"
-          en: "Catalan meat and vegetable stew"
-          es: "Escudella"
-        price: "S/M"
-        description: 
-          ca: "Escudella de botifarra i fideu, un plat carnívor perfecte per a compartir."
-          en: "Catalan meat and vegetable stew, a perfect meat dish to share."
-          es: "Escudella de botifarra y fideu, un plato carnívoro perfecto para compartir."
 
 
 
@@ -1135,4 +1135,3 @@ menu:
           ca: "Vi dolç natural, amb intensos sabors de fruita confitada, xocolata negra i un toc de nou moscada."
           en: "Natural sweet wine, with intense flavors of candied fruit, dark chocolate, and a hint of nutmeg."
           es: "Vino dulce natural, con intensos sabores de fruta confitada, chocolate negro y un toque de nuez moscada."
-
