@@ -17,6 +17,7 @@ layout: default
       <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8 md:mb-12">
         <a href="#contact" class="btn btn-primary text-center">Reserva ara</a>
         <a href="#concept" class="btn btn-outline text-center">Més informació</a>
+        <a href="{{ '/grups' | relative_url }}" class="btn btn-outline text-center">Grups i esdeveniments</a>
       </div>
     </div>
   </div>
@@ -46,13 +47,13 @@ layout: default
           <h3 class="text-xl font-bold mb-3">Espai acollidor</h3>
           <p class="text-gray-600">Taules per a 2-4 persones i una taula gran per a grups de fins a 10 persones.</p>
         </div>
-        <div class="p-6 border border-gray-200 rounded-lg">
+        <a href="{{ '/grups' | relative_url }}" class="block p-6 border border-gray-200 rounded-lg hover:border-brand hover:shadow-md transition">
           <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mx-auto mb-4">
             <i class="fas fa-calendar-alt text-white text-2xl"></i>
           </div>
           <h3 class="text-xl font-bold mb-3">Esdeveniments selectes</h3>
           <p class="text-gray-600">Petits esdeveniments exclusius per a la comunitat startup en un ambient íntim i personal.</p>
-        </div>
+        </a>
       </div>
     </div>
   </div>
