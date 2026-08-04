@@ -1177,6 +1177,10 @@ video {
   margin-top: auto;
 }
 
+.groups-section .btn {
+  display: inline-block;
+}
+
 .groups-label {
   font-size: 0.78rem;
   font-weight: 600;
@@ -1188,6 +1192,7 @@ video {
 .groups-note,
 .groups-capacity {
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.2rem;
   font-weight: 700;
