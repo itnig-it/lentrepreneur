@@ -228,7 +228,12 @@ permalink: /grups/
       <p><a href="mailto:hola@entrepreneur.cat">hola@entrepreneur.cat</a> · <a href="tel:+34936790580">936 79 05 80</a></p>
     </div>
 
-    <form class="groups-form" id="groups-form">
+    <form class="groups-form" id="groups-form" name="grups-i-esdeveniments" method="POST" action="/grups/?success=true" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="grups-i-esdeveniments">
+      <input type="hidden" name="destinatari" value="hola@entrepreneur.cat">
+      <p class="hidden">
+        <label>No ompliu aquest camp<input name="bot-field"></label>
+      </p>
       <div class="groups-form-grid">
         <label>Nom i cognoms *<input name="nom" required maxlength="100"></label>
         <label>Empresa *<input name="empresa" required maxlength="100"></label>
@@ -262,6 +267,7 @@ permalink: /grups/
 
       <label>Expliqueu-nos breument què esteu organitzant *<textarea name="detalls" rows="4" required maxlength="1000"></textarea></label>
       <label>Al·lèrgies o necessitats alimentàries (opcional)<textarea name="allergies" rows="3" maxlength="1000"></textarea></label>
+      <p class="groups-form-error" id="groups-form-error" role="alert"></p>
       <button type="submit" class="btn btn-primary">Rebre una proposta</button>
       <p class="groups-fineprint">En enviar el formulari, accepteu que ens posem en contacte amb vosaltres per gestionar la sol·licitud.</p>
     </form>
@@ -291,7 +297,38 @@ permalink: /grups/
     if (form) {
       form.addEventListener('submit', function(event) {
         event.preventDefault();
-        form.outerHTML = '<div class="groups-success"><h3>Gràcies, hem rebut la vostra sol·licitud.</h3><p>Revisarem la informació i us enviarem una proposta al més aviat possible. Per a consultes urgents, podeu escriure\\'ns a <a href="mailto:hola@entrepreneur.cat">hola@entrepreneur.cat</a>.</p></div>';
+        var submitButton = form.querySelector('button[type="submit"]');
+        var errorMessage = document.getElementById('groups-form-error');
+        var formData = new FormData(form);
+        var encodedData = new URLSearchParams(formData).toString();
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Enviant...';
+        }
+
+        if (errorMessage) {
+          errorMessage.textContent = '';
+        }
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encodedData
+        })
+          .then(function(response) {
+            if (!response.ok) throw new Error('Form submission failed');
+            form.outerHTML = "<div class=\"groups-success\"><h3>Gràcies, hem rebut la vostra sol·licitud.</h3><p>Revisarem la informació i us enviarem una proposta al més aviat possible. Per a consultes urgents, podeu escriure'ns a <a href=\"mailto:hola@entrepreneur.cat\">hola@entrepreneur.cat</a>.</p></div>";
+          })
+          .catch(function() {
+            if (errorMessage) {
+              errorMessage.textContent = 'No hem pogut enviar el formulari. Si us plau, escriviu-nos a hola@entrepreneur.cat.';
+            }
+            if (submitButton) {
+              submitButton.disabled = false;
+              submitButton.textContent = 'Rebre una proposta';
+            }
+          });
       });
     }
   });
