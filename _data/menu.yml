@@ -135,8 +135,8 @@ menu:
         price: 11.5
       - name:
           ca: Bunyols de bacallà en tempura, pebrots<br>i allioli de tinta de calamar
-          en: Tempura cod fritters, peppers and squid ink allioli
-          es: Buñuelos de bacalao en tempura, pimientos y alioli de tinta de calamar
+          en: Tempura cod fritters, peppers<br>and squid ink allioli
+          es: Buñuelos de bacalao en tempura, pimientos<br>y alioli de tinta de calamar
         price: 10.5
       - name:
           ca: Croquetes de pernil ibèric i llet crua
@@ -176,8 +176,8 @@ menu:
       items:
       - name:
           ca: Carxofes i llamàntol a l'andalusa amb salsa cítrica<br>li pots afegir un ou
-          en: Andalusian-style artichokes and lobster with citrus sauce, you can add an egg
-          es: Alcachofas y bogavante a la andaluza con salsa cítrica, puedes añadir un huevo
+          en: Andalusian-style artichokes and lobster with citrus sauce<br>you can add an egg
+          es: Alcachofas y bogavante a la andaluza con salsa cítrica<br>puedes añadir un huevo
         price: "16.20"
       - name:
           ca: Moniato amb mató casolà, festucs i mel
