@@ -245,7 +245,7 @@ layout: default
     // Obtener todos los platos (excluyendo bebidas)
     const allDishes = [];
     {% for section in site.data.menu.menu.items %}
-      {% if section.menu_area != "VINS" and section.menu_area != "COCTELS_I_ESPIRITUOSOS" %}
+      {% if section.menu_area != "VINS" and section.menu_area != "COCTELS_I_ESPIRITUOSOS" and section.type != "drink" %}
         {% for item in section.items %}
           allDishes.push({
             name: "{{ item.name.ca | escape }}",
@@ -258,7 +258,7 @@ layout: default
     // Obtener todas las bebidas
     const allDrinks = [];
     {% for section in site.data.menu.menu.items %}
-      {% if section.menu_area == "VINS" or section.menu_area == "COCTELS_I_ESPIRITUOSOS" %}
+      {% if section.menu_area == "VINS" or section.menu_area == "COCTELS_I_ESPIRITUOSOS" or section.type == "drink" %}
         {% for item in section.items %}
           allDrinks.push({
             name: "{{ item.name.ca | escape }}",

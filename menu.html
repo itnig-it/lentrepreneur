@@ -3,7 +3,13 @@ layout: default
 title: Menú
 ---
 
-<section class="section bg-white">
+<style>
+  .restaurant-menu .menu-item-row { gap: 1rem; }
+  .restaurant-menu .menu-item-row > h3 { min-width: 0; }
+  .restaurant-menu .menu-item-row > .text-right { flex-shrink: 0; white-space: nowrap; }
+</style>
+
+<section class="section bg-white restaurant-menu">
   <div class="container">
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h1 class="text-3xl md:text-4xl font-serif font-bold mb-6">Menú Complet</h1>
@@ -28,7 +34,7 @@ title: Menú
                   {% if item.type == 'acompanyament' %}
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start menu-item-row">
                     <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
@@ -56,14 +62,14 @@ title: Menú
       </div>
     {% endif %}
 
-    <!-- PER COMPARTIR -->
-    {% assign per_compartir = site.data.menu.menu.items | where: "menu_area", "PER_COMPARTIR" %}
-    {% if per_compartir.size > 0 %}
+    <!-- PER COMENÇAR -->
+    {% assign per_comencar = site.data.menu.menu.items | where: "menu_area", "PER_COMENCAR" %}
+    {% if per_comencar.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
-          {{ site.data.menu.menu.areas.PER_COMPARTIR.ca }}
+          {{ site.data.menu.menu.areas.PER_COMENCAR.ca }}
         </h2>
-        {% for category in per_compartir %}
+        {% for category in per_comencar %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
@@ -72,7 +78,7 @@ title: Menú
                   {% if item.type == 'acompanyament' %}
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start menu-item-row">
                     <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
@@ -100,14 +106,14 @@ title: Menú
       </div>
     {% endif %}
 
-    <!-- PLATS PRINCIPALS -->
-    {% assign plats_principals = site.data.menu.menu.items | where: "menu_area", "PLATS_PRINCIPALS" %}
-    {% if plats_principals.size > 0 %}
+    <!-- PER CONTINUAR -->
+    {% assign per_continuar = site.data.menu.menu.items | where: "menu_area", "PER_CONTINUAR" %}
+    {% if per_continuar.size > 0 %}
       <div class="mb-16">
         <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
-          {{ site.data.menu.menu.areas.PLATS_PRINCIPALS.ca }}
+          {{ site.data.menu.menu.areas.PER_CONTINUAR.ca }}
         </h2>
-        {% for category in plats_principals %}
+        {% for category in per_continuar %}
           <div class="mb-12">
             <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
             <div class="space-y-4">
@@ -116,7 +122,54 @@ title: Menú
                   {% if item.type == 'acompanyament' %}
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start menu-item-row">
+                    <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
+                    <div class="text-right">
+                      {% if item.price_glass and item.price_bottle %}
+                        <div class="flex flex-col">
+                          <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                          <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                        </div>
+                      {% elsif item.price_glass %}
+                        <span class="text-brand font-medium">Copa €{{ item.price_glass }}</span>
+                      {% elsif item.price_bottle %}
+                        <span class="text-brand font-medium">Ampolla €{{ item.price_bottle }}</span>
+                      {% elsif item.price %}
+                        <span class="text-brand font-medium">€{{ item.price }}</span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% if item.description %}
+                    <p class="text-gray-600 mt-1">{{ item.description.ca }}</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+              {% if category.note %}
+                <p class="text-base text-gray-600 italic mt-4 mb-2">{{ category.note.ca }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- PER ACABAR -->
+    {% assign per_acabar = site.data.menu.menu.items | where: "menu_area", "PER_ACABAR" %}
+    {% if per_acabar.size > 0 %}
+      <div class="mb-16">
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center text-brand">
+          {{ site.data.menu.menu.areas.PER_ACABAR.ca }}
+        </h2>
+        {% for category in per_acabar %}
+          <div class="mb-12">
+            <h3 class="text-2xl font-serif font-bold mb-6 border-b border-gray-200 pb-2">{{ category.category.ca }}</h3>
+            <div class="space-y-4">
+              {% for item in category.items %}
+                <div class="{% if item.type == 'acompanyament' %}pl-6{% endif %}">
+                  {% if item.type == 'acompanyament' %}
+                    <span class="text-brand mr-2">+</span>
+                  {% endif %}
+                  <div class="flex justify-between items-start menu-item-row">
                     <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
@@ -163,7 +216,7 @@ title: Menú
                   {% if item.type == 'acompanyament' %}
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start menu-item-row">
                     <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
@@ -210,7 +263,7 @@ title: Menú
                   {% if item.type == 'acompanyament' %}
                     <span class="text-brand mr-2">+</span>
                   {% endif %}
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start menu-item-row">
                     <h3 class="text-lg font-medium">{{ item.name.ca }}</h3>
                     <div class="text-right">
                       {% if item.price_glass and item.price_bottle %}
@@ -239,4 +292,4 @@ title: Menú
     {% endif %}
     
   </div>
-</section> 
+</section>

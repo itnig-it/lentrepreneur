@@ -203,30 +203,44 @@ layout: null
             letter-spacing: normal;
         }
 
+        .menu-item-description {
+            font-size: 9px;
+            line-height: 1.4;
+            margin: 3px 0 6px;
+        }
+
         /* Specific sizes for each menu page */
         #plat-del-dia .menu-content-wrapper {
             width: 110mm;  /* Smallest size */
             height: 147mm;
         }
 
-        #per-compartir .menu-content-wrapper {
+        #per-comencar .menu-content-wrapper {
             width: 130mm;  /* +20mm from smallest */
             height: 177mm;
+            padding-right: 22mm;
         }
 
-        #plats-principals .menu-content-wrapper {
+        #per-continuar .menu-content-wrapper {
             width: 150mm;  /* +40mm from smallest */
             height: 207mm;
+            padding-right: 22mm;
+        }
+
+        #per-acabar .menu-content-wrapper {
+            width: 170mm;
+            height: 237mm;
+            padding-right: 22mm;
         }
 
         #carta-vins .menu-content-wrapper {
-            width: 170mm;  /* +60mm from smallest */
-            height: 237mm;
+            width: 185mm;
+            height: 257mm;
         }
 
         #coctels .menu-content-wrapper {
-            width: 190mm;  /* +80mm from smallest */
-            height: 267mm;
+            width: 200mm;
+            height: 277mm;
         }
 
         #esmorzars .menu-content-wrapper {
@@ -441,8 +455,8 @@ layout: null
         </div>
     </div>
 
-    <!-- PER COMPARTIR -->
-    <div id="per-compartir" class="menu-page">
+    <!-- PER COMENÇAR -->
+    <div id="per-comencar" class="menu-page">
         <div class="menu-content-wrapper">
             <!-- Cut lines -->
             <div class="cut-line horizontal" style="top: 0;"></div>
@@ -457,7 +471,7 @@ layout: null
             <!-- Menu content -->
             <div class="menu-content">
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PER_COMPARTIR" %}
+                    {% if section.menu_area == "PER_COMENCAR" %}
                     <div class="menu-section">
                         <h2>
                             <span data-lang-content="ca">{{ section.category.ca }}</span>
@@ -486,15 +500,15 @@ layout: null
                 {% endfor %}
             </div>
             <h1 class="menu-title">
-                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PER_COMPARTIR.ca }}</span>
-                <span data-lang-content="en">{{ site.data.menu.menu.areas.PER_COMPARTIR.en }}</span>
-                <span data-lang-content="es">{{ site.data.menu.menu.areas.PER_COMPARTIR.es }}</span>
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PER_COMENCAR.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.PER_COMENCAR.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.PER_COMENCAR.es }}</span>
             </h1>
         </div>
     </div>
 
-    <!-- PLATS PRINCIPALS -->
-    <div id="plats-principals" class="menu-page">
+    <!-- PER CONTINUAR -->
+    <div id="per-continuar" class="menu-page">
         <div class="menu-content-wrapper">
             <!-- Cut lines -->
             <div class="cut-line horizontal" style="top: 0;"></div>
@@ -509,7 +523,7 @@ layout: null
             <!-- Menu content -->
             <div class="menu-content">
                 {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PLATS_PRINCIPALS" %}
+                    {% if section.menu_area == "PER_CONTINUAR" %}
                     <div class="menu-section">
                         <h2>
                             <span data-lang-content="ca">{{ section.category.ca }}</span>
@@ -538,9 +552,68 @@ layout: null
                 {% endfor %}
             </div>
             <h1 class="menu-title">
-                <span data-lang-content="ca">PLATS PRINCIPALS</span>
-                <span data-lang-content="en">MAIN DISHES</span>
-                <span data-lang-content="es">PLATOS PRINCIPALES</span>
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PER_CONTINUAR.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.PER_CONTINUAR.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.PER_CONTINUAR.es }}</span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- PER ACABAR -->
+    <div id="per-acabar" class="menu-page">
+        <div class="menu-content-wrapper">
+            <!-- Cut lines -->
+            <div class="cut-line horizontal" style="top: 0;"></div>
+            <div class="cut-line horizontal" style="bottom: 0;"></div>
+            <div class="cut-line vertical" style="left: 0;"></div>
+            <div class="cut-line vertical" style="right: 0;"></div>
+
+            <!-- Dimension labels -->
+            <div class="dimension-label width">170mm</div>
+            <div class="dimension-label height">237mm</div>
+
+            <!-- Menu content -->
+            <div class="menu-content">
+                {% for section in site.data.menu.menu.items %}
+                    {% if section.menu_area == "PER_ACABAR" %}
+                    <div class="menu-section">
+                        <h2>
+                            <span data-lang-content="ca">{{ section.category.ca }}</span>
+                            <span data-lang-content="en">{{ section.category.en }}</span>
+                            <span data-lang-content="es">{{ section.category.es }}</span>
+                        </h2>
+                        {% if section.note %}
+                        <div class="menu-note">
+                            <span data-lang-content="ca">{{ section.note.ca }}</span>
+                            <span data-lang-content="en">{{ section.note.en }}</span>
+                            <span data-lang-content="es">{{ section.note.es }}</span>
+                        </div>
+                        {% endif %}
+                        {% for item in section.items %}
+                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
+                            <span class="menu-item-name">
+                                <span data-lang-content="ca">{{ item.name.ca }}</span>
+                                <span data-lang-content="en">{{ item.name.en }}</span>
+                                <span data-lang-content="es">{{ item.name.es }}</span>
+                                {% if item.price %} - {{ item.price }}{% endif %}
+                            </span>
+                            {% if item.description %}
+                            <div class="menu-item-description">
+                                <span data-lang-content="ca">{{ item.description.ca }}</span>
+                                <span data-lang-content="en">{{ item.description.en }}</span>
+                                <span data-lang-content="es">{{ item.description.es }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <h1 class="menu-title">
+                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PER_ACABAR.ca }}</span>
+                <span data-lang-content="en">{{ site.data.menu.menu.areas.PER_ACABAR.en }}</span>
+                <span data-lang-content="es">{{ site.data.menu.menu.areas.PER_ACABAR.es }}</span>
             </h1>
         </div>
     </div>
@@ -555,8 +628,8 @@ layout: null
             <div class="cut-line vertical" style="right: 0;"></div>
 
             <!-- Dimension labels -->
-            <div class="dimension-label width">170mm</div>
-            <div class="dimension-label height">237mm</div>
+            <div class="dimension-label width">185mm</div>
+            <div class="dimension-label height">257mm</div>
 
             <!-- Menu content -->
             <div class="menu-content">
@@ -619,8 +692,8 @@ layout: null
             <div class="cut-line vertical" style="right: 0;"></div>
 
             <!-- Dimension labels -->
-            <div class="dimension-label width">190mm</div>
-            <div class="dimension-label height">267mm</div>
+            <div class="dimension-label width">200mm</div>
+            <div class="dimension-label height">277mm</div>
 
             <!-- Menu content -->
             <div class="menu-content">
@@ -868,4 +941,4 @@ layout: null
         });
     </script>
 </body>
-</html> 
+</html>
