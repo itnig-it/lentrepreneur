@@ -1,15 +1,20 @@
 description:
-  ca: "A l'entrepreneur treballem per tornar a l'essència de la cuina, oferint una gastronomia sincera i de qualitat; amb verdures km 0, làctics i carns de pastura, així com ous ecològics de Calaf i peix salvatge. El nostre pa és de massa mare i fermentació lenta i els olis que utilitzem són verges extra."
-  en: "At Entrepreneur we work to return to the essence of cuisine, offering honest and high-quality gastronomy; with local vegetables, pasture-raised dairy and meats, organic eggs from Calaf, and wild-caught fish. Our bread is sourdough with slow fermentation, and the oils we use are extra virgin."
-  es: "En el entrepreneur trabajamos para volver a la esencia de la cocina, ofreciendo una gastronomía sincera y de calidad; con verduras de proximidad, lácteos y carnes de pastura, así como huevos ecológicos de Calaf y pescado salvaje. Nuestro pan es de masa madre y fermentación lenta, y los aceites que utilizamos son vírgenes extra."
+  ca: |-
+    A l'Entrepreneur treballem per tornar a l'essència de la cuina, oferint una gastronomia sincera i de qualitat; amb verdures de km 0, làctics i carns de pastura, ous ecològics de Calaf i peix salvatge. El nostre pa és de massa mare i fermentació lenta, i els olis que utilitzem són verges extra.
+
+    Benvinguts a allò de sempre, a la cuina feta a foc lent, sense preses. Aquí el temps torna a ser un ingredient més: el que deixa reposar el pa, el que fa xup-xup a l'olla, el que convida a seure i a allargar la sobretaula. Cuinem com ho feien les nostres àvies, amb paciència, respecte i el gust de les coses ben fetes.
+  en: |-
+    At Entrepreneur, we work to bring cooking back to its essence, offering honest, quality food: local km 0 vegetables, dairy and grass-fed meats, organic eggs from Calaf and wild fish. Our bread is sourdough and slow-fermented, and the oils we use are extra virgin.
+
+    Welcome to the way things have always been, to food slow-cooked over a low flame, with no rush. Here, time becomes an ingredient again: the time that lets the bread rest, that keeps the pot gently simmering, that invites you to sit down and stay at the table long after the meal. We cook the way our grandmothers did, with patience, respect and the taste of things done right.
+  es: |-
+    En Entrepreneur trabajamos para volver a la esencia de la cocina, ofreciendo una gastronomía sincera y de calidad: con verduras de km 0, lácteos y carnes de pasto, huevos ecológicos de Calaf y pescado salvaje. Nuestro pan es de masa madre y fermentación lenta, y los aceites que utilizamos son vírgenes extra.
+
+    Bienvenidos a lo de siempre, a la cocina hecha a fuego lento, sin prisas. Aquí el tiempo vuelve a ser un ingrediente más: el que deja reposar el pan, el que hace chup-chup en la olla, el que invita a sentarse y a alargar la sobremesa. Cocinamos como lo hacían nuestras abuelas, con paciencia, respeto y el gusto por las cosas bien hechas.
 
 
 menu:
   areas:
-    ESMORZARS:
-      ca: "ESMORZARS"
-      en: "BREAKFAST"
-      es: "DESAYUNOS"
     PER_COMENCAR:
       ca: "PER COMENÇAR"
       en: "TO START"
@@ -22,86 +27,8 @@ menu:
       ca: "PER ACABAR"
       en: "TO FINISH"
       es: "PARA ACABAR"
-    PLAT_DEL_DIA:
-      ca: "PLAT DEL DIA"
-      en: "DISH OF THE DAY"
-      es: "PLATO DEL DÍA"
 
   items:
-    - category:
-        ca: "BOCADILLOS, DOLÇOS I MÉS"
-        en: "SANDWICHES, SWEETS AND MORE"
-        es: "BOCADILLOS, DULCES Y MÁS"
-      menu_area: "ESMORZARS"
-      note:
-        ca: "Pregunta per les nostres torrades, entrepans i dolços casolans diaris."
-        en: "Ask about our toasts, sandwiches and daily homemade sweets."
-        es: "Pregunta por nuestras tostadas, bocadillos y dulces caseros diarios."
-      items: []
-
-    - category:
-        ca: "CAFÈ ESPECIALITAT \"SYRA COFFEE\""
-        en: "SPECIALTY COFFEE \"SYRA COFFEE\""
-        es: "CAFÉ ESPECIALIDAD \"SYRA COFFEE\""
-      menu_area: "ESMORZARS"
-      items:
-      - name:
-          ca: "Espresso"
-          en: "Espresso"
-          es: "Espresso"
-        price: 1.9
-      - name:
-          ca: "Cafè amb llet"
-          en: "Coffee with milk"
-          es: "Café con leche"
-        price: 2.8
-      - name:
-          ca: "Flat white"
-          en: "Flat white"
-          es: "Flat white"
-        price: 3.2
-      - name:
-          ca: "Americà"
-          en: "Americano"
-          es: "Americano"
-        price: 2.2
-      - name:
-          ca: "Tallat"
-          en: "Macchiato"
-          es: "Café cortado"
-        price: 2.5
-
-    - category:
-        ca: "INFUSIONS I TES"
-        en: "INFUSIONS AND TEAS"
-        es: "INFUSIONES Y TÉS"
-      menu_area: "ESMORZARS"
-      items:
-      - name:
-          ca: "Matcha latte"
-          en: "Matcha latte"
-          es: "Matcha latte"
-        price: 4.5
-      - name:
-          ca: "Chai latte"
-          en: "Chai latte"
-          es: "Chai latte"
-        price: 4.5
-      - name:
-          ca: "Infusió de camamilla"
-          en: "Chamomile infusion"
-          es: "Infusión de manzanilla"
-        price: 3.5
-      - name:
-          ca: "Infusió de menta i poliol"
-          en: "Mint and pennyroyal infusion"
-          es: "Infusión de menta y poleo"
-        price: 3.5
-      - name:
-          ca: "Te negre / te verd"
-          en: "Black tea / green tea"
-          es: "Té negro / té verde"
-        price: 3.5
 
     - category:
         ca: PLATILLOS

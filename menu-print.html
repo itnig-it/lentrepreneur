@@ -210,7 +210,7 @@ layout: null
         }
 
         /* Specific sizes for each menu page */
-        #plat-del-dia .menu-content-wrapper {
+        #portada .menu-content-wrapper {
             width: 110mm;  /* Smallest size */
             height: 147mm;
         }
@@ -389,8 +389,8 @@ layout: null
     <!-- Add Download Button -->
     <button class="download-btn" onclick="downloadPDF()">Descarregar PDF</button>
 
-    <!-- PLAT DEL DIA -->
-    <div id="plat-del-dia" class="menu-page">
+    <!-- PORTADA -->
+    <div id="portada" class="menu-page">
         <div class="menu-content-wrapper">
             <!-- Cut lines -->
             <div class="cut-line horizontal" style="top: 0;"></div>
@@ -406,37 +406,11 @@ layout: null
             <div class="menu-content">
                 <h2 class="restaurant-name">entrepreneur</h2>
                 <p class="restaurant-description">
-                    <span data-lang-content="ca">{{ site.data.menu.description.ca }}</span>
-                    <span data-lang-content="en">{{ site.data.menu.description.en }}</span>
-                    <span data-lang-content="es">{{ site.data.menu.description.es }}</span>
+                    <span data-lang-content="ca">{{ site.data.menu.description.ca | newline_to_br }}</span>
+                    <span data-lang-content="en">{{ site.data.menu.description.en | newline_to_br }}</span>
+                    <span data-lang-content="es">{{ site.data.menu.description.es | newline_to_br }}</span>
                 </p>
-                {% for section in site.data.menu.menu.items %}
-                    {% if section.menu_area == "PLAT_DEL_DIA" %}
-                    <div class="menu-section">
-                        <h2>
-                            <span data-lang-content="ca">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.ca }}</span>
-                            <span data-lang-content="en">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.en }}</span>
-                            <span data-lang-content="es">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.es }}</span>
-                        </h2>
-                        {% for item in section.items %}
-                        <div class="menu-item {% if item.type == 'acompanyament' %}accompaniment{% endif %}">
-                            <span class="menu-item-name">
-                                <span data-lang-content="ca">{{ item.name.ca }}</span>
-                                <span data-lang-content="en">{{ item.name.en }}</span>
-                                <span data-lang-content="es">{{ item.name.es }}</span>
-                                - {{ item.price }}
-                            </span>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                {% endfor %}
             </div>
-            <h1 class="menu-title">
-                <span data-lang-content="ca">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.ca }}</span>
-                <span data-lang-content="en">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.en }}</span>
-                <span data-lang-content="es">{{ site.data.menu.menu.areas.PLAT_DEL_DIA.es }}</span>
-            </h1>
         </div>
     </div>
 
