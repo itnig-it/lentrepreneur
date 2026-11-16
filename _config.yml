@@ -1,9 +1,9 @@
 # Site settings
-title: entrepreneur
+title: Entrepreneur
 email: hola@lentrepreneur.es
 description: >-
-  Un centre culinari per a l'escena startup de Barcelona al Poblenou.
-  Obertura pròxima - on la innovació es troba amb la gastronomia.
+  Gaudeix del restaurant de cuina catalana Entrepreneur a Barcelona.
+  Una casa de menjars contemporània al Poblenou.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
